@@ -1,1 +1,2 @@
-# FHIR-us-eicr-anonymized
+# anonymized-ecr
+FHIR IG repository for the Anonymized eICR implementation guide

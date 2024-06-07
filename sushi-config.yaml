@@ -1,0 +1,55 @@
+canonical: http://fhir.org/fhir/us/anonymized-eicr
+title: "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)"
+fhirVersion: 4.0.1
+FSHOnly: false
+applyExtensionMetadataToRoot: false
+id: ecr.fhir.us.anonymized-eicr
+name: EICRAnonymized
+status: active
+version: 1.0.0
+releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+
+publisher:
+  name: APHL
+
+dependencies:
+  hl7.fhir.us.ecr:
+    version: 2.1.1
+    uri: http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr
+    id: hl7fhirusecr
+  us.nlm.vsac:
+    version: 0.18.0
+    uri: http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac
+    id: usnlmvsac
+  hl7.fhir.us.core:
+    version: 4.0.0
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: hl7fhiruscore
+  hl7.fhir.us.odh:
+    version: 1.1.0
+    uri: http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh
+    id: hl7fhirusodh
+
+parameters:
+  show-inherited-invariants: true
+
+pages:
+  index.md:
+    title: Home Page
+  technical_guidance.md:
+   title: Technical Guidance
+  downloads.md:
+    title: Downloads
+  getting_started.md:
+    title: Getting Started
+            
+menu:
+  Home: index.html
+  Table of Contents: toc.html
+  Technical Guidance: technical_guidance.html
+  Downloads: downloads.html
+  Artifact Index: artifacts.html
+
+copyrightYear: 2024+
+jurisdiction: urn:iso:std:iso:3166#US
+license: CC0-1.0

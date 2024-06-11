@@ -34,7 +34,7 @@ It also adds invariants (constraints) to check that any required anonymized prof
 Invariant: eicr-anon-org-tele
 Description: "All Organization resources must conform to EICRAnonymizedTele"
 * severity = #error
-* expression = "descendants().reference.resolve().ofType(Organization).exists() implies descendants().reference.resolve().ofType(Organization).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-org-tele')"
+* expression = "descendants().reference.resolve().ofType(Organization).exists() implies descendants().reference.resolve().ofType(Organization).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom')"
 
 Invariant: eicr-anon-org
 Description: "All Organization resources must conform to EICRAnonymizedNameAddrTele (other than custodian and employer)"

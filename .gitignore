@@ -3,3 +3,8 @@
 /_updatePublisher.bat
 /_genonce.bat
 /input-cache
+/fsh-generated
+/output
+/temp/qa
+/template
+/temp/pages

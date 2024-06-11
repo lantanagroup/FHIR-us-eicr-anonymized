@@ -12,5 +12,5 @@ Usage: #example
 * location = Reference(location-salem-medical-center-anon)
 
 * telecom.system = #email
-* insert rsDdtaAbsentReason(telecom.value)
+* insert rsDataAbsentReason(telecom.value)
 // * telecom.value = "henry.seven@example.com"

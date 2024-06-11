@@ -14,10 +14,9 @@ It is based on the **US Public Health Location** profile with further constraint
 * telecom.extension[dataAbsentReason].value[x] = #masked (exactly)
 * telecom obeys eicr-anon-loc-tel
 
-* managingOrganization only Reference(EICRAnonymizedOrganization)
+* managingOrganization only Reference(EICRAnonymizedOrgAddrTele)
 
 Invariant: eicr-anon-loc-tel
 Description: "Location.telecom fields SHALL NOT be present"
 * severity = #error
 * expression = "system.empty() and value.empty() and use.empty() and rank.empty() and period.empty()"
-* xpath = "not(f:system) and not(f:value) and not(f:use) and not(f:rank)"

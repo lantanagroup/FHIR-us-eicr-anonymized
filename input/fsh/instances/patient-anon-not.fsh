@@ -29,45 +29,45 @@ Usage: #example
 * identifier.type = $v2-0203#MR "Medical Record Number"
 * identifier.system = "http://hospital.smarthealthit.org"
 * identifier.value = "1032702"
-//* insert rsDdtaAbsentReason(identifier.system)
-//* insert rsDdtaAbsentReason(identifier.value)
+//* insert rsDataAbsentReason(identifier.system)
+//* insert rsDataAbsentReason(identifier.value)
 
 * active = true
 
 * name.family = "Everywoman"
 * name.given[0] = "Eve"
 * name.given[+] = "L"
-//* insert rsDdtaAbsentReason(name)
+//* insert rsDataAbsentReason(name)
 
 * telecom[phone].system = #phone
 * telecom[phone].value = "1-(404)555-1212"
-//* insert rsDdtaAbsentReason(telecom[phone].value)
+//* insert rsDataAbsentReason(telecom[phone].value)
 * telecom[phone].use = #home
 
 * telecom[email].system = #email
 * telecom[email].value = "eve.everywoman@example.com"
-// * insert rsDdtaAbsentReason(telecom[email].value)
+// * insert rsDataAbsentReason(telecom[email].value)
 
 * gender = #female
 
-* insert rsDdtaAbsentReason(birthDate)
+* insert rsDataAbsentReason(birthDate)
 
 * deceasedBoolean = false
 
 * address.line = "5101 Peachtree St NE"
-//* insert rsDdtaAbsentReason(address.line)
+//* insert rsDataAbsentReason(address.line)
 * address.city = "Atlanta"
 * address.state = "GA"
 * address.postalCode = "30302"
 * address.country = "US"
 
 * contact.relationship = $v3-RoleClass#GUARD
-* insert rsDdtaAbsentReason(contact.name)
+* insert rsDataAbsentReason(contact.name)
 
 //* contact.telecom.system = #phone
 
-* insert rsDdtaAbsentReason(contact.telecom)
+* insert rsDataAbsentReason(contact.telecom)
 
-* insert rsDdtaAbsentReason(contact.address)
+* insert rsDataAbsentReason(contact.address)
 
 * communication.language = urn:ietf:bcp:47#en "English"

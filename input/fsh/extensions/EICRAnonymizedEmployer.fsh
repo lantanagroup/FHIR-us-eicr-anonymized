@@ -11,6 +11,6 @@ Context: Observation
 * insert rsProfileMeta
 
 // * value[x] 1..
-// * value[x] only Reference(EICRAnonymizedRelatedPerson or EICRAnonymizedOrganization)
+// * value[x] only Reference(EICRAnonymizedRelatedPerson or EICRAnonymizedOrgAddrTele)
 * valueReference 1..
-* valueReference only Reference(EICRAnonymizedRelatedPerson or EICRAnonymizedOrganization)
+* valueReference only Reference(EICRAnonymizedRelatedPerson or EICRAnonymizedOrgAddrTele)

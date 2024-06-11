@@ -2,7 +2,7 @@ Profile: CalculatedAge
 Parent: Observation
 Id: caculated-age-observation
 Title: "Calculated Age"
-Description: "This Observation profile represents the patient's age, calculated from the time of calculation and the date of birth."
+Description: "This Observation profile represents the patient's age, calculated by subtracting the date of birth from the current date."
 * insert rsProfileMeta
 
 * code MS

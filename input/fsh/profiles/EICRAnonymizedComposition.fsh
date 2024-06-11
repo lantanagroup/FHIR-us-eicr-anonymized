@@ -2,39 +2,28 @@ Profile: EICRAnonymizedComposition
 Parent: EICRComposition
 Id: eicr-anon-composition
 Title: "eICR Anonymized Composition"
-Description: "This Composition profile represents an anonymized eICR Composition.
-
-It is based on the **eICR Composition** profile with further constraints to require masking of:
- * subject
- * encounter
- * author
- * custodian
- * Immunization
- 
- It also requires relatesTo which must point to the original eICR, along with the Calculated Age Observation.
- "
+Description: "This Composition profile represents an anonymized eICR Composition."
 * ^version = "1.0.0"
 * insert rsProfileMeta
 
 * extension 1..
 
 // sliceExtensionInformationRecipient
-* identifier ^short = "This is the identifier of the anonymized eICR, the identifier of the original eICR (before anonymization) is recorded in the relatesTo[sliceTransformed].target.identifier"
+* identifier ^short = "This is the identifier of this anonymized eICR, the identifier of the original eICR (before anonymization) is recorded in the relatesTo[sliceTransformed].target.identifier"
 
 * subject only Reference(EICRAnonymizedPatient)
 * subject.display 0..0
-* subject ^short = "The subject of this anonymized Composition is the anonymized Patient"
-* subject ^definition = "The subject of this anonymized Composition is the anonymized Patient"
+* subject ^short = "The subject of this anonymized Composition is the eICR Anonymized Patient"
 * encounter only Reference(EICRAnonymizedEncounter)
-* encounter ^short = "References the anonymized Encounter"
+* encounter ^short = "References the eICR Anonymized Encounter"
 * encounter.display 0..0
-* date ^short = "The creation date of the anonymized eICR document (this is different to the creation date of the original (non-anonymized) eICR document)"
-* author only Reference(EICRAnonymizedPractitionerRole or EICRAnonymizedPractitioner or EICRAnonymizedOrganization or Device)
-* author ^short = "References the anonymized PractitionerRole, Practitioner, Organization, or Device"
+* date ^short = "The creation date of the eICR Anonymized Document (this is different to the creation date of the original (non-anonymized) eICR document)"
+* author only Reference(EICRAnonymizedPractitionerRole or EICRAnonymizedPractitioner or EICRAnonymizedOrgAddrTele or Device)
+* author ^short = "References the eICR Anonymized PractitionerRole, eICR Anonymized Practitioner, eICR Anonymized Organization, or Device"
 * author.display 0..0
 
-* custodian only Reference (EICRAnonymizedOrganizationTelecom)
-* custodian ^short = "References the anonymized Organization - telecom"
+* custodian only Reference (EICRAnonymizedOrgTele)
+* custodian ^short = "References the eICR Anonymized Organization - Telecom"
 * custodian.display 0..0
 
 * relatesTo 1..
@@ -45,11 +34,20 @@ It is based on the **eICR Composition** profile with further constraints to requ
 * relatesTo[sliceTransformed].target[x] ^short = "Identifier of the Document or Composition transformed"
 * relatesTo[sliceTransformed].target[x] ^definition = "Identifier of the Document or Composition transformed"
 
-// * section.entry.reference obeys eicr-anon-comp-obs
+* section[sliceHistoryOfPresentIllnessSection].text.extension contains $data-absent-reason named dataAbsentReason 1..1 MS
+* section[sliceHistoryOfPresentIllnessSection].text.extension[dataAbsentReason] ^short = "A text.div is not allowed, must use data-absent-reason with value 'masked'"
+* section[sliceHistoryOfPresentIllnessSection].text.extension[dataAbsentReason].value[x] = #masked (exactly)
+* section[sliceHistoryOfPresentIllnessSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">MASKED</div>"
+
+
+* section[slicePastMedicalHistorySection].text.extension contains $data-absent-reason named dataAbsentReason 1..1 MS
+* section[slicePastMedicalHistorySection].text.extension[dataAbsentReason] ^short = "A text.div is not allowed, must use data-absent-reason with value 'masked'"
+* section[slicePastMedicalHistorySection].text.extension[dataAbsentReason].value[x] = #masked (exactly)
 
 * section[sliceImmunizationsSection].entry[sliceUSCoreImmunization] only Reference(EICRAnonymizedImmunization)
 
 * section[sliceSocialHistorySection].entry[sliceExposureContactInformation] 0..0
+* section[sliceSocialHistorySection].entry[sliceExposureContactInformation] only Reference(USPublicHealthExposureContactInformation)
 
 * section[sliceSocialHistorySection].entry contains sliceCalculatedAge 1..1 MS
 * section[sliceSocialHistorySection].entry[sliceCalculatedAge] only Reference(CalculatedAge)
@@ -57,7 +55,13 @@ It is based on the **eICR Composition** profile with further constraints to requ
 * section[sliceSocialHistorySection].entry[sliceCalculatedAge] ^definition = "Calculated Age entry"
 
 * section[slicePregnancySection].entry 1..
-// Invariant: eicr-anon-comp-obs
-// Description: "If entry.Observation.subject is present it SHALL reference EICRAnonymizedPatient"
+
+// Invariant: eicr-anon-hp
+// Description: "History of Present Illness text.div value SHALL NOT be present"
 // * severity = #error
-// * expression = "(Observation.subject.exists() and Observation.subject.conformsTo(EICRAnonymizedPatient)) or Observation.subject.empty()"
+// * expression = "div.empty()"
+
+// Invariant: eicr-anon-pmh
+// Description: "Past Medical History text.div value SHALL NOT be present"
+// * severity = #error
+// * expression = "div.empty()"

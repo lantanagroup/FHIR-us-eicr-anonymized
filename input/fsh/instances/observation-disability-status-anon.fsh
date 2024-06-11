@@ -5,6 +5,6 @@ Description: "Example of Disability Status Profile (anonymized)"
 Usage: #example
 * status = #final
 * code = $loinc#69856-3 "Are you deaf, or do you have serious difficulty hearing"
-* subject = Reference(patient-anon-not)
+* subject = Reference(patient-anon)
 * effectiveDateTime = "2020-11-10T22:33:22Z"
 * valueBoolean = true

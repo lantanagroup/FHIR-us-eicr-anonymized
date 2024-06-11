@@ -8,13 +8,7 @@ Usage: #example
 * status = #active
 * name = "Clinic Bldg A, Salem Medical Center"
 * type = $v3-RoleCode#HOSP "Hospital"
-* insert rsDdtaAbsentReason(telecom)
-// * telecom[0].system = #phone
-// * telecom[=].value = "(+1) (555)555-3001"
-// * telecom[+].system = #fax
-// * telecom[=].value = "(+1) (555)555-3002"
-// * telecom[+].system = #email
-// * telecom[=].value = "mail@smc.org"
+* insert rsDataAbsentReason(telecom)
 * address.line[0] = "Clinic Bldg A"
 * address.line[+] = "4444 Healthcare Drive"
 * address.city = "Ann Arbor"

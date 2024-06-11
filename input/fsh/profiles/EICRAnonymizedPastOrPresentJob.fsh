@@ -10,7 +10,7 @@ It is based on the **Occupational Data for Health Past Or Present Job** profile 
 * insert rsProfileMeta
 
 //* extension[employer] contains EICRAnonymizedEmployer named employer 0..1
-* extension[employer].valueReference only Reference(EICRAnonymizedRelatedPerson or EICRAnonymizedOrganization)
+* extension[employer].valueReference only Reference(EICRAnonymizedRelatedPerson or EICRAnonymizedOrgNameAddrTele)
 
 * subject only Reference(EICRAnonymizedPatient)
 * subject ^short = "The subject of this anonymized Past or Present Job is the anonymized Patient"

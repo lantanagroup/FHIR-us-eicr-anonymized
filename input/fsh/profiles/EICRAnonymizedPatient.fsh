@@ -23,10 +23,10 @@ It is based on the **US Public Health Patient** profile with further constraints
 * name obeys eicr-anon-pt-name
 
 // need the data absent reason set out here because it is only on id in the base profile
-// * telecom.value.extension contains $data-absent-reason named dataAbsentReason 1..1 MS
-// * telecom.value.extension[dataAbsentReason] ^short = "A value for telecom.value is not allowed, must use data-absent-reason with value 'masked'"
-// * telecom.value.extension[dataAbsentReason].value[x] = #masked (exactly)
-// * telecom obeys eicr-anon-pt-tel
+* telecom.value.extension contains $data-absent-reason named dataAbsentReason 1..1 MS
+* telecom.value.extension[dataAbsentReason] ^short = "A value for telecom.value is not allowed, must use data-absent-reason with value 'masked'"
+* telecom.value.extension[dataAbsentReason].value[x] = #masked (exactly)
+* telecom obeys eicr-anon-pt-tel
 
 * birthDate.extension[dataAbsentReason] 1..
 * birthDate.extension[dataAbsentReason] ^short = "A value for birthDate is not allowed, must use data-absent-reason with value 'masked'"
@@ -62,11 +62,11 @@ Description: "Patient.name fields SHALL NOT be present"
 * expression = "use.empty() and text.empty() and family.empty() and given.empty() and prefix.empty() and suffix.empty() and period.empty()"
 * xpath = "not(f:use) and not(f:text) and not(f:family) and not(f:given) and not(f:prefix) and not(f:suffix) and not(f:period)"
 
-// Invariant: eicr-anon-pt-tel
-// Description: "Patient.telecom.value.value SHALL NOT be present"
-// * severity = #error
-// * expression = "value.value.empty()"
-// * xpath = "not(f:value/@value)"
+Invariant: eicr-anon-pt-tel
+Description: "Patient.telecom.value.value SHALL NOT be present"
+* severity = #error
+* expression = "value.value.empty()"
+* xpath = "not(f:value/@value)"
 
 Invariant: eicr-anon-pt-bd
 Description: "Patient.birthDate.value SHALL NOT be present"

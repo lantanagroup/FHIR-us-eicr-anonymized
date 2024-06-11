@@ -11,73 +11,83 @@ It also adds invariants (constraints) to check that any required anonymized prof
 * insert rsProfileMeta
 
 * entry 1..
-* entry.resource obeys eicr-anon-sbj
-* entry.resource obeys eicr-anon-pt
-* entry.resource obeys eicr-anon-sbj-disp
-* entry.resource obeys eicr-anon-pt-disp
+// * entry.resource obeys eicr-anon-sbj
+// * entry.resource obeys eicr-anon-pt
+
+* obeys eicr-anon-patient
+* obeys eicr-anon-prct
+* obeys eicr-anon-prct-rol
+* obeys eicr-anon-enc
+* obeys eicr-anon-loc
+* obeys eicr-anon-rp
+
+* obeys eicr-anon-exposure
+
+// no references can have a display
+* entry.resource obeys eicr-anon-display
+
+* entry.resource obeys eicr-anon-org-tele
 
 * entry[slicePublicHealthComposition].resource only EICRAnonymizedComposition
 * entry[slicePublicHealthComposition].resource ^short = "References the Anonymized eICR Composition"
 
+Invariant: eicr-anon-org-tele
+Description: "All Organization resources must conform to EICRAnonymizedTele"
+* severity = #error
+* expression = "descendants().reference.resolve().ofType(Organization).exists() implies descendants().reference.resolve().ofType(Organization).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-org-tele')"
+
+Invariant: eicr-anon-org
+Description: "All Organization resources must conform to EICRAnonymizedNameAddrTele (other than custodian and employer)"
+* severity = #error
+* expression = "descendants().exclude(descendants().select(custodian)).reference.resolve().ofType(Organization).exists() implies descendants().exclude(descendants().select(custodian)).reference.resolve().ofType(Organization).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-org-name-addr-tele')"
+
 Invariant: eicr-anon-patient
-Description: "All Patients must conform to EICRAnonymizedPatient profile"
+Description: "All Patient resources must conform to EICRAnonymizedPatient profile"
 * severity = #error
-* expression = "ofType(Patient).resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient')"
-
-Invariant: eicr-anon-sbj
-Description: "If subject is present it SHALL reference EICRAnonymizedPatient"
-* severity = #error
-* expression = "subject.exists() implies subject.reference.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient')"
-
-Invariant: eicr-anon-pt
-Description: "If patient is present it SHALL reference EICRAnonymizedPatient"
-* severity = #error
-* expression = "patient.exists() implies patient.reference.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient')"
+* expression = "entry.resource.ofType(Patient).empty() or entry.where(resource.ofType(Patient).exists()).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient')"
 
 Invariant: eicr-anon-prct
-Description: "If practitioner is present it SHALL reference EICRAnonymizedPractitioner"
+Description: "All Practitioner resources must conform to EICRAnonymizedPractitioner"
 * severity = #error
-* expression = "practitioner.exists() implies practitioner.reference.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner')"
+* expression = "entry.resource.ofType(Practitioner).empty() or entry.where(resource.ofType(Practitioner).exists()).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner')"
+
+Invariant: eicr-anon-prct-rol
+Description: "All PractitionerRole resources must conform to EICRAnonymizedPractitionerRole"
+* severity = #error
+* expression = "entry.resource.ofType(PractitionerRole).empty() or entry.where(resource.ofType(PractitionerRole).exists()).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitionerrole')"
+
+Invariant: eicr-anon-enc
+Description: "All Encounter resources must conform to EICRAnonymizedEncounter"
+* severity = #error
+* expression = "entry.resource.ofType(Encounter).empty() or entry.where(resource.ofType(Encounter).exists()).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-encounter')"
+
+Invariant: eicr-anon-loc
+Description: "All Location resources must conform to EICRAnonymizedLocation"
+* severity = #error
+* expression = "entry.resource.ofType(Location).empty() or entry.where(resource.ofType(Location).exists()).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location')"
+
+Invariant: eicr-anon-rp
+Description: "All RelatedPerson resources must conform to EICRAnonymizedRelatedPerson"
+* severity = #error
+* expression = "entry.resource.ofType(RelatedPerson).empty() or entry.where(resource.ofType(RelatedPerson).exists()).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson')"
+
+Invariant: eicr-anon-exposure
+Description: "US Public Health Exposure Contact Information is not allowed"
+* severity = #error
+* expression = "entry.fullUrl.resolve().conformsTo('http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-exposure-contact-information').not()"
+
+// Invariant: eicr-anon-sbj
+// Description: "If subject is present it SHALL reference EICRAnonymizedPatient"
+// * severity = #error
+// * expression = "subject.exists() implies subject.reference.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient')"
+
+// Invariant: eicr-anon-pt
+// Description: "If patient is present it SHALL reference EICRAnonymizedPatient"
+// * severity = #error
+// * expression = "patient.exists() implies patient.reference.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient')"
 
 // disallow display
-Invariant: eicr-anon-sbj-disp
-Description: "If subject is present it SHALL NOT have a display"
+Invariant: eicr-anon-display
+Description: "A reference cannot have a display"
 * severity = #error
-* expression = "subject.exists() implies subject.display.empty()"
-
-Invariant: eicr-anon-pt-disp
-Description: "If patient is present it SHALL NOT have a display"
-* severity = #error
-* expression = "patient.exists() implies patient.display.empty()"
-
-Invariant: eicr-anon-prct-disp
-Description: "If practitioner is present it SHALL NOT have a display"
-* severity = #error
-* expression = "practitioner.exists() implies practitioner.display.empty()"
-
-Invariant: eicr-anon-aut-disp
-Description: "If author is present it SHALL NOT have a display"
-* severity = #error
-* expression = "author.exists() implies author.display.empty()"
-
-Invariant: eicr-anon-cust-disp
-Description: "If custodian is present it SHALL NOT have a display"
-* severity = #error
-* expression = "custodian.exists() implies custodian.display.empty()"
-
-Invariant: eicr-anon-enc-disp
-Description: "If encounter is present it SHALL NOT have a display"
-* severity = #error
-* expression = "encounter.exists() implies encounter.display.empty()"
-
-Invariant: eicr-anon-att-disp
-Description: "If attester is present it SHALL NOT have a display"
-* severity = #error
-* expression = "attester.exists() implies attester.display.empty()"
-
-Invariant: eicr-anon-ent-disp
-Description: "If entry is present it SHALL NOT have a display"
-* severity = #error
-* expression = "entry.exists() implies entry.display.empty()"
-
-//Bundle.entry.descendants().reference.distinct().all($this in %context.entry.fullUrl.select($this.toString().substring('http://example.org/fhir/'.length())))
+* expression = "children().where(reference.exists()).display.empty()"

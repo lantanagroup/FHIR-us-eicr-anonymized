@@ -10,7 +10,6 @@ Usage: #example
 * code.text = "Mass gathering (football game)"
 * subject = Reference(patient-anon)
 * focus.reference = "Location/location-city-football-stadium-anon"
-* focus.display = "City Football Stadium"
 * effectivePeriod.start = "2020-01-11T18:00:00Z"
 * effectivePeriod.end = "2020-01-11T21:30:00Z"
 * valueCodeableConcept = $sct#264379009 "Sports stadium (environment)"

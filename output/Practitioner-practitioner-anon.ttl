@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/fhir/us/anonymized-eicr/Practitioner/practitioner-anon> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "practitioner-anon"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner </b><a name=\"practitioner-anon\"> </a><a name=\"hcpractitioner-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourcePractitioner &quot;practitioner-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-practitioner.html\">eICR Anonymized Practitioner</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.3.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/9941339108</p><p><b>name</b>: null </p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: </p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "9941339108" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "masked" ]
+     ] ) ;
+     fhir:family [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "masked" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "masked" ]
+     ] )
+  ] ) ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "masked" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

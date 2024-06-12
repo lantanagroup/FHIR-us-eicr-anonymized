@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/fhir/us/anonymized-eicr/Device/device-ecmo-anon> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "device-ecmo-anon"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device </b><a name=\"device-ecmo-anon\"> </a><a name=\"hcdevice-ecmo-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceDevice &quot;device-ecmo-anon&quot; </p></div><h3>UdiCarriers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>DeviceIdentifier</b></td><td><b>CarrierHRF</b></td><td><b>EntryType</b></td></tr><tr><td style=\"display: none\">*</td><td>99863313444316</td><td>(01)99863313444316(17)220101(10)M320(21)AC222</td><td>rfid</td></tr></table><p><b>status</b>: active</p><p><b>manufacturer</b>: ACME Biomedical</p><p><b>expirationDate</b>: 2022-01-01</p><p><b>lotNumber</b>: M320</p><p><b>serialNumber</b>: AC222</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>ACME Extracorporeal membrane oxygenator</td><td>udi-label-name</td></tr></table><p><b>modelNumber</b>: 4.0</p><p><b>type</b>: Extracorporeal membrane oxygenator (physical object) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#469244005)</span></p><p><b>patient</b>: <a href=\"Patient-patient-anon.html\">Patient/patient-anon</a> &quot;&quot;</p></div>"
+  ] ; # 
+  fhir:udiCarrier ( [
+     fhir:deviceIdentifier [ fhir:v "99863313444316" ] ;
+     fhir:carrierHRF [ fhir:v "(01)99863313444316(17)220101(10)M320(21)AC222" ] ;
+     fhir:entryType [ fhir:v "rfid" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "ACME Biomedical"] ; # 
+  fhir:expirationDate [ fhir:v "2022-01-01"^^xsd:date] ; # 
+  fhir:lotNumber [ fhir:v "M320"] ; # 
+  fhir:serialNumber [ fhir:v "AC222"] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "ACME Extracorporeal membrane oxygenator" ] ;
+     fhir:type [ fhir:v "udi-label-name" ]
+  ] ) ; # 
+  fhir:modelNumber [ fhir:v "4.0"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:469244005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "469244005" ] ;
+       fhir:display [ fhir:v "Extracorporeal membrane oxygenator (physical object)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Extracorporeal membrane oxygenator (physical object)" ]
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Patient/patient-anon> ;
+     fhir:reference [ fhir:v "Patient/patient-anon" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

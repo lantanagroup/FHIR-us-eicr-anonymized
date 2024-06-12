@@ -1,0 +1,2040 @@
+{
+  "date" : "Thu, 13 Jun, 2024 06:32:23 +1000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "\\fsh-generated\\resources\\ImplementationGuide-ecr.fhir.us.anonymized-eicr.json",
+      "size" : 20477,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 13
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 78,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 78,
+          "length" : 35
+        },
+        {
+          "activity" : "validate",
+          "start" : 93,
+          "length" : 814
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 94,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 101,
+          "length" : 138
+        },
+        {
+          "activity" : "generate2",
+          "start" : 113,
+          "length" : 343
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 176,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-bundle-document-zika-anon.json",
+      "size" : 90371,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 17
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 76,
+          "length" : 1
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 76,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 84
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 78,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 78,
+          "length" : 1581
+        },
+        {
+          "activity" : "validate",
+          "start" : 94,
+          "length" : 5031
+        },
+        {
+          "activity" : "generate1",
+          "start" : 101,
+          "length" : 327
+        },
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 254
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 175,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 215,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Composition-composition-zika-anon.json",
+      "size" : 43607,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 10
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 79,
+          "length" : 45
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 94,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 99,
+          "length" : 748
+        },
+        {
+          "activity" : "generate1",
+          "start" : 101,
+          "length" : 135
+        },
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 117
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 175,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Condition-condition-common-cold-anon.json",
+      "size" : 757,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 79,
+          "length" : 33
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 11
+        },
+        {
+          "activity" : "generate1",
+          "start" : 101,
+          "length" : 23
+        },
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 39
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Condition-condition-zika-anon.json",
+      "size" : 649,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 79,
+          "length" : 26
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 101,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 40
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Device-device-ecmo-anon.json",
+      "size" : 853,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 79,
+          "length" : 36
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 101,
+          "length" : 21
+        },
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 47
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Encounter-encounter-outpatient-anon.json",
+      "size" : 2347,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 78,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 79,
+          "length" : 82
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 57
+        },
+        {
+          "activity" : "generate1",
+          "start" : 101,
+          "length" : 28
+        },
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 72
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Immunization-immunization-pneumo-anon.json",
+      "size" : 540,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 22
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 101,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 65
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 175,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Location-location-city-football-stadium-anon.json",
+      "size" : 634,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 76,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 101,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 39
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 175,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Location-location-salem-medical-center-anon.json",
+      "size" : 1056,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 21
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 13
+        },
+        {
+          "activity" : "generate1",
+          "start" : 101,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 52
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MedicationAdministration-medicationadministration-azithromycin-anon.json",
+      "size" : 1276,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 38
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 101,
+          "length" : 23
+        },
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 44
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 174,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MedicationAdministration-medicationadministration-naloxone-response-anon.json",
+      "size" : 1564,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 24
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 20
+        },
+        {
+          "activity" : "generate1",
+          "start" : 101,
+          "length" : 23
+        },
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 40
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-observation-blood-pressure-anon.json",
+      "size" : 1700,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 28
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 27
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 23
+        },
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 41
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-observation-calculated-age-anon.json",
+      "size" : 619,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 23
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 36
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-observation-country-of-nationality-anon.json",
+      "size" : 710,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 3
+        },
+        {
+          "activity" : "scan",
+          "start" : 76,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 19
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 20
+        },
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 39
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-observation-country-of-residence-anon.json",
+      "size" : 711,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 19
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 21
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 42
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 175,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-observation-disability-status-anon.json",
+      "size" : 550,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 27
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 45
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-observation-emergency-outbreak-info-anon.json",
+      "size" : 477,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 41
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-observation-exposure-contact-info-football-game-anon.json",
+      "size" : 1901,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 42
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 266
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 25
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 54
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 175,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-observation-lab-result-lymphocytes-anon.json",
+      "size" : 1380,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 76,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 30
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 37
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-observation-odh-usual-work-anon.json",
+      "size" : 1166,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 21
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 22
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 35
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-observation-pregnancy-status-anon.json",
+      "size" : 2200,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 78,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 34
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 27
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 42
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-observation-travel-history-201801-anon.json",
+      "size" : 1465,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 20
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 12
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 25
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 41
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-observation-vaccine-credential-assertion-anon.json",
+      "size" : 714,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 20
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 20
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 34
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 175,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-organization-acme-laboratory-telecom-anon.json",
+      "size" : 952,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 28
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-organization-name-tele-addr-anon.json",
+      "size" : 899,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 13
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 20
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 23
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-organization-salem-medical-center-anon.json",
+      "size" : 765,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 27
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 174,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-organization-telecom-anon.json",
+      "size" : 736,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 27
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-patient-anon-not.json",
+      "size" : 4360,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 134
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 96
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 35
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 26
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 175,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-patient-anon.json",
+      "size" : 5264,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 76,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 45
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 124
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 38
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 27
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Practitioner-practitioner-anon.json",
+      "size" : 1083,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 22
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 23
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PractitionerRole-practitionerrole-anon.json",
+      "size" : 1256,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 28
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 20
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 57
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Procedure-procedure-ecmo-anon.json",
+      "size" : 878,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 30
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 12
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 23
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 50
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ServiceRequest-servicerequest-zika-anon.json",
+      "size" : 1037,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 33
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 14
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 23
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 60
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 175,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-caculated-age-observation.json",
+      "size" : 2916,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 3
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 76,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 13
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 77,
+          "length" : 183
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 78,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 43
+        },
+        {
+          "activity" : "validate",
+          "start" : 81,
+          "length" : 933
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 94,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 378
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 2338
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 176,
+          "length" : 6
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 215,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 215,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-eicr-anon-composition.json",
+      "size" : 10392,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 77,
+          "length" : 539
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 80,
+          "length" : 167
+        },
+        {
+          "activity" : "validate",
+          "start" : 82,
+          "length" : 3616
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 94,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 94,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 102,
+          "length" : 2098
+        },
+        {
+          "activity" : "generate2",
+          "start" : 118,
+          "length" : 3917
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 176,
+          "length" : 34
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 215,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-eicr-anon-document-bundle.json",
+      "size" : 6682,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 77,
+          "length" : 71
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 81,
+          "length" : 30
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 1618
+        },
+        {
+          "activity" : "generate1",
+          "start" : 105,
+          "length" : 376
+        },
+        {
+          "activity" : "generate2",
+          "start" : 121,
+          "length" : 569
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 176,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-eicr-anon-employer-extension.json",
+      "size" : 1766,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 77,
+          "length" : 53
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 81,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 87,
+          "length" : 51
+        },
+        {
+          "activity" : "generate1",
+          "start" : 105,
+          "length" : 61
+        },
+        {
+          "activity" : "generate2",
+          "start" : 122,
+          "length" : 159
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 176,
+          "length" : 2
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 215,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-eicr-anon-encounter.json",
+      "size" : 2684,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 77,
+          "length" : 33
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 81,
+          "length" : 44
+        },
+        {
+          "activity" : "validate",
+          "start" : 87,
+          "length" : 439
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 94,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 105,
+          "length" : 385
+        },
+        {
+          "activity" : "generate2",
+          "start" : 122,
+          "length" : 701
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 142,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 176,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 215,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-eicr-anon-immunization.json",
+      "size" : 1740,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 77,
+          "length" : 29
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 81,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 88,
+          "length" : 297
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 94,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 105,
+          "length" : 250
+        },
+        {
+          "activity" : "generate2",
+          "start" : 123,
+          "length" : 574
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 175,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 176,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-eicr-anon-location.json",
+      "size" : 2703,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 10
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 77,
+          "length" : 16
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 81,
+          "length" : 19
+        },
+        {
+          "activity" : "validate",
+          "start" : 88,
+          "length" : 377
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 94,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 106,
+          "length" : 285
+        },
+        {
+          "activity" : "generate2",
+          "start" : 123,
+          "length" : 548
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 176,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 215,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-eicr-anon-org-name-addr-tele.json",
+      "size" : 2608,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 10
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 77,
+          "length" : 56
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 81,
+          "length" : 24
+        },
+        {
+          "activity" : "validate",
+          "start" : 88,
+          "length" : 322
+        },
+        {
+          "activity" : "generate1",
+          "start" : 106,
+          "length" : 295
+        },
+        {
+          "activity" : "generate2",
+          "start" : 124,
+          "length" : 733
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 176,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-eicr-anon-org-telecom.json",
+      "size" : 2438,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 8
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 81,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 89,
+          "length" : 299
+        },
+        {
+          "activity" : "generate1",
+          "start" : 106,
+          "length" : 285
+        },
+        {
+          "activity" : "generate2",
+          "start" : 125,
+          "length" : 467
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 176,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 215,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-eicr-anon-organization.json",
+      "size" : 2530,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 11
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 81,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 89,
+          "length" : 284
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 94,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 106,
+          "length" : 275
+        },
+        {
+          "activity" : "generate2",
+          "start" : 125,
+          "length" : 450
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 176,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-eicr-anon-past-or-present-job.json",
+      "size" : 3151,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 77,
+          "length" : 120
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 81,
+          "length" : 61
+        },
+        {
+          "activity" : "validate",
+          "start" : 89,
+          "length" : 1442
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 94,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 94,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 107,
+          "length" : 1447
+        },
+        {
+          "activity" : "generate2",
+          "start" : 126,
+          "length" : 1814
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 175,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 176,
+          "length" : 27
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 215,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 215,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-eicr-anon-patient.json",
+      "size" : 11832,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 76,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 15
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 78,
+          "length" : 39
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 81,
+          "length" : 74
+        },
+        {
+          "activity" : "validate",
+          "start" : 91,
+          "length" : 1315
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 94,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 94,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 108,
+          "length" : 1123
+        },
+        {
+          "activity" : "generate2",
+          "start" : 128,
+          "length" : 1653
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 174,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 176,
+          "length" : 21
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 215,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 215,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-eicr-anon-practitioner.json",
+      "size" : 7164,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 11
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 78,
+          "length" : 26
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 81,
+          "length" : 23
+        },
+        {
+          "activity" : "validate",
+          "start" : 92,
+          "length" : 472
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 94,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 109,
+          "length" : 398
+        },
+        {
+          "activity" : "generate2",
+          "start" : 129,
+          "length" : 506
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 176,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-eicr-anon-practitionerrole.json",
+      "size" : 3782,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 78,
+          "length" : 31
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 81,
+          "length" : 21
+        },
+        {
+          "activity" : "validate",
+          "start" : 92,
+          "length" : 239
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 94,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 110,
+          "length" : 234
+        },
+        {
+          "activity" : "generate2",
+          "start" : 130,
+          "length" : 354
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 176,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-eicr-anon-relatedperson.json",
+      "size" : 7590,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 76,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 78,
+          "length" : 25
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 81,
+          "length" : 27
+        },
+        {
+          "activity" : "validate",
+          "start" : 93,
+          "length" : 347
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 94,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 110,
+          "length" : 405
+        },
+        {
+          "activity" : "generate2",
+          "start" : 130,
+          "length" : 483
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 176,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 215,
+          "length" : 2
+        }
+      ]
+    }
+  ]
+}

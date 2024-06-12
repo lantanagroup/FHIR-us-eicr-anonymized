@@ -1,0 +1,1268 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/fhir/us/anonymized-eicr/ImplementationGuide/ecr.fhir.us.anonymized-eicr> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ecr.fhir.us.anonymized-eicr"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>EICRAnonymized</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/fhir/us/anonymized-eicr/ImplementationGuide/ecr.fhir.us.anonymized-eicr</pre></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/fhir/us/anonymized-eicr/ImplementationGuide/ecr.fhir.us.anonymized-eicr"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "EICRAnonymized"] ; # 
+  fhir:title [ fhir:v "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-06-13T06:32:23+10:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "APHL"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "ecr.fhir.us.anonymized-eicr"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "5.5.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "5.1.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7fhirusecr" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.ecr" ] ;
+     fhir:version [ fhir:v "2.1.1" ]
+  ] [
+     fhir:id [ fhir:v "usnlmvsac" ] ;
+     fhir:uri [
+       fhir:v "http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac>
+     ] ;
+     fhir:packageId [ fhir:v "us.nlm.vsac" ] ;
+     fhir:version [ fhir:v "0.18.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7fhiruscore" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.core" ] ;
+     fhir:version [ fhir:v "4.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7fhirusodh" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.odh" ] ;
+     fhir:version [ fhir:v "1.1.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2024+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ci-build" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "show-inherited-invariants" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://fhir.org/fhir/us/anonymized-eicr/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2024+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ci-build" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "show-inherited-invariants" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://fhir.org/fhir/us/anonymized-eicr/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/caculated-age-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/caculated-age-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Calculated Age" ] ;
+       fhir:description [ fhir:v "This Observation profile represents the patient's age, calculated by subtracting the date of birth from the current date." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-calculated-age-anon> ;
+         fhir:reference [ fhir:v "Observation/observation-calculated-age-anon" ]
+       ] ;
+       fhir:name [ fhir:v "Calculated Age Observation Example: anonymized" ] ;
+       fhir:description [ fhir:v "Example of Calculated Age Observation (anonymized)" ] ;
+       fhir:example [
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/caculated-age-observation"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/caculated-age-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-country-of-nationality-anon> ;
+         fhir:reference [ fhir:v "Observation/observation-country-of-nationality-anon" ]
+       ] ;
+       fhir:name [ fhir:v "Country of Nationality Observation Example: anonymized" ] ;
+       fhir:description [ fhir:v "Example of Country of Nationality Observation (anonymized)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-country-of-residence-anon> ;
+         fhir:reference [ fhir:v "Observation/observation-country-of-residence-anon" ]
+       ] ;
+       fhir:name [ fhir:v "Country of Residence Observation Example: anonymized" ] ;
+       fhir:description [ fhir:v "Example of Country of Residence Observation (anonymized)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Device" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Device/device-ecmo-anon> ;
+         fhir:reference [ fhir:v "Device/device-ecmo-anon" ]
+       ] ;
+       fhir:name [ fhir:v "Device Example: ECMO, anonymized" ] ;
+       fhir:description [ fhir:v "Example of Device Profile (anonymized, ECMO)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-disability-status-anon> ;
+         fhir:reference [ fhir:v "Observation/observation-disability-status-anon" ]
+       ] ;
+       fhir:name [ fhir:v "Disability Status Example: anonymized" ] ;
+       fhir:description [ fhir:v "Example of Disability Status Profile (anonymized)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-composition" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Composition" ] ;
+       fhir:description [ fhir:v "This Composition profile represents an anonymized eICR Composition." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Composition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Composition/composition-zika-anon> ;
+         fhir:reference [ fhir:v "Composition/composition-zika-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Composition Example: Initial Public Health Case Report - Anonymized, Zika" ] ;
+       fhir:description [ fhir:v "Example of eICR Anonymized Composition profile (anonymized, Zika)" ] ;
+       fhir:example [
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-document-bundle" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Document Bundle" ] ;
+       fhir:description [ fhir:v "This Composition profile represents an anonymized eICR Document Bundle.\r\n\r\nIt is based on the **eICR Document Bundle** profile with further constraints to require masking the contained eICR Composition.\r\n\r\nIt also adds invariants (constraints) to check that any required anonymized profiles are present in the Bundle entries." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Bundle/bundle-document-zika-anon> ;
+         fhir:reference [ fhir:v "Bundle/bundle-document-zika-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Document Bundle Example: bundle-eicr-document-zika-anon" ] ;
+       fhir:description [ fhir:v "Example of eICR Anonymized Document Bundle profile (anonymized, Zika)" ] ;
+       fhir:example [
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-employer-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-employer-extension" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Employer Extension" ] ;
+       fhir:description [ fhir:v "This Patient profile represents an anonymized eICR Employer Extension.\r\n\r\nIt is based on the **ODH Employer Extension** profile with further constraints to require masking of some data elements." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Encounter" ] ;
+       fhir:description [ fhir:v "This Encounter profile represents an anonymized eICR Encounter.\r\n\r\nIt is based on the **eICR Encounter** profile with further constraints to require masking of some data elements." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Encounter/encounter-outpatient-anon> ;
+         fhir:reference [ fhir:v "Encounter/encounter-outpatient-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Encounter Example: encounter-outpatient-anon" ] ;
+       fhir:description [ fhir:v "Example of eICR Anonymized Encounter profile (anonymized, outpatient)" ] ;
+       fhir:example [
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-encounter"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-immunization> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-immunization" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Immunization" ] ;
+       fhir:description [ fhir:v "This Immunization profile represents an anonymized eICR Immunization.\r\n\r\nIt is based on the **US Core Immunization** profile with further constraints to require removal of performer." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Immunization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Immunization/immunization-pneumo-anon> ;
+         fhir:reference [ fhir:v "Immunization/immunization-pneumo-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Immunization Example: immunization-ecr-pneumo-anonymized" ] ;
+       fhir:description [ fhir:v "Example of eICR Anonymized Immunization profile (anonymized, pneumo)" ] ;
+       fhir:example [
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-immunization"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-immunization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-location" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Location" ] ;
+       fhir:description [ fhir:v "This Location profile represents an anonymized eCR Location.\r\n\r\nIt is based on the **US Public Health Location** profile with further constraints to require masking of some data elements." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Location/location-salem-medical-center-anon> ;
+         fhir:reference [ fhir:v "Location/location-salem-medical-center-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Location Example: Anonymized telecom, Clinic Bldg A, Salem Medical Center" ] ;
+       fhir:description [ fhir:v "Example of US Public Health profile (anonymized telecom, Salem Medical Center)" ] ;
+       fhir:example [
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-organization" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Organization - Address, Telecom" ] ;
+       fhir:description [ fhir:v "This Organization profile represents an anonymized eCR Organization.\r\n\r\nIt is based on the **EICRAnonymizedOrgTele** profile with further constraints to require masking of address." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-org-name-addr-tele" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Organization - Name, Address, Telecom" ] ;
+       fhir:description [ fhir:v "This Organization profile represents an anonymized eCR Organization.\r\n\r\nIt is based on the **EICRAnonymizedOrgAddrTele** profile with further constraints to require masking of name." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-org-telecom" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Organization - Telecom" ] ;
+       fhir:description [ fhir:v "This Organization profile represents an anonymized eCR Organization - Telecom.\r\n\r\nIt is based on the **US Public Health Organization** profile with further constraints to require masking of telecom." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-salem-medical-center-anon> ;
+         fhir:reference [ fhir:v "Organization/organization-salem-medical-center-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Organization Example: Salem Medical Center" ] ;
+       fhir:description [ fhir:v "Example of eICR Anonymized Organization profile (anonymized, Salem Medical Center)" ] ;
+       fhir:example [
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-name-tele-addr-anon> ;
+         fhir:reference [ fhir:v "Organization/organization-name-tele-addr-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Organization Name Telecom Address Example: anonymized (name, telecom, address) Organization" ] ;
+       fhir:description [ fhir:v "Example of eICR Anonymized Organization Name Telecom Address profile (anonymized name, telecom, address)" ] ;
+       fhir:example [
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-telecom-anon> ;
+         fhir:reference [ fhir:v "Organization/organization-telecom-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Organization Telecom Example: anonymized (telecom only) Organization" ] ;
+       fhir:description [ fhir:v "Example of eICR Anonymized Organization Telecom profile (anonymized (telecom only), Telecom Anonymized Organization)" ] ;
+       fhir:example [
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-past-or-present-job> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-past-or-present-job" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Past or Present Job" ] ;
+       fhir:description [ fhir:v "This Past or Present Job profile represents an anonymized eICR Past or Present Job.\r\n\r\nIt is based on the **Occupational Data for Health Past Or Present Job** profile with further constraints to require masking of some data elements." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-patient" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Patient" ] ;
+       fhir:description [ fhir:v "This Patient profile represents an anonymized eICR Patient.\r\n\r\nIt is based on the **US Public Health Patient** profile with further constraints to require masking of some data elements." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Patient/patient-anon> ;
+         fhir:reference [ fhir:v "Patient/patient-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Patient Example: Anonymized" ] ;
+       fhir:description [ fhir:v "Example of eICR Anonymized Patient profile (anonymized)" ] ;
+       fhir:example [
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Practitioner" ] ;
+       fhir:description [ fhir:v "This Practitioner profile represents an anonymized eCR Practitioner.\r\n\r\nIt is based on the **US Core Practitioner** profile with further constraints to require masking of some data elements." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Practitioner/practitioner-anon> ;
+         fhir:reference [ fhir:v "Practitioner/practitioner-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Practitioner Example: Anonymized" ] ;
+       fhir:description [ fhir:v "Example of eICR Anonymized Practitioner (anonymized)" ] ;
+       fhir:example [
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitionerrole> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-practitionerrole" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized PractitionerRole" ] ;
+       fhir:description [ fhir:v "This PractitionerRole profile represents an anonymized eCR PractitionerRole.\r\n\r\nIt is based on the **US Public Health PractitionerRole** profile with further constraints to require masking of some data elements." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PractitionerRole" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/PractitionerRole/practitionerrole-anon> ;
+         fhir:reference [ fhir:v "PractitionerRole/practitionerrole-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized PractitionerRole Example: anonymized" ] ;
+       fhir:description [ fhir:v "Example of eICR Anonymized PractitionerRole profile (anonymized)" ] ;
+       fhir:example [
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitionerrole"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitionerrole>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-relatedperson" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized RelatedPerson" ] ;
+       fhir:description [ fhir:v "This RelatedPerson profile represents an anonymized eCR RelatedPerson.\r\n\r\nIt is based on the **RelatedPerson** resource with further constraints to require masking of some data elements." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Condition/condition-zika-anon> ;
+         fhir:reference [ fhir:v "Condition/condition-zika-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Condition example: anonymized - zika" ] ;
+       fhir:description [ fhir:v "Example of eICR Condition profile (anonymized, zika)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Patient/patient-anon-not> ;
+         fhir:reference [ fhir:v "Patient/patient-anon-not" ]
+       ] ;
+       fhir:name [ fhir:v "eICR NOT Anonymized Patient Example: NOT Anonymized" ] ;
+       fhir:description [ fhir:v "Example of US Public Health Patient (NOT anonymized)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Procedure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Procedure/procedure-ecmo-anon> ;
+         fhir:reference [ fhir:v "Procedure/procedure-ecmo-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Procedure Example: ECMO" ] ;
+       fhir:description [ fhir:v "Example of eICR Procedure (anonymized, ECMO)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/ServiceRequest/servicerequest-zika-anon> ;
+         fhir:reference [ fhir:v "ServiceRequest/servicerequest-zika-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR ServiceRequest Example" ] ;
+       fhir:description [ fhir:v "Example of eICR ServiceRequest profile (anonymized, Zika RT-PCR)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-vaccine-credential-assertion-anon> ;
+         fhir:reference [ fhir:v "Observation/observation-vaccine-credential-assertion-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Vaccine Credential Patient Assertion Observation Example: anonymized" ] ;
+       fhir:description [ fhir:v "Example of eICR Vaccine Credential Patient Assertion Observation (anonymized)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Location/location-city-football-stadium-anon> ;
+         fhir:reference [ fhir:v "Location/location-city-football-stadium-anon" ]
+       ] ;
+       fhir:name [ fhir:v "Location Example: City Football Stadium" ] ;
+       fhir:description [ fhir:v "Example of Location resource (anonymized, City Football Stadium)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationAdministration" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/MedicationAdministration/medicationadministration-azithromycin-anon> ;
+         fhir:reference [ fhir:v "MedicationAdministration/medicationadministration-azithromycin-anon" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministration Example: anonymized, azithromycin" ] ;
+       fhir:description [ fhir:v "Example of MedicationAdministration resource (anonymized, azithromycin)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationAdministration" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/MedicationAdministration/medicationadministration-naloxone-response-anon> ;
+         fhir:reference [ fhir:v "MedicationAdministration/medicationadministration-naloxone-response-anon" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministration Example: anonymized, naloxone response" ] ;
+       fhir:description [ fhir:v "Example of MedicationAdministration resource with Therapeutic Medication Response extension (anonymized: naloxone response)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-odh-usual-work-anon> ;
+         fhir:reference [ fhir:v "Observation/observation-odh-usual-work-anon" ]
+       ] ;
+       fhir:name [ fhir:v "ODH Usual Work Example: observation-odh-usual-work-anonymized" ] ;
+       fhir:description [ fhir:v "Example of ODH Usual Work profile (anonymized)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-travel-history-201801-anon> ;
+         fhir:reference [ fhir:v "Observation/observation-travel-history-201801-anon" ]
+       ] ;
+       fhir:name [ fhir:v "Travel History Observation Example: observation-travel-history-anonymized-201801" ] ;
+       fhir:description [ fhir:v "Example of Travel History Observation profile (anonymized, January 2018)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-lab-result-lymphocytes-anon> ;
+         fhir:reference [ fhir:v "Observation/observation-lab-result-lymphocytes-anon" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Lab Result Observation Example: observation-lab-result-lymphocytes-anon" ] ;
+       fhir:description [ fhir:v "Example of US Core Lab Result profile (anonymized, lymphocytes)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-blood-pressure-anon> ;
+         fhir:reference [ fhir:v "Observation/observation-blood-pressure-anon" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Vital Sign Observation example" ] ;
+       fhir:description [ fhir:v "Example of US Core Vital Sign Observation profile." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-acme-laboratory-telecom-anon> ;
+         fhir:reference [ fhir:v "Organization/organization-acme-laboratory-telecom-anon" ]
+       ] ;
+       fhir:name [ fhir:v "US PH Organization Example: Acme Labs (anonymized (telecom only))" ] ;
+       fhir:description [ fhir:v "Example of US Public Health Organization profile (anonymized (telecom only), Acme Labs)" ] ;
+       fhir:example [
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Condition/condition-common-cold-anon> ;
+         fhir:reference [ fhir:v "Condition/condition-common-cold-anon" ]
+       ] ;
+       fhir:name [ fhir:v "US Public Health Condition example: anonymized - common cold" ] ;
+       fhir:description [ fhir:v "Example of US Public Health Condition profile (anonymized, common cold)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-emergency-outbreak-info-anon> ;
+         fhir:reference [ fhir:v "Observation/observation-emergency-outbreak-info-anon" ]
+       ] ;
+       fhir:name [ fhir:v "US Public Health Emergency Outbreak Information Example: anonymized" ] ;
+       fhir:description [ fhir:v "Example of Emergency Outbreak Information profile (anonymized)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-exposure-contact-info-football-game-anon> ;
+         fhir:reference [ fhir:v "Observation/observation-exposure-contact-info-football-game-anon" ]
+       ] ;
+       fhir:name [ fhir:v "US Public Health Exposure Contact Information Example: Football Game" ] ;
+       fhir:description [ fhir:v "Example of US Public Health Exposure Contact Information (Football Game)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-pregnancy-status-anon> ;
+         fhir:reference [ fhir:v "Observation/observation-pregnancy-status-anon" ]
+       ] ;
+       fhir:name [ fhir:v "US Public Health Pregnancy Status Observation Example: anonymized" ] ;
+       fhir:description [ fhir:v "Example of US Public Health Pregnancy Status Observation profile (anonymized)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "toc.html"^^xsd:anyURI ]
+       ] ) ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Home Page" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "technical_guidance.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "technical_guidance.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Technical Guidance" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "downloads.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "getting_started.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "getting_started.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Getting Started" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [ fhir:v "path-tx-cache" ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

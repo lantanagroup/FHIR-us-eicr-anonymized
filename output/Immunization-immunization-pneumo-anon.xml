@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="immunization-pneumo-anon"/>
+  <meta>
+    <profile value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-immunization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Immunization </b><a name="immunization-pneumo-anon"> </a><a name="hcimmunization-pneumo-anon"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceImmunization &quot;immunization-pneumo-anon&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-eicr-anon-immunization.html">eICR Anonymized Immunization</a></p></div><p><b>status</b>: completed</p><p><b>vaccineCode</b>: pneumococcal polysaccharide PPV23 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-CVX.html">Vaccine Administered Code Set (CVX)</a>#33)</span></p><p><b>patient</b>: <a href="Patient-patient-anon.html">Patient/patient-anon</a> &quot;&quot;</p><p><b>occurrence</b>: 2018-09-01</p><p><b>primarySource</b>: true</p></div>
+  </text>
+  <status value="completed"/>
+  <vaccineCode>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+      <code value="33"/>
+      <display value="pneumococcal polysaccharide PPV23"/>
+    </coding>
+  </vaccineCode>
+  <patient>
+    <reference value="Patient/patient-anon"/>
+  </patient>
+  <occurrenceDateTime value="2018-09-01"/>
+  <primarySource value="true"/>
+</Immunization>

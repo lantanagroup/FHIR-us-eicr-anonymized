@@ -1,0 +1,253 @@
+{
+  "package": "ecr.fhir.us.anonymized-eicr",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "US",
+  "extensions": [
+    {
+      "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-employer-extension",
+      "title": "eICR Anonymized Employer Extension",
+      "types": [
+        "Reference",
+        "Reference"
+      ]
+    }
+  ],
+  "profiles": {
+    "Observation": [
+      {
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-past-or-present-job",
+        "title": "eICR Anonymized Past or Present Job"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition",
+        "title": "eICR Anonymized Composition"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle",
+        "title": "eICR Anonymized Document Bundle"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-encounter",
+        "title": "eICR Anonymized Encounter"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-immunization",
+        "title": "eICR Anonymized Immunization"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location",
+        "title": "eICR Anonymized Location"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele",
+        "title": "eICR Anonymized Organization - Name, Address, Telecom"
+      },
+      {
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom",
+        "title": "eICR Anonymized Organization - Telecom"
+      },
+      {
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization",
+        "title": "eICR Anonymized Organization - Address, Telecom"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient",
+        "title": "eICR Anonymized Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner",
+        "title": "eICR Anonymized Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitionerrole",
+        "title": "eICR Anonymized PractitionerRole"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson",
+        "title": "eICR Anonymized RelatedPerson"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber": [
+      "Bundle.entry.resource",
+      "Composition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Bundle.entry.resource.address",
+      "Bundle.entry.resource.address.line",
+      "Bundle.entry.resource.birthDate",
+      "Bundle.entry.resource.contact.address",
+      "Bundle.entry.resource.contact.name",
+      "Bundle.entry.resource.contact.telecom",
+      "Bundle.entry.resource.identifier.system",
+      "Bundle.entry.resource.identifier.value",
+      "Bundle.entry.resource.name",
+      "Bundle.entry.resource.name.family",
+      "Bundle.entry.resource.section.text",
+      "Bundle.entry.resource.telecom",
+      "Bundle.entry.resource.telecom.value",
+      "Composition.section.text",
+      "Location.telecom",
+      "Organization.address",
+      "Organization.name",
+      "Organization.telecom",
+      "Patient.address",
+      "Patient.address.line",
+      "Patient.birthDate",
+      "Patient.communication.language",
+      "Patient.contact.address",
+      "Patient.contact.name",
+      "Patient.contact.telecom",
+      "Patient.extension",
+      "Patient.gender",
+      "Patient.identifier",
+      "Patient.identifier.system",
+      "Patient.identifier.value",
+      "Patient.name",
+      "Patient.telecom",
+      "Patient.telecom.value",
+      "Practitioner.address",
+      "Practitioner.name",
+      "Practitioner.name.family",
+      "Practitioner.telecom",
+      "PractitionerRole.telecom.value",
+      "RelatedPerson.address",
+      "RelatedPerson.identifier",
+      "RelatedPerson.name",
+      "RelatedPerson.telecom"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.snapshot.element.type",
+      "StructureDefinition.snapshot.element.type.targetProfile"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-initiation-type-extension": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-trigger-code-flag-extension": [
+      "Bundle.entry.resource.diagnosis",
+      "Bundle.entry.resource.section.entry",
+      "Composition.section.entry",
+      "Encounter.diagnosis"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-date-determined-extension": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.component",
+      "Observation",
+      "Observation.component"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-date-recorded-extension": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-genderidentity-extension": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-information-recipient-extension": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-initiation-reason-extension": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-therapeutic-medication-response-extension": [
+      "Bundle.entry.resource",
+      "MedicationAdministration"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-tribal-affiliation-extension": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension": [
+      "Observation"
+    ]
+  }
+}

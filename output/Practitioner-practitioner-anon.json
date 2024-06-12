@@ -1,0 +1,39 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "practitioner-anon",
+  "meta" : {
+    "profile" : ["http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner </b><a name=\"practitioner-anon\"> </a><a name=\"hcpractitioner-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourcePractitioner &quot;practitioner-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-practitioner.html\">eICR Anonymized Practitioner</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.3.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/9941339108</p><p><b>name</b>: null </p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: </p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://hl7.org/fhir/sid/us-npi",
+    "value" : "9941339108"
+  }],
+  "name" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode" : "masked"
+    }],
+    "_family" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode" : "masked"
+      }]
+    }
+  }],
+  "telecom" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode" : "masked"
+    }]
+  }],
+  "address" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode" : "masked"
+    }]
+  }]
+}

@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-country-of-nationality-anon> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-country-of-nationality-anon"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-country-of-nationality"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-country-of-nationality>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation </b><a name=\"observation-country-of-nationality-anon\"> </a><a name=\"hcobservation-country-of-nationality-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;observation-country-of-nationality-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-eicr-country-of-nationality.html\">eICR Country of Nationality</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Ethnicity / related nationality data (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#186034007)</span></p><p><b>subject</b>: <a href=\"Patient-patient-anon.html\">Patient/patient-anon</a> &quot;&quot;</p><p><b>effective</b>: 2020-11-10 22:33:22+0000</p><p><b>value</b>: Australia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#AU)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:186034007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "186034007" ] ;
+       fhir:display [ fhir:v "Ethnicity / related nationality data (observable entity)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Patient/patient-anon> ;
+     fhir:reference [ fhir:v "Patient/patient-anon" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2020-11-10T22:33:22Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "AU" ] ;
+       fhir:display [ fhir:v "Australia" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

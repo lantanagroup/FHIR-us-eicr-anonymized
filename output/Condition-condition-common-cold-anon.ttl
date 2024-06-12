@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/fhir/us/anonymized-eicr/Condition/condition-common-cold-anon> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "condition-common-cold-anon"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-condition"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition </b><a name=\"condition-common-cold-anon\"> </a><a name=\"hccondition-common-cold-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceCondition &quot;condition-common-cold-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-us-ph-condition.html\">US Public Health Condition</a></p></div><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Common cold (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#82272006)</span></p><p><b>subject</b>: <a href=\"Patient-patient-anon.html\">Patient/patient-anon</a> &quot;&quot;</p><p><b>onset</b>: 2017-09-23</p><p><b>asserter</b>: <a href=\"Practitioner-practitioner-anon.html\">Practitioner/practitioner-anon</a> &quot;&quot;</p></div>"
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "problem-list-item" ] ;
+       fhir:display [ fhir:v "Problem List Item" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:82272006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "82272006" ] ;
+       fhir:display [ fhir:v "Common cold (disorder)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Patient/patient-anon> ;
+     fhir:reference [ fhir:v "Patient/patient-anon" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2017-09-23"^^xsd:date] ; # 
+  fhir:asserter [
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Practitioner/practitioner-anon> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-anon" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

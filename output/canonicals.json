@@ -1,0 +1,114 @@
+[
+  {
+    "id" : "ecr.fhir.us.anonymized-eicr",
+    "type" : "ImplementationGuide",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/ImplementationGuide/ecr.fhir.us.anonymized-eicr",
+    "version" : "1.0.0",
+    "name" : "EICRAnonymized"
+  },
+  {
+    "id" : "caculated-age-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/caculated-age-observation",
+    "version" : "1.0.0",
+    "name" : "CalculatedAge"
+  },
+  {
+    "id" : "eicr-anon-composition",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition",
+    "version" : "1.0.0",
+    "name" : "EICRAnonymizedComposition"
+  },
+  {
+    "id" : "eicr-anon-document-bundle",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle",
+    "version" : "1.0.0",
+    "name" : "EICRAnonymizedDocumentBundle"
+  },
+  {
+    "id" : "eicr-anon-employer-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-employer-extension",
+    "version" : "1.0.0",
+    "name" : "EICRAnonymizedEmployer"
+  },
+  {
+    "id" : "eicr-anon-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-encounter",
+    "version" : "1.0.0",
+    "name" : "EICRAnonymizedEncounter"
+  },
+  {
+    "id" : "eicr-anon-immunization",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-immunization",
+    "version" : "1.0.0",
+    "name" : "EICRAnonymizedImmunization"
+  },
+  {
+    "id" : "eicr-anon-location",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location",
+    "version" : "1.0.0",
+    "name" : "EICRAnonymizedLocation"
+  },
+  {
+    "id" : "eicr-anon-org-name-addr-tele",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele",
+    "version" : "1.0.0",
+    "name" : "EICRAnonymizedOrgNameAddrTele"
+  },
+  {
+    "id" : "eicr-anon-org-telecom",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom",
+    "version" : "1.0.0",
+    "name" : "EICRAnonymizedOrgTele"
+  },
+  {
+    "id" : "eicr-anon-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization",
+    "version" : "1.0.0",
+    "name" : "EICRAnonymizedOrgAddrTele"
+  },
+  {
+    "id" : "eicr-anon-past-or-present-job",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-past-or-present-job",
+    "version" : "1.0.0",
+    "name" : "EICRAnonymizedPastOrPresentJob"
+  },
+  {
+    "id" : "eicr-anon-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient",
+    "version" : "1.0.0",
+    "name" : "EICRAnonymizedPatient"
+  },
+  {
+    "id" : "eicr-anon-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner",
+    "version" : "1.0.0",
+    "name" : "EICRAnonymizedPractitioner"
+  },
+  {
+    "id" : "eicr-anon-practitionerrole",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitionerrole",
+    "version" : "1.0.0",
+    "name" : "EICRAnonymizedPractitionerRole"
+  },
+  {
+    "id" : "eicr-anon-relatedperson",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson",
+    "version" : "1.0.0",
+    "name" : "EICRAnonymizedRelatedPerson"
+  }
+]

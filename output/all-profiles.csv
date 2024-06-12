@@ -2345,25 +2345,6 @@ This outcome is not used for error responses in batch/transaction, only for hint
 "eicr-anon-document-bundle","Bundle.signature","Bundle.signature","","","",0,1,"","","Y","Signature {[]} {[]}
 ","Digital Signature","Digital Signature - base64 encoded. XML-DSig or a JWT.","The signature could be created by the ""author"" of the bundle or by the originating device.   Requirements around inclusion of a signature, verification of signatures and treatment of signed/non-signed bundles is implementation-environment specific.","A Signature holds an electronic representation of a signature and its supporting context in a FHIR accessible form. The signature may either be a cryptographic type (XML DigSig or a JWS), which is able to provide non-repudiation proof, or it may be a graphical image that represents a signature or a signature process. This element allows capturing signatures on documents, messages, transactions or even search responses, to support content-authentication, non-repudiation or other business cases. This is primarily relevant where the bundle may travel through multiple hops or via other mechanisms where HTTPS non-repudiation is insufficient.","","","","","","","",,,,,"",,,,"Bundle.signature",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"eicr-anon-employer-extension","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"eicr-anon-employer-extension","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"eicr-anon-employer-extension","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"eicr-anon-employer-extension","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"eicr-anon-employer-extension","Extension.value[x]","Extension.value[x]","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
-","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"eicr-anon-employer-extension","Extension.value[x]:valueReference","Extension.value[x]","valueReference","","",1,1,"","","","Reference {[]} {[CanonicalType[http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson], CanonicalType[http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization]]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
 "eicr-anon-encounter","Encounter","Encounter","","Visit
 ","",0,*,"","","","null {[]} {[]}
 ","eICR Encounter","The Public Health Encounter profile is based on the Encounter resource and establishes the core elements, extensions, vocabularies and value sets for representing the following encounters for public health reporting:

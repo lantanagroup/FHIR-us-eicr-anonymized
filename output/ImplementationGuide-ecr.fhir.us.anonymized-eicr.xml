@@ -10,7 +10,7 @@
   <name value="EICRAnonymized"/>
   <title value="CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)"/>
   <status value="active"/>
-  <date value="2024-06-13T06:32:23+10:00"/>
+  <date value="2024-06-13T06:51:52+10:00"/>
   <publisher value="APHL"/>
   <jurisdiction>
     <coding>
@@ -586,17 +586,6 @@
       <name value="eICR Anonymized Document Bundle Example: bundle-eicr-document-zika-anon"/>
       <description value="Example of eICR Anonymized Document Bundle profile (anonymized, Zika)"/>
       <exampleCanonical value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/eicr-anon-employer-extension"/>
-      </reference>
-      <name value="eICR Anonymized Employer Extension"/>
-      <description value="This Patient profile represents an anonymized eICR Employer Extension.&#xD;&#xA;&#xD;&#xA;It is based on the **ODH Employer Extension** profile with further constraints to require masking of some data elements."/>
-      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

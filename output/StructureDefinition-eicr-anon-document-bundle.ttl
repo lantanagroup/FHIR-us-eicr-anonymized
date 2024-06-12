@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "eICR Anonymized Document Bundle"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-06-13T06:32:23+10:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-13T06:51:52+10:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "APHL"] ; # 
   fhir:description [ fhir:v "This Composition profile represents an anonymized eICR Document Bundle.\r\n\r\nIt is based on the **eICR Document Bundle** profile with further constraints to require masking the contained eICR Composition.\r\n\r\nIt also adds invariants (constraints) to check that any required anonymized profiles are present in the Bundle entries."] ; # 
   fhir:jurisdiction ( [

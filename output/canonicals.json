@@ -28,13 +28,6 @@
     "name" : "EICRAnonymizedDocumentBundle"
   },
   {
-    "id" : "eicr-anon-employer-extension",
-    "type" : "StructureDefinition",
-    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-employer-extension",
-    "version" : "1.0.0",
-    "name" : "EICRAnonymizedEmployer"
-  },
-  {
     "id" : "eicr-anon-encounter",
     "type" : "StructureDefinition",
     "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-encounter",

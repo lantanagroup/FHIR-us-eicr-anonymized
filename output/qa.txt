@@ -1,9 +1,9 @@
 EICRAnonymized : Validation Results
 =========================================
 
-err = 0, warn = 45, info = 66
+err = 0, warn = 44, info = 66
 IG Publisher Version: 1.6.11
-Generated Thu Jun 13 06:34:44 AEST 2024. FHIR version 4.0.1 for ecr.fhir.us.anonymized-eicr#1.0.0 (canonical = http://fhir.org/fhir/us/anonymized-eicr)
+Generated Thu Jun 13 06:54:21 AEST 2024. FHIR version 4.0.1 for ecr.fhir.us.anonymized-eicr#1.0.0 (canonical = http://fhir.org/fhir/us/anonymized-eicr)
  Build Errors : 0 / 0 / 0
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Bundle-bundle-document-zika-anon : 0 / 24 / 98
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Composition-composition-zika-anon : 0 / 0 / 1
@@ -42,7 +42,6 @@ Generated Thu Jun 13 06:34:44 AEST 2024. FHIR version 4.0.1 for ecr.fhir.us.anon
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-caculated-age-observation : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-composition : 0 / 2 / 14
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-document-bundle : 0 / 2 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-employer-extension : 0 / 1 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-encounter : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-immunization : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-location : 0 / 0 / 1
@@ -201,8 +200,6 @@ INFORMATION: StructureDefinition/eicr-anon-composition: Composition.extension: T
 == fsh-generated\resources\StructureDefinition-eicr-anon-document-bundle.json ==
 WARNING: StructureDefinition/eicr-anon-document-bundle: StructureDefinition.snapshot.element[21].constraint[1]: eicr-anon-org-tele: The type specified in ofType() is http://hl7.org/fhir/StructureDefinition/Organization which is not a possible candidate for the existing types () in the expression ofType(Organization).exists(). Check the paths and types to be sure this is what is intended
 WARNING: StructureDefinition/eicr-anon-document-bundle: StructureDefinition.snapshot.element[21].constraint[1]: eicr-anon-org-tele: The type specified in ofType() is http://hl7.org/fhir/StructureDefinition/Organization which is not a possible candidate for the existing types () in the expression ofType(Organization).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom'). Check the paths and types to be sure this is what is intended
-== fsh-generated\resources\StructureDefinition-eicr-anon-employer-extension.json ==
-WARNING: StructureDefinition.where(url = 'http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-employer-extension'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-eicr-anon-encounter.json ==
 == fsh-generated\resources\StructureDefinition-eicr-anon-immunization.json ==
 == fsh-generated\resources\StructureDefinition-eicr-anon-location.json ==

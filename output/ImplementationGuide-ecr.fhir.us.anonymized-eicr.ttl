@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "EICRAnonymized"] ; # 
   fhir:title [ fhir:v "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-06-13T06:32:23+10:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-13T06:51:52+10:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "APHL"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
@@ -687,18 +687,6 @@
          fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle"^^xsd:anyURI ;
          fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle>
        ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-employer-extension> ;
-         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-employer-extension" ]
-       ] ;
-       fhir:name [ fhir:v "eICR Anonymized Employer Extension" ] ;
-       fhir:description [ fhir:v "This Patient profile represents an anonymized eICR Employer Extension.\r\n\r\nIt is based on the **ODH Employer Extension** profile with further constraints to require masking of some data elements." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

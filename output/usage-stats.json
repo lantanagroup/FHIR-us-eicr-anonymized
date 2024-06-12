@@ -3,16 +3,7 @@
   "version": "1.0.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "US",
-  "extensions": [
-    {
-      "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-employer-extension",
-      "title": "eICR Anonymized Employer Extension",
-      "types": [
-        "Reference",
-        "Reference"
-      ]
-    }
-  ],
+  "extensions": [],
   "profiles": {
     "Observation": [
       {

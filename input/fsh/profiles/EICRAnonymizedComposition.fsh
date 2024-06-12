@@ -35,14 +35,16 @@ Description: "This Composition profile represents an anonymized eICR Composition
 * relatesTo[sliceTransformed].target[x] ^definition = "Identifier of the Document or Composition transformed"
 
 * section[sliceHistoryOfPresentIllnessSection].text.extension contains $data-absent-reason named dataAbsentReason 1..1 MS
-* section[sliceHistoryOfPresentIllnessSection].text.extension[dataAbsentReason] ^short = "A text.div is not allowed, must use data-absent-reason with value 'masked'"
+* section[sliceHistoryOfPresentIllnessSection].text.extension[dataAbsentReason] ^short = "Use data-absent-reason with value 'masked'"
 * section[sliceHistoryOfPresentIllnessSection].text.extension[dataAbsentReason].value[x] = #masked (exactly)
-* section[sliceHistoryOfPresentIllnessSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">MASKED</div>"
-
+* section[sliceHistoryOfPresentIllnessSection].text.div ^short = """Set to '<div xmlns="http://www.w3.org/1999/xhtml"><p>MASKED</p></div>'"""
+* section[sliceHistoryOfPresentIllnessSection].text.div obeys eicr-anon-text-div
 
 * section[slicePastMedicalHistorySection].text.extension contains $data-absent-reason named dataAbsentReason 1..1 MS
-* section[slicePastMedicalHistorySection].text.extension[dataAbsentReason] ^short = "A text.div is not allowed, must use data-absent-reason with value 'masked'"
+* section[slicePastMedicalHistorySection].text.extension[dataAbsentReason] ^short = "Use data-absent-reason with value 'masked'"
 * section[slicePastMedicalHistorySection].text.extension[dataAbsentReason].value[x] = #masked (exactly)
+* section[slicePastMedicalHistorySection].text.div ^short = """Set to '<div xmlns="http://www.w3.org/1999/xhtml"><p>MASKED</p></div>'"""
+* section[slicePastMedicalHistorySection].text.div obeys eicr-anon-text-div
 
 * section[sliceImmunizationsSection].entry[sliceUSCoreImmunization] only Reference(EICRAnonymizedImmunization)
 
@@ -56,12 +58,7 @@ Description: "This Composition profile represents an anonymized eICR Composition
 
 * section[slicePregnancySection].entry 1..
 
-// Invariant: eicr-anon-hp
-// Description: "History of Present Illness text.div value SHALL NOT be present"
-// * severity = #error
-// * expression = "div.empty()"
-
-// Invariant: eicr-anon-pmh
-// Description: "Past Medical History text.div value SHALL NOT be present"
-// * severity = #error
-// * expression = "div.empty()"
+Invariant: eicr-anon-text-div
+Description: """section.text.div SHALL be '<div xmlns="http://www.w3.org/1999/xhtml"><p>MASKED</p></div>'"""
+* severity = #error
+* expression = "where($this = '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>')"

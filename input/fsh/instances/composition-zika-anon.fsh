@@ -45,7 +45,7 @@ Usage: #example
   * code = $loinc#10164-2 "History of Present illness Narrative"
   * insert rsDataAbsentReason(text)
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">MASKED</div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>"
 
 * section[sliceProblemSection]
   * title = "Problems Section"
@@ -153,7 +153,7 @@ Usage: #example
   * code = $loinc#11348-0 "History of Past illness Narrative"
   * insert rsDataAbsentReason(text)
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">MASKED</div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>"
 
 * section[sliceReviewOfSystemsSection]
   * title = "Review of Systems Section"

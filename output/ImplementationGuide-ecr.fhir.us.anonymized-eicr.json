@@ -10,7 +10,7 @@
   "name" : "EICRAnonymized",
   "title" : "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)",
   "status" : "active",
-  "date" : "2024-06-13T11:16:16+10:00",
+  "date" : "2024-06-14T06:31:35+10:00",
   "publisher" : "APHL",
   "jurisdiction" : [{
     "coding" : [{
@@ -1048,7 +1048,7 @@
       },
       "name" : "eICR NOT Anonymized Patient Example: NOT Anonymized",
       "description" : "Example of US Public Health Patient (NOT anonymized)",
-      "exampleBoolean" : true
+      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient"
     },
     {
       "extension" : [{

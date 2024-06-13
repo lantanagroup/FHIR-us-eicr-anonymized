@@ -101,6 +101,9 @@
      fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Patient/patient-anon"^^xsd:anyURI ] ;
      fhir:resource ( <http://www.example.org/fhir/Patient/patient-anon> )
   ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Patient/patient-anon-not"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Patient/patient-anon-not> )
+  ] [
      fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Practitioner/practitioner-anon"^^xsd:anyURI ] ;
      fhir:resource ( <http://www.example.org/fhir/Practitioner/practitioner-anon> )
   ] [
@@ -709,7 +712,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_immunization-pneumo-anon\"> </a><p><b>Generated Narrative: Immunization </b><a name=\"immunization-pneumo-anon\"> </a><a name=\"hcimmunization-pneumo-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceImmunization &quot;immunization-pneumo-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-immunization.html\">eICR Anonymized Immunization</a></p></div><p><b>status</b>: completed</p><p><b>vaccineCode</b>: pneumococcal polysaccharide PPV23 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-CVX.html\">Vaccine Administered Code Set (CVX)</a>#33)</span></p><p><b>patient</b>: See on this page: Patient/patient-anon</p><p><b>occurrence</b>: 2018-09-01</p><p><b>primarySource</b>: true</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_immunization-pneumo-anon\"> </a><p><b>Generated Narrative: Immunization </b><a name=\"immunization-pneumo-anon\"> </a><a name=\"hcimmunization-pneumo-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceImmunization &quot;immunization-pneumo-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-immunization.html\">eICR Anonymized Immunization</a></p></div><p><b>status</b>: completed</p><p><b>vaccineCode</b>: pneumococcal polysaccharide PPV23 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-CVX.html\">Vaccine Administered Code Set (CVX)</a>#33)</span></p><p><b>patient</b>: See on this page: Patient/patient-anon-not</p><p><b>occurrence</b>: 2018-09-01</p><p><b>primarySource</b>: true</p></div>"
   ] ; # 
   fhir:status [ fhir:v "completed"] ; # 
   fhir:vaccineCode [
@@ -720,8 +723,8 @@
      ] )
   ] ; # 
   fhir:patient [
-     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Patient/patient-anon> ;
-     fhir:reference [ fhir:v "Patient/patient-anon" ]
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Patient/patient-anon-not> ;
+     fhir:reference [ fhir:v "Patient/patient-anon-not" ]
   ] ; # 
   fhir:occurrence [ fhir:v "2018-09-01"^^xsd:date] ; # 
   fhir:primarySource [ fhir:v "true"^^xsd:boolean] . # 
@@ -1820,6 +1823,188 @@
      ]
   ] ) . # 
 
+<http://www.example.org/fhir/Patient/patient-anon-not> a fhir:Patient ;
+  fhir:id [ fhir:v "patient-anon-not"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-anon-not\"> </a><p><b>Generated Narrative: Patient </b><a name=\"patient-anon-not\"> </a><a name=\"hcpatient-anon-not\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourcePatient &quot;patient-anon-not&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-patient.html\">eICR Anonymized Patient</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: White</p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: White (Details: Race &amp; Ethnicity - CDC code 2106-3  = ' White ', stated as ' White ')</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Not Hispanic or Latino</p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Not Hispanic or Latino (Details: Race &amp; Ethnicity - CDC code 2186-5  = ' Not Hispanic or Latino ', stated as ' Not Hispanic or Latino ')</p></blockquote><p><b>US Core Birth Sex Extension</b>: F</p><blockquote><p><b>US Public Health Gender Identity Extension</b></p><blockquote><p><b>url</b></p><code>value</code></blockquote><p><b>value</b>: asked but unknown <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-NullFlavor.html\">NullFlavor</a>#ASKU)</span></p></blockquote><blockquote><p><b>US Public Health Tribal Affiliation Extension</b></p><blockquote><p><b>url</b></p><code>TribeName</code></blockquote><p><b>value</b>: Fort Mojave Indian Tribe of Arizona, California &amp; Nevada (Details: TribalEntityUS code 91  = ' Fort Mojave Indian Tribe of Arizona, California &amp; Nevada ', stated as ' Fort Mojave Indian Tribe of Arizona, California &amp; Nevada ')</p><blockquote><p><b>url</b></p><code>EnrolledTribeMember</code></blockquote><p><b>value</b>: true</p></blockquote><p><b>identifier</b>: Medical Record Number/1032702 (use: usual)</p><p><b>active</b>: true</p><p><b>name</b>: Eve L Everywoman </p><p><b>telecom</b>: ph: 1-(404)555-1212(HOME), <a href=\"mailto:eve.everywoman@example.com\">eve.everywoman@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: Absent because : <code>masked</code></p><p><b>deceased</b>: false</p><p><b>address</b>: 5101 Peachtree St NE Atlanta GA 30302 US </p><h3>Contacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td style=\"display: none\">*</td><td>guardian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleClass.html\">RoleClass</a>#GUARD)</span></td><td></td><td>-unknown-</td><td></td></tr></table><h3>Communications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td></tr><tr><td style=\"display: none\">*</td><td>English <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ietf3066.html\">Tags for the Identification of Languages</a>#en)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "White" ]
+     ] [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2106-3" ] ;
+         fhir:display [ fhir:v "White" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Not Hispanic or Latino" ]
+     ] [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2186-5" ] ;
+         fhir:display [ fhir:v "Not Hispanic or Latino" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "F" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ASKU" ] ;
+           fhir:display [ fhir:v "asked but unknown" ]
+         ] ) ;
+         fhir:text [ fhir:v "asked but unknown" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-genderidentity-extension"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "TribeName"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "91" ] ;
+         fhir:display [ fhir:v "Fort Mojave Indian Tribe of Arizona, California & Nevada" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "EnrolledTribeMember"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-tribal-affiliation-extension"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ] ;
+         fhir:display [ fhir:v "Medical Record Number" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://hospital.smarthealthit.org"^^xsd:anyURI ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "masked" ]
+       ] )
+     ] ;
+     fhir:value [
+       fhir:v "1032702" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "masked" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "masked" ]
+     ] ) ;
+     fhir:family [ fhir:v "Everywoman" ] ;
+     fhir:given ( [ fhir:v "Eve" ] [ fhir:v "L" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [
+       fhir:v "1-(404)555-1212" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "masked" ]
+       ] )
+     ] ;
+     fhir:use [ fhir:v "home" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [
+       fhir:v "eve.everywoman@example.com" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "masked" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "masked" ]
+     ] )
+  ] ; # 
+  fhir:deceased [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:address ( [
+     fhir:line ( [
+       fhir:v "5101 Peachtree St NE" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "masked" ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "Atlanta" ] ;
+     fhir:state [ fhir:v "GA" ] ;
+     fhir:postalCode [ fhir:v "30302" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ) ; # 
+  fhir:contact ( [
+     fhir:relationship ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "GUARD" ]
+       ] )
+     ] ) ;
+     fhir:name [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "masked" ]
+       ] )
+     ] ;
+     fhir:telecom ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "masked" ]
+       ] )
+     ] ) ;
+     fhir:address [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "masked" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:communication ( [
+     fhir:language [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "en" ] ;
+         fhir:display [ fhir:v "English" ]
+       ] )
+     ]
+  ] ) . # 
+
 <http://www.example.org/fhir/Practitioner/practitioner-anon> a fhir:Practitioner ;
   fhir:id [ fhir:v "practitioner-anon"] ; # 
   fhir:meta [
@@ -1966,7 +2151,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_relatedperson-anon\"> </a><p><b>Generated Narrative: RelatedPerson </b><a name=\"relatedperson-anon\"> </a><a name=\"hcrelatedperson-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceRelatedPerson &quot;relatedperson-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-relatedperson.html\">eICR Anonymized RelatedPerson</a></p></div><p><b>identifier</b>: ?ngen-9?</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"Patient-patient-anon-not.html\">Patient/patient-anon-not</a> &quot; EVERYWOMAN&quot;</p><p><b>relationship</b>: Gestational Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#GESTM &quot;gestational mother&quot;)</span></p><p><b>name</b>: </p><p><b>telecom</b>: -unknown-</p><p><b>gender</b>: female</p><p><b>birthDate</b>: Absent because : <code>masked</code></p><p><b>address</b>: </p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_relatedperson-anon\"> </a><p><b>Generated Narrative: RelatedPerson </b><a name=\"relatedperson-anon\"> </a><a name=\"hcrelatedperson-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceRelatedPerson &quot;relatedperson-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-relatedperson.html\">eICR Anonymized RelatedPerson</a></p></div><p><b>identifier</b>: ?ngen-9?</p><p><b>active</b>: true</p><p><b>patient</b>: See on this page: Patient/patient-anon-not</p><p><b>relationship</b>: Gestational Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#GESTM &quot;gestational mother&quot;)</span></p><p><b>name</b>: </p><p><b>telecom</b>: -unknown-</p><p><b>gender</b>: female</p><p><b>birthDate</b>: Absent because : <code>masked</code></p><p><b>address</b>: </p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:extension ( [

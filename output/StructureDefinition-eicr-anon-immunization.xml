@@ -14,7 +14,7 @@
   <title value="eICR Anonymized Immunization"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2024-06-13T11:16:16+10:00"/>
+  <date value="2024-06-14T06:31:35+10:00"/>
   <publisher value="APHL"/>
   <description value="This Immunization profile represents an anonymized eICR Immunization.&#xD;&#xA;&#xD;&#xA;It is based on the **US Core Immunization** profile with further constraints to require removal of performer."/>
   <jurisdiction>

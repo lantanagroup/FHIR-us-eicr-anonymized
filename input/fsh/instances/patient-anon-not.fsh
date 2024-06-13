@@ -1,5 +1,5 @@
 Instance: patient-anon-not
-InstanceOf: USPublicHealthPatient
+InstanceOf: EICRAnonymizedPatient
 Title: "eICR NOT Anonymized Patient Example: NOT Anonymized"
 Description: "Example of US Public Health Patient (NOT anonymized)"
 Usage: #example

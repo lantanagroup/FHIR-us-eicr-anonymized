@@ -3,7 +3,7 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="patient-anon-not"/>
   <meta>
-    <profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-patient"/>
+    <profile value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Eve L Everywoman </b> female, DoB:  ( Medical Record Number/1032702 (use: usual))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li>ph: 1-(404)555-1212(HOME)</li><li><a href="mailto:eve.everywoman@example.com">eve.everywoman@example.com</a></li><li>5101 Peachtree St NE Atlanta GA 30302 US </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Language spoken">Language:</td><td colspan="3"><span title="Codes:{urn:ietf:bcp:47 en}">English</span></td></tr><tr><td style="background-color: #f3f5da" title="Nominated Contact: guardian">guardian:</td><td colspan="3"><ul><li></li><li></li><li>-unknown-</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.">US Core Ethnicity Extension:</td><td colspan="3"><ul><li>text: Not Hispanic or Latino</li><li>ombCategory: <a href="http://hl7.org/fhir/us/core/STU4/CodeSystem-cdcrec.html#cdcrec-2186-5">Race &amp; Ethnicity - CDC</a> 2186-5: Not Hispanic or Latino</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9)."><a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension</a></td><td colspan="3"><ul><li>F</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:
@@ -74,23 +74,42 @@
         <display value="Medical Record Number"/>
       </coding>
     </type>
-    <system value="http://hospital.smarthealthit.org"/>
-    <value value="1032702"/>
+    <system value="http://hospital.smarthealthit.org">
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="masked"/>
+      </extension>
+    </system>
+    <value value="1032702">
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="masked"/>
+      </extension>
+    </value>
   </identifier>
   <active value="true"/>
   <name>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="masked"/>
+    </extension>
     <family value="Everywoman"/>
     <given value="Eve"/>
     <given value="L"/>
   </name>
   <telecom>
     <system value="phone"/>
-    <value value="1-(404)555-1212"/>
+    <value value="1-(404)555-1212">
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="masked"/>
+      </extension>
+    </value>
     <use value="home"/>
   </telecom>
   <telecom>
     <system value="email"/>
-    <value value="eve.everywoman@example.com"/>
+    <value value="eve.everywoman@example.com">
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="masked"/>
+      </extension>
+    </value>
   </telecom>
   <gender value="female"/>
   <birthDate>
@@ -100,7 +119,11 @@
   </birthDate>
   <deceasedBoolean value="false"/>
   <address>
-    <line value="5101 Peachtree St NE"/>
+    <line value="5101 Peachtree St NE">
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="masked"/>
+      </extension>
+    </line>
     <city value="Atlanta"/>
     <state value="GA"/>
     <postalCode value="30302"/>

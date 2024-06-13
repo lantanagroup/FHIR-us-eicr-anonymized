@@ -561,7 +561,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
           <profile value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-immunization"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Immunization_immunization-pneumo-anon"> </a><p><b>Generated Narrative: Immunization </b><a name="immunization-pneumo-anon"> </a><a name="hcimmunization-pneumo-anon"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceImmunization &quot;immunization-pneumo-anon&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-eicr-anon-immunization.html">eICR Anonymized Immunization</a></p></div><p><b>status</b>: completed</p><p><b>vaccineCode</b>: pneumococcal polysaccharide PPV23 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-CVX.html">Vaccine Administered Code Set (CVX)</a>#33)</span></p><p><b>patient</b>: See on this page: Patient/patient-anon</p><p><b>occurrence</b>: 2018-09-01</p><p><b>primarySource</b>: true</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Immunization_immunization-pneumo-anon"> </a><p><b>Generated Narrative: Immunization </b><a name="immunization-pneumo-anon"> </a><a name="hcimmunization-pneumo-anon"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceImmunization &quot;immunization-pneumo-anon&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-eicr-anon-immunization.html">eICR Anonymized Immunization</a></p></div><p><b>status</b>: completed</p><p><b>vaccineCode</b>: pneumococcal polysaccharide PPV23 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-CVX.html">Vaccine Administered Code Set (CVX)</a>#33)</span></p><p><b>patient</b>: See on this page: Patient/patient-anon-not</p><p><b>occurrence</b>: 2018-09-01</p><p><b>primarySource</b>: true</p></div>
         </text>
         <status value="completed"/>
         <vaccineCode>
@@ -572,7 +572,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
           </coding>
         </vaccineCode>
         <patient>
-          <reference value="Patient/patient-anon"/>
+          <reference value="Patient/patient-anon-not"/>
         </patient>
         <occurrenceDateTime value="2018-09-01"/>
         <primarySource value="true"/>
@@ -1598,6 +1598,167 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://www.example.org/fhir/Patient/patient-anon-not"/>
+    <resource>
+      <Patient>
+        <id value="patient-anon-not"/>
+        <meta>
+          <profile value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-anon-not"> </a><p><b>Generated Narrative: Patient </b><a name="patient-anon-not"> </a><a name="hcpatient-anon-not"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourcePatient &quot;patient-anon-not&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-eicr-anon-patient.html">eICR Anonymized Patient</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: White</p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: White (Details: Race &amp; Ethnicity - CDC code 2106-3  = ' White ', stated as ' White ')</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Not Hispanic or Latino</p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Not Hispanic or Latino (Details: Race &amp; Ethnicity - CDC code 2186-5  = ' Not Hispanic or Latino ', stated as ' Not Hispanic or Latino ')</p></blockquote><p><b>US Core Birth Sex Extension</b>: F</p><blockquote><p><b>US Public Health Gender Identity Extension</b></p><blockquote><p><b>url</b></p><code>value</code></blockquote><p><b>value</b>: asked but unknown <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-NullFlavor.html">NullFlavor</a>#ASKU)</span></p></blockquote><blockquote><p><b>US Public Health Tribal Affiliation Extension</b></p><blockquote><p><b>url</b></p><code>TribeName</code></blockquote><p><b>value</b>: Fort Mojave Indian Tribe of Arizona, California &amp; Nevada (Details: TribalEntityUS code 91  = ' Fort Mojave Indian Tribe of Arizona, California &amp; Nevada ', stated as ' Fort Mojave Indian Tribe of Arizona, California &amp; Nevada ')</p><blockquote><p><b>url</b></p><code>EnrolledTribeMember</code></blockquote><p><b>value</b>: true</p></blockquote><p><b>identifier</b>: Medical Record Number/1032702 (use: usual)</p><p><b>active</b>: true</p><p><b>name</b>: Eve L Everywoman </p><p><b>telecom</b>: ph: 1-(404)555-1212(HOME), <a href="mailto:eve.everywoman@example.com">eve.everywoman@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: Absent because : <code>masked</code></p><p><b>deceased</b>: false</p><p><b>address</b>: 5101 Peachtree St NE Atlanta GA 30302 US </p><h3>Contacts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td style="display: none">*</td><td>guardian <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleClass.html">RoleClass</a>#GUARD)</span></td><td></td><td>-unknown-</td><td></td></tr></table><h3>Communications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Language</b></td></tr><tr><td style="display: none">*</td><td>English <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ietf3066.html">Tags for the Identification of Languages</a>#en)</span></td></tr></table></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+          <extension url="text">
+            <valueString value="White"/>
+          </extension>
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2106-3"/>
+              <display value="White"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+          <extension url="text">
+            <valueString value="Not Hispanic or Latino"/>
+          </extension>
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2186-5"/>
+              <display value="Not Hispanic or Latino"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+          <valueCode value="F"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-genderidentity-extension">
+          <extension url="value">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+                <code value="ASKU"/>
+                <display value="asked but unknown"/>
+              </coding>
+              <text value="asked but unknown"/>
+            </valueCodeableConcept>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-tribal-affiliation-extension">
+          <extension url="TribeName">
+            <valueCoding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS"/>
+              <code value="91"/>
+              <display value="Fort Mojave Indian Tribe of Arizona, California &amp; Nevada"/>
+            </valueCoding>
+          </extension>
+          <extension url="EnrolledTribeMember">
+            <valueBoolean value="true"/>
+          </extension>
+        </extension>
+        <identifier>
+          <use value="usual"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+              <display value="Medical Record Number"/>
+            </coding>
+          </type>
+          <system value="http://hospital.smarthealthit.org">
+            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+              <valueCode value="masked"/>
+            </extension>
+          </system>
+          <value value="1032702">
+            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+              <valueCode value="masked"/>
+            </extension>
+          </value>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="masked"/>
+          </extension>
+          <family value="Everywoman"/>
+          <given value="Eve"/>
+          <given value="L"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="1-(404)555-1212">
+            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+              <valueCode value="masked"/>
+            </extension>
+          </value>
+          <use value="home"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="eve.everywoman@example.com">
+            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+              <valueCode value="masked"/>
+            </extension>
+          </value>
+        </telecom>
+        <gender value="female"/>
+        <birthDate>
+          <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="masked"/>
+          </extension>
+        </birthDate>
+        <deceasedBoolean value="false"/>
+        <address>
+          <line value="5101 Peachtree St NE">
+            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+              <valueCode value="masked"/>
+            </extension>
+          </line>
+          <city value="Atlanta"/>
+          <state value="GA"/>
+          <postalCode value="30302"/>
+          <country value="US"/>
+        </address>
+        <contact>
+          <relationship>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
+              <code value="GUARD"/>
+            </coding>
+          </relationship>
+          <name>
+            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+              <valueCode value="masked"/>
+            </extension>
+          </name>
+          <telecom>
+            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+              <valueCode value="masked"/>
+            </extension>
+          </telecom>
+          <address>
+            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+              <valueCode value="masked"/>
+            </extension>
+          </address>
+        </contact>
+        <communication>
+          <language>
+            <coding>
+              <system value="urn:ietf:bcp:47"/>
+              <code value="en"/>
+              <display value="English"/>
+            </coding>
+          </language>
+        </communication>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="http://www.example.org/fhir/Practitioner/practitioner-anon"/>
     <resource>
       <Practitioner>
@@ -1738,7 +1899,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
           <profile value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RelatedPerson_relatedperson-anon"> </a><p><b>Generated Narrative: RelatedPerson </b><a name="relatedperson-anon"> </a><a name="hcrelatedperson-anon"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceRelatedPerson &quot;relatedperson-anon&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-eicr-anon-relatedperson.html">eICR Anonymized RelatedPerson</a></p></div><p><b>identifier</b>: ?ngen-9?</p><p><b>active</b>: true</p><p><b>patient</b>: <a href="Patient-patient-anon-not.html">Patient/patient-anon-not</a> &quot; EVERYWOMAN&quot;</p><p><b>relationship</b>: Gestational Mother <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html">RoleCode</a>#GESTM &quot;gestational mother&quot;)</span></p><p><b>name</b>: </p><p><b>telecom</b>: -unknown-</p><p><b>gender</b>: female</p><p><b>birthDate</b>: Absent because : <code>masked</code></p><p><b>address</b>: </p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RelatedPerson_relatedperson-anon"> </a><p><b>Generated Narrative: RelatedPerson </b><a name="relatedperson-anon"> </a><a name="hcrelatedperson-anon"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceRelatedPerson &quot;relatedperson-anon&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-eicr-anon-relatedperson.html">eICR Anonymized RelatedPerson</a></p></div><p><b>identifier</b>: ?ngen-9?</p><p><b>active</b>: true</p><p><b>patient</b>: See on this page: Patient/patient-anon-not</p><p><b>relationship</b>: Gestational Mother <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html">RoleCode</a>#GESTM &quot;gestational mother&quot;)</span></p><p><b>name</b>: </p><p><b>telecom</b>: -unknown-</p><p><b>gender</b>: female</p><p><b>birthDate</b>: Absent because : <code>masked</code></p><p><b>address</b>: </p></div>
         </text>
         <identifier>
           <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">

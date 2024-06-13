@@ -35,7 +35,7 @@ Usage: #example
 * insert rsAddBundleEntry(Organization, organization-telecom-anon)
 * insert rsAddBundleEntry(Organization, organization-salem-medical-center-anon)
 * insert rsAddBundleEntry(Patient, patient-anon)
-//* insert rsAddBundleEntry(Patient, patient-anon-not)
+* insert rsAddBundleEntry(Patient, patient-anon-not)
 * insert rsAddBundleEntry(Practitioner, practitioner-anon)
 * insert rsAddBundleEntry(PractitionerRole, practitionerrole-anon)
 * insert rsAddBundleEntry(Procedure, procedure-ecmo-anon)

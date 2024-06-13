@@ -11,7 +11,7 @@
   "title" : "eICR Anonymized Organization - Telecom",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-06-13T11:16:16+10:00",
+  "date" : "2024-06-14T06:31:35+10:00",
   "publisher" : "APHL",
   "description" : "This Organization profile represents an anonymized eCR Organization - Telecom.\r\n\r\nIt is based on the **US Public Health Organization** profile with further constraints to require masking of telecom.",
   "jurisdiction" : [{

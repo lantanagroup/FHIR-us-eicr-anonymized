@@ -2,7 +2,7 @@
   "resourceType" : "Patient",
   "id" : "patient-anon-not",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-patient"]
+    "profile" : ["http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient"]
   },
   "text" : {
     "status" : "generated",
@@ -81,10 +81,26 @@
       }]
     },
     "system" : "http://hospital.smarthealthit.org",
-    "value" : "1032702"
+    "_system" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode" : "masked"
+      }]
+    },
+    "value" : "1032702",
+    "_value" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode" : "masked"
+      }]
+    }
   }],
   "active" : true,
   "name" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode" : "masked"
+    }],
     "family" : "Everywoman",
     "given" : ["Eve",
     "L"]
@@ -92,11 +108,23 @@
   "telecom" : [{
     "system" : "phone",
     "value" : "1-(404)555-1212",
+    "_value" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode" : "masked"
+      }]
+    },
     "use" : "home"
   },
   {
     "system" : "email",
-    "value" : "eve.everywoman@example.com"
+    "value" : "eve.everywoman@example.com",
+    "_value" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode" : "masked"
+      }]
+    }
   }],
   "gender" : "female",
   "_birthDate" : {
@@ -108,6 +136,12 @@
   "deceasedBoolean" : false,
   "address" : [{
     "line" : ["5101 Peachtree St NE"],
+    "_line" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode" : "masked"
+      }]
+    }],
     "city" : "Atlanta",
     "state" : "GA",
     "postalCode" : "30302",

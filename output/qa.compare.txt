@@ -1,63 +1,64 @@
 EICRAnonymized : Validation Results
 =========================================
 
-err = 0, warn = 45, info = 81
+err = 19, warn = 45, info = 89
 $--
 Generated $--. FHIR version $-- for ecr.fhir.us.anonymized-eicr#$-- (canonical = http://fhir.org/fhir/us/anonymized-eicr)
  Build Errors : 0 / 0 / 0
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Bundle-bundle-document-zika-anon : 0 / 26 / 116
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Composition-composition-zika-anon : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Condition-condition-common-cold-anon : 0 / 1 / 2
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Condition-condition-zika-anon : 0 / 1 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Device-device-ecmo-anon : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Encounter-encounter-outpatient-anon : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Immunization-immunization-pneumo-anon : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\ImplementationGuide-ecr.fhir.us.anonymized-eicr : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Location-location-city-football-stadium-anon : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Location-location-salem-medical-center-anon : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\MedicationAdministration-medicationadministration-azithromycin-anon : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\MedicationAdministration-medicationadministration-naloxone-response-anon : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-blood-pressure-anon : 0 / 1 / 2
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-calculated-age-anon : 0 / 1 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-country-of-nationality-anon : 0 / 1 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-country-of-residence-anon : 0 / 1 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-disability-status-anon : 0 / 1 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-emergency-outbreak-info-anon : 0 / 1 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-exposure-contact-info-football-game-anon : 0 / 1 / 2
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-lab-result-lymphocytes-anon : 0 / 1 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-odh-usual-work-anon : 0 / 1 / 5
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-past-or-present-job-anon : 0 / 1 / 5
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-pregnancy-status-anon : 0 / 1 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-travel-history-201801-anon : 0 / 1 / 2
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-vaccine-credential-assertion-anon : 0 / 1 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Organization-organization-acme-laboratory-telecom-anon : 0 / 0 / 2
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Organization-organization-name-tele-addr-anon : 0 / 0 / 2
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Organization-organization-salem-medical-center-anon : 0 / 0 / 2
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Organization-organization-telecom-anon : 0 / 0 / 2
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Patient-patient-anon : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Patient-patient-anon-not : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Practitioner-practitioner-anon : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\PractitionerRole-practitionerrole-anon : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Procedure-procedure-ecmo-anon : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\RelatedPerson-relatedperson-anon : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\ServiceRequest-servicerequest-zika-anon : 0 / 0 / 2
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-caculated-age-observation : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-composition : 0 / 2 / 14
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-document-bundle : 0 / 2 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-encounter : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-immunization : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-location : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-org-name-addr-tele : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-org-telecom : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-organization : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-past-or-present-job : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-patient : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-practitioner : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-practitionerrole : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-relatedperson : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Bundle-bundle-document-zika-anon : 13 / 26 / 125
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Composition-composition-zika-anon : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Condition-condition-common-cold-anon : 0 / 1 / 2
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Condition-condition-zika-anon : 0 / 1 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Device-device-ecmo-anon : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Encounter-encounter-outpatient-anon : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Immunization-immunization-pneumo-anon : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\ImplementationGuide-ecr.fhir.us.anonymized-eicr : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Location-location-city-football-stadium-anon : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Location-location-salem-medical-center-anon : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\MedicationAdministration-medicationadministration-azithromycin-anon : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\MedicationAdministration-medicationadministration-naloxone-response-anon : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Observation-observation-blood-pressure-anon : 0 / 1 / 2
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Observation-observation-calculated-age-anon : 0 / 1 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Observation-observation-country-of-nationality-anon : 0 / 1 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Observation-observation-country-of-residence-anon : 0 / 1 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Observation-observation-disability-status-anon : 0 / 1 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Observation-observation-emergency-outbreak-info-anon : 0 / 1 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Observation-observation-exposure-contact-info-football-game-anon : 0 / 1 / 2
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Observation-observation-lab-result-lymphocytes-anon : 0 / 1 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Observation-observation-odh-usual-work-anon : 0 / 1 / 5
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Observation-observation-past-or-present-job-anon : 0 / 1 / 5
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Observation-observation-pregnancy-status-anon : 0 / 1 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Observation-observation-travel-history-201801-anon : 0 / 1 / 2
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Observation-observation-vaccine-credential-assertion-anon : 0 / 1 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Organization-organization-acme-laboratory-telecom-anon : 0 / 0 / 2
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Organization-organization-name-tele-addr-anon : 0 / 0 / 2
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Organization-organization-salem-medical-center-anon : 0 / 0 / 2
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Organization-organization-telecom-anon : 0 / 0 / 2
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Patient-patient-anon : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Patient-patient-anon-not : 6 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Practitioner-practitioner-anon : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\PractitionerRole-practitionerrole-anon : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\Procedure-procedure-ecmo-anon : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\RelatedPerson-relatedperson-anon : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\ServiceRequest-servicerequest-zika-anon : 0 / 0 / 2
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\StructureDefinition-caculated-age-observation : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\StructureDefinition-eicr-anon-composition : 0 / 2 / 14
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\StructureDefinition-eicr-anon-document-bundle : 0 / 2 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\StructureDefinition-eicr-anon-encounter : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\StructureDefinition-eicr-anon-immunization : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\StructureDefinition-eicr-anon-location : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\StructureDefinition-eicr-anon-org-name-addr-tele : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\StructureDefinition-eicr-anon-org-telecom : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\StructureDefinition-eicr-anon-organization : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\StructureDefinition-eicr-anon-past-or-present-job : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\StructureDefinition-eicr-anon-patient : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\StructureDefinition-eicr-anon-practitioner : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\StructureDefinition-eicr-anon-practitionerrole : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anon-demo\fsh-generated\resources\StructureDefinition-eicr-anon-relatedperson : 0 / 0 / 1
 </table>
 == n/a ==
 == fsh-generated\resources\Bundle-bundle-document-zika-anon.json ==
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[1]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[2]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[3]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -88,9 +89,17 @@ INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[27]: This element do
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[28]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[29]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[30]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[31]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Bundle/bundle-document-zika-anon: Bundle: Slice 'Bundle.entry:slicePublicHealthComposition': a matching slice is required, but not found (from http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0). Note that other slices are allowed in addition to this required slice
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[0].resource.section[6].entry[2]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[0].resource.section[10].entry[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Bundle/bundle-document-zika-anon: Bundle.entry[0].resource.section[10]: Slice 'Composition.section:sliceImmunizationsSection.entry:sliceUSCoreImmunization': a matching slice is required, but not found (from http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition|1.0.0). Note that other slices are allowed in addition to this required slice
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[1].resource/*Condition/condition-zika-anon*/: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[2].resource/*Condition/condition-common-cold-anon*/: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[2].resource/*Condition/condition-common-cold-anon*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[5].resource/*Immunization/immunization-pneumo-anon*/.patient: Details for Patient/patient-anon-not matching against profile http://hl7.org/fhir/StructureDefinition/Patient|4.0.1
+ERROR: Bundle/bundle-document-zika-anon: Bundle.entry[5].resource.patient: Unable to find a match for profile Patient/patient-anon-not among choices: http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[5].resource.patient: Details for Patient/patient-anon-not matching against profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient|1.0.0
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[9].resource/*Observation/observation-blood-pressure-anon*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[10].resource/*Observation/observation-calculated-age-anon*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[11].resource/*Observation/observation-country-of-nationality-anon*/: Best Practice Recommendation: In general, all observations should have a performer
@@ -106,6 +115,8 @@ INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[14].resource.compone
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource/*Observation/observation-past-or-present-job-anon*/: Best Practice Recommendation: In general, all observations should have a performer
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource/*Observation/observation-past-or-present-job-anon*/.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/PHOccupationCDCCensus2010' could not be found, so the code cannot be validated
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource/*Observation/observation-past-or-present-job-anon*/.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/PHIndustryCDCCensus2010' could not be found, so the code cannot be validated
+ERROR: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource.focus[0]: Unable to find a match for profile RelatedPerson/relatedperson-anon among choices: http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource.focus[0]: Details for RelatedPerson/relatedperson-anon matching against profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson|1.0.0
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/PHOccupationCDCCensus2010' could not be found, so the code cannot be validated
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource.value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-past-or-present-job|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/PHIndustryCDCCensus2010' could not be found, so the code cannot be validated
@@ -121,9 +132,19 @@ INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[21].resource/*Organi
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[22].resource/*Organization/organization-name-tele-addr-anon*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[23].resource/*Organization/organization-telecom-anon*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[24].resource/*Organization/organization-salem-medical-center-anon*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[30].resource/*ServiceRequest/servicerequest-zika-anon*/.category[0].coding[0].code: The code '103693007' is valid but is not active
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[30].resource.category[0].coding[0].code: The code '103693007' is valid but is not active
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle: Can't find 'Patient/patient-anon-not' in the bundle (Bundle.entry[29].resource.patient)
+ERROR: Bundle/bundle-document-zika-anon: Bundle.entry[26].resource/*Patient/patient-anon-not*/.identifier[0]: Constraint failed: eicr-anon-pt-iden: 'Patient.identifier.system.value SHALL NOT be present AND Patient.identifier.value.value SHALL NOT be present' (defined in http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient)
+ERROR: Bundle/bundle-document-zika-anon: Bundle.entry[26].resource/*Patient/patient-anon-not*/.name[0]: Constraint failed: us-core-8: 'Either Patient.name.given and/or Patient.name.family SHALL be present or a Data Absent Reason Extension SHALL be present.' (defined in http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)
+ERROR: Bundle/bundle-document-zika-anon: Bundle.entry[26].resource/*Patient/patient-anon-not*/.name[0]: Constraint failed: eicr-anon-pt-name: 'Patient.name fields SHALL NOT be present' (defined in http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient)
+ERROR: Bundle/bundle-document-zika-anon: Bundle.entry[26].resource/*Patient/patient-anon-not*/.telecom[0]: Constraint failed: eicr-anon-pt-tel: 'Patient.telecom.value.value SHALL NOT be present' (defined in http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient)
+ERROR: Bundle/bundle-document-zika-anon: Bundle.entry[26].resource/*Patient/patient-anon-not*/.telecom[1]: Constraint failed: eicr-anon-pt-tel: 'Patient.telecom.value.value SHALL NOT be present' (defined in http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient)
+ERROR: Bundle/bundle-document-zika-anon: Bundle.entry[26].resource/*Patient/patient-anon-not*/.address[0]: Constraint failed: eicr-anon-pt-addr: 'Patient.address.line.value SHALL NOT be present' (defined in http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient)
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[30].resource/*RelatedPerson/relatedperson-anon*/.patient: Details for Patient/patient-anon-not matching against profile http://hl7.org/fhir/StructureDefinition/Patient|4.0.1
+ERROR: Bundle/bundle-document-zika-anon: Bundle.entry[30].resource/*RelatedPerson/relatedperson-anon*/.patient: Unable to find a match for profile Patient/patient-anon-not among choices: http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[30].resource/*RelatedPerson/relatedperson-anon*/.patient: Details for Patient/patient-anon-not matching against profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient|1.0.0
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[31].resource/*ServiceRequest/servicerequest-zika-anon*/.category[0].coding[0].code: The code '103693007' is valid but is not active
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[31].resource.category[0].coding[0].code: The code '103693007' is valid but is not active
+ERROR: Bundle/bundle-document-zika-anon: Bundle: Constraint failed: eicr-anon-patient: 'All Patient resources must conform to EICRAnonymizedPatient profile' (defined in http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle)
+ERROR: Bundle/bundle-document-zika-anon: Bundle: Constraint failed: eicr-anon-rp: 'All RelatedPerson resources must conform to EICRAnonymizedRelatedPerson' (defined in http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle)
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[9].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[10].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[11].resource: Best Practice Recommendation: In general, all observations should have a performer
@@ -196,6 +217,12 @@ INFORMATION: Organization/organization-salem-medical-center-anon: Organization.i
 INFORMATION: Organization/organization-telecom-anon: Organization.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated\resources\Patient-patient-anon.json ==
 == fsh-generated\resources\Patient-patient-anon-not.json ==
+ERROR: Patient/patient-anon-not: Patient.identifier[0]: Constraint failed: eicr-anon-pt-iden: 'Patient.identifier.system.value SHALL NOT be present AND Patient.identifier.value.value SHALL NOT be present' (defined in http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient)
+ERROR: Patient/patient-anon-not: Patient.name[0]: Constraint failed: us-core-8: 'Either Patient.name.given and/or Patient.name.family SHALL be present or a Data Absent Reason Extension SHALL be present.' (defined in http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)
+ERROR: Patient/patient-anon-not: Patient.name[0]: Constraint failed: eicr-anon-pt-name: 'Patient.name fields SHALL NOT be present' (defined in http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient)
+ERROR: Patient/patient-anon-not: Patient.telecom[0]: Constraint failed: eicr-anon-pt-tel: 'Patient.telecom.value.value SHALL NOT be present' (defined in http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient)
+ERROR: Patient/patient-anon-not: Patient.telecom[1]: Constraint failed: eicr-anon-pt-tel: 'Patient.telecom.value.value SHALL NOT be present' (defined in http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient)
+ERROR: Patient/patient-anon-not: Patient.address[0]: Constraint failed: eicr-anon-pt-addr: 'Patient.address.line.value SHALL NOT be present' (defined in http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient)
 == fsh-generated\resources\Practitioner-practitioner-anon.json ==
 == fsh-generated\resources\PractitionerRole-practitionerrole-anon.json ==
 == fsh-generated\resources\Procedure-procedure-ecmo-anon.json ==

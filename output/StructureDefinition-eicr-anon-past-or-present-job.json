@@ -11,7 +11,7 @@
   "title" : "eICR Anonymized Past or Present Job",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-06-13T11:16:16+10:00",
+  "date" : "2024-06-14T06:31:35+10:00",
   "publisher" : "APHL",
   "description" : "This Past or Present Job profile represents an anonymized eICR Past or Present Job.\r\n\r\nIt is based on the **Occupational Data for Health Past Or Present Job** profile with further constraints to require masking of some data elements.",
   "jurisdiction" : [{

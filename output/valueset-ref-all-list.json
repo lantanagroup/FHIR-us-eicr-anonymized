@@ -53,12 +53,12 @@
       "uses" : {
       },
       "StructureDefinition-eicr-anon-org-telecom.html" : "eICR Anonymized Organization - Telecom",
+      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom",
       "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
-      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
-      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location",
-      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
       "StructureDefinition-eicr-anon-org-name-addr-tele.html" : "eICR Anonymized Organization - Name, Address, Telecom",
-      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom"
+      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
+      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
+      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -73,12 +73,12 @@
       "uses" : {
       },
       "StructureDefinition-eicr-anon-org-telecom.html" : "eICR Anonymized Organization - Telecom",
+      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom",
       "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
-      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
-      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location",
-      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
       "StructureDefinition-eicr-anon-org-name-addr-tele.html" : "eICR Anonymized Organization - Name, Address, Telecom",
-      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom"
+      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
+      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
+      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -93,8 +93,8 @@
       "uses" : {
       },
       "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
-      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
-      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient"
+      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
+      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -166,13 +166,13 @@
       "uses" : {
       },
       "StructureDefinition-eicr-anon-org-telecom.html" : "eICR Anonymized Organization - Telecom",
-      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
-      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
-      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location",
-      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
       "StructureDefinition-eicr-anon-practitionerrole.html" : "eICR Anonymized PractitionerRole",
+      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom",
+      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
       "StructureDefinition-eicr-anon-org-name-addr-tele.html" : "eICR Anonymized Organization - Name, Address, Telecom",
-      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom"
+      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
+      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
+      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -187,13 +187,13 @@
       "uses" : {
       },
       "StructureDefinition-eicr-anon-org-telecom.html" : "eICR Anonymized Organization - Telecom",
-      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
-      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
-      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location",
-      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
       "StructureDefinition-eicr-anon-practitionerrole.html" : "eICR Anonymized PractitionerRole",
+      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom",
+      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
       "StructureDefinition-eicr-anon-org-name-addr-tele.html" : "eICR Anonymized Organization - Name, Address, Telecom",
-      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom"
+      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
+      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
+      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -208,8 +208,8 @@
       "uses" : {
       },
       "StructureDefinition-eicr-anon-org-telecom.html" : "eICR Anonymized Organization - Telecom",
-      "StructureDefinition-eicr-anon-org-name-addr-tele.html" : "eICR Anonymized Organization - Name, Address, Telecom",
-      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom"
+      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom",
+      "StructureDefinition-eicr-anon-org-name-addr-tele.html" : "eICR Anonymized Organization - Name, Address, Telecom"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -223,17 +223,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-eicr-anon-composition.html" : "eICR Anonymized Composition",
       "StructureDefinition-eicr-anon-org-telecom.html" : "eICR Anonymized Organization - Telecom",
-      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
-      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
-      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location",
       "StructureDefinition-eicr-anon-past-or-present-job.html" : "eICR Anonymized Past or Present Job",
-      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
       "StructureDefinition-eicr-anon-practitionerrole.html" : "eICR Anonymized PractitionerRole",
       "StructureDefinition-caculated-age-observation.html" : "Calculated Age",
+      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom",
+      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
+      "StructureDefinition-eicr-anon-composition.html" : "eICR Anonymized Composition",
       "StructureDefinition-eicr-anon-org-name-addr-tele.html" : "eICR Anonymized Organization - Name, Address, Telecom",
-      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom"
+      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
+      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
+      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -247,8 +247,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location",
-      "StructureDefinition-eicr-anon-practitionerrole.html" : "eICR Anonymized PractitionerRole"
+      "StructureDefinition-eicr-anon-practitionerrole.html" : "eICR Anonymized PractitionerRole",
+      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
@@ -483,12 +483,12 @@
       "uses" : {
       },
       "StructureDefinition-eicr-anon-org-telecom.html" : "eICR Anonymized Organization - Telecom",
+      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom",
       "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
-      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
-      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
       "StructureDefinition-eicr-anon-encounter.html" : "eICR Anonymized Encounter",
       "StructureDefinition-eicr-anon-org-name-addr-tele.html" : "eICR Anonymized Organization - Name, Address, Telecom",
-      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom"
+      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
+      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -503,12 +503,12 @@
       "uses" : {
       },
       "StructureDefinition-eicr-anon-org-telecom.html" : "eICR Anonymized Organization - Telecom",
+      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom",
       "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
-      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
-      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
       "StructureDefinition-eicr-anon-encounter.html" : "eICR Anonymized Encounter",
       "StructureDefinition-eicr-anon-org-name-addr-tele.html" : "eICR Anonymized Organization - Name, Address, Telecom",
-      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom"
+      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
+      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
@@ -687,20 +687,20 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-eicr-anon-composition.html" : "eICR Anonymized Composition",
-      "StructureDefinition-eicr-anon-document-bundle.html" : "eICR Anonymized Document Bundle",
-      "StructureDefinition-eicr-anon-org-telecom.html" : "eICR Anonymized Organization - Telecom",
-      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
-      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
-      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location",
-      "StructureDefinition-eicr-anon-practitionerrole.html" : "eICR Anonymized PractitionerRole",
-      "StructureDefinition-caculated-age-observation.html" : "Calculated Age",
-      "StructureDefinition-eicr-anon-org-name-addr-tele.html" : "eICR Anonymized Organization - Name, Address, Telecom",
       "StructureDefinition-eicr-anon-past-or-present-job.html" : "eICR Anonymized Past or Present Job",
+      "StructureDefinition-caculated-age-observation.html" : "Calculated Age",
+      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom",
+      "StructureDefinition-eicr-anon-encounter.html" : "eICR Anonymized Encounter",
+      "StructureDefinition-eicr-anon-composition.html" : "eICR Anonymized Composition",
+      "StructureDefinition-eicr-anon-org-name-addr-tele.html" : "eICR Anonymized Organization - Name, Address, Telecom",
+      "StructureDefinition-eicr-anon-org-telecom.html" : "eICR Anonymized Organization - Telecom",
+      "StructureDefinition-eicr-anon-practitionerrole.html" : "eICR Anonymized PractitionerRole",
+      "StructureDefinition-eicr-anon-document-bundle.html" : "eICR Anonymized Document Bundle",
+      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
       "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
       "StructureDefinition-eicr-anon-immunization.html" : "eICR Anonymized Immunization",
-      "StructureDefinition-eicr-anon-encounter.html" : "eICR Anonymized Encounter",
-      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom"
+      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
+      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -786,8 +786,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.328"],
       "uses" : {
       },
-      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location",
-      "StructureDefinition-eicr-anon-encounter.html" : "eICR Anonymized Encounter"
+      "StructureDefinition-eicr-anon-encounter.html" : "eICR Anonymized Encounter",
+      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-status",
@@ -833,8 +833,8 @@
       "uses" : {
       },
       "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
-      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
-      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient"
+      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
+      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/narrative-status",
@@ -940,8 +940,8 @@
       "uses" : {
       },
       "StructureDefinition-eicr-anon-org-telecom.html" : "eICR Anonymized Organization - Telecom",
-      "StructureDefinition-eicr-anon-org-name-addr-tele.html" : "eICR Anonymized Organization - Name, Address, Telecom",
-      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom"
+      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom",
+      "StructureDefinition-eicr-anon-org-name-addr-tele.html" : "eICR Anonymized Organization - Name, Address, Telecom"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -1168,10 +1168,10 @@
       "uses" : {
       },
       "StructureDefinition-eicr-anon-org-telecom.html" : "eICR Anonymized Organization - Telecom",
-      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location",
-      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
+      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom",
       "StructureDefinition-eicr-anon-org-name-addr-tele.html" : "eICR Anonymized Organization - Name, Address, Telecom",
-      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization - Address, Telecom"
+      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
+      "StructureDefinition-eicr-anon-location.html" : "eICR Anonymized Location"
     },
     {
       "url" : "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7186",

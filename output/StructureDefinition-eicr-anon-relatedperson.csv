@@ -40,7 +40,7 @@ eicr-anon-rp-iden:RelatedPerson.identifier.system SHALL NOT be present AND Patie
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RelatedPerson.identifier.extension:dataAbsentReason","RelatedPerson.identifier.extension","dataAbsentReason","","",1,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
-","A value for identifier.system is not allowed, must use data-absent-reason with value 'masked'","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","RelatedPerson.identifier is not allowed, must use data-absent-reason with value 'masked'","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ANY.nullFlavor"
 "RelatedPerson.identifier.extension:dataAbsentReason.id","RelatedPerson.identifier.extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -92,7 +92,7 @@ eicr-anon-rp-name:RelatedPerson.name fields SHALL NOT be present {use.empty() an
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RelatedPerson.name.extension:dataAbsentReason","RelatedPerson.name.extension","dataAbsentReason","","",1,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
-","A value is not allowed, must use data-absent-reason with value 'masked'","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","RelatedPerson.name is not allowed, must use data-absent-reason with value 'masked'","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ANY.nullFlavor"
 "RelatedPerson.name.extension:dataAbsentReason.id","RelatedPerson.name.extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -140,7 +140,7 @@ eicr-anon-rp-tel:RelatedPerson.telecom fields SHALL NOT be present {system.empty
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RelatedPerson.telecom.extension:dataAbsentReason","RelatedPerson.telecom.extension","dataAbsentReason","","",1,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
-","A value is not allowed, must use data-absent-reason with value 'masked'","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","RelatedPerson.telecom is not allowed, must use data-absent-reason with value 'masked'","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ANY.nullFlavor"
 "RelatedPerson.telecom.extension:dataAbsentReason.id","RelatedPerson.telecom.extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
@@ -176,7 +176,31 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","administrativeGender","NK1-15"
 "RelatedPerson.birthDate","RelatedPerson.birthDate","","","",0,1,"","","Y","date {[]} {[]}
 ","The date on which the related person was born","The date on which the related person was born.","","","","","","","","","",,,,,"",,,,"RelatedPerson.birthDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","player.birthTime"
+eicr-anon-rp-bd:Patient.birthDate.value SHALL NOT be present {value.empty()}","player.birthTime"
+"RelatedPerson.birthDate.id","RelatedPerson.birthDate.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"RelatedPerson.birthDate.extension","RelatedPerson.birthDate.extension","","","",1,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"RelatedPerson.birthDate.extension:dataAbsentReason","RelatedPerson.birthDate.extension","dataAbsentReason","","",1,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
+","RelatedPerson.birthDate is not allowed, must use data-absent-reason with value 'masked'","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ANY.nullFlavor"
+"RelatedPerson.birthDate.extension:dataAbsentReason.id","RelatedPerson.birthDate.extension.id","","","",0,1,"","","","id {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
+","","n/a"
+"RelatedPerson.birthDate.extension:dataAbsentReason.extension","RelatedPerson.birthDate.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"RelatedPerson.birthDate.extension:dataAbsentReason.url","RelatedPerson.birthDate.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/data-absent-reason""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"RelatedPerson.birthDate.extension:dataAbsentReason.value[x]","RelatedPerson.birthDate.extension.value[x]","","","",1,1,"","","","code {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","","",,"required","","http://hl7.org/fhir/ValueSet/data-absent-reason","",,,,"Extension.value[x]",0,1,"ext-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"RelatedPerson.birthDate.value","RelatedPerson.birthDate.value","","","",0,1,"","","","date {[]} {[]}
+","Primitive value for date","The actual value","","","","","","","","","",,,,,"",,,,"date.value",0,1,"",""
 "RelatedPerson.address","RelatedPerson.address","","","",0,*,"","","Y","Address {[]} {[]}
 ","Address where the related person can be contacted or visited","Address where the related person can be contacted or visited.","","Need to keep track where the related person can be contacted per postal mail or visited.","","","","","","","",,,,,"",,,,"RelatedPerson.address",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 eicr-anon-rp-ad:RelatedPerson.address fields SHALL NOT be present {use.empty() and text.empty() and line.empty() and city.empty() and district.empty() and state.empty() and postalCode.empty() and country.empty() and period.empty()}","addr","NK1-4"
@@ -187,7 +211,7 @@ eicr-anon-rp-ad:RelatedPerson.address fields SHALL NOT be present {use.empty() a
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RelatedPerson.address.extension:dataAbsentReason","RelatedPerson.address.extension","dataAbsentReason","","",1,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
-","A value is not allowed, must use data-absent-reason with value 'masked'","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","ReleatedPerson.address is not allowed, must use data-absent-reason with value 'masked'","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ANY.nullFlavor"
 "RelatedPerson.address.extension:dataAbsentReason.id","RelatedPerson.address.extension.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1

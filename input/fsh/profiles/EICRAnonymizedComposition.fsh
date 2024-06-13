@@ -51,6 +51,8 @@ Description: "This Composition profile represents an anonymized eICR Composition
 * section[sliceSocialHistorySection].entry[sliceExposureContactInformation] 0..0
 * section[sliceSocialHistorySection].entry[sliceExposureContactInformation] only Reference(USPublicHealthExposureContactInformation)
 
+* section[sliceSocialHistorySection].entry[sliceODHPastOrPresentJob] only Reference(EICRAnonymizedPastOrPresentJob)
+
 * section[sliceSocialHistorySection].entry contains sliceCalculatedAge 1..1 MS
 * section[sliceSocialHistorySection].entry[sliceCalculatedAge] only Reference(CalculatedAge)
 * section[sliceSocialHistorySection].entry[sliceCalculatedAge] ^short = "Calculated Age entry"

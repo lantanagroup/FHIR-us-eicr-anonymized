@@ -161,6 +161,9 @@
       "reference" : "Observation/observation-odh-usual-work-anon"
     },
     {
+      "reference" : "Observation/observation-past-or-present-job-anon"
+    },
+    {
       "reference" : "Observation/observation-disability-status-anon"
     },
     {

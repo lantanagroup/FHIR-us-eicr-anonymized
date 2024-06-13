@@ -172,6 +172,9 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
             <reference value="Observation/observation-odh-usual-work-anon"/>
           </entry>
           <entry>
+            <reference value="Observation/observation-past-or-present-job-anon"/>
+          </entry>
+          <entry>
             <reference value="Observation/observation-disability-status-anon"/>
           </entry>
           <entry>
@@ -427,6 +430,43 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
           <reference value="Practitioner/practitioner-anon"/>
         </asserter>
       </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Device/device-ecmo-anon"/>
+    <resource>
+      <Device>
+        <id value="device-ecmo-anon"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Device_device-ecmo-anon"> </a><p><b>Generated Narrative: Device </b><a name="device-ecmo-anon"> </a><a name="hcdevice-ecmo-anon"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceDevice &quot;device-ecmo-anon&quot; </p></div><h3>UdiCarriers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>DeviceIdentifier</b></td><td><b>CarrierHRF</b></td><td><b>EntryType</b></td></tr><tr><td style="display: none">*</td><td>99863313444316</td><td>(01)99863313444316(17)220101(10)M320(21)AC222</td><td>rfid</td></tr></table><p><b>status</b>: active</p><p><b>manufacturer</b>: ACME Biomedical</p><p><b>expirationDate</b>: 2022-01-01</p><p><b>lotNumber</b>: M320</p><p><b>serialNumber</b>: AC222</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>ACME Extracorporeal membrane oxygenator</td><td>udi-label-name</td></tr></table><p><b>modelNumber</b>: 4.0</p><p><b>type</b>: Extracorporeal membrane oxygenator (physical object) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#469244005)</span></p><p><b>patient</b>: See on this page: Patient/patient-anon</p></div>
+        </text>
+        <udiCarrier>
+          <deviceIdentifier value="99863313444316"/>
+          <carrierHRF value="(01)99863313444316(17)220101(10)M320(21)AC222"/>
+          <entryType value="rfid"/>
+        </udiCarrier>
+        <status value="active"/>
+        <manufacturer value="ACME Biomedical"/>
+        <expirationDate value="2022-01-01"/>
+        <lotNumber value="M320"/>
+        <serialNumber value="AC222"/>
+        <deviceName>
+          <name value="ACME Extracorporeal membrane oxygenator"/>
+          <type value="udi-label-name"/>
+        </deviceName>
+        <modelNumber value="4.0"/>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="469244005"/>
+            <display value="Extracorporeal membrane oxygenator (physical object)"/>
+          </coding>
+          <text value="Extracorporeal membrane oxygenator (physical object)"/>
+        </type>
+        <patient>
+          <reference value="Patient/patient-anon"/>
+        </patient>
+      </Device>
     </resource>
   </entry>
   <entry>
@@ -942,6 +982,75 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://www.example.org/fhir/Observation/observation-past-or-present-job-anon"/>
+    <resource>
+      <Observation>
+        <id value="observation-past-or-present-job-anon"/>
+        <meta>
+          <profile value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-past-or-present-job"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-past-or-present-job-anon"> </a><p><b>Generated Narrative: Observation </b><a name="observation-past-or-present-job-anon"> </a><a name="hcobservation-past-or-present-job-anon"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceObservation &quot;observation-past-or-present-job-anon&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-eicr-anon-past-or-present-job.html">eICR Anonymized Past or Present Job</a></p></div><p><b>Employer</b>: See on this page: Organization/organization-name-tele-addr-anon</p><p><b>status</b>: final</p><p><b>code</b>: History of Occupation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#11341-5)</span></p><p><b>subject</b>: See on this page: Patient/patient-anon</p><p><b>focus</b>: See on this page: RelatedPerson/relatedperson-anon</p><p><b>effective</b>: 2015-04-24 --&gt; (ongoing)</p><p><b>value</b>: Nursing, psychiatric, and home health aides <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-PHOccupationCDCCensus2010.html">Occupation CDC Census 2010</a>#3600)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: History of Occupation industry <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#86188-0)</span></p><p><b>value</b>: Nursing care facilities <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-PHIndustryCDCCensus2010.html">Industry CDC Census 2010</a>#8270)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: History of Occupational hazard <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#87729-0)</span></p><p><b>value</b>: Asbestos</p></blockquote></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension">
+          <valueReference>
+            <reference value="Organization/organization-name-tele-addr-anon"/>
+          </valueReference>
+        </extension>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11341-5"/>
+            <display value="History of Occupation"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-anon"/>
+        </subject>
+        <focus>
+          <reference value="RelatedPerson/relatedperson-anon"/>
+        </focus>
+        <effectivePeriod>
+          <start value="2015-04-24"/>
+        </effectivePeriod>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/PHOccupationCDCCensus2010"/>
+            <code value="3600"/>
+            <display value="Nursing, psychiatric, and home health aides"/>
+          </coding>
+        </valueCodeableConcept>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="86188-0"/>
+              <display value="History of Occupation industry"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/PHIndustryCDCCensus2010"/>
+              <code value="8270"/>
+              <display value="Nursing care facilities"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="87729-0"/>
+              <display value="History of Occupational hazard"/>
+            </coding>
+          </code>
+          <valueString value="Asbestos"/>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="http://www.example.org/fhir/Observation/observation-pregnancy-status-anon"/>
     <resource>
       <Observation>
@@ -1231,6 +1340,40 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
           <city value="Ann Arbor"/>
           <state value="MI"/>
           <postalCode value="99999"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Organization/organization-name-tele-addr-anon"/>
+    <resource>
+      <Organization>
+        <id value="organization-name-tele-addr-anon"/>
+        <meta>
+          <profile value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_organization-name-tele-addr-anon"> </a><p><b>Generated Narrative: Organization </b><a name="organization-name-tele-addr-anon"> </a><a name="hcorganization-name-tele-addr-anon"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceOrganization &quot;organization-name-tele-addr-anon&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-eicr-anon-org-name-addr-tele.html">eICR Anonymized Organization - Name, Address, Telecom</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/7878787878</p><p><b>active</b>: true</p><p><b>name</b>: Absent because : <code>masked</code></p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: </p></div>
+        </text>
+        <identifier>
+          <system value="http://hl7.org.fhir/sid/us-npi"/>
+          <value value="7878787878"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="masked"/>
+          </extension>
+        </name>
+        <telecom>
+          <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="masked"/>
+          </extension>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="masked"/>
+          </extension>
         </address>
       </Organization>
     </resource>
@@ -1556,7 +1699,7 @@ This oid is used as an identifier II.root to indicate the the extension is an ab
 
 Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
 
-This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:b2a737f2-2fdb-49c1-b097-dac173d07afd</p><p><b>status</b>: completed</p><p><b>code</b>: Extracorporeal membrane oxygenation (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#233573008)</span></p><p><b>subject</b>: See on this page: Patient/patient-anon</p><p><b>performed</b>: 2020-11-01 12:55:26-0700 --&gt; 2020-11-01 13:25:26-0700</p><h3>FocalDevices</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Manipulated</b></td></tr><tr><td style="display: none">*</td><td><a href="Device-device-ecmo-anon.html">Device/device-ecmo-anon</a></td></tr></table></div>
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:b2a737f2-2fdb-49c1-b097-dac173d07afd</p><p><b>status</b>: completed</p><p><b>code</b>: Extracorporeal membrane oxygenation (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#233573008)</span></p><p><b>subject</b>: See on this page: Patient/patient-anon</p><p><b>performed</b>: 2020-11-01 12:55:26-0700 --&gt; 2020-11-01 13:25:26-0700</p><h3>FocalDevices</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Manipulated</b></td></tr><tr><td style="display: none">*</td><td>See on this page: Device/device-ecmo-anon</td></tr></table></div>
         </text>
         <identifier>
           <system value="urn:ietf:rfc:3986"/>
@@ -1584,6 +1727,58 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
           </manipulated>
         </focalDevice>
       </Procedure>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/RelatedPerson/relatedperson-anon"/>
+    <resource>
+      <RelatedPerson>
+        <id value="relatedperson-anon"/>
+        <meta>
+          <profile value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RelatedPerson_relatedperson-anon"> </a><p><b>Generated Narrative: RelatedPerson </b><a name="relatedperson-anon"> </a><a name="hcrelatedperson-anon"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceRelatedPerson &quot;relatedperson-anon&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-eicr-anon-relatedperson.html">eICR Anonymized RelatedPerson</a></p></div><p><b>identifier</b>: ?ngen-9?</p><p><b>active</b>: true</p><p><b>patient</b>: <a href="Patient-patient-anon-not.html">Patient/patient-anon-not</a> &quot; EVERYWOMAN&quot;</p><p><b>relationship</b>: Gestational Mother <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html">RoleCode</a>#GESTM &quot;gestational mother&quot;)</span></p><p><b>name</b>: </p><p><b>telecom</b>: -unknown-</p><p><b>gender</b>: female</p><p><b>birthDate</b>: Absent because : <code>masked</code></p><p><b>address</b>: </p></div>
+        </text>
+        <identifier>
+          <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="masked"/>
+          </extension>
+        </identifier>
+        <active value="true"/>
+        <patient>
+          <reference value="Patient/patient-anon-not"/>
+        </patient>
+        <relationship>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="GESTM"/>
+            <display value="gestational mother"/>
+          </coding>
+          <text value="Gestational Mother"/>
+        </relationship>
+        <name>
+          <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="masked"/>
+          </extension>
+        </name>
+        <telecom>
+          <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="masked"/>
+          </extension>
+        </telecom>
+        <gender value="female"/>
+        <birthDate>
+          <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="masked"/>
+          </extension>
+        </birthDate>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="masked"/>
+          </extension>
+        </address>
+      </RelatedPerson>
     </resource>
   </entry>
   <entry>

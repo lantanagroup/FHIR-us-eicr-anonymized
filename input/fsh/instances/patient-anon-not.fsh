@@ -29,24 +29,19 @@ Usage: #example
 * identifier.type = $v2-0203#MR "Medical Record Number"
 * identifier.system = "http://hospital.smarthealthit.org"
 * identifier.value = "1032702"
-//* insert rsDataAbsentReason(identifier.system)
-//* insert rsDataAbsentReason(identifier.value)
 
 * active = true
 
 * name.family = "Everywoman"
 * name.given[0] = "Eve"
 * name.given[+] = "L"
-//* insert rsDataAbsentReason(name)
 
 * telecom[phone].system = #phone
 * telecom[phone].value = "1-(404)555-1212"
-//* insert rsDataAbsentReason(telecom[phone].value)
 * telecom[phone].use = #home
 
 * telecom[email].system = #email
 * telecom[email].value = "eve.everywoman@example.com"
-// * insert rsDataAbsentReason(telecom[email].value)
 
 * gender = #female
 
@@ -55,7 +50,6 @@ Usage: #example
 * deceasedBoolean = false
 
 * address.line = "5101 Peachtree St NE"
-//* insert rsDataAbsentReason(address.line)
 * address.city = "Atlanta"
 * address.state = "GA"
 * address.postalCode = "30302"

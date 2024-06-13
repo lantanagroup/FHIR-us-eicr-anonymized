@@ -92,6 +92,7 @@
       "Bundle.entry.resource.contact.address",
       "Bundle.entry.resource.contact.name",
       "Bundle.entry.resource.contact.telecom",
+      "Bundle.entry.resource.identifier",
       "Bundle.entry.resource.identifier.system",
       "Bundle.entry.resource.identifier.value",
       "Bundle.entry.resource.name",
@@ -125,6 +126,7 @@
       "Practitioner.telecom",
       "PractitionerRole.telecom.value",
       "RelatedPerson.address",
+      "RelatedPerson.birthDate",
       "RelatedPerson.identifier",
       "RelatedPerson.name",
       "RelatedPerson.telecom"
@@ -235,6 +237,7 @@
       "Patient"
     ],
     "http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension": [
+      "Bundle.entry.resource",
       "Observation"
     ],
     "http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension": [

@@ -183,6 +183,9 @@
        fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-odh-usual-work-anon> ;
        fhir:reference [ fhir:v "Observation/observation-odh-usual-work-anon" ]
      ] [
+       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-past-or-present-job-anon> ;
+       fhir:reference [ fhir:v "Observation/observation-past-or-present-job-anon" ]
+     ] [
        fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-disability-status-anon> ;
        fhir:reference [ fhir:v "Observation/observation-disability-status-anon" ]
      ] [

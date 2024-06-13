@@ -158,6 +158,9 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
       <reference value="Observation/observation-odh-usual-work-anon"/>
     </entry>
     <entry>
+      <reference value="Observation/observation-past-or-present-job-anon"/>
+    </entry>
+    <entry>
       <reference value="Observation/observation-disability-status-anon"/>
     </entry>
     <entry>

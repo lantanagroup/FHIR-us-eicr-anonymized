@@ -7,3 +7,7 @@
 /temp/qa
 /template
 /temp/pages
+/_copy-file.bat
+/fhir_validator.bat
+/validation.html
+/validator_cli.jar

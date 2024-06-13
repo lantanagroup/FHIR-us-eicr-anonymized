@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "EICRAnonymized"] ; # 
   fhir:title [ fhir:v "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-06-13T06:51:52+10:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-13T11:16:16+10:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "APHL"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
@@ -864,6 +864,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-past-or-present-job-anon> ;
+         fhir:reference [ fhir:v "Observation/observation-past-or-present-job-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Past or Present Job Example: anonymized" ] ;
+       fhir:description [ fhir:v "Example of eICR Anonymized Past or Present Job profile (anonymized)" ] ;
+       fhir:example [
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-past-or-present-job"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-past-or-present-job>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -954,6 +969,21 @@
        fhir:name [ fhir:v "eICR Anonymized RelatedPerson" ] ;
        fhir:description [ fhir:v "This RelatedPerson profile represents an anonymized eCR RelatedPerson.\r\n\r\nIt is based on the **RelatedPerson** resource with further constraints to require masking of some data elements." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/RelatedPerson/relatedperson-anon> ;
+         fhir:reference [ fhir:v "RelatedPerson/relatedperson-anon" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized RelatedPerson Example: Anonymized" ] ;
+       fhir:description [ fhir:v "Example of eICR Anonymized RelatedPerson profile (anonymized)" ] ;
+       fhir:example [
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

@@ -1,11 +1,11 @@
 EICRAnonymized : Validation Results
 =========================================
 
-err = 0, warn = 44, info = 66
+err = 0, warn = 45, info = 81
 IG Publisher Version: 1.6.11
-Generated Thu Jun 13 06:54:21 AEST 2024. FHIR version 4.0.1 for ecr.fhir.us.anonymized-eicr#1.0.0 (canonical = http://fhir.org/fhir/us/anonymized-eicr)
+Generated Thu Jun 13 11:19:04 AEST 2024. FHIR version 4.0.1 for ecr.fhir.us.anonymized-eicr#1.0.0 (canonical = http://fhir.org/fhir/us/anonymized-eicr)
  Build Errors : 0 / 0 / 0
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Bundle-bundle-document-zika-anon : 0 / 24 / 98
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Bundle-bundle-document-zika-anon : 0 / 26 / 116
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Composition-composition-zika-anon : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Condition-condition-common-cold-anon : 0 / 1 / 2
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Condition-condition-zika-anon : 0 / 1 / 1
@@ -26,6 +26,7 @@ Generated Thu Jun 13 06:54:21 AEST 2024. FHIR version 4.0.1 for ecr.fhir.us.anon
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-exposure-contact-info-football-game-anon : 0 / 1 / 2
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-lab-result-lymphocytes-anon : 0 / 1 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-odh-usual-work-anon : 0 / 1 / 5
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-past-or-present-job-anon : 0 / 1 / 5
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-pregnancy-status-anon : 0 / 1 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-travel-history-201801-anon : 0 / 1 / 2
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-vaccine-credential-assertion-anon : 0 / 1 / 1
@@ -38,6 +39,7 @@ Generated Thu Jun 13 06:54:21 AEST 2024. FHIR version 4.0.1 for ecr.fhir.us.anon
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Practitioner-practitioner-anon : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\PractitionerRole-practitionerrole-anon : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Procedure-procedure-ecmo-anon : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\RelatedPerson-relatedperson-anon : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\ServiceRequest-servicerequest-zika-anon : 0 / 0 / 2
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-caculated-age-observation : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-composition : 0 / 2 / 14
@@ -48,11 +50,11 @@ Generated Thu Jun 13 06:54:21 AEST 2024. FHIR version 4.0.1 for ecr.fhir.us.anon
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-org-name-addr-tele : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-org-telecom : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-organization : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-past-or-present-job : 0 / 1 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-past-or-present-job : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-patient : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-practitioner : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-practitionerrole : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-relatedperson : 0 / 1 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-relatedperson : 0 / 0 / 1
 </table>
 == n/a ==
 == fsh-generated\resources\Bundle-bundle-document-zika-anon.json ==
@@ -82,35 +84,46 @@ INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[23]: This element do
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[24]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[25]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[26]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[27]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[28]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[29]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[30]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[1].resource/*Condition/condition-zika-anon*/: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[2].resource/*Condition/condition-common-cold-anon*/: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[2].resource/*Condition/condition-common-cold-anon*/.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
-WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[8].resource/*Observation/observation-blood-pressure-anon*/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[9].resource/*Observation/observation-calculated-age-anon*/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[10].resource/*Observation/observation-country-of-nationality-anon*/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[11].resource/*Observation/observation-country-of-residence-anon*/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[12].resource/*Observation/observation-disability-status-anon*/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[13].resource/*Observation/observation-odh-usual-work-anon*/: Best Practice Recommendation: In general, all observations should have a performer
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[13].resource/*Observation/observation-odh-usual-work-anon*/.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.314' could not be found, so the code cannot be validated
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[13].resource/*Observation/observation-odh-usual-work-anon*/.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.315' could not be found, so the code cannot be validated
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[13].resource.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.314' could not be found, so the code cannot be validated
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[13].resource.value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[13].resource.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.315' could not be found, so the code cannot be validated
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[13].resource.component[0].value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[14].resource/*Observation/observation-pregnancy-status-anon*/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource/*Observation/observation-travel-history-201801-anon*/: Best Practice Recommendation: In general, all observations should have a performer
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource/*Observation/observation-travel-history-201801-anon*/.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:1.0.3166.1' could not be found, so the code cannot be validated
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:1.0.3166.1' could not be found, so the code cannot be validated
-WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[16].resource/*Observation/observation-emergency-outbreak-info-anon*/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[17].resource/*Observation/observation-lab-result-lymphocytes-anon*/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[18].resource/*Observation/observation-vaccine-credential-assertion-anon*/: Best Practice Recommendation: In general, all observations should have a performer
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[19].resource/*Organization/organization-acme-laboratory-telecom-anon*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[20].resource/*Organization/organization-telecom-anon*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[21].resource/*Organization/organization-salem-medical-center-anon*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[26].resource/*ServiceRequest/servicerequest-zika-anon*/.category[0].coding[0].code: The code '103693007' is valid but is not active
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[26].resource.category[0].coding[0].code: The code '103693007' is valid but is not active
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle: Can't find 'Device/device-ecmo-anon' in the bundle (Bundle.entry[25].resource.focalDevice[0].manipulated)
-WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[9].resource/*Observation/observation-blood-pressure-anon*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[10].resource/*Observation/observation-calculated-age-anon*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[11].resource/*Observation/observation-country-of-nationality-anon*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[12].resource/*Observation/observation-country-of-residence-anon*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[13].resource/*Observation/observation-disability-status-anon*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[14].resource/*Observation/observation-odh-usual-work-anon*/: Best Practice Recommendation: In general, all observations should have a performer
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[14].resource/*Observation/observation-odh-usual-work-anon*/.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.314' could not be found, so the code cannot be validated
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[14].resource/*Observation/observation-odh-usual-work-anon*/.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.315' could not be found, so the code cannot be validated
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[14].resource.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.314' could not be found, so the code cannot be validated
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[14].resource.value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[14].resource.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.315' could not be found, so the code cannot be validated
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[14].resource.component[0].value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource/*Observation/observation-past-or-present-job-anon*/: Best Practice Recommendation: In general, all observations should have a performer
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource/*Observation/observation-past-or-present-job-anon*/.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/PHOccupationCDCCensus2010' could not be found, so the code cannot be validated
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource/*Observation/observation-past-or-present-job-anon*/.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/PHIndustryCDCCensus2010' could not be found, so the code cannot be validated
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/PHOccupationCDCCensus2010' could not be found, so the code cannot be validated
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource.value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-past-or-present-job|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/PHIndustryCDCCensus2010' could not be found, so the code cannot be validated
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource.component[0].value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-past-or-present-job|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[16].resource/*Observation/observation-pregnancy-status-anon*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[17].resource/*Observation/observation-travel-history-201801-anon*/: Best Practice Recommendation: In general, all observations should have a performer
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[17].resource/*Observation/observation-travel-history-201801-anon*/.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:1.0.3166.1' could not be found, so the code cannot be validated
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[17].resource.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:1.0.3166.1' could not be found, so the code cannot be validated
+WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[18].resource/*Observation/observation-emergency-outbreak-info-anon*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[19].resource/*Observation/observation-lab-result-lymphocytes-anon*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[20].resource/*Observation/observation-vaccine-credential-assertion-anon*/: Best Practice Recommendation: In general, all observations should have a performer
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[21].resource/*Organization/organization-acme-laboratory-telecom-anon*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[22].resource/*Organization/organization-name-tele-addr-anon*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[23].resource/*Organization/organization-telecom-anon*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[24].resource/*Organization/organization-salem-medical-center-anon*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[30].resource/*ServiceRequest/servicerequest-zika-anon*/.category[0].coding[0].code: The code '103693007' is valid but is not active
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[30].resource.category[0].coding[0].code: The code '103693007' is valid but is not active
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle: Can't find 'Patient/patient-anon-not' in the bundle (Bundle.entry[29].resource.patient)
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[9].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[10].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[11].resource: Best Practice Recommendation: In general, all observations should have a performer
@@ -121,6 +134,8 @@ WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[15].resource: Best Pract
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[16].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[17].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[18].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[19].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[20].resource: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated\resources\Composition-composition-zika-anon.json ==
 == fsh-generated\resources\Condition-condition-common-cold-anon.json ==
 INFORMATION: Condition/condition-common-cold-anon: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
@@ -158,6 +173,12 @@ INFORMATION: Observation/observation-odh-usual-work-anon: Observation.value.ofTy
 INFORMATION: Observation/observation-odh-usual-work-anon: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.315' could not be found, so the code cannot be validated
 INFORMATION: Observation/observation-odh-usual-work-anon: Observation.component[0].value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Observation/observation-odh-usual-work-anon: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated\resources\Observation-observation-past-or-present-job-anon.json ==
+INFORMATION: Observation/observation-past-or-present-job-anon: Observation.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/PHOccupationCDCCensus2010' could not be found, so the code cannot be validated
+INFORMATION: Observation/observation-past-or-present-job-anon: Observation.value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-past-or-present-job|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/observation-past-or-present-job-anon: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/PHIndustryCDCCensus2010' could not be found, so the code cannot be validated
+INFORMATION: Observation/observation-past-or-present-job-anon: Observation.component[0].value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-past-or-present-job|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Observation/observation-past-or-present-job-anon: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated\resources\Observation-observation-pregnancy-status-anon.json ==
 WARNING: Observation/observation-pregnancy-status-anon: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated\resources\Observation-observation-travel-history-201801-anon.json ==
@@ -178,6 +199,7 @@ INFORMATION: Organization/organization-telecom-anon: Organization.identifier[0]:
 == fsh-generated\resources\Practitioner-practitioner-anon.json ==
 == fsh-generated\resources\PractitionerRole-practitionerrole-anon.json ==
 == fsh-generated\resources\Procedure-procedure-ecmo-anon.json ==
+== fsh-generated\resources\RelatedPerson-relatedperson-anon.json ==
 == fsh-generated\resources\ServiceRequest-servicerequest-zika-anon.json ==
 INFORMATION: ServiceRequest/servicerequest-zika-anon: ServiceRequest.category[0].coding[0].code: The code '103693007' is valid but is not active
 == fsh-generated\resources\StructureDefinition-caculated-age-observation.json ==
@@ -193,9 +215,9 @@ INFORMATION: StructureDefinition/eicr-anon-composition: StructureDefinition.snap
 INFORMATION: StructureDefinition/eicr-anon-composition: StructureDefinition.differential.element[18].short: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/eicr-anon-composition: StructureDefinition.differential.element[18].constraint[0].human: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/eicr-anon-composition: StructureDefinition.differential.element[18].constraint[0].expression: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/eicr-anon-composition: StructureDefinition.differential.element[31].short: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/eicr-anon-composition: StructureDefinition.differential.element[31].constraint[0].human: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/eicr-anon-composition: StructureDefinition.differential.element[31].constraint[0].expression: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/eicr-anon-composition: StructureDefinition.differential.element[32].short: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/eicr-anon-composition: StructureDefinition.differential.element[32].constraint[0].human: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/eicr-anon-composition: StructureDefinition.differential.element[32].constraint[0].expression: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/eicr-anon-composition: Composition.extension: The extension http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber|5.1.0 is deprecated
 == fsh-generated\resources\StructureDefinition-eicr-anon-document-bundle.json ==
 WARNING: StructureDefinition/eicr-anon-document-bundle: StructureDefinition.snapshot.element[21].constraint[1]: eicr-anon-org-tele: The type specified in ofType() is http://hl7.org/fhir/StructureDefinition/Organization which is not a possible candidate for the existing types () in the expression ofType(Organization).exists(). Check the paths and types to be sure this is what is intended
@@ -207,9 +229,7 @@ WARNING: StructureDefinition/eicr-anon-document-bundle: StructureDefinition.snap
 == fsh-generated\resources\StructureDefinition-eicr-anon-org-telecom.json ==
 == fsh-generated\resources\StructureDefinition-eicr-anon-organization.json ==
 == fsh-generated\resources\StructureDefinition-eicr-anon-past-or-present-job.json ==
-WARNING: StructureDefinition.where(url = 'http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-past-or-present-job'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-eicr-anon-patient.json ==
 == fsh-generated\resources\StructureDefinition-eicr-anon-practitioner.json ==
 == fsh-generated\resources\StructureDefinition-eicr-anon-practitionerrole.json ==
 == fsh-generated\resources\StructureDefinition-eicr-anon-relatedperson.json ==
-WARNING: StructureDefinition.where(url = 'http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson'): The Implementation Guide contains no examples for this profile

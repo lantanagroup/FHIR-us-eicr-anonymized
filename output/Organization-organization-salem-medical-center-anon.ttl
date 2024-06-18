@@ -10,13 +10,13 @@
   fhir:id [ fhir:v "organization-salem-medical-center-anon"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization>
+       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization </b><a name=\"organization-salem-medical-center-anon\"> </a><a name=\"hcorganization-salem-medical-center-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-salem-medical-center-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-organization.html\">eICR Anonymized Organization - Address, Telecom</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/55555555</p><p><b>active</b>: true</p><p><b>name</b>: Salem Medical Center</p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: </p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization </b><a name=\"organization-salem-medical-center-anon\"> </a><a name=\"hcorganization-salem-medical-center-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-salem-medical-center-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-org-tele-addr.html\">eICR Anonymized Organization - Telecom, Address</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/55555555</p><p><b>active</b>: true</p><p><b>name</b>: Salem Medical Center</p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: </p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org.fhir/sid/us-npi"^^xsd:anyURI ] ;

@@ -10,7 +10,7 @@
   "name" : "EICRAnonymized",
   "title" : "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)",
   "status" : "active",
-  "date" : "2024-06-13T11:16:16+10:00",
+  "date" : "2024-06-18T16:49:21+10:00",
   "publisher" : "APHL",
   "jurisdiction" : [{
     "coding" : [{
@@ -645,18 +645,6 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/caculated-age-observation"
-      },
-      "name" : "Calculated Age",
-      "description" : "This Observation profile represents the patient's age, calculated by subtracting the date of birth from the current date.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -664,7 +652,7 @@
       },
       "name" : "Calculated Age Observation Example: anonymized",
       "description" : "Example of Calculated Age Observation (anonymized)",
-      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/caculated-age-observation"
+      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-caculated-age"
     },
     {
       "extension" : [{
@@ -713,6 +701,18 @@
       "name" : "Disability Status Example: anonymized",
       "description" : "Example of Disability Status Profile (anonymized)",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eicr-anon-caculated-age"
+      },
+      "name" : "eICR Anonymized Calculated Age",
+      "description" : "This Observation profile represents the patient's age, calculated by subtracting the date of birth from the current date.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -840,9 +840,21 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/eicr-anon-organization"
+        "reference" : "StructureDefinition/eicr-anon-org-tele"
       },
-      "name" : "eICR Anonymized Organization - Address, Telecom",
+      "name" : "eICR Anonymized Organization - Telecom",
+      "description" : "This Organization profile represents an anonymized eCR Organization - Telecom.\r\n\r\nIt is based on the **US Public Health Organization** profile with further constraints to require masking of telecom.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eicr-anon-org-tele-addr"
+      },
+      "name" : "eICR Anonymized Organization - Telecom, Address",
       "description" : "This Organization profile represents an anonymized eCR Organization.\r\n\r\nIt is based on the **EICRAnonymizedOrgTele** profile with further constraints to require masking of address.",
       "exampleBoolean" : false
     },
@@ -852,22 +864,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/eicr-anon-org-name-addr-tele"
+        "reference" : "StructureDefinition/eicr-anon-org-tele-addr-name"
       },
-      "name" : "eICR Anonymized Organization - Name, Address, Telecom",
-      "description" : "This Organization profile represents an anonymized eCR Organization.\r\n\r\nIt is based on the **EICRAnonymizedOrgAddrTele** profile with further constraints to require masking of name.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/eicr-anon-org-telecom"
-      },
-      "name" : "eICR Anonymized Organization - Telecom",
-      "description" : "This Organization profile represents an anonymized eCR Organization - Telecom.\r\n\r\nIt is based on the **US Public Health Organization** profile with further constraints to require masking of telecom.",
+      "name" : "eICR Anonymized Organization - Telecom, Address, Name",
+      "description" : "This Organization profile represents an anonymized eCR Organization.\r\n\r\nIt is based on the **EICRAnonymizedOrgTeleAddr** profile with further constraints to require masking of name.",
       "exampleBoolean" : false
     },
     {
@@ -880,7 +880,7 @@
       },
       "name" : "eICR Anonymized Organization Example: Salem Medical Center",
       "description" : "Example of eICR Anonymized Organization profile (anonymized, Salem Medical Center)",
-      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization"
+      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr"
     },
     {
       "extension" : [{
@@ -892,7 +892,7 @@
       },
       "name" : "eICR Anonymized Organization Name Telecom Address Example: anonymized (name, telecom, address) Organization",
       "description" : "Example of eICR Anonymized Organization Name Telecom Address profile (anonymized name, telecom, address)",
-      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele"
+      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name"
     },
     {
       "extension" : [{
@@ -904,7 +904,7 @@
       },
       "name" : "eICR Anonymized Organization Telecom Example: anonymized (telecom only) Organization",
       "description" : "Example of eICR Anonymized Organization Telecom profile (anonymized (telecom only), Telecom Anonymized Organization)",
-      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom"
+      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele"
     },
     {
       "extension" : [{
@@ -1137,6 +1137,102 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/documentreference-add-reporting-needs-pdf"
+      },
+      "name" : "RR DocumentReference example: Additional reporting needs",
+      "description" : "Example of RR DocumentReference profile: Additional reporting needs",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/documentreference-zika-follow-up-pdf"
+      },
+      "name" : "RR DocumentReference example: Zika follow-up",
+      "description" : "Example of RR DocumentReference profile: Zika follow-up",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/documentreference-zika-info-pdf"
+      },
+      "name" : "RR DocumentReference example: Zika info",
+      "description" : "Example of RR DocumentReference profile: Zika info",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-rr-relevant-reportable-condition-anon"
+      },
+      "name" : "RR Relevant Reportable Condition Observation Example - anonymized",
+      "description" : "Example of RR Relevant Reportable Condition Observation profile - anonymized",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-rr-reportability-information-anon"
+      },
+      "name" : "RR Reportability Information Observation Example - anonymized",
+      "description" : "Example of RR Reportability Information Observation profile - anonymized",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/organization-rr-responsible-agency-haw"
+      },
+      "name" : "RR Responsible Agency Organization Example: Health Authority West Responsible Agency",
+      "description" : "Example of RR Responsible Agency Organization profile (Health Authority West Responsible Agency)",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/organization-rr-routing-entity-haw"
+      },
+      "name" : "RR Routing Entity Organization Example: Health Authority West Routing Entity",
+      "description" : "Example of RR Routing Entity Organization Example profile (Health Authority West Routing Entity)",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/organization-rr-rules-authoring-agency-haw"
+      },
+      "name" : "RR Rules Authoring Agency Organization Example: Health Authority West Rules Authoring Agency",
+      "description" : "Example of RR Rules Authoring Agency profile (Health Authority West Rules Authoring Agency)",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -1180,7 +1276,7 @@
       },
       "name" : "US PH Organization Example: Acme Labs (anonymized (telecom only))",
       "description" : "Example of US Public Health Organization profile (anonymized (telecom only), Acme Labs)",
-      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom"
+      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele"
     },
     {
       "extension" : [{

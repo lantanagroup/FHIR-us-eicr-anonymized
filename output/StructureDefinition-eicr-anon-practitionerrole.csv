@@ -43,7 +43,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Practitioner that is able to provide the defined services for the organization","Practitioner that is able to provide the defined services for the organization.","","","","","","","","","",,,,,"",,,,"PractitionerRole.practitioner",0,1,"us-core-13
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".player"
-"PractitionerRole.organization","PractitionerRole.organization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization]]}
+"PractitionerRole.organization","PractitionerRole.organization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr]]}
 ","Organization where the roles are available","The organization where the Practitioner performs the roles associated.","","","","","","","","","",,,,,"",,,,"PractitionerRole.organization",0,1,"us-core-13
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".scoper"

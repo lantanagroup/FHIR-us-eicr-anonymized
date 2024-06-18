@@ -1,5 +1,5 @@
 Instance: observation-calculated-age-anon
-InstanceOf: CalculatedAge
+InstanceOf: EICRAnonymizedCalculatedAge
 Title: "Calculated Age Observation Example: anonymized"
 Description: "Example of Calculated Age Observation (anonymized)"
 Usage: #example

@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/fhir/us/anonymized-eicr/DocumentReference/documentreference-add-reporting-needs-pdf> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "documentreference-add-reporting-needs-pdf"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-documentreference"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/ecr/StructureDefinition/rr-documentreference>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DocumentReference </b><a name=\"documentreference-add-reporting-needs-pdf\"> </a><a name=\"hcdocumentreference-add-reporting-needs-pdf\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceDocumentReference &quot;documentreference-add-reporting-needs-pdf&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-rr-documentreference.html\">RR DocumentReference</a></p></div><p><b>Reportability Response Priority Extension</b>: Action requested <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#RRVS16)</span></p><p><b>status</b>: current</p><p><b>type</b>: Public health information <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#83910-0 &quot;Public health Note&quot;)</span></p><p><b>category</b>: Additional reporting needs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#RRVS8)</span></p><p><b>subject</b>: <a href=\"Patient-patient-anon.html\">Patient/patient-anon</a> &quot;&quot;</p><p><b>description</b>: Additional information for the required reporting of Zika must be submitted to State Department of Health immediately. This additional information can be submitted here.</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/pdf</td><td><a href=\"http://statedepartmentofhealth.gov/epi/disease/zika/Supplemental_data_form.pdf\">http://statedepartmentofhealth.gov/epi/disease/zika/Supplemental_data_form.pdf</a></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-priority-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.114222.4.5.274"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "RRVS16" ] ;
+         fhir:display [ fhir:v "Action requested" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:83910-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "83910-0" ] ;
+       fhir:display [ fhir:v "Public health Note" ]
+     ] ) ;
+     fhir:text [ fhir:v "Public health information" ]
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.114222.4.5.274"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "RRVS8" ] ;
+       fhir:display [ fhir:v "Additional reporting needs" ]
+     ] ) ;
+     fhir:text [ fhir:v "Additional reporting needs" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Patient/patient-anon> ;
+     fhir:reference [ fhir:v "Patient/patient-anon" ]
+  ] ; # 
+  fhir:description [ fhir:v "Additional information for the required reporting of Zika must be submitted to State Department of Health immediately. This additional information can be submitted here."] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "application/pdf" ] ;
+       fhir:url [ fhir:v "http://statedepartmentofhealth.gov/epi/disease/zika/Supplemental_data_form.pdf"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

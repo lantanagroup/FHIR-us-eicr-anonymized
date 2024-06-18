@@ -1,6 +1,6 @@
 Profile: EICRAnonymizedOrgTele
 Parent: USPublicHealthOrganization
-Id: eicr-anon-org-telecom
+Id: eicr-anon-org-tele
 Title: "eICR Anonymized Organization - Telecom"
 Description: "This Organization profile represents an anonymized eCR Organization - Telecom.
 

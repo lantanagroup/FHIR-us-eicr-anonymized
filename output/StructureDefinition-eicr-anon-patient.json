@@ -11,7 +11,7 @@
   "title" : "eICR Anonymized Patient",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-06-13T11:16:16+10:00",
+  "date" : "2024-06-18T16:49:21+10:00",
   "publisher" : "APHL",
   "description" : "This Patient profile represents an anonymized eICR Patient.\r\n\r\nIt is based on the **US Public Health Patient** profile with further constraints to require masking of some data elements.",
   "jurisdiction" : [{

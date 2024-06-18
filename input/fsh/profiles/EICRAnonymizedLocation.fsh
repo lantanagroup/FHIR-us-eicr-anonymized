@@ -14,7 +14,7 @@ It is based on the **US Public Health Location** profile with further constraint
 * telecom.extension[dataAbsentReason].value[x] = #masked (exactly)
 * telecom obeys eicr-anon-loc-tel
 
-* managingOrganization only Reference(EICRAnonymizedOrgAddrTele)
+* managingOrganization only Reference(EICRAnonymizedOrgTeleAddr)
 
 Invariant: eicr-anon-loc-tel
 Description: "Location.telecom fields SHALL NOT be present"

@@ -11,8 +11,6 @@ It also adds invariants (constraints) to check that any required anonymized prof
 * insert rsProfileMeta
 
 * entry 1..
-// * entry.resource obeys eicr-anon-sbj
-// * entry.resource obeys eicr-anon-pt
 
 * obeys eicr-anon-patient
 * obeys eicr-anon-prct
@@ -23,23 +21,31 @@ It also adds invariants (constraints) to check that any required anonymized prof
 
 * obeys eicr-anon-exposure
 
+* entry obeys eicr-anon-org-tele
+
 // no references can have a display
 * entry.resource obeys eicr-anon-display
 
-* entry.resource obeys eicr-anon-org-tele
+
+// * entry.resource obeys eicr-anon-org-tele-addr
 
 * entry[slicePublicHealthComposition].resource only EICRAnonymizedComposition
 * entry[slicePublicHealthComposition].resource ^short = "References the Anonymized eICR Composition"
 
 Invariant: eicr-anon-org-tele
-Description: "All Organization resources must conform to EICRAnonymizedTele"
+Description: "All Organization resources (other than PHAs in RR) must conform to EICRAnonymizedOrgTele"
 * severity = #error
-* expression = "descendants().reference.resolve().ofType(Organization).exists() implies descendants().reference.resolve().ofType(Organization).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom')"
+* expression = "resource.ofType(Organization).empty() or resource.ofType(Organization).where(type.coding.code='RR7' or type.coding.code='RR8' or type.coding.code='RR12') or where(resource.ofType(Organization)).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele')"
 
-Invariant: eicr-anon-org
-Description: "All Organization resources must conform to EICRAnonymizedNameAddrTele (other than custodian and employer)"
+Invariant: eicr-anon-org-tele-addr
+Description: "All Organization resources (other than custodian and PHAs in RR) must conform to EICRAnonymizedOrgTeleAddr"
 * severity = #error
-* expression = "descendants().exclude(descendants().select(custodian)).reference.resolve().ofType(Organization).exists() implies descendants().exclude(descendants().select(custodian)).reference.resolve().ofType(Organization).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-org-name-addr-tele')"
+* expression = "descendants().exclude(descendants().select(custodian)).reference.resolve().ofType(Organization).exists() implies descendants().exclude(descendants().select(custodian)).reference.resolve().ofType(Organization).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-org-tele-addr')"
+
+// Invariant: eicr-anon-org-tele-addr
+// Description: "All Organization resources (other than custodian and PHAs in RR) must conform to EICRAnonymizedOrgTeleAddr"
+// * severity = #error
+// * expression = "descendants().exclude(descendants().select(custodian)).reference.resolve().ofType(Organization).exists() implies descendants().exclude(descendants().select(custodian)).reference.resolve().ofType(Organization).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-org-tele-addr')"
 
 Invariant: eicr-anon-patient
 Description: "All Patient resources must conform to EICRAnonymizedPatient profile"
@@ -75,16 +81,6 @@ Invariant: eicr-anon-exposure
 Description: "US Public Health Exposure Contact Information is not allowed"
 * severity = #error
 * expression = "entry.fullUrl.resolve().conformsTo('http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-exposure-contact-information').not()"
-
-// Invariant: eicr-anon-sbj
-// Description: "If subject is present it SHALL reference EICRAnonymizedPatient"
-// * severity = #error
-// * expression = "subject.exists() implies subject.reference.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient')"
-
-// Invariant: eicr-anon-pt
-// Description: "If patient is present it SHALL reference EICRAnonymizedPatient"
-// * severity = #error
-// * expression = "patient.exists() implies patient.reference.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-patient')"
 
 // disallow display
 Invariant: eicr-anon-display

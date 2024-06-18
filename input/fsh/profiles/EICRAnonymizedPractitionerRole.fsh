@@ -10,7 +10,7 @@ It is based on the **US Public Health PractitionerRole** profile with further co
 * insert rsProfileMeta
 
 * practitioner only Reference(EICRAnonymizedPractitioner)
-* organization only Reference(EICRAnonymizedOrgAddrTele)
+* organization only Reference(EICRAnonymizedOrgTeleAddr)
 * location only Reference(EICRAnonymizedLocation)
 
 // * telecom.extension contains $data-absent-reason named dataAbsentReason 1..1 MS

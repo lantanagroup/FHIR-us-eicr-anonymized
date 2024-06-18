@@ -165,8 +165,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-caculated-age-observation.html"
-                  title="StructureDefinition/caculated-age-observation">Calculated Age</a>
+               <a href="StructureDefinition-eicr-anon-caculated-age.html"
+                  title="StructureDefinition/eicr-anon-caculated-age">eICR Anonymized Calculated Age</a>
             </td>
             <td>
 <p>This Observation profile represents the patient’s age, calculated by subtracting the date of birth from the current date.</p>
@@ -229,8 +229,19 @@ It is based on the <strong>US Public Health Location</strong> profile with furth
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-eicr-anon-organization.html"
-                  title="StructureDefinition/eicr-anon-organization">eICR Anonymized Organization - Address, Telecom</a>
+               <a href="StructureDefinition-eicr-anon-org-tele.html"
+                  title="StructureDefinition/eicr-anon-org-tele">eICR Anonymized Organization - Telecom</a>
+            </td>
+            <td>
+<p>This Organization profile represents an anonymized eCR Organization - Telecom.
+
+It is based on the <strong>US Public Health Organization</strong> profile with further constraints to require masking of telecom.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-eicr-anon-org-tele-addr.html"
+                  title="StructureDefinition/eicr-anon-org-tele-addr">eICR Anonymized Organization - Telecom, Address</a>
             </td>
             <td>
 <p>This Organization profile represents an anonymized eCR Organization.
@@ -240,24 +251,13 @@ It is based on the <strong>EICRAnonymizedOrgTele</strong> profile with further c
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-eicr-anon-org-name-addr-tele.html"
-                  title="StructureDefinition/eicr-anon-org-name-addr-tele">eICR Anonymized Organization - Name, Address, Telecom</a>
+               <a href="StructureDefinition-eicr-anon-org-tele-addr-name.html"
+                  title="StructureDefinition/eicr-anon-org-tele-addr-name">eICR Anonymized Organization - Telecom, Address, Name</a>
             </td>
             <td>
 <p>This Organization profile represents an anonymized eCR Organization.
 
-It is based on the <strong>EICRAnonymizedOrgAddrTele</strong> profile with further constraints to require masking of name.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-eicr-anon-org-telecom.html"
-                  title="StructureDefinition/eicr-anon-org-telecom">eICR Anonymized Organization - Telecom</a>
-            </td>
-            <td>
-<p>This Organization profile represents an anonymized eCR Organization - Telecom.
-
-It is based on the <strong>US Public Health Organization</strong> profile with further constraints to require masking of telecom.</p>
+It is based on the <strong>EICRAnonymizedOrgTeleAddr</strong> profile with further constraints to require masking of name.</p>
 </td>
          </tr>
          <tr>
@@ -401,6 +401,78 @@ It is based on the <strong>RelatedPerson</strong> resource with further constrai
             </td>
             <td>
 <p>Example of ODH Usual Work profile (anonymized)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-documentreference-add-reporting-needs-pdf.html"
+                  title="DocumentReference/documentreference-add-reporting-needs-pdf">RR DocumentReference example: Additional reporting needs</a>
+            </td>
+            <td>
+<p>Example of RR DocumentReference profile: Additional reporting needs</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-documentreference-zika-follow-up-pdf.html"
+                  title="DocumentReference/documentreference-zika-follow-up-pdf">RR DocumentReference example: Zika follow-up</a>
+            </td>
+            <td>
+<p>Example of RR DocumentReference profile: Zika follow-up</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-documentreference-zika-info-pdf.html"
+                  title="DocumentReference/documentreference-zika-info-pdf">RR DocumentReference example: Zika info</a>
+            </td>
+            <td>
+<p>Example of RR DocumentReference profile: Zika info</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-rr-relevant-reportable-condition-anon.html"
+                  title="Observation/observation-rr-relevant-reportable-condition-anon">RR Relevant Reportable Condition Observation Example - anonymized</a>
+            </td>
+            <td>
+<p>Example of RR Relevant Reportable Condition Observation profile - anonymized</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-rr-reportability-information-anon.html"
+                  title="Observation/observation-rr-reportability-information-anon">RR Reportability Information Observation Example - anonymized</a>
+            </td>
+            <td>
+<p>Example of RR Reportability Information Observation profile - anonymized</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-organization-rr-responsible-agency-haw.html"
+                  title="Organization/organization-rr-responsible-agency-haw">RR Responsible Agency Organization Example: Health Authority West Responsible Agency</a>
+            </td>
+            <td>
+<p>Example of RR Responsible Agency Organization profile (Health Authority West Responsible Agency)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-organization-rr-routing-entity-haw.html"
+                  title="Organization/organization-rr-routing-entity-haw">RR Routing Entity Organization Example: Health Authority West Routing Entity</a>
+            </td>
+            <td>
+<p>Example of RR Routing Entity Organization Example profile (Health Authority West Routing Entity)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-organization-rr-rules-authoring-agency-haw.html"
+                  title="Organization/organization-rr-rules-authoring-agency-haw">RR Rules Authoring Agency Organization Example: Health Authority West Rules Authoring Agency</a>
+            </td>
+            <td>
+<p>Example of RR Rules Authoring Agency profile (Health Authority West Rules Authoring Agency)</p>
 </td>
          </tr>
          <tr>
@@ -655,7 +727,7 @@ It is based on the <strong>RelatedPerson</strong> resource with further constrai
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 13, 2024 11:16+1000">2024-06-13</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 18, 2024 16:49+1000">2024-06-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

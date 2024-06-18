@@ -43,16 +43,16 @@
     ],
     "Organization": [
       {
-        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele",
-        "title": "eICR Anonymized Organization - Name, Address, Telecom"
-      },
-      {
-        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom",
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele",
         "title": "eICR Anonymized Organization - Telecom"
       },
       {
-        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization",
-        "title": "eICR Anonymized Organization - Address, Telecom"
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr",
+        "title": "eICR Anonymized Organization - Telecom, Address"
+      },
+      {
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name",
+        "title": "eICR Anonymized Organization - Telecom, Address, Name"
       }
     ],
     "Patient": [
@@ -208,6 +208,14 @@
       "Composition.section.entry",
       "Encounter.diagnosis"
     ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-external-resource-extension": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-priority-extension": [
+      "Bundle.entry.resource",
+      "DocumentReference"
+    ],
     "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-date-determined-extension": [
       "Bundle.entry.resource",
       "Bundle.entry.resource.component",
@@ -215,6 +223,18 @@
       "Observation.component"
     ],
     "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-date-recorded-extension": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-extension": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-reason-extension": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-rule-extension": [
       "Bundle.entry.resource",
       "Observation"
     ],

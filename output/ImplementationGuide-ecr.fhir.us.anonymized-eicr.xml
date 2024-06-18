@@ -10,7 +10,7 @@
   <name value="EICRAnonymized"/>
   <title value="CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)"/>
   <status value="active"/>
-  <date value="2024-06-13T11:16:16+10:00"/>
+  <date value="2024-06-18T16:49:21+10:00"/>
   <publisher value="APHL"/>
   <jurisdiction>
     <coding>
@@ -479,17 +479,6 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/caculated-age-observation"/>
-      </reference>
-      <name value="Calculated Age"/>
-      <description value="This Observation profile represents the patient's age, calculated by subtracting the date of birth from the current date."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -497,7 +486,7 @@
       </reference>
       <name value="Calculated Age Observation Example: anonymized"/>
       <description value="Example of Calculated Age Observation (anonymized)"/>
-      <exampleCanonical value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/caculated-age-observation"/>
+      <exampleCanonical value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-caculated-age"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -542,6 +531,17 @@
       <name value="Disability Status Example: anonymized"/>
       <description value="Example of Disability Status Profile (anonymized)"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eicr-anon-caculated-age"/>
+      </reference>
+      <name value="eICR Anonymized Calculated Age"/>
+      <description value="This Observation profile represents the patient's age, calculated by subtracting the date of birth from the current date."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -658,9 +658,20 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/eicr-anon-organization"/>
+        <reference value="StructureDefinition/eicr-anon-org-tele"/>
       </reference>
-      <name value="eICR Anonymized Organization - Address, Telecom"/>
+      <name value="eICR Anonymized Organization - Telecom"/>
+      <description value="This Organization profile represents an anonymized eCR Organization - Telecom.&#xD;&#xA;&#xD;&#xA;It is based on the **US Public Health Organization** profile with further constraints to require masking of telecom."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eicr-anon-org-tele-addr"/>
+      </reference>
+      <name value="eICR Anonymized Organization - Telecom, Address"/>
       <description value="This Organization profile represents an anonymized eCR Organization.&#xD;&#xA;&#xD;&#xA;It is based on the **EICRAnonymizedOrgTele** profile with further constraints to require masking of address."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -669,21 +680,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/eicr-anon-org-name-addr-tele"/>
+        <reference value="StructureDefinition/eicr-anon-org-tele-addr-name"/>
       </reference>
-      <name value="eICR Anonymized Organization - Name, Address, Telecom"/>
-      <description value="This Organization profile represents an anonymized eCR Organization.&#xD;&#xA;&#xD;&#xA;It is based on the **EICRAnonymizedOrgAddrTele** profile with further constraints to require masking of name."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/eicr-anon-org-telecom"/>
-      </reference>
-      <name value="eICR Anonymized Organization - Telecom"/>
-      <description value="This Organization profile represents an anonymized eCR Organization - Telecom.&#xD;&#xA;&#xD;&#xA;It is based on the **US Public Health Organization** profile with further constraints to require masking of telecom."/>
+      <name value="eICR Anonymized Organization - Telecom, Address, Name"/>
+      <description value="This Organization profile represents an anonymized eCR Organization.&#xD;&#xA;&#xD;&#xA;It is based on the **EICRAnonymizedOrgTeleAddr** profile with further constraints to require masking of name."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -695,7 +695,7 @@
       </reference>
       <name value="eICR Anonymized Organization Example: Salem Medical Center"/>
       <description value="Example of eICR Anonymized Organization profile (anonymized, Salem Medical Center)"/>
-      <exampleCanonical value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization"/>
+      <exampleCanonical value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -706,7 +706,7 @@
       </reference>
       <name value="eICR Anonymized Organization Name Telecom Address Example: anonymized (name, telecom, address) Organization"/>
       <description value="Example of eICR Anonymized Organization Name Telecom Address profile (anonymized name, telecom, address)"/>
-      <exampleCanonical value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele"/>
+      <exampleCanonical value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -717,7 +717,7 @@
       </reference>
       <name value="eICR Anonymized Organization Telecom Example: anonymized (telecom only) Organization"/>
       <description value="Example of eICR Anonymized Organization Telecom profile (anonymized (telecom only), Telecom Anonymized Organization)"/>
-      <exampleCanonical value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom"/>
+      <exampleCanonical value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -930,6 +930,94 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/documentreference-add-reporting-needs-pdf"/>
+      </reference>
+      <name value="RR DocumentReference example: Additional reporting needs"/>
+      <description value="Example of RR DocumentReference profile: Additional reporting needs"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/documentreference-zika-follow-up-pdf"/>
+      </reference>
+      <name value="RR DocumentReference example: Zika follow-up"/>
+      <description value="Example of RR DocumentReference profile: Zika follow-up"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/documentreference-zika-info-pdf"/>
+      </reference>
+      <name value="RR DocumentReference example: Zika info"/>
+      <description value="Example of RR DocumentReference profile: Zika info"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-rr-relevant-reportable-condition-anon"/>
+      </reference>
+      <name value="RR Relevant Reportable Condition Observation Example - anonymized"/>
+      <description value="Example of RR Relevant Reportable Condition Observation profile - anonymized"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-rr-reportability-information-anon"/>
+      </reference>
+      <name value="RR Reportability Information Observation Example - anonymized"/>
+      <description value="Example of RR Reportability Information Observation profile - anonymized"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organization-rr-responsible-agency-haw"/>
+      </reference>
+      <name value="RR Responsible Agency Organization Example: Health Authority West Responsible Agency"/>
+      <description value="Example of RR Responsible Agency Organization profile (Health Authority West Responsible Agency)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organization-rr-routing-entity-haw"/>
+      </reference>
+      <name value="RR Routing Entity Organization Example: Health Authority West Routing Entity"/>
+      <description value="Example of RR Routing Entity Organization Example profile (Health Authority West Routing Entity)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organization-rr-rules-authoring-agency-haw"/>
+      </reference>
+      <name value="RR Rules Authoring Agency Organization Example: Health Authority West Rules Authoring Agency"/>
+      <description value="Example of RR Rules Authoring Agency profile (Health Authority West Rules Authoring Agency)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -970,7 +1058,7 @@
       </reference>
       <name value="US PH Organization Example: Acme Labs (anonymized (telecom only))"/>
       <description value="Example of US Public Health Organization profile (anonymized (telecom only), Acme Labs)"/>
-      <exampleCanonical value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom"/>
+      <exampleCanonical value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

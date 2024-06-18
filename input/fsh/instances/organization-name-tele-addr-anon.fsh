@@ -1,5 +1,5 @@
 Instance: organization-name-tele-addr-anon
-InstanceOf: EICRAnonymizedOrgNameAddrTele
+InstanceOf: EICRAnonymizedOrgTeleAddrName
 Title: "eICR Anonymized Organization Name Telecom Address Example: anonymized (name, telecom, address) Organization"
 Description: "Example of eICR Anonymized Organization Name Telecom Address profile (anonymized name, telecom, address)"
 Usage: #example

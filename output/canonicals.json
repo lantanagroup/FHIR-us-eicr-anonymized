@@ -7,11 +7,11 @@
     "name" : "EICRAnonymized"
   },
   {
-    "id" : "caculated-age-observation",
+    "id" : "eicr-anon-caculated-age",
     "type" : "StructureDefinition",
-    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/caculated-age-observation",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-caculated-age",
     "version" : "1.0.0",
-    "name" : "CalculatedAge"
+    "name" : "EICRAnonymizedCalculatedAge"
   },
   {
     "id" : "eicr-anon-composition",
@@ -49,25 +49,25 @@
     "name" : "EICRAnonymizedLocation"
   },
   {
-    "id" : "eicr-anon-org-name-addr-tele",
+    "id" : "eicr-anon-org-tele",
     "type" : "StructureDefinition",
-    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele",
-    "version" : "1.0.0",
-    "name" : "EICRAnonymizedOrgNameAddrTele"
-  },
-  {
-    "id" : "eicr-anon-org-telecom",
-    "type" : "StructureDefinition",
-    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele",
     "version" : "1.0.0",
     "name" : "EICRAnonymizedOrgTele"
   },
   {
-    "id" : "eicr-anon-organization",
+    "id" : "eicr-anon-org-tele-addr",
     "type" : "StructureDefinition",
-    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr",
     "version" : "1.0.0",
-    "name" : "EICRAnonymizedOrgAddrTele"
+    "name" : "EICRAnonymizedOrgTeleAddr"
+  },
+  {
+    "id" : "eicr-anon-org-tele-addr-name",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name",
+    "version" : "1.0.0",
+    "name" : "EICRAnonymizedOrgTeleAddrName"
   },
   {
     "id" : "eicr-anon-past-or-present-job",

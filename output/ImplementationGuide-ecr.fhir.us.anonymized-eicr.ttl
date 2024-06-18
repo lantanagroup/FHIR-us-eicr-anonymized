@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "EICRAnonymized"] ; # 
   fhir:title [ fhir:v "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-06-13T11:16:16+10:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-18T16:49:21+10:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "APHL"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
@@ -561,18 +561,6 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/caculated-age-observation> ;
-         fhir:reference [ fhir:v "StructureDefinition/caculated-age-observation" ]
-       ] ;
-       fhir:name [ fhir:v "Calculated Age" ] ;
-       fhir:description [ fhir:v "This Observation profile represents the patient's age, calculated by subtracting the date of birth from the current date." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
@@ -582,8 +570,8 @@
        fhir:name [ fhir:v "Calculated Age Observation Example: anonymized" ] ;
        fhir:description [ fhir:v "Example of Calculated Age Observation (anonymized)" ] ;
        fhir:example [
-         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/caculated-age-observation"^^xsd:anyURI ;
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/caculated-age-observation>
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-caculated-age"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-caculated-age>
        ]
      ] [
        fhir:extension ( [
@@ -633,6 +621,18 @@
        fhir:name [ fhir:v "Disability Status Example: anonymized" ] ;
        fhir:description [ fhir:v "Example of Disability Status Profile (anonymized)" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-caculated-age> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-caculated-age" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Calculated Age" ] ;
+       fhir:description [ fhir:v "This Observation profile represents the patient's age, calculated by subtracting the date of birth from the current date." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -774,10 +774,22 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization> ;
-         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-organization" ]
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-org-tele" ]
        ] ;
-       fhir:name [ fhir:v "eICR Anonymized Organization - Address, Telecom" ] ;
+       fhir:name [ fhir:v "eICR Anonymized Organization - Telecom" ] ;
+       fhir:description [ fhir:v "This Organization profile represents an anonymized eCR Organization - Telecom.\r\n\r\nIt is based on the **US Public Health Organization** profile with further constraints to require masking of telecom." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-org-tele-addr" ]
+       ] ;
+       fhir:name [ fhir:v "eICR Anonymized Organization - Telecom, Address" ] ;
        fhir:description [ fhir:v "This Organization profile represents an anonymized eCR Organization.\r\n\r\nIt is based on the **EICRAnonymizedOrgTele** profile with further constraints to require masking of address." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -786,23 +798,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele> ;
-         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-org-name-addr-tele" ]
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name> ;
+         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-org-tele-addr-name" ]
        ] ;
-       fhir:name [ fhir:v "eICR Anonymized Organization - Name, Address, Telecom" ] ;
-       fhir:description [ fhir:v "This Organization profile represents an anonymized eCR Organization.\r\n\r\nIt is based on the **EICRAnonymizedOrgAddrTele** profile with further constraints to require masking of name." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom> ;
-         fhir:reference [ fhir:v "StructureDefinition/eicr-anon-org-telecom" ]
-       ] ;
-       fhir:name [ fhir:v "eICR Anonymized Organization - Telecom" ] ;
-       fhir:description [ fhir:v "This Organization profile represents an anonymized eCR Organization - Telecom.\r\n\r\nIt is based on the **US Public Health Organization** profile with further constraints to require masking of telecom." ] ;
+       fhir:name [ fhir:v "eICR Anonymized Organization - Telecom, Address, Name" ] ;
+       fhir:description [ fhir:v "This Organization profile represents an anonymized eCR Organization.\r\n\r\nIt is based on the **EICRAnonymizedOrgTeleAddr** profile with further constraints to require masking of name." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -816,8 +816,8 @@
        fhir:name [ fhir:v "eICR Anonymized Organization Example: Salem Medical Center" ] ;
        fhir:description [ fhir:v "Example of eICR Anonymized Organization profile (anonymized, Salem Medical Center)" ] ;
        fhir:example [
-         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization"^^xsd:anyURI ;
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization>
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr>
        ]
      ] [
        fhir:extension ( [
@@ -831,8 +831,8 @@
        fhir:name [ fhir:v "eICR Anonymized Organization Name Telecom Address Example: anonymized (name, telecom, address) Organization" ] ;
        fhir:description [ fhir:v "Example of eICR Anonymized Organization Name Telecom Address profile (anonymized name, telecom, address)" ] ;
        fhir:example [
-         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele"^^xsd:anyURI ;
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele>
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name>
        ]
      ] [
        fhir:extension ( [
@@ -846,8 +846,8 @@
        fhir:name [ fhir:v "eICR Anonymized Organization Telecom Example: anonymized (telecom only) Organization" ] ;
        fhir:description [ fhir:v "Example of eICR Anonymized Organization Telecom profile (anonymized (telecom only), Telecom Anonymized Organization)" ] ;
        fhir:example [
-         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom"^^xsd:anyURI ;
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom>
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele>
        ]
      ] [
        fhir:extension ( [
@@ -1095,6 +1095,102 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DocumentReference" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/DocumentReference/documentreference-add-reporting-needs-pdf> ;
+         fhir:reference [ fhir:v "DocumentReference/documentreference-add-reporting-needs-pdf" ]
+       ] ;
+       fhir:name [ fhir:v "RR DocumentReference example: Additional reporting needs" ] ;
+       fhir:description [ fhir:v "Example of RR DocumentReference profile: Additional reporting needs" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DocumentReference" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/DocumentReference/documentreference-zika-follow-up-pdf> ;
+         fhir:reference [ fhir:v "DocumentReference/documentreference-zika-follow-up-pdf" ]
+       ] ;
+       fhir:name [ fhir:v "RR DocumentReference example: Zika follow-up" ] ;
+       fhir:description [ fhir:v "Example of RR DocumentReference profile: Zika follow-up" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DocumentReference" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/DocumentReference/documentreference-zika-info-pdf> ;
+         fhir:reference [ fhir:v "DocumentReference/documentreference-zika-info-pdf" ]
+       ] ;
+       fhir:name [ fhir:v "RR DocumentReference example: Zika info" ] ;
+       fhir:description [ fhir:v "Example of RR DocumentReference profile: Zika info" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-rr-relevant-reportable-condition-anon> ;
+         fhir:reference [ fhir:v "Observation/observation-rr-relevant-reportable-condition-anon" ]
+       ] ;
+       fhir:name [ fhir:v "RR Relevant Reportable Condition Observation Example - anonymized" ] ;
+       fhir:description [ fhir:v "Example of RR Relevant Reportable Condition Observation profile - anonymized" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-rr-reportability-information-anon> ;
+         fhir:reference [ fhir:v "Observation/observation-rr-reportability-information-anon" ]
+       ] ;
+       fhir:name [ fhir:v "RR Reportability Information Observation Example - anonymized" ] ;
+       fhir:description [ fhir:v "Example of RR Reportability Information Observation profile - anonymized" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-rr-responsible-agency-haw> ;
+         fhir:reference [ fhir:v "Organization/organization-rr-responsible-agency-haw" ]
+       ] ;
+       fhir:name [ fhir:v "RR Responsible Agency Organization Example: Health Authority West Responsible Agency" ] ;
+       fhir:description [ fhir:v "Example of RR Responsible Agency Organization profile (Health Authority West Responsible Agency)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-rr-routing-entity-haw> ;
+         fhir:reference [ fhir:v "Organization/organization-rr-routing-entity-haw" ]
+       ] ;
+       fhir:name [ fhir:v "RR Routing Entity Organization Example: Health Authority West Routing Entity" ] ;
+       fhir:description [ fhir:v "Example of RR Routing Entity Organization Example profile (Health Authority West Routing Entity)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-rr-rules-authoring-agency-haw> ;
+         fhir:reference [ fhir:v "Organization/organization-rr-rules-authoring-agency-haw" ]
+       ] ;
+       fhir:name [ fhir:v "RR Rules Authoring Agency Organization Example: Health Authority West Rules Authoring Agency" ] ;
+       fhir:description [ fhir:v "Example of RR Rules Authoring Agency profile (Health Authority West Rules Authoring Agency)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
@@ -1140,8 +1236,8 @@
        fhir:name [ fhir:v "US PH Organization Example: Acme Labs (anonymized (telecom only))" ] ;
        fhir:description [ fhir:v "Example of US Public Health Organization profile (anonymized (telecom only), Acme Labs)" ] ;
        fhir:example [
-         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom"^^xsd:anyURI ;
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom>
+         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele"^^xsd:anyURI ;
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele>
        ]
      ] [
        fhir:extension ( [

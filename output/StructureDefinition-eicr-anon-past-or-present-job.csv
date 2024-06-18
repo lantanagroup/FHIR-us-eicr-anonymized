@@ -41,7 +41,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
 ","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"Observation.extension:employer.value[x]:valueReference","Observation.extension.value[x]","valueReference","","",1,1,"","","","Reference {[]} {[CanonicalType[http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson], CanonicalType[http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele]]}
+"Observation.extension:employer.value[x]:valueReference","Observation.extension.value[x]","valueReference","","",1,1,"","","","Reference {[]} {[CanonicalType[http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson], CanonicalType[http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name]]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Observation.extension:ODHIsCurrentJobExtension","Observation.extension","ODHIsCurrentJobExtension","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension]]} {[]}

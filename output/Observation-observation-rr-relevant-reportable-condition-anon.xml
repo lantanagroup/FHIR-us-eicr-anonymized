@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-rr-relevant-reportable-condition-anon"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/rr-relevant-reportable-condition-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation </b><a name="observation-rr-relevant-reportable-condition-anon"> </a><a name="hcobservation-rr-relevant-reportable-condition-anon"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceObservation &quot;observation-rr-relevant-reportable-condition-anon&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-rr-relevant-reportable-condition-observation.html">RR Relevant Reportable Condition Observation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Condition <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#64572001; <a href="https://loinc.org/">LOINC</a>#75323-6)</span></p><p><b>subject</b>: <a href="Patient-patient-anon.html">Patient/patient-anon</a> &quot;&quot;</p><p><b>value</b>: Zika virus disease (disorder) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#3928002)</span></p><p><b>hasMember</b>: <a href="Observation-observation-rr-reportability-information-anon.html">Observation/observation-rr-reportability-information-anon</a></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="64572001"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="75323-6"/>
+    </coding>
+    <text value="Condition"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-anon"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="3928002"/>
+      <display value="Zika virus disease (disorder)"/>
+    </coding>
+  </valueCodeableConcept>
+  <hasMember>
+    <reference value="Observation/observation-rr-reportability-information-anon"/>
+  </hasMember>
+</Observation>

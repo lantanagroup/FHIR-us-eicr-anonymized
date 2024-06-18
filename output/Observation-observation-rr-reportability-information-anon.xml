@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-rr-reportability-information-anon"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation </b><a name="observation-rr-reportability-information-anon"> </a><a name="hcobservation-rr-reportability-information-anon"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceObservation &quot;observation-rr-reportability-information-anon&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-rr-reportability-information-observation.html">RR Reportability Information Observation</a></p></div><p><b>US Public Health Determination of Reportability Extension</b>: Reportable <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#RRVS1)</span></p><p><b>US Public Health Determination of Reportability Reason Extension</b>: Condition is reportable</p><p><b>US Public Health Determination of Reportability Rule Extension</b>: Description of rule used in reportability determination</p><p><b>RR External Resource Extension</b>: <a href="DocumentReference-documentreference-add-reporting-needs-pdf.html">DocumentReference/documentreference-add-reporting-needs-pdf</a></p><p><b>RR External Resource Extension</b>: <a href="DocumentReference-documentreference-zika-info-pdf.html">DocumentReference/documentreference-zika-info-pdf</a></p><p><b>RR External Resource Extension</b>: <a href="DocumentReference-documentreference-zika-follow-up-pdf.html">DocumentReference/documentreference-zika-follow-up-pdf</a></p><p><b>status</b>: final</p><p><b>code</b>: Patient home address <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#RRVS5)</span></p><p><b>subject</b>: <a href="Patient-patient-anon.html">Patient/patient-anon</a> &quot;&quot;</p><p><b>performer</b>: </p><ul><li><a href="Organization-organization-rr-rules-authoring-agency-haw.html">Organization/organization-rr-rules-authoring-agency-haw</a> &quot;Health Authority West Rules Authoring Agency&quot;</li><li><a href="Organization-organization-rr-routing-entity-haw.html">Organization/organization-rr-routing-entity-haw</a> &quot;Health Authority West Routing Entity&quot;</li><li><a href="Organization-organization-rr-responsible-agency-haw.html">Organization/organization-rr-responsible-agency-haw</a> &quot;Health Authority West Responsible Agency&quot;</li></ul><h3>Components</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td>Timeframe to report (urgency) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#RR4)</span></td><td>24 H<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeH = 'H')</span></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-extension">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+        <code value="RRVS1"/>
+        <display value="Reportable"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-reason-extension">
+    <valueString value="Condition is reportable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-rule-extension">
+    <valueString value="Description of rule used in reportability determination"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/ecr/StructureDefinition/rr-external-resource-extension">
+    <valueReference>
+      <reference value="DocumentReference/documentreference-add-reporting-needs-pdf"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/ecr/StructureDefinition/rr-external-resource-extension">
+    <valueReference>
+      <reference value="DocumentReference/documentreference-zika-info-pdf"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/ecr/StructureDefinition/rr-external-resource-extension">
+    <valueReference>
+      <reference value="DocumentReference/documentreference-zika-follow-up-pdf"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+      <code value="RRVS5"/>
+      <display value="Patient home address"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-anon"/>
+  </subject>
+  <performer>
+    <reference value="Organization/organization-rr-rules-authoring-agency-haw"/>
+  </performer>
+  <performer>
+    <reference value="Organization/organization-rr-routing-entity-haw"/>
+  </performer>
+  <performer>
+    <reference value="Organization/organization-rr-responsible-agency-haw"/>
+  </performer>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.114222.4.5.232"/>
+        <code value="RR4"/>
+        <display value="Timeframe to report (urgency)"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="24"/>
+      <unit value="H"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="H"/>
+    </valueQuantity>
+  </component>
+</Observation>

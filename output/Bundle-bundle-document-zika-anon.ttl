@@ -115,6 +115,30 @@
   ] [
      fhir:fullUrl [ fhir:v "http://www.example.org/fhir/ServiceRequest/servicerequest-zika-anon"^^xsd:anyURI ] ;
      fhir:resource ( <http://www.example.org/fhir/ServiceRequest/servicerequest-zika-anon> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-rr-relevant-reportable-condition-anon"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-rr-relevant-reportable-condition-anon> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-rr-reportability-information-anon"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-rr-reportability-information-anon> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Organization/organization-rr-responsible-agency-haw"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Organization/organization-rr-responsible-agency-haw> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Organization/organization-rr-routing-entity-haw"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Organization/organization-rr-routing-entity-haw> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Organization/organization-rr-rules-authoring-agency-haw"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Organization/organization-rr-rules-authoring-agency-haw> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/DocumentReference/documentreference-add-reporting-needs-pdf"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/DocumentReference/documentreference-add-reporting-needs-pdf> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/DocumentReference/documentreference-zika-follow-up-pdf"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/DocumentReference/documentreference-zika-follow-up-pdf> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/DocumentReference/documentreference-zika-info-pdf"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/DocumentReference/documentreference-zika-info-pdf> )
   ] ) . # 
 
 <http://www.example.org/fhir/Composition/composition-zika-anon> a fhir:Composition ;
@@ -183,7 +207,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Reason for Visit Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Reason for visit Narrative</div>(<div title=\"code\">29299-5</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td colspan=\"2\" lang=\"en-US\" class=\"text-no-entries\"><p>Reason for Visit: Bad cough</p></td></tr></table></div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Reason for Visit Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Reason for visit Narrative</div><div title=\"code\">(29299-5)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td colspan=\"2\" lang=\"en-US\" class=\"text-no-entries\"><p>Reason for Visit: Bad cough</p></td></tr></table></div>"
      ]
   ] [
      fhir:title [ fhir:v "Chief Complaint" ] ;
@@ -197,7 +221,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Chief complaint Narrative - Reported</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Chief complaint Narrative - Reported</div>(<div title=\"code\">10154-3</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td colspan=\"2\" lang=\"en-US\" class=\"text-no-entries\"><p>Chief Complaint: Bad cough</p></td></tr></table></div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Chief complaint Narrative - Reported</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Chief complaint Narrative - Reported</div><div title=\"code\">(10154-3)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td colspan=\"2\" lang=\"en-US\" class=\"text-no-entries\"><p>Chief Complaint: Bad cough</p></td></tr></table></div>"
      ]
   ] [
      fhir:title [ fhir:v "History of Present Illness Section" ] ;
@@ -214,7 +238,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "masked" ]
        ] ) ;
-       fhir:status [ fhir:v "generated" ] ;
+       fhir:status [ fhir:v "empty" ] ;
        fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>"
      ]
   ] [
@@ -229,7 +253,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Problems Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Problem list - Reported</div>(<div title=\"code\">11450-4</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Condition-condition-common-cold-anon.html\">Common cold (disorder)</a><table><tr><td style=\"font-weight: bold\">id</td><td><div title=\"id\">condition-eicr-anonymized-common-cold</div></td></tr><tr><td style=\"font-weight: bold\">meta</td><td><table><tr><td style=\"font-weight: bold\">versionId</td><td><div title=\"versionId\">15</div></td></tr><tr><td style=\"font-weight: bold\">lastUpdated</td><td><div title=\"lastUpdated\">2019-10-10T21:21:49.000-04:00</div></td></tr><tr><td style=\"font-weight: bold\">profile</td><td><div title=\"profile\">http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-condition</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">category</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Problem List Item</div>(<div title=\"code\">problem-list-item</div>)</li><li><div title=\"system\"><a href=\"http://terminology.hl7.org/CodeSystem/condition-category\">http://terminology.hl7.org/CodeSystem/condition-category</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Common cold (disorder)</div>(<div title=\"code\">82272006</div>)</li><li><div title=\"system\"><a href=\"http://snomed.info/sct\">http://snomed.info/sct</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">subject</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Patient-patient-anon.html\">anonymized</a></li></ul></td></tr><tr><td style=\"font-weight: bold\">onsetDateTime</td><td><div title=\"onsetDateTime\">2017-09-23</div></td></tr><tr><td style=\"font-weight: bold\">asserter</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Practitioner-practitioner-anon.html\">anonymized</a></li></ul></td></tr></table></td></tr></table></div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Problems Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Problem list - Reported</div><div title=\"code\">(11450-4)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Condition-condition-common-cold-anon.html\">Common cold (disorder)</a></td></tr></table></div>"
      ] ;
      fhir:entry ( [
        fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Condition/condition-common-cold-anon> ;
@@ -247,7 +271,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Medications Administered Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Medication administered Narrative</div>(<div title=\"code\">29549-3</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"MedicationAdministration-medicationadministration-azithromycin-anon.html\">Azithromycin 500 MG Oral Tablet</a><table><tr><td style=\"font-weight: bold\">id</td><td><div title=\"id\">medicationadministration-azithromycin-anon</div></td></tr><tr><td style=\"font-weight: bold\">meta</td><td><table><tr><td style=\"font-weight: bold\">versionId</td><td><div title=\"versionId\">10</div></td></tr><tr><td style=\"font-weight: bold\">lastUpdated</td><td><div title=\"lastUpdated\">2019-10-05T03:11:22.000-04:00</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">status</td><td><div title=\"status\">completed</div></td></tr><tr><td style=\"font-weight: bold\">medicationCodeableConcept</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"text\">Azithromycin 500 MG Oral Tablet</div></li><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Azithromycin 500 MG Oral Tablet</div>(<div title=\"code\">248656</div>)</li><li><div title=\"system\"><a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\">http://www.nlm.nih.gov/research/umls/rxnorm</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">subject</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Patient-patient-anon.html\">anonymized</a></li></ul></td></tr><tr><td style=\"font-weight: bold\">effectivePeriod</td><td><table><tr><td style=\"font-weight: bold\">start</td><td><div title=\"start\">2018-03-07</div></td></tr><tr><td style=\"font-weight: bold\">end</td><td><div title=\"end\">2018-03-07</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">dosage</td><td><table><tr><td style=\"font-weight: bold\">route</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Oral Route</div>(<div title=\"code\">26643006</div>)</li><li><div title=\"system\"><a href=\"http://snomed.info/sct\">http://snomed.info/sct</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">method</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Swallow - dosing instruction imperative (qualifier value)</div>(<div title=\"code\">421521009</div>)</li><li><div title=\"system\"><a href=\"http://snomed.info/sct\">http://snomed.info/sct</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">dose</td><td><table><tr><td style=\"font-weight: bold\">value</td><td><div title=\"value\">2</div></td></tr><tr><td style=\"font-weight: bold\">unit</td><td><div title=\"unit\">TAB</div></td></tr><tr><td style=\"font-weight: bold\">system</td><td><div title=\"system\"><a href=\"http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm\">http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm</a></div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><div title=\"code\">TAB</div></td></tr></table></td></tr></table></td></tr></table></td></tr></table></div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Medications Administered Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Medication administered Narrative</div><div title=\"code\">(29549-3)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"MedicationAdministration-medicationadministration-azithromycin-anon.html\">Azithromycin 500 MG Oral Tablet</a></td></tr></table></div>"
      ] ;
      fhir:entry ( [
        fhir:link <http://fhir.org/fhir/us/anonymized-eicr/MedicationAdministration/medicationadministration-azithromycin-anon> ;
@@ -265,7 +289,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Results Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Relevant Dx tests/lab data</div>(<div title=\"code\">30954-2</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-lab-result-lymphocytes-anon.html\">Lymphocytes [#/​volume] in Blood by Automated count - Interpretation: High</a><table><tr><td style=\"font-weight: bold\">id</td><td><div title=\"id\">observation-us-ph-lab-result-anonymized-lymphocytes</div></td></tr><tr><td style=\"font-weight: bold\">meta</td><td><table><tr><td style=\"font-weight: bold\">versionId</td><td><div title=\"versionId\">10</div></td></tr><tr><td style=\"font-weight: bold\">lastUpdated</td><td><div title=\"lastUpdated\">2019-10-05T02:50:13.000-04:00</div></td></tr><tr><td style=\"font-weight: bold\">profile</td><td><div title=\"profile\">http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-lab-result-observation</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">status</td><td><div title=\"status\">final</div></td></tr><tr><td style=\"font-weight: bold\">category</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"text\">Laboratory</div></li><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Laboratory</div>(<div title=\"code\">laboratory</div>)</li><li><div title=\"system\"><a href=\"http://terminology.hl7.org/CodeSystem/observation-category\">http://terminology.hl7.org/CodeSystem/observation-category</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Lymphocytes [#/volume] in Blood by Automated count</div>(<div title=\"code\">731-0</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">subject</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Patient-patient-anon.html\">anonymized</a></li></ul></td></tr><tr><td style=\"font-weight: bold\">effectiveDateTime</td><td><div title=\"effectiveDateTime\">2018-03-07</div></td></tr><tr><td style=\"font-weight: bold\">valueQuantity</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"value\">5.2</div></li><li><div title=\"system\"><a href=\"http://unitsofmeasure.org\">http://unitsofmeasure.org</a></div></li><li><div title=\"code\">10*3/uL</div></li></ul></td></tr><tr><td style=\"font-weight: bold\">interpretation</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">High</div>(<div title=\"code\">H</div>)</li><li><div title=\"system\"><a href=\"http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation\">http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">referenceRange</td><td><table><tr><td style=\"font-weight: bold\">low</td><td><table><tr><td style=\"font-weight: bold\">value</td><td><div title=\"value\">1</div></td></tr><tr><td style=\"font-weight: bold\">system</td><td><div title=\"system\"><a href=\"http://unitsofmeasure.org\">http://unitsofmeasure.org</a></div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><div title=\"code\">10*3/uL</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">high</td><td><table><tr><td style=\"font-weight: bold\">value</td><td><div title=\"value\">4.8</div></td></tr><tr><td style=\"font-weight: bold\">system</td><td><div title=\"system\"><a href=\"http://unitsofmeasure.org\">http://unitsofmeasure.org</a></div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><div title=\"code\">10*3/uL</div></td></tr></table></td></tr></table></td></tr></table></td></tr></table></div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Results Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Relevant Dx tests/lab data</div><div title=\"code\">(30954-2)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-lab-result-lymphocytes-anon.html\">Lymphocytes [#/​volume] in Blood by Automated count - Interpretation: High</a></td></tr></table></div>"
      ] ;
      fhir:entry ( [
        fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-lab-result-lymphocytes-anon> ;
@@ -283,7 +307,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Social History Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Social history Narrative</div>(<div title=\"code\">29762-2</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-travel-history-201801-anon.html\">eICR Travel History: anonymized 2018-01</a><table><tr><td style=\"font-weight: bold\">id</td><td><div title=\"id\">observation-travel-history-anonymized-201801</div></td></tr><tr><td style=\"font-weight: bold\">meta</td><td><table><tr><td style=\"font-weight: bold\">versionId</td><td><div title=\"versionId\">11</div></td></tr><tr><td style=\"font-weight: bold\">lastUpdated</td><td><div title=\"lastUpdated\">2019-10-05T03:15:42.000-04:00</div></td></tr><tr><td style=\"font-weight: bold\">profile</td><td><div title=\"profile\">http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-travel-history</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">status</td><td><div title=\"status\">final</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"text\">Travel History</div></li><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Travel</div>(<div title=\"code\">420008001</div>)</li><li><div title=\"system\"><a href=\"http://snomed.info/sct\">http://snomed.info/sct</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">subject</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Patient-patient-anon.html\">anonymized</a></li></ul></td></tr><tr><td style=\"font-weight: bold\">effectivePeriod</td><td><table><tr><td style=\"font-weight: bold\">start</td><td><div title=\"start\">2018-01-15</div></td></tr><tr><td style=\"font-weight: bold\">end</td><td><div title=\"end\">2018-01-30</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">component</td><td><table><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Location</div>(<div title=\"code\">LOC</div>)</li><li><div title=\"system\"><a href=\"http://terminology.hl7.org/CodeSystem/v3-ParticipationType\">http://terminology.hl7.org/CodeSystem/v3-ParticipationType</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">valueCodeableConcept</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Fiji</div>(<div title=\"code\">FJI</div>)</li><li><div title=\"system\">urn:iso:std:iso:3166</div></li></ul></li></ul></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">component</td><td><table><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Location</div>(<div title=\"code\">LOC</div>)</li><li><div title=\"system\"><a href=\"http://terminology.hl7.org/CodeSystem/v3-ParticipationType\">http://terminology.hl7.org/CodeSystem/v3-ParticipationType</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">valueCodeableConcept</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Vanuatu</div>(<div title=\"code\">VUT</div>)</li><li><div title=\"system\"><a href=\"https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=1.0.3166.1\">https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=1.0.3166.1</a></div></li></ul></li></ul></td></tr></table></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-odh-usual-work-anon.html\">ODH Usual Work Example</a><table><tr><td style=\"font-weight: bold\">id</td><td><div title=\"id\">observation-odh-usual-work-anonymized</div></td></tr><tr><td style=\"font-weight: bold\">meta</td><td><table><tr><td style=\"font-weight: bold\">versionId</td><td><div title=\"versionId\">2</div></td></tr><tr><td style=\"font-weight: bold\">lastUpdated</td><td><div title=\"lastUpdated\">2019-10-20T10:53:14.000-04:00</div></td></tr><tr><td style=\"font-weight: bold\">profile</td><td><div title=\"profile\">http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">status</td><td><div title=\"status\">final</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">History of Usual occupation</div>(<div title=\"code\">21843-8</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">subject</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Patient-patient-anon.html\">anonymized</a></li></ul></td></tr><tr><td style=\"font-weight: bold\">effectivePeriod</td><td><table><tr><td style=\"font-weight: bold\">start</td><td><div title=\"start\">2015-01-01</div></td></tr><tr><td style=\"font-weight: bold\">end</td><td><div title=\"end\">2018-03-07</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">valueCodeableConcept</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Human Resources Managers</div>(<div title=\"code\">0136</div>)</li><li><div title=\"system\"><a href=\"https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.314\">https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.314</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">component</td><td><table><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">History of Usual industry</div>(<div title=\"code\">21844-6</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">valueCodeableConcept</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Hospitals</div>(<div title=\"code\">8190</div>)</li><li><div title=\"system\"><a href=\"https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.315\">https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.315</a></div></li></ul></li></ul></td></tr></table></td></tr></table></td></tr></table></div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Social History Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Social history Narrative</div><div title=\"code\">(29762-2)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-travel-history-201801-anon.html\">eICR Travel History: anonymized 2018-01</a></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-odh-usual-work-anon.html\">ODH Usual Work: anonymized</a></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-past-or-present-job-anon.html\">:eICR Anonymized Past or Present Job</a></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-disability-status-anon.html\">:US Public Health Disability Status: anonymized</a></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-country-of-nationality-anon.html\">:eICR Country of Nationality: anonymized</a></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-country-of-residence-anon.html\">:eICR Country of Residence: anonymized</a></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-calculated-age-anon.html\">:eICR Calculated Age: anonymized</a></td></tr></table></div>"
      ] ;
      fhir:entry ( [
        fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-travel-history-201801-anon> ;
@@ -319,7 +343,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Admission Medications Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Medications on admission (narrative)</div>(<div title=\"code\">42346-7</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"MedicationAdministration-medicationadministration-naloxone-response-anon.html\">naloxone HCl 0.4 MG in 1 ML Injection</a></td></tr></table></div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Admission Medications Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Medications on admission (narrative)</div><div title=\"code\">(42346-7)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"MedicationAdministration-medicationadministration-naloxone-response-anon.html\">naloxone HCl 0.4 MG in 1 ML Injection</a></td></tr></table></div>"
      ] ;
      fhir:entry ( [
        fhir:link <http://fhir.org/fhir/us/anonymized-eicr/MedicationAdministration/medicationadministration-naloxone-response-anon> ;
@@ -337,7 +361,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Medications Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">History of Medication use Narrative</div>(<div title=\"code\">10160-0</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"MedicationAdministration-medicationadministration-azithromycin-anon.html\">Azithromycin 500 MG Oral Tablet</a></td></tr></table></div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Medications Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">History of Medication use Narrative</div><div title=\"code\">(10160-0)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"MedicationAdministration-medicationadministration-azithromycin-anon.html\">Azithromycin 500 MG Oral Tablet</a></td></tr></table></div>"
      ] ;
      fhir:entry ( [
        fhir:link <http://fhir.org/fhir/us/anonymized-eicr/MedicationAdministration/medicationadministration-azithromycin-anon> ;
@@ -355,7 +379,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Plan of Treatment Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Plan of care note</div>(<div title=\"code\">18776-5</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><b>Trigger code</b></li><li>Trigger Code:</li><li>Trigger Code Display:</li><li>Trigger Code System:</li><li>Trigger Code Value Set: urn:oid:2.16.840.1.114222.4.11.7508</li><li>Trigger Code Value Set Version: 19/05/2018</li></ul><a href=\"ServiceRequest-servicerequest-zika-anon.html\">Request for Zika virus envelope (E) gene [Presence] in Serum by Probe and target amplification method</a><table><tr><td style=\"font-weight: bold\">id</td><td><div title=\"id\">servicerequest-eicr-zika</div></td></tr><tr><td style=\"font-weight: bold\">meta</td><td><table><tr><td style=\"font-weight: bold\">versionId</td><td><div title=\"versionId\">9</div></td></tr><tr><td style=\"font-weight: bold\">lastUpdated</td><td><div title=\"lastUpdated\">2019-10-23T13:56:36.000-04:00</div></td></tr><tr><td style=\"font-weight: bold\">profile</td><td><div title=\"profile\">http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-servicerequest</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">status</td><td><div title=\"status\">completed</div></td></tr><tr><td style=\"font-weight: bold\">intent</td><td><div title=\"intent\">order</div></td></tr><tr><td style=\"font-weight: bold\">category</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"text\">Diagnostics Procedure</div></li><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Diagnostic procedure (procedure)</div>(<div title=\"code\">103693007</div>)</li><li><div title=\"system\"><a href=\"http://snomed.info/sct\">http://snomed.info/sct</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"text\">Zika RT-PCR</div></li><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Zika virus envelope E gene [Presence] in Serum by NAA with probe detection</div>(<div title=\"code\">80825-3</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">subject</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Patient-patient-anon.html\">anonymized</a></li></ul></td></tr><tr><td style=\"font-weight: bold\">performer</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Organization-organization-acme-laboratory-telecom-anon.html\">Acme Labs</a></li></ul></td></tr></table></td></tr></table></div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Plan of Treatment Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Plan of care note</div><div title=\"code\">(18776-5)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><b>Trigger code</b></li><li>Trigger Code:</li><li>Trigger Code Display:</li><li>Trigger Code System:</li><li>Trigger Code Value Set: urn:oid:2.16.840.1.114222.4.11.7508</li><li>Trigger Code Value Set Version: 19/05/2018</li></ul><a href=\"ServiceRequest-servicerequest-zika-anon.html\">Request for Zika virus envelope (E) gene [Presence] in Serum by Probe and target amplification method</a></td></tr></table></div>"
      ] ;
      fhir:entry ( [
        fhir:link <http://fhir.org/fhir/us/anonymized-eicr/ServiceRequest/servicerequest-zika-anon> ;
@@ -391,7 +415,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Immunizations Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">History of Immunization Narrative</div>(<div title=\"code\">11369-6</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Immunization-immunization-pneumo-anon.html\">pneumococcal polysaccharide vaccine</a></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-vaccine-credential-assertion-anon.html\">Vaccine Credential Patient Assertion Observation Example</a></td></tr></table></div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Immunizations Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">History of Immunization Narrative</div><div title=\"code\">(11369-6)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Immunization-immunization-pneumo-anon.html\">pneumococcal polysaccharide vaccine</a></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-vaccine-credential-assertion-anon.html\">Vaccine Credential Patient Assertion Observation Example</a></td></tr></table></div>"
      ] ;
      fhir:entry ( [
        fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Immunization/immunization-pneumo-anon> ;
@@ -412,7 +436,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Procedures Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">History of Procedures Document</div>(<div title=\"code\">47519-4</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Procedure-procedure-ecmo-anon.html\">Extracorporeal membrane oxygenation (procedure)</a></td></tr></table></div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Procedures Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">History of Procedures Document</div><div title=\"code\">(47519-4)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Procedure-procedure-ecmo-anon.html\">Extracorporeal membrane oxygenation (procedure)</a></td></tr></table></div>"
      ] ;
      fhir:entry ( [
        fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Procedure/procedure-ecmo-anon> ;
@@ -430,7 +454,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Vital Signs Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Vital signs</div>(<div title=\"code\">8716-3</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-blood-pressure-anon.html\">Blood pressure systolic and diastolic</a></td></tr></table></div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Vital Signs Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Vital signs</div><div title=\"code\">(8716-3)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-blood-pressure-anon.html\">Blood pressure systolic and diastolic</a></td></tr></table></div>"
      ] ;
      fhir:entry ( [
        fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-blood-pressure-anon> ;
@@ -448,7 +472,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Pregnancy Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Pregnancy summary Document</div>(<div title=\"code\">90767-5</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-pregnancy-status-anon.html\">eICR Pregnancy Status Example</a><table><tr><td style=\"font-weight: bold\">id</td><td><div title=\"id\">observation-pregnancy-status-anonymized</div></td></tr><tr><td style=\"font-weight: bold\">meta</td><td><table><tr><td style=\"font-weight: bold\">versionId</td><td><div title=\"versionId\">13</div></td></tr><tr><td style=\"font-weight: bold\">lastUpdated</td><td><div title=\"lastUpdated\">2019-10-05T03:15:42.000-04:00</div></td></tr><tr><td style=\"font-weight: bold\">profile</td><td><div title=\"profile\">http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-pregnancy-status-observation</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">us-ph-date-recorded-extension</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"valueDateTime\">2017-10-01</div></li></ul></td></tr><tr><td style=\"font-weight: bold\">date-determined-extension</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"valueDateTime\">2017-10-01</div></li></ul></td></tr><tr><td style=\"font-weight: bold\">status</td><td><div title=\"status\">final</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Pregnancy Status</div>(<div title=\"code\">82810-3</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">subject</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Patient-patient-anon.html\">anonymized</a></li></ul></td></tr><tr><td style=\"font-weight: bold\">effectivePeriod</td><td><table><tr><td style=\"font-weight: bold\">start</td><td><div title=\"start\">2017-08-26</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">valueCodeableConcept</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Pregnancy (finding)</div>(<div title=\"code\">77386006</div>)</li><li><div title=\"system\"><a href=\"http://snomed.info/sct\">http://snomed.info/sct</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">method</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Diagnostic ultrasonography (procedure)</div>(<div title=\"code\">16310003</div>)</li><li><div title=\"system\"><a href=\"http://snomed.info/sct\">http://snomed.info/sct</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">component</td><td><table><tr><td style=\"font-weight: bold\">date-determined-extension</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"valueDateTime\">2017-10-01</div></li></ul></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Gestational age Estimated from patient reported estimated date of conception</div>(<div title=\"code\">53691-2</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">valueQuantity</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"value\">143</div></li><li><div title=\"unit\">d</div></li></ul></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">component</td><td><table><tr><td style=\"font-weight: bold\">date-determined-extension</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"valueDateTime\">2017-10-01</div></li></ul></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Delivery date Estimated from date fundal height reaches umb</div>(<div title=\"code\">57064-8</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">valueDateTime</td><td><div title=\"valueDateTime\">2018-05-01</div></td></tr></table></td></tr></table></td></tr></table></div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Pregnancy Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Pregnancy summary Document</div><div title=\"code\">(90767-5)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-pregnancy-status-anon.html\">eICR Pregnancy Status: anonymized</a></td></tr></table></div>"
      ] ;
      fhir:entry ( [
        fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-pregnancy-status-anon> ;
@@ -466,7 +490,7 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Emergency Outbreak Information Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Public health Note</div>(<div title=\"code\">83910-0</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-emergency-outbreak-info-anon.html\">US Public Health Emergency Outbreak Information Example</a></td></tr></table></div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Emergency Outbreak Information Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Public health Note</div><div title=\"code\">(83910-0)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-emergency-outbreak-info-anon.html\">US Public Health Emergency Outbreak Information Example</a></td></tr></table></div>"
      ] ;
      fhir:entry ( [
        fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-emergency-outbreak-info-anon> ;
@@ -487,7 +511,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "masked" ]
        ] ) ;
-       fhir:status [ fhir:v "generated" ] ;
+       fhir:status [ fhir:v "empty" ] ;
        fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>"
      ]
   ] [
@@ -502,8 +526,26 @@
      ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Review of Systems Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Review of Systems Section Narrative</div>(<div title=\"code\">10187-3</div>)</li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td colspan=\"2\" lang=\"en-US\" class=\"text-no-entries\"><p>Review of systems</p></td></tr></table></div>"
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Review of Systems Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Review of Systems Section Narrative</div><div title=\"code\">(10187-3)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td colspan=\"2\" lang=\"en-US\" class=\"text-no-entries\"><p>Review of systems section text</p></td></tr></table></div>"
      ]
+  ] [
+     fhir:title [ fhir:v "Reportability Response Information Section" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:88085-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "88085-6" ] ;
+         fhir:display [ fhir:v "Reportability response report Document Public health" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Reportability Response Information Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Reportability response report Document Public health</div><div title=\"code\">(88085-6)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-rr-relevant-reportable-condition-anon.html\">RR Relevant Reportable Condition: anonymized</a></td></tr></table></div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-rr-relevant-reportable-condition-anon> ;
+       fhir:reference [ fhir:v "Observation/observation-rr-relevant-reportable-condition-anon" ]
+     ] )
   ] ) . # 
 
 <http://www.example.org/fhir/Condition/condition-zika-anon> a fhir:Condition ;
@@ -970,13 +1012,13 @@
   fhir:id [ fhir:v "observation-calculated-age-anon"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/caculated-age-observation"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/caculated-age-observation>
+       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-caculated-age"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-caculated-age>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-calculated-age-anon\"> </a><p><b>Generated Narrative: Observation </b><a name=\"observation-calculated-age-anon\"> </a><a name=\"hcobservation-calculated-age-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;observation-calculated-age-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-caculated-age-observation.html\">Calculated Age</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Age calculated <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29553-5)</span></p><p><b>subject</b>: See on this page: Patient/patient-anon</p><p><b>effective</b>: 2024-06-02 22:13:23+0000</p><p><b>value</b>: 35 year<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-calculated-age-anon\"> </a><p><b>Generated Narrative: Observation </b><a name=\"observation-calculated-age-anon\"> </a><a name=\"hcobservation-calculated-age-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;observation-calculated-age-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-caculated-age.html\">eICR Anonymized Calculated Age</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Age calculated <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29553-5)</span></p><p><b>subject</b>: See on this page: Patient/patient-anon</p><p><b>effective</b>: 2024-06-02 22:13:23+0000</p><p><b>value</b>: 35 year<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
@@ -1513,13 +1555,13 @@
   fhir:id [ fhir:v "organization-acme-laboratory-telecom-anon"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom>
+       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-acme-laboratory-telecom-anon\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-acme-laboratory-telecom-anon\"> </a><a name=\"hcorganization-acme-laboratory-telecom-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-acme-laboratory-telecom-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-org-telecom.html\">eICR Anonymized Organization - Telecom</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/1144221999</p><p><b>active</b>: true</p><p><b>type</b>: outpatient laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#OUTLAB)</span></p><p><b>name</b>: Acme Labs</p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: 7777 Laboratory Drive Ann Arbor MI 99999 </p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-acme-laboratory-telecom-anon\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-acme-laboratory-telecom-anon\"> </a><a name=\"hcorganization-acme-laboratory-telecom-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-acme-laboratory-telecom-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-org-tele.html\">eICR Anonymized Organization - Telecom</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/1144221999</p><p><b>active</b>: true</p><p><b>type</b>: outpatient laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#OUTLAB)</span></p><p><b>name</b>: Acme Labs</p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: 7777 Laboratory Drive Ann Arbor MI 99999 </p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org.fhir/sid/us-npi"^^xsd:anyURI ] ;
@@ -1551,13 +1593,13 @@
   fhir:id [ fhir:v "organization-name-tele-addr-anon"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-name-addr-tele>
+       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-name-tele-addr-anon\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-name-tele-addr-anon\"> </a><a name=\"hcorganization-name-tele-addr-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-name-tele-addr-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-org-name-addr-tele.html\">eICR Anonymized Organization - Name, Address, Telecom</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/7878787878</p><p><b>active</b>: true</p><p><b>name</b>: Absent because : <code>masked</code></p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: </p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-name-tele-addr-anon\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-name-tele-addr-anon\"> </a><a name=\"hcorganization-name-tele-addr-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-name-tele-addr-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-org-tele-addr-name.html\">eICR Anonymized Organization - Telecom, Address, Name</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/7878787878</p><p><b>active</b>: true</p><p><b>name</b>: Absent because : <code>masked</code></p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: </p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org.fhir/sid/us-npi"^^xsd:anyURI ] ;
@@ -1587,13 +1629,13 @@
   fhir:id [ fhir:v "organization-telecom-anon"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-telecom>
+       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-telecom-anon\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-telecom-anon\"> </a><a name=\"hcorganization-telecom-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-telecom-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-org-telecom.html\">eICR Anonymized Organization - Telecom</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/545454545</p><p><b>active</b>: true</p><p><b>name</b>: Telecom Anonymized Organization</p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: 11111 Custodian Drive Ann Arbor MI 99999 </p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-telecom-anon\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-telecom-anon\"> </a><a name=\"hcorganization-telecom-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-telecom-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-org-tele.html\">eICR Anonymized Organization - Telecom</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/545454545</p><p><b>active</b>: true</p><p><b>name</b>: Telecom Anonymized Organization</p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: 11111 Custodian Drive Ann Arbor MI 99999 </p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org.fhir/sid/us-npi"^^xsd:anyURI ] ;
@@ -1618,13 +1660,13 @@
   fhir:id [ fhir:v "organization-salem-medical-center-anon"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization>
+       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-salem-medical-center-anon\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-salem-medical-center-anon\"> </a><a name=\"hcorganization-salem-medical-center-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-salem-medical-center-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-organization.html\">eICR Anonymized Organization - Address, Telecom</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/55555555</p><p><b>active</b>: true</p><p><b>name</b>: Salem Medical Center</p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: </p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-salem-medical-center-anon\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-salem-medical-center-anon\"> </a><a name=\"hcorganization-salem-medical-center-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-salem-medical-center-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-org-tele-addr.html\">eICR Anonymized Organization - Telecom, Address</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/55555555</p><p><b>active</b>: true</p><p><b>name</b>: Salem Medical Center</p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: </p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org.fhir/sid/us-npi"^^xsd:anyURI ] ;
@@ -1966,7 +2008,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_relatedperson-anon\"> </a><p><b>Generated Narrative: RelatedPerson </b><a name=\"relatedperson-anon\"> </a><a name=\"hcrelatedperson-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceRelatedPerson &quot;relatedperson-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-relatedperson.html\">eICR Anonymized RelatedPerson</a></p></div><p><b>identifier</b>: ?ngen-9?</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"Patient-patient-anon-not.html\">Patient/patient-anon-not</a> &quot; EVERYWOMAN&quot;</p><p><b>relationship</b>: Gestational Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#GESTM &quot;gestational mother&quot;)</span></p><p><b>name</b>: </p><p><b>telecom</b>: -unknown-</p><p><b>gender</b>: female</p><p><b>birthDate</b>: Absent because : <code>masked</code></p><p><b>address</b>: </p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_relatedperson-anon\"> </a><p><b>Generated Narrative: RelatedPerson </b><a name=\"relatedperson-anon\"> </a><a name=\"hcrelatedperson-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceRelatedPerson &quot;relatedperson-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-relatedperson.html\">eICR Anonymized RelatedPerson</a></p></div><p><b>identifier</b>: ?ngen-9?</p><p><b>active</b>: true</p><p><b>patient</b>: See on this page: Patient/patient-anon</p><p><b>relationship</b>: Gestational Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#GESTM &quot;gestational mother&quot;)</span></p><p><b>name</b>: </p><p><b>telecom</b>: -unknown-</p><p><b>gender</b>: female</p><p><b>birthDate</b>: Absent because : <code>masked</code></p><p><b>address</b>: </p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:extension ( [
@@ -1976,8 +2018,8 @@
   ] ) ; # 
   fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:patient [
-     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Patient/patient-anon-not> ;
-     fhir:reference [ fhir:v "Patient/patient-anon-not" ]
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Patient/patient-anon> ;
+     fhir:reference [ fhir:v "Patient/patient-anon" ]
   ] ; # 
   fhir:relationship ( [
      fhir:coding ( [
@@ -2056,6 +2098,414 @@
   fhir:performer ( [
      fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-acme-laboratory-telecom-anon> ;
      fhir:reference [ fhir:v "Organization/organization-acme-laboratory-telecom-anon" ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/observation-rr-relevant-reportable-condition-anon> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-rr-relevant-reportable-condition-anon"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-relevant-reportable-condition-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/ecr/StructureDefinition/rr-relevant-reportable-condition-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-rr-relevant-reportable-condition-anon\"> </a><p><b>Generated Narrative: Observation </b><a name=\"observation-rr-relevant-reportable-condition-anon\"> </a><a name=\"hcobservation-rr-relevant-reportable-condition-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;observation-rr-relevant-reportable-condition-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-rr-relevant-reportable-condition-observation.html\">RR Relevant Reportable Condition Observation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Condition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#64572001; <a href=\"https://loinc.org/\">LOINC</a>#75323-6)</span></p><p><b>subject</b>: See on this page: Patient/patient-anon</p><p><b>value</b>: Zika virus disease (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#3928002)</span></p><p><b>hasMember</b>: See on this page: Observation/observation-rr-reportability-information-anon</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:64572001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "64572001" ]
+     ] [
+       a loinc:75323-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "75323-6" ]
+     ] ) ;
+     fhir:text [ fhir:v "Condition" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Patient/patient-anon> ;
+     fhir:reference [ fhir:v "Patient/patient-anon" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:3928002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3928002" ] ;
+       fhir:display [ fhir:v "Zika virus disease (disorder)" ]
+     ] )
+  ] ; # 
+  fhir:hasMember ( [
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-rr-reportability-information-anon> ;
+     fhir:reference [ fhir:v "Observation/observation-rr-reportability-information-anon" ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/observation-rr-reportability-information-anon> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-rr-reportability-information-anon"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-rr-reportability-information-anon\"> </a><p><b>Generated Narrative: Observation </b><a name=\"observation-rr-reportability-information-anon\"> </a><a name=\"hcobservation-rr-reportability-information-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;observation-rr-reportability-information-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-rr-reportability-information-observation.html\">RR Reportability Information Observation</a></p></div><p><b>US Public Health Determination of Reportability Extension</b>: Reportable <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#RRVS1)</span></p><p><b>US Public Health Determination of Reportability Reason Extension</b>: Condition is reportable</p><p><b>US Public Health Determination of Reportability Rule Extension</b>: Description of rule used in reportability determination</p><p><b>RR External Resource Extension</b>: See on this page: DocumentReference/documentreference-add-reporting-needs-pdf</p><p><b>RR External Resource Extension</b>: See on this page: DocumentReference/documentreference-zika-info-pdf</p><p><b>RR External Resource Extension</b>: See on this page: DocumentReference/documentreference-zika-follow-up-pdf</p><p><b>status</b>: final</p><p><b>code</b>: Patient home address <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#RRVS5)</span></p><p><b>subject</b>: See on this page: Patient/patient-anon</p><p><b>performer</b>: </p><ul><li>See on this page: Organization/organization-rr-rules-authoring-agency-haw</li><li>See on this page: Organization/organization-rr-routing-entity-haw</li><li>See on this page: Organization/organization-rr-responsible-agency-haw</li></ul><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Timeframe to report (urgency) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#RR4)</span></td><td>24 H<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeH = 'H')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.114222.4.5.274"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "RRVS1" ] ;
+         fhir:display [ fhir:v "Reportable" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-reason-extension"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Condition is reportable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-rule-extension"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Description of rule used in reportability determination" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-external-resource-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/DocumentReference/documentreference-add-reporting-needs-pdf> ;
+       fhir:reference [ fhir:v "DocumentReference/documentreference-add-reporting-needs-pdf" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-external-resource-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/DocumentReference/documentreference-zika-info-pdf> ;
+       fhir:reference [ fhir:v "DocumentReference/documentreference-zika-info-pdf" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-external-resource-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/DocumentReference/documentreference-zika-follow-up-pdf> ;
+       fhir:reference [ fhir:v "DocumentReference/documentreference-zika-follow-up-pdf" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.114222.4.5.274"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "RRVS5" ] ;
+       fhir:display [ fhir:v "Patient home address" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Patient/patient-anon> ;
+     fhir:reference [ fhir:v "Patient/patient-anon" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-rr-rules-authoring-agency-haw> ;
+     fhir:reference [ fhir:v "Organization/organization-rr-rules-authoring-agency-haw" ]
+  ] [
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-rr-routing-entity-haw> ;
+     fhir:reference [ fhir:v "Organization/organization-rr-routing-entity-haw" ]
+  ] [
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-rr-responsible-agency-haw> ;
+     fhir:reference [ fhir:v "Organization/organization-rr-responsible-agency-haw" ]
+  ] ) ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.114222.4.5.232"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "RR4" ] ;
+         fhir:display [ fhir:v "Timeframe to report (urgency)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "24"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "H" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "H" ]
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Organization/organization-rr-responsible-agency-haw> a fhir:Organization ;
+  fhir:id [ fhir:v "organization-rr-responsible-agency-haw"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-responsible-agency-organization"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/ecr/StructureDefinition/rr-responsible-agency-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-rr-responsible-agency-haw\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-rr-responsible-agency-haw\"> </a><a name=\"hcorganization-rr-responsible-agency-haw\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-rr-responsible-agency-haw&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-rr-responsible-agency-organization.html\">Responsible Agency Organization</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/99996666</p><p><b>active</b>: true</p><p><b>type</b>: Responsible Agency <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#RR8)</span></p><p><b>name</b>: Health Authority West Responsible Agency</p><p><b>telecom</b>: <a href=\"tel:+1-555-555-3555\">+1-555-555-3555</a>, <a href=\"mailto:mail@healthauthoritywest.gov\">mail@healthauthoritywest.gov</a></p><p><b>address</b>: 7777 Health Authority Drive Ann Arbor MI 99999 </p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org.fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "99996666" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.114222.4.5.232"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "RR8" ] ;
+       fhir:display [ fhir:v "Responsible Agency" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Health Authority West Responsible Agency"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+1-555-555-3555" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mail@healthauthoritywest.gov" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "7777 Health Authority Drive" ] ) ;
+     fhir:city [ fhir:v "Ann Arbor" ] ;
+     fhir:state [ fhir:v "MI" ] ;
+     fhir:postalCode [ fhir:v "99999" ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Organization/organization-rr-routing-entity-haw> a fhir:Organization ;
+  fhir:id [ fhir:v "organization-rr-routing-entity-haw"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-routing-entity-organization"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/ecr/StructureDefinition/rr-routing-entity-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-rr-routing-entity-haw\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-rr-routing-entity-haw\"> </a><a name=\"hcorganization-rr-routing-entity-haw\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-rr-routing-entity-haw&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-rr-routing-entity-organization.html\">Routing Entity Organization</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/43214321</p><p><b>active</b>: true</p><p><b>type</b>: Routing Entity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#RR7)</span></p><p><b>name</b>: Health Authority West Routing Entity</p><p><b>telecom</b>: <a href=\"tel:+1-555-555-3555\">+1-555-555-3555</a>, <a href=\"mailto:mail@healthauthoritywest.gov\">mail@healthauthoritywest.gov</a></p><p><b>address</b>: 7777 Health Authority Drive Ann Arbor MI 99999 </p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org.fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "43214321" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.114222.4.5.232"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "RR7" ] ;
+       fhir:display [ fhir:v "Routing Entity" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Health Authority West Routing Entity"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+1-555-555-3555" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mail@healthauthoritywest.gov" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "7777 Health Authority Drive" ] ) ;
+     fhir:city [ fhir:v "Ann Arbor" ] ;
+     fhir:state [ fhir:v "MI" ] ;
+     fhir:postalCode [ fhir:v "99999" ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Organization/organization-rr-rules-authoring-agency-haw> a fhir:Organization ;
+  fhir:id [ fhir:v "organization-rr-rules-authoring-agency-haw"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-rules-authoring-agency-organization"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/ecr/StructureDefinition/rr-rules-authoring-agency-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-rr-rules-authoring-agency-haw\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-rr-rules-authoring-agency-haw\"> </a><a name=\"hcorganization-rr-rules-authoring-agency-haw\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-rr-rules-authoring-agency-haw&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-rr-rules-authoring-agency-organization.html\">Rules Authoring Agency Organization</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/12341234</p><p><b>active</b>: true</p><p><b>type</b>: Rules Authoring Agency <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#RR12)</span></p><p><b>name</b>: Health Authority West Rules Authoring Agency</p><p><b>telecom</b>: <a href=\"tel:+1-555-555-3555\">+1-555-555-3555</a>, <a href=\"mailto:mail@healthauthoritywest.gov\">mail@healthauthoritywest.gov</a></p><p><b>address</b>: 7777 Health Authority Drive Ann Arbor MI 99999 </p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org.fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12341234" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.114222.4.5.232"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "RR12" ] ;
+       fhir:display [ fhir:v "Rules Authoring Agency" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Health Authority West Rules Authoring Agency"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+1-555-555-3555" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mail@healthauthoritywest.gov" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "7777 Health Authority Drive" ] ) ;
+     fhir:city [ fhir:v "Ann Arbor" ] ;
+     fhir:state [ fhir:v "MI" ] ;
+     fhir:postalCode [ fhir:v "99999" ]
+  ] ) . # 
+
+<http://www.example.org/fhir/DocumentReference/documentreference-add-reporting-needs-pdf> a fhir:DocumentReference ;
+  fhir:id [ fhir:v "documentreference-add-reporting-needs-pdf"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-documentreference"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/ecr/StructureDefinition/rr-documentreference>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_documentreference-add-reporting-needs-pdf\"> </a><p><b>Generated Narrative: DocumentReference </b><a name=\"documentreference-add-reporting-needs-pdf\"> </a><a name=\"hcdocumentreference-add-reporting-needs-pdf\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceDocumentReference &quot;documentreference-add-reporting-needs-pdf&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-rr-documentreference.html\">RR DocumentReference</a></p></div><p><b>Reportability Response Priority Extension</b>: Action requested <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#RRVS16)</span></p><p><b>status</b>: current</p><p><b>type</b>: Public health information <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#83910-0 &quot;Public health Note&quot;)</span></p><p><b>category</b>: Additional reporting needs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#RRVS8)</span></p><p><b>subject</b>: See on this page: Patient/patient-anon</p><p><b>description</b>: Additional information for the required reporting of Zika must be submitted to State Department of Health immediately. This additional information can be submitted here.</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/pdf</td><td><a href=\"http://statedepartmentofhealth.gov/epi/disease/zika/Supplemental_data_form.pdf\">http://statedepartmentofhealth.gov/epi/disease/zika/Supplemental_data_form.pdf</a></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-priority-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.114222.4.5.274"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "RRVS16" ] ;
+         fhir:display [ fhir:v "Action requested" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:83910-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "83910-0" ] ;
+       fhir:display [ fhir:v "Public health Note" ]
+     ] ) ;
+     fhir:text [ fhir:v "Public health information" ]
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.114222.4.5.274"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "RRVS8" ] ;
+       fhir:display [ fhir:v "Additional reporting needs" ]
+     ] ) ;
+     fhir:text [ fhir:v "Additional reporting needs" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Patient/patient-anon> ;
+     fhir:reference [ fhir:v "Patient/patient-anon" ]
+  ] ; # 
+  fhir:description [ fhir:v "Additional information for the required reporting of Zika must be submitted to State Department of Health immediately. This additional information can be submitted here."] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "application/pdf" ] ;
+       fhir:url [ fhir:v "http://statedepartmentofhealth.gov/epi/disease/zika/Supplemental_data_form.pdf"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/DocumentReference/documentreference-zika-follow-up-pdf> a fhir:DocumentReference ;
+  fhir:id [ fhir:v "documentreference-zika-follow-up-pdf"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-documentreference"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/ecr/StructureDefinition/rr-documentreference>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_documentreference-zika-follow-up-pdf\"> </a><p><b>Generated Narrative: DocumentReference </b><a name=\"documentreference-zika-follow-up-pdf\"> </a><a name=\"hcdocumentreference-zika-follow-up-pdf\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceDocumentReference &quot;documentreference-zika-follow-up-pdf&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-rr-documentreference.html\">RR DocumentReference</a></p></div><p><b>Reportability Response Priority Extension</b>: Immediate action requested <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#RRVS18)</span></p><p><b>status</b>: current</p><p><b>type</b>: Public health information <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#83910-0 &quot;Public health Note&quot;)</span></p><p><b>category</b>: Treatment and/or prevention <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#RRVS10)</span></p><p><b>subject</b>: See on this page: Patient/patient-anon</p><p><b>description</b>: Zika has particular risks for pregnant women. Follow-up guidance for pregnant women and couples who are planning pregnancy.</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/pdf</td><td><a href=\"http://statedepartmentofhealth.gov/epi/diseases/zika/Zika_Virus_Testing_Guidance.pdf\">http://statedepartmentofhealth.gov/epi/diseases/zika/Zika_Virus_Testing_Guidance.pdf</a></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-priority-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.114222.4.5.274"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "RRVS18" ] ;
+         fhir:display [ fhir:v "Immediate action requested" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:83910-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "83910-0" ] ;
+       fhir:display [ fhir:v "Public health Note" ]
+     ] ) ;
+     fhir:text [ fhir:v "Public health information" ]
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.114222.4.5.274"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "RRVS10" ] ;
+       fhir:display [ fhir:v "Treatment and/or prevention" ]
+     ] ) ;
+     fhir:text [ fhir:v "Treatment and/or prevention" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Patient/patient-anon> ;
+     fhir:reference [ fhir:v "Patient/patient-anon" ]
+  ] ; # 
+  fhir:description [ fhir:v "Zika has particular risks for pregnant women. Follow-up guidance for pregnant women and couples who are planning pregnancy."] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "application/pdf" ] ;
+       fhir:url [ fhir:v "http://statedepartmentofhealth.gov/epi/diseases/zika/Zika_Virus_Testing_Guidance.pdf"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/DocumentReference/documentreference-zika-info-pdf> a fhir:DocumentReference ;
+  fhir:id [ fhir:v "documentreference-zika-info-pdf"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-documentreference"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/ecr/StructureDefinition/rr-documentreference>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_documentreference-zika-info-pdf\"> </a><p><b>Generated Narrative: DocumentReference </b><a name=\"documentreference-zika-info-pdf\"> </a><a name=\"hcdocumentreference-zika-info-pdf\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceDocumentReference &quot;documentreference-zika-info-pdf&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-rr-documentreference.html\">RR DocumentReference</a></p></div><p><b>Reportability Response Priority Extension</b>: Immediate action required <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#RRVS17)</span></p><p><b>status</b>: current</p><p><b>type</b>: Public health information <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#83910-0 &quot;Public health Note&quot;)</span></p><p><b>category</b>: Outbreak- or Cluster Related <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#RRVS13)</span></p><p><b>subject</b>: See on this page: Patient/patient-anon</p><p><b>description</b>: Local mosquito-borne Zika virus creation was reported in your area. Increased watchfulness for symptoms of Zika virus in your patients is warranted.</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/pdf</td><td><a href=\"http://statedepartmentofhealth.gov/epi/disease/zika/outbreakinfo.pdf\">http://statedepartmentofhealth.gov/epi/disease/zika/outbreakinfo.pdf</a></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-priority-extension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.114222.4.5.274"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "RRVS17" ] ;
+         fhir:display [ fhir:v "Immediate action required" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:83910-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "83910-0" ] ;
+       fhir:display [ fhir:v "Public health Note" ]
+     ] ) ;
+     fhir:text [ fhir:v "Public health information" ]
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.114222.4.5.274"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "RRVS13" ] ;
+       fhir:display [ fhir:v "Outbreak- or Cluster Related" ]
+     ] ) ;
+     fhir:text [ fhir:v "Outbreak- or Cluster Related" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Patient/patient-anon> ;
+     fhir:reference [ fhir:v "Patient/patient-anon" ]
+  ] ; # 
+  fhir:description [ fhir:v "Local mosquito-borne Zika virus creation was reported in your area. Increased watchfulness for symptoms of Zika virus in your patients is warranted."] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "application/pdf" ] ;
+       fhir:url [ fhir:v "http://statedepartmentofhealth.gov/epi/disease/zika/outbreakinfo.pdf"^^xsd:anyURI ]
+     ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

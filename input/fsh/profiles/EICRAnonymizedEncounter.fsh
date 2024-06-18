@@ -17,4 +17,4 @@ It is based on the **eICR Encounter** profile with further constraints to requir
 
 * location.location only Reference(EICRAnonymizedLocation)
 
-* serviceProvider only Reference(EICRAnonymizedOrgAddrTele)
+* serviceProvider only Reference(EICRAnonymizedOrgTeleAddr)

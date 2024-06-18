@@ -1,5 +1,5 @@
 Instance: organization-salem-medical-center-anon
-InstanceOf: EICRAnonymizedOrgAddrTele
+InstanceOf: EICRAnonymizedOrgTeleAddr
 Title: "eICR Anonymized Organization Example: Salem Medical Center"
 Description: "Example of eICR Anonymized Organization profile (anonymized, Salem Medical Center)"
 Usage: #example

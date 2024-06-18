@@ -11,7 +11,7 @@ Usage: #example
 //   * system = "http://hl7.org/fhir/sid/us-ssn"
 //   * value = "132225986"
 * active = true
-* patient = Reference(patient-anon-not)
+* patient = Reference(patient-anon)
 * relationship = $v3-RoleCode#GESTM "gestational mother"
   * text = "Gestational Mother"
 * insert rsDataAbsentReason(name)

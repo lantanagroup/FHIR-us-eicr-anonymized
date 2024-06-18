@@ -12,7 +12,7 @@
       "sources" : ["2.16.840.1.113883.11.20.9.21"],
       "uses" : {
       },
-      "StructureDefinition-caculated-age-observation.html" : "Calculated Age"
+      "StructureDefinition-eicr-anon-caculated-age.html" : "eICR Anonymized Calculated Age"
     }
   ]
 }

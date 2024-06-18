@@ -18,7 +18,7 @@ Description: "This Composition profile represents an anonymized eICR Composition
 * encounter ^short = "References the eICR Anonymized Encounter"
 * encounter.display 0..0
 * date ^short = "The creation date of the eICR Anonymized Document (this is different to the creation date of the original (non-anonymized) eICR document)"
-* author only Reference(EICRAnonymizedPractitionerRole or EICRAnonymizedPractitioner or EICRAnonymizedOrgAddrTele or Device)
+* author only Reference(EICRAnonymizedPractitionerRole or EICRAnonymizedPractitioner or EICRAnonymizedOrgTeleAddr or Device)
 * author ^short = "References the eICR Anonymized PractitionerRole, eICR Anonymized Practitioner, eICR Anonymized Organization, or Device"
 * author.display 0..0
 
@@ -53,10 +53,10 @@ Description: "This Composition profile represents an anonymized eICR Composition
 
 * section[sliceSocialHistorySection].entry[sliceODHPastOrPresentJob] only Reference(EICRAnonymizedPastOrPresentJob)
 
-* section[sliceSocialHistorySection].entry contains sliceCalculatedAge 1..1 MS
-* section[sliceSocialHistorySection].entry[sliceCalculatedAge] only Reference(CalculatedAge)
-* section[sliceSocialHistorySection].entry[sliceCalculatedAge] ^short = "Calculated Age entry"
-* section[sliceSocialHistorySection].entry[sliceCalculatedAge] ^definition = "Calculated Age entry"
+* section[sliceSocialHistorySection].entry contains sliceEICRAnonymizedCalculatedAge 1..1 MS
+* section[sliceSocialHistorySection].entry[sliceEICRAnonymizedCalculatedAge] only Reference(EICRAnonymizedCalculatedAge)
+* section[sliceSocialHistorySection].entry[sliceEICRAnonymizedCalculatedAge] ^short = "Calculated Age entry"
+* section[sliceSocialHistorySection].entry[sliceEICRAnonymizedCalculatedAge] ^definition = "Calculated Age entry"
 
 * section[slicePregnancySection].entry 1..
 

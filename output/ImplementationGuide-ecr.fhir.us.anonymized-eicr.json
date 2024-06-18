@@ -10,7 +10,7 @@
   "name" : "EICRAnonymized",
   "title" : "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)",
   "status" : "active",
-  "date" : "2024-06-18T16:49:21+10:00",
+  "date" : "2024-06-18T18:40:58+10:00",
   "publisher" : "APHL",
   "jurisdiction" : [{
     "coding" : [{

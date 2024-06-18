@@ -37,7 +37,7 @@
   <title value="eICR Anonymized RelatedPerson"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2024-06-18T16:49:21+10:00"/>
+  <date value="2024-06-18T18:40:58+10:00"/>
   <publisher value="APHL"/>
   <description value="This RelatedPerson profile represents an anonymized eCR RelatedPerson.&#xD;&#xA;&#xD;&#xA;It is based on the **RelatedPerson** resource with further constraints to require masking of some data elements."/>
   <jurisdiction>

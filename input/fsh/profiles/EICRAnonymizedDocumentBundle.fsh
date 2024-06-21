@@ -41,6 +41,12 @@ Description: "All Organization resources (other than in lab orders, lab results,
                                         'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.ofType(ServiceRequest)).descendants().reference
                                       ).not()
                                     ) or 
+                resource.ofType(Organization).where(
+                                      ('Organization/' + id in %rootResource.entry.resource.conformsTo('http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab').descendants().reference).trace('in1') and 
+                                      (
+                                        'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.conformsTo('http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab')).descendants().reference
+                                      ).not().trace('in2')
+                                    ).trace('where') or
                 where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele')"
 
 Invariant: eicr-anon-org-tele-addr

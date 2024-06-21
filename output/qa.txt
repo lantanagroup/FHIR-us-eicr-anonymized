@@ -1,9 +1,9 @@
 EICRAnonymized : Validation Results
 =========================================
 
-err = 6, warn = 84, info = 122
+err = 7, warn = 84, info = 122
 IG Publisher Version: 1.6.11
-Generated Fri Jun 21 10:54:13 AEST 2024. FHIR version 4.0.1 for ecr.fhir.us.anonymized-eicr#1.0.0 (canonical = http://fhir.org/fhir/us/anonymized-eicr)
+Generated Fri Jun 21 11:34:21 AEST 2024. FHIR version 4.0.1 for ecr.fhir.us.anonymized-eicr#1.0.0 (canonical = http://fhir.org/fhir/us/anonymized-eicr)
  Build Errors : 0 / 0 / 0
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Bundle-bundle-document-zika-anon : 3 / 48 / 163
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Composition-composition-zika-anon : 0 / 0 / 2
@@ -51,7 +51,7 @@ Generated Fri Jun 21 10:54:13 AEST 2024. FHIR version 4.0.1 for ecr.fhir.us.anon
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\ServiceRequest-servicerequest-zika-anon : 0 / 0 / 2
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-caculated-age : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-composition : 0 / 2 / 14
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-document-bundle : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-document-bundle : 1 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-encounter : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-immunization : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-location : 0 / 0 / 1
@@ -324,6 +324,21 @@ INFORMATION: StructureDefinition/eicr-anon-composition: StructureDefinition.diff
 INFORMATION: StructureDefinition/eicr-anon-composition: StructureDefinition.differential.element[32].constraint[0].expression: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/eicr-anon-composition: Composition.extension: The extension http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber|5.1.0 is deprecated
 == fsh-generated\resources\StructureDefinition-eicr-anon-document-bundle.json ==
+ERROR: StructureDefinition/eicr-anon-document-bundle: StructureDefinition.snapshot.element[15].constraint[3]: Error in constraint 'eicr-anon-org-tele' with expression 'resource.ofType(Organization).empty() or 
+                resource.ofType(Organization).where(type.coding.code.first()='RR7' or type.coding.code.first()='RR8' or type.coding.code.first()='RR12') or 
+                resource.ofType(Organization).where(
+                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference) and 
+                                      (
+                                        'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.ofType(ServiceRequest)).descendants().reference
+                                      ).not()
+                                    ) or 
+                resource.ofType(Organization).where(
+                                      ('Organization/' + id in %rootResource.entry.resource.conformsTo('http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab').descendants().reference).trace('in1') and 
+                                      (
+                                        'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.conformsTo('http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab')).descendants().reference
+                                      ).not().trace('in2')
+                                    ).trace('where') or
+                where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele')': Error evaluating FHIRPath expression: The name 'reference' is not valid for any of the possible types: [] (@line 15 char 19)
 == fsh-generated\resources\StructureDefinition-eicr-anon-encounter.json ==
 == fsh-generated\resources\StructureDefinition-eicr-anon-immunization.json ==
 == fsh-generated\resources\StructureDefinition-eicr-anon-location.json ==

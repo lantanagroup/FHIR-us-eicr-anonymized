@@ -19,7 +19,7 @@
   <title value="eICR Anonymized Encounter"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2024-06-21T10:51:28+10:00"/>
+  <date value="2024-06-21T11:31:43+10:00"/>
   <publisher value="APHL"/>
   <description value="This Encounter profile represents an anonymized eICR Encounter.&#xD;&#xA;&#xD;&#xA;It is based on the **eICR Encounter** profile with further constraints to require masking of some data elements."/>
   <jurisdiction>

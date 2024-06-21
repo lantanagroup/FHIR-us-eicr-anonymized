@@ -2102,20 +2102,26 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}eicr-anon-org-tele:All Organization resources (other than in lab orders, lab results, and PHAs in RR) must conform to EICRAnonymizedOrgTele {resource.ofType(Organization).empty() or 
                 resource.ofType(Organization).where(type.coding.code.first()='RR7' or type.coding.code.first()='RR8' or type.coding.code.first()='RR12') or 
                 resource.ofType(Organization).where(
-                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference).trace('in1') and 
+                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference) and 
                                       (
                                         'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.ofType(ServiceRequest)).descendants().reference
+                                      ).not()
+                                    ) or 
+                resource.ofType(Organization).where(
+                                      ('Organization/' + id in %rootResource.entry.resource.conformsTo('http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab').descendants().reference).trace('in1') and 
+                                      (
+                                        'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.conformsTo('http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab')).descendants().reference
                                       ).not().trace('in2')
-                                    ).trace('where') or 
+                                    ).trace('where') or
                 where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele')}eicr-anon-org-tele-addr:All Organization resources (other than custodian, in laborders, lab results, and PHAs in RR) must conform to EICRAnonymizedOrgTeleAddr {resource.ofType(Organization).empty() or 
 resource.ofType(Organization).where(type.coding.code.first()='RR7' or type.coding.code.first()='RR8' or type.coding.code.first()='RR12') or 
 resource.ofType(Organization).where(%context.fullUrl.endsWith(%rootResource.entry.resource.ofType(Composition).custodian.reference)) or 
 resource.ofType(Organization).where(
-                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference).trace('in1') and 
+                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference) and 
                                       (
                                         'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.ofType(ServiceRequest)).descendants().reference
-                                      ).not().trace('in2')
-                                    ).trace('where') or 
+                                      ).not()
+                                    ) or 
 where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr')}"
 "eicr-anon-document-bundle","Bundle.entry.id","Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""

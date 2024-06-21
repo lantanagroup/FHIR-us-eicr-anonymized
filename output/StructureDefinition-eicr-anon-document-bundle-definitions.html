@@ -249,20 +249,26 @@
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Bundle.entry">  </a><span style="color: grey">2</span><b>. Bundle.entry</b><a href="#diff_Bundle.entry" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..?</td></tr><tr><td style="white-space: nowrap">Invariants</td><td><b title="Formal Invariant Identifier">eicr-anon-org-tele</b>: All Organization resources (other than in lab orders, lab results, and PHAs in RR) must conform to EICRAnonymizedOrgTele (<code>resource.ofType(Organization).empty() or 
                 resource.ofType(Organization).where(type.coding.code.first()='RR7' or type.coding.code.first()='RR8' or type.coding.code.first()='RR12') or 
                 resource.ofType(Organization).where(
-                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference).trace('in1') and 
+                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference) and 
                                       (
                                         'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.ofType(ServiceRequest)).descendants().reference
+                                      ).not()
+                                    ) or 
+                resource.ofType(Organization).where(
+                                      ('Organization/' + id in %rootResource.entry.resource.conformsTo('http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab').descendants().reference).trace('in1') and 
+                                      (
+                                        'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.conformsTo('http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab')).descendants().reference
                                       ).not().trace('in2')
-                                    ).trace('where') or 
+                                    ).trace('where') or
                 where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele')</code>)<br/><b title="Formal Invariant Identifier">eicr-anon-org-tele-addr</b>: All Organization resources (other than custodian, in laborders, lab results, and PHAs in RR) must conform to EICRAnonymizedOrgTeleAddr (<code>resource.ofType(Organization).empty() or 
 resource.ofType(Organization).where(type.coding.code.first()='RR7' or type.coding.code.first()='RR8' or type.coding.code.first()='RR12') or 
 resource.ofType(Organization).where(%context.fullUrl.endsWith(%rootResource.entry.resource.ofType(Composition).custodian.reference)) or 
 resource.ofType(Organization).where(
-                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference).trace('in1') and 
+                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference) and 
                                       (
                                         'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.ofType(ServiceRequest)).descendants().reference
-                                      ).not().trace('in2')
-                                    ).trace('where') or 
+                                      ).not()
+                                    ) or 
 where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr')</code>)</td></tr>
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Bundle.entry.resource">  </a><span style="color: grey">4</span><b>. Bundle.entry.resource</b><a href="#diff_Bundle.entry.resource" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Invariants</td><td><b title="Formal Invariant Identifier">eicr-anon-display</b>: A reference cannot have a display (<code>children().where(reference.exists()).display.empty()</code>)</td></tr>
@@ -296,20 +302,26 @@ where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fh
 </td></tr><tr><td style="white-space: nowrap">Short</td><td><span style="color:DarkGray">Entry in the bundle - will have a resource or information</span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1<span style="color:DarkGray;text-decoration:line-through">0</span>..<span style="color:DarkGray">*</span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td><span style="color:DarkGray">false</span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr><tr><td style="white-space: nowrap">Invariants</td><td><b title="Formal Invariant Identifier">bdl-5</b>: must be a resource unless there's a request or response (<code>resource.exists() or request.exists() or response.exists()</code>)<br/><b title="Formal Invariant Identifier">bdl-8</b>: fullUrl cannot be a version specific reference (<code>fullUrl.contains('/_history/').not()</code>)<br/><span style="color:DarkGray"><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (hasValue() or (children().count() &gt; id.count()))</span><br/><b title="Formal Invariant Identifier">eicr-anon-org-tele</b>: All Organization resources (other than in lab orders, lab results, and PHAs in RR) must conform to EICRAnonymizedOrgTele (<code>resource.ofType(Organization).empty() or 
                 resource.ofType(Organization).where(type.coding.code.first()='RR7' or type.coding.code.first()='RR8' or type.coding.code.first()='RR12') or 
                 resource.ofType(Organization).where(
-                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference).trace('in1') and 
+                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference) and 
                                       (
                                         'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.ofType(ServiceRequest)).descendants().reference
+                                      ).not()
+                                    ) or 
+                resource.ofType(Organization).where(
+                                      ('Organization/' + id in %rootResource.entry.resource.conformsTo('http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab').descendants().reference).trace('in1') and 
+                                      (
+                                        'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.conformsTo('http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab')).descendants().reference
                                       ).not().trace('in2')
-                                    ).trace('where') or 
+                                    ).trace('where') or
                 where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele')</code>)<br/><b title="Formal Invariant Identifier">eicr-anon-org-tele-addr</b>: All Organization resources (other than custodian, in laborders, lab results, and PHAs in RR) must conform to EICRAnonymizedOrgTeleAddr (<code>resource.ofType(Organization).empty() or 
 resource.ofType(Organization).where(type.coding.code.first()='RR7' or type.coding.code.first()='RR8' or type.coding.code.first()='RR12') or 
 resource.ofType(Organization).where(%context.fullUrl.endsWith(%rootResource.entry.resource.ofType(Composition).custodian.reference)) or 
 resource.ofType(Organization).where(
-                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference).trace('in1') and 
+                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference) and 
                                       (
                                         'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.ofType(ServiceRequest)).descendants().reference
-                                      ).not().trace('in2')
-                                    ).trace('where') or 
+                                      ).not()
+                                    ) or 
 where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr')</code>)<br/><span style="color:DarkGray;text-decoration:line-through"><b title="Formal Invariant Identifier">bdl-5</b>: must be a resource unless there's a request or response (resource.exists() or request.exists() or response.exists())</span><br/><span style="color:DarkGray;text-decoration:line-through"><b title="Formal Invariant Identifier">bdl-8</b>: fullUrl cannot be a version specific reference (fullUrl.contains('/_history/').not())</span></td></tr>
 <tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices on <code>Bundle.entry</code>. The slices areUnordered and Open, and can be differentiated using the following discriminators:<ul></ul><li><span style="color:DarkGray">profile @ resource</span></li></td></tr>
 
@@ -424,20 +436,26 @@ where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fh
 </td></tr><tr><td style="white-space: nowrap">Short</td><td>Entry in the bundle - will have a resource or information</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..*</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>false</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr><tr><td style="white-space: nowrap">Invariants</td><td><b title="Formal Invariant Identifier">bdl-5</b>: must be a resource unless there's a request or response (<code>resource.exists() or request.exists() or response.exists()</code>)<br/><b title="Formal Invariant Identifier">bdl-8</b>: fullUrl cannot be a version specific reference (<code>fullUrl.contains('/_history/').not()</code>)<br/><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (<code>hasValue() or (children().count() &gt; id.count())</code>)<br/><b title="Formal Invariant Identifier">eicr-anon-org-tele</b>: All Organization resources (other than in lab orders, lab results, and PHAs in RR) must conform to EICRAnonymizedOrgTele (<code>resource.ofType(Organization).empty() or 
                 resource.ofType(Organization).where(type.coding.code.first()='RR7' or type.coding.code.first()='RR8' or type.coding.code.first()='RR12') or 
                 resource.ofType(Organization).where(
-                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference).trace('in1') and 
+                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference) and 
                                       (
                                         'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.ofType(ServiceRequest)).descendants().reference
+                                      ).not()
+                                    ) or 
+                resource.ofType(Organization).where(
+                                      ('Organization/' + id in %rootResource.entry.resource.conformsTo('http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab').descendants().reference).trace('in1') and 
+                                      (
+                                        'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.conformsTo('http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab')).descendants().reference
                                       ).not().trace('in2')
-                                    ).trace('where') or 
+                                    ).trace('where') or
                 where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele')</code>)<br/><b title="Formal Invariant Identifier">eicr-anon-org-tele-addr</b>: All Organization resources (other than custodian, in laborders, lab results, and PHAs in RR) must conform to EICRAnonymizedOrgTeleAddr (<code>resource.ofType(Organization).empty() or 
 resource.ofType(Organization).where(type.coding.code.first()='RR7' or type.coding.code.first()='RR8' or type.coding.code.first()='RR12') or 
 resource.ofType(Organization).where(%context.fullUrl.endsWith(%rootResource.entry.resource.ofType(Composition).custodian.reference)) or 
 resource.ofType(Organization).where(
-                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference).trace('in1') and 
+                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference) and 
                                       (
                                         'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.ofType(ServiceRequest)).descendants().reference
-                                      ).not().trace('in2')
-                                    ).trace('where') or 
+                                      ).not()
+                                    ) or 
 where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr')</code>)</td></tr>
 <tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices on <code>Bundle.entry</code>. The slices areUnordered and Open, and can be differentiated using the following discriminators:<ul></ul><li>profile @ resource</li></td></tr>
 
@@ -738,7 +756,7 @@ where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fh
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 21, 2024 10:51+1000">2024-06-21</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 21, 2024 11:31+1000">2024-06-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

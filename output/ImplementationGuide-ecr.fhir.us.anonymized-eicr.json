@@ -10,7 +10,7 @@
   "name" : "EICRAnonymized",
   "title" : "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)",
   "status" : "active",
-  "date" : "2024-06-18T18:40:58+10:00",
+  "date" : "2024-06-21T10:51:28+10:00",
   "publisher" : "APHL",
   "jurisdiction" : [{
     "coding" : [{
@@ -1272,11 +1272,11 @@
         "valueString" : "Organization"
       }],
       "reference" : {
-        "reference" : "Organization/organization-acme-laboratory-telecom-anon"
+        "reference" : "Organization/organization-acme-laboratory"
       },
-      "name" : "US PH Organization Example: Acme Labs (anonymized (telecom only))",
-      "description" : "Example of US Public Health Organization profile (anonymized (telecom only), Acme Labs)",
-      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele"
+      "name" : "US PH Organization Example: Acme Labs",
+      "description" : "Example of US Public Health Organization profile: Acme Labs",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{

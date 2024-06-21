@@ -1,11 +1,11 @@
 EICRAnonymized : Validation Results
 =========================================
 
-err = 7, warn = 90, info = 122
+err = 6, warn = 84, info = 122
 $--
 Generated $--. FHIR version $-- for ecr.fhir.us.anonymized-eicr#$-- (canonical = http://fhir.org/fhir/us/anonymized-eicr)
  Build Errors : 0 / 0 / 0
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Bundle-bundle-document-zika-anon : 4 / 48 / 163
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Bundle-bundle-document-zika-anon : 3 / 48 / 163
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Composition-composition-zika-anon : 0 / 0 / 2
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Condition-condition-common-cold-anon : 0 / 1 / 2
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Condition-condition-zika-anon : 0 / 1 / 1
@@ -35,7 +35,7 @@ Generated $--. FHIR version $-- for ecr.fhir.us.anonymized-eicr#$-- (canonical =
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-rr-reportability-information-anon : 2 / 5 / 3
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-travel-history-201801-anon : 0 / 1 / 2
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Observation-observation-vaccine-credential-assertion-anon : 0 / 1 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Organization-organization-acme-laboratory-telecom-anon : 0 / 0 / 2
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Organization-organization-acme-laboratory : 0 / 0 / 2
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Organization-organization-name-tele-addr-anon : 0 / 0 / 2
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Organization-organization-rr-responsible-agency-haw : 0 / 0 / 3
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Organization-organization-rr-routing-entity-haw : 0 / 0 / 3
@@ -51,7 +51,7 @@ Generated $--. FHIR version $-- for ecr.fhir.us.anonymized-eicr#$-- (canonical =
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\ServiceRequest-servicerequest-zika-anon : 0 / 0 / 2
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-caculated-age : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-composition : 0 / 2 / 14
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-document-bundle : 0 / 6 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-document-bundle : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-encounter : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-immunization : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-location : 0 / 0 / 1
@@ -134,8 +134,7 @@ INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[17].resource.compone
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[18].resource/*Observation/observation-emergency-outbreak-info-anon*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[19].resource/*Observation/observation-lab-result-lymphocytes-anon*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[20].resource/*Observation/observation-vaccine-credential-assertion-anon*/: Best Practice Recommendation: In general, all observations should have a performer
-ERROR: Bundle/bundle-document-zika-anon: Bundle.entry[21]: Constraint failed: eicr-anon-org-tele-addr: 'All Organization resources (other than custodian and PHAs in RR) must conform to EICRAnonymizedOrgTeleAddr' (defined in http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle)
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[21].resource/*Organization/organization-acme-laboratory-telecom-anon*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[21].resource/*Organization/organization-acme-laboratory*/.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization|2.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[22].resource/*Organization/organization-name-tele-addr-anon*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[23].resource/*Organization/organization-telecom-anon*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[24].resource/*Organization/organization-salem-medical-center-anon*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -282,8 +281,8 @@ INFORMATION: Observation/observation-travel-history-201801-anon: Observation.com
 WARNING: Observation/observation-travel-history-201801-anon: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated\resources\Observation-observation-vaccine-credential-assertion-anon.json ==
 WARNING: Observation/observation-vaccine-credential-assertion-anon: Observation: Best Practice Recommendation: In general, all observations should have a performer
-== fsh-generated\resources\Organization-organization-acme-laboratory-telecom-anon.json ==
-INFORMATION: Organization/organization-acme-laboratory-telecom-anon: Organization.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated\resources\Organization-organization-acme-laboratory.json ==
+INFORMATION: Organization/organization-acme-laboratory: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization|2.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated\resources\Organization-organization-name-tele-addr-anon.json ==
 INFORMATION: Organization/organization-name-tele-addr-anon: Organization.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated\resources\Organization-organization-rr-responsible-agency-haw.json ==
@@ -325,12 +324,6 @@ INFORMATION: StructureDefinition/eicr-anon-composition: StructureDefinition.diff
 INFORMATION: StructureDefinition/eicr-anon-composition: StructureDefinition.differential.element[32].constraint[0].expression: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/eicr-anon-composition: Composition.extension: The extension http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber|5.1.0 is deprecated
 == fsh-generated\resources\StructureDefinition-eicr-anon-document-bundle.json ==
-WARNING: StructureDefinition/eicr-anon-document-bundle: StructureDefinition.snapshot.element[15].constraint[3]: eicr-anon-org-tele: The left side is inherently a collection, and so the expression 'type.coding.code = 'RR7'' may fail or return false if there is more than one item in the content being evaluated
-WARNING: StructureDefinition/eicr-anon-document-bundle: StructureDefinition.snapshot.element[15].constraint[3]: eicr-anon-org-tele: The left side is inherently a collection, and so the expression 'type.coding.code = 'RR8'' may fail or return false if there is more than one item in the content being evaluated
-WARNING: StructureDefinition/eicr-anon-document-bundle: StructureDefinition.snapshot.element[15].constraint[3]: eicr-anon-org-tele: The left side is inherently a collection, and so the expression 'type.coding.code = 'RR12'' may fail or return false if there is more than one item in the content being evaluated
-WARNING: StructureDefinition/eicr-anon-document-bundle: StructureDefinition.snapshot.element[15].constraint[4]: eicr-anon-org-tele-addr: The left side is inherently a collection, and so the expression 'type.coding.code = 'RR7'' may fail or return false if there is more than one item in the content being evaluated
-WARNING: StructureDefinition/eicr-anon-document-bundle: StructureDefinition.snapshot.element[15].constraint[4]: eicr-anon-org-tele-addr: The left side is inherently a collection, and so the expression 'type.coding.code = 'RR8'' may fail or return false if there is more than one item in the content being evaluated
-WARNING: StructureDefinition/eicr-anon-document-bundle: StructureDefinition.snapshot.element[15].constraint[4]: eicr-anon-org-tele-addr: The left side is inherently a collection, and so the expression 'type.coding.code = 'RR12'' may fail or return false if there is more than one item in the content being evaluated
 == fsh-generated\resources\StructureDefinition-eicr-anon-encounter.json ==
 == fsh-generated\resources\StructureDefinition-eicr-anon-immunization.json ==
 == fsh-generated\resources\StructureDefinition-eicr-anon-location.json ==

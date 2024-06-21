@@ -30,7 +30,7 @@ Usage: #example
 // * insert rsAddBundleEntry(Observation, observation-exposure-contact-info-football-game-anon)
 * insert rsAddBundleEntry(Observation, observation-lab-result-lymphocytes-anon)
 * insert rsAddBundleEntry(Observation, observation-vaccine-credential-assertion-anon)
-* insert rsAddBundleEntry(Organization, organization-acme-laboratory-telecom-anon)
+* insert rsAddBundleEntry(Organization, organization-acme-laboratory)
 * insert rsAddBundleEntry(Organization, organization-name-tele-addr-anon)
 * insert rsAddBundleEntry(Organization, organization-telecom-anon)
 * insert rsAddBundleEntry(Organization, organization-salem-medical-center-anon)

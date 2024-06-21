@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="organization-acme-laboratory"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization </b><a name="organization-acme-laboratory"> </a><a name="hcorganization-acme-laboratory"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceOrganization &quot;organization-acme-laboratory&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-us-ph-organization.html">US Public Health Organization</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/1144221999</p><p><b>active</b>: true</p><p><b>type</b>: outpatient laboratory <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html">RoleCode</a>#OUTLAB)</span></p><p><b>name</b>: Acme Labs</p><p><b>telecom</b>: <a href="tel:+1-555-555-2222">+1-555-555-2222</a>, <a href="mailto:mail@acmelabs.com">mail@acmelabs.com</a></p><p><b>address</b>: 7777 Laboratory Drive Ann Arbor MI 99999 </p></div>
+  </text>
+  <identifier>
+    <system value="http://hl7.org.fhir/sid/us-npi"/>
+    <value value="1144221999"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="OUTLAB"/>
+      <display value="outpatient laboratory"/>
+    </coding>
+  </type>
+  <name value="Acme Labs"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+1-555-555-2222"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="mail@acmelabs.com"/>
+  </telecom>
+  <address>
+    <line value="7777 Laboratory Drive"/>
+    <city value="Ann Arbor"/>
+    <state value="MI"/>
+    <postalCode value="99999"/>
+  </address>
+</Organization>

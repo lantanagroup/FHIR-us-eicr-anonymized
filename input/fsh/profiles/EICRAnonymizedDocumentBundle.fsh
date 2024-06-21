@@ -27,26 +27,35 @@ It also adds invariants (constraints) to check that any required anonymized prof
 // no references can have a display
 * entry.resource obeys eicr-anon-display
 
-
 * entry[slicePublicHealthComposition].resource only EICRAnonymizedComposition
 * entry[slicePublicHealthComposition].resource ^short = "References the Anonymized eICR Composition"
 
 Invariant: eicr-anon-org-tele
-Description: "All Organization resources (other than PHAs in RR) must conform to EICRAnonymizedOrgTele"
+Description: "All Organization resources (other than in lab orders, lab results, and PHAs in RR) must conform to EICRAnonymizedOrgTele"
 * severity = #error
-* expression = "resource.ofType(Organization).empty() or resource.ofType(Organization).where(type.coding.code='RR7' or type.coding.code='RR8' or type.coding.code='RR12') or where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele')"
+* expression = "resource.ofType(Organization).empty() or 
+                resource.ofType(Organization).where(type.coding.code.first()='RR7' or type.coding.code.first()='RR8' or type.coding.code.first()='RR12') or 
+                resource.ofType(Organization).where(
+                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference) and 
+                                      (
+                                        'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.ofType(ServiceRequest)).descendants().reference
+                                      ).not()
+                                    ) or 
+                where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele')"
 
 Invariant: eicr-anon-org-tele-addr
-Description: "All Organization resources (other than custodian and PHAs in RR) must conform to EICRAnonymizedOrgTeleAddr"
+Description: "All Organization resources (other than custodian, in laborders, lab results, and PHAs in RR) must conform to EICRAnonymizedOrgTeleAddr"
 * severity = #error
-* expression = "resource.ofType(Organization).empty() or resource.ofType(Organization).where(type.coding.code='RR7' or type.coding.code='RR8' or type.coding.code='RR12') or resource.ofType(Organization).where(%context.fullUrl.endsWith(%rootResource.entry.resource.ofType(Composition).custodian.reference)) or where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr')"
-// * expression = "descendants().exclude(descendants().select(custodian)).reference.resolve().ofType(Organization).exists() implies descendants().exclude(descendants().select(custodian)).reference.resolve().ofType(Organization).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr')"
-
-Invariant: eicr-anon-org-tele-addr-name
-Description: "All Organization resources (other than custodian and PHAs in RR) must conform to EICRAnonymizedOrgTeleAddrName"
-* severity = #error
-// resource.ofType(Organization).where(%rootResource.entry.resource.ofType(Observation).extension.where(url='http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension').value.reference = resourceType + '/' + id)
-* expression = "descendants().exclude(descendants().select(custodian)).reference.resolve().ofType(Organization).exists() implies descendants().exclude(descendants().select(custodian)).reference.resolve().ofType(Organization).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-aono-org-tele-addr')"
+* expression = "resource.ofType(Organization).empty() or 
+resource.ofType(Organization).where(type.coding.code.first()='RR7' or type.coding.code.first()='RR8' or type.coding.code.first()='RR12') or 
+resource.ofType(Organization).where(%context.fullUrl.endsWith(%rootResource.entry.resource.ofType(Composition).custodian.reference)) or 
+resource.ofType(Organization).where(
+                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference) and 
+                                      (
+                                        'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.ofType(ServiceRequest)).descendants().reference
+                                      ).not()
+                                    ) or 
+where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr')"
 
 Invariant: eicr-anon-patient
 Description: "All Patient resources must conform to EICRAnonymizedPatient profile"

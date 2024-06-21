@@ -1352,16 +1352,16 @@
     }
   },
   {
-    "fullUrl" : "http://www.example.org/fhir/Organization/organization-acme-laboratory-telecom-anon",
+    "fullUrl" : "http://www.example.org/fhir/Organization/organization-acme-laboratory",
     "resource" : {
       "resourceType" : "Organization",
-      "id" : "organization-acme-laboratory-telecom-anon",
+      "id" : "organization-acme-laboratory",
       "meta" : {
-        "profile" : ["http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele"]
+        "profile" : ["http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-acme-laboratory-telecom-anon\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-acme-laboratory-telecom-anon\"> </a><a name=\"hcorganization-acme-laboratory-telecom-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-acme-laboratory-telecom-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-org-tele.html\">eICR Anonymized Organization - Telecom</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/1144221999</p><p><b>active</b>: true</p><p><b>type</b>: outpatient laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#OUTLAB)</span></p><p><b>name</b>: Acme Labs</p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: 7777 Laboratory Drive Ann Arbor MI 99999 </p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-acme-laboratory\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-acme-laboratory\"> </a><a name=\"hcorganization-acme-laboratory\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-acme-laboratory&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-us-ph-organization.html\">US Public Health Organization</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/1144221999</p><p><b>active</b>: true</p><p><b>type</b>: outpatient laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#OUTLAB)</span></p><p><b>name</b>: Acme Labs</p><p><b>telecom</b>: <a href=\"tel:+1-555-555-2222\">+1-555-555-2222</a>, <a href=\"mailto:mail@acmelabs.com\">mail@acmelabs.com</a></p><p><b>address</b>: 7777 Laboratory Drive Ann Arbor MI 99999 </p></div>"
       },
       "identifier" : [{
         "system" : "http://hl7.org.fhir/sid/us-npi",
@@ -1377,10 +1377,12 @@
       }],
       "name" : "Acme Labs",
       "telecom" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-          "valueCode" : "masked"
-        }]
+        "system" : "phone",
+        "value" : "+1-555-555-2222"
+      },
+      {
+        "system" : "email",
+        "value" : "mail@acmelabs.com"
       }],
       "address" : [{
         "line" : ["7777 Laboratory Drive"],
@@ -1869,7 +1871,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_servicerequest-zika-anon\"> </a><p><b>Generated Narrative: ServiceRequest </b><a name=\"servicerequest-zika-anon\"> </a><a name=\"hcservicerequest-zika-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceServiceRequest &quot;servicerequest-zika-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-eicr-servicerequest.html\">eICR ServiceRequest</a></p></div><p><b>identifier</b>: <code>http://lab.smarthealthit.org</code>/061ef612-344f-4e7b-81a8-1059ae7bbe11</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>category</b>: Diagnostics Procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#103693007 &quot;Diagnostic procedure (procedure)&quot;)</span></p><p><b>code</b>: Zika RT-PCR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#80825-3 &quot;Zika virus envelope E gene [Presence] in Serum by NAA with probe detection&quot;)</span></p><p><b>subject</b>: See on this page: Patient/patient-anon</p><p><b>performer</b>: See on this page: Organization/organization-acme-laboratory-telecom-anon</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_servicerequest-zika-anon\"> </a><p><b>Generated Narrative: ServiceRequest </b><a name=\"servicerequest-zika-anon\"> </a><a name=\"hcservicerequest-zika-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceServiceRequest &quot;servicerequest-zika-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-eicr-servicerequest.html\">eICR ServiceRequest</a></p></div><p><b>identifier</b>: <code>http://lab.smarthealthit.org</code>/061ef612-344f-4e7b-81a8-1059ae7bbe11</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>category</b>: Diagnostics Procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#103693007 &quot;Diagnostic procedure (procedure)&quot;)</span></p><p><b>code</b>: Zika RT-PCR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#80825-3 &quot;Zika virus envelope E gene [Presence] in Serum by NAA with probe detection&quot;)</span></p><p><b>subject</b>: See on this page: Patient/patient-anon</p><p><b>performer</b>: See on this page: Organization/organization-acme-laboratory</p></div>"
       },
       "identifier" : [{
         "system" : "http://lab.smarthealthit.org",
@@ -1897,7 +1899,7 @@
         "reference" : "Patient/patient-anon"
       },
       "performer" : [{
-        "reference" : "Organization/organization-acme-laboratory-telecom-anon"
+        "reference" : "Organization/organization-acme-laboratory"
       }]
     }
   },

@@ -12,4 +12,4 @@ Usage: #example
 * code = $loinc#80825-3 "Zika virus envelope E gene [Presence] in Serum by NAA with probe detection"
 * code.text = "Zika RT-PCR"
 * subject = Reference(patient-anon)
-* performer = Reference(organization-acme-laboratory-telecom-anon)
+* performer = Reference(organization-acme-laboratory)

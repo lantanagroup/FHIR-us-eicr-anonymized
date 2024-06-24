@@ -11,7 +11,7 @@
   "title" : "eICR Anonymized Calculated Age",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-06-21T11:31:43+10:00",
+  "date" : "2024-06-25T09:09:40+10:00",
   "publisher" : "APHL",
   "description" : "This Observation profile represents the patient's age, calculated by subtracting the date of birth from the current date.",
   "jurisdiction" : [{

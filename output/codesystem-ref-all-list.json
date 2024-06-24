@@ -321,10 +321,10 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
       "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
+      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
       "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
-      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes"
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -336,14 +336,14 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
       "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes",
-      "http://hl7.org/fhir/us/core/STU4/ValueSet-us-core-encounter-type.html" : "US Core Encounter Type",
-      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
       "http://hl7.org/fhir/R4/valueset-immunization-reason.html" : "Immunization Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
       "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes"
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes",
+      "http://hl7.org/fhir/us/core/STU4/ValueSet-us-core-encounter-type.html" : "US Core Encounter Type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/PHIndustryCDCCensus2010",
@@ -378,9 +378,9 @@
       "description" : null,
       "uses" : {
       },
-      "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7613" : "Job Supervisory Level or Pay Grade (ODH)",
       "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7900" : "Industry CDC NAICS 2012 (ODH)",
-      "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7901" : "Occupation CDC ONET-SOC 2010 (ODH)"
+      "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7901" : "Occupation CDC ONET-SOC 2010 (ODH)",
+      "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7613" : "Job Supervisory Level or Pay Grade (ODH)"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -877,8 +877,8 @@
       "oids" : ["2.16.840.1.113883.6.121"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU4/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier",
-      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages",
+      "http://hl7.org/fhir/us/core/STU4/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier"
     },
     {
       "url" : "urn:oid:2.16.840.1.113883.6.238",
@@ -891,9 +891,9 @@
       "uses" : {
       },
       "http://hl7.org/fhir/us/core/STU4/ValueSet-omb-race-category.html" : "OMB Race Categories",
+      "http://hl7.org/fhir/us/core/STU4/ValueSet-detailed-ethnicity.html" : "Detailed ethnicity",
       "http://hl7.org/fhir/us/core/STU4/ValueSet-omb-ethnicity-category.html" : "OMB Ethnicity Categories",
-      "http://hl7.org/fhir/us/core/STU4/ValueSet-detailed-race.html" : "Detailed Race",
-      "http://hl7.org/fhir/us/core/STU4/ValueSet-detailed-ethnicity.html" : "Detailed ethnicity"
+      "http://hl7.org/fhir/us/core/STU4/ValueSet-detailed-race.html" : "Detailed Race"
     }
   ]
 }

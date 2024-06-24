@@ -10,7 +10,7 @@
   "name" : "EICRAnonymized",
   "title" : "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)",
   "status" : "active",
-  "date" : "2024-06-21T11:31:43+10:00",
+  "date" : "2024-06-25T09:09:40+10:00",
   "publisher" : "APHL",
   "jurisdiction" : [{
     "coding" : [{
@@ -825,18 +825,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Location"
-      }],
-      "reference" : {
-        "reference" : "Location/location-salem-medical-center-anon"
-      },
-      "name" : "eICR Anonymized Location Example: Anonymized telecom, Clinic Bldg A, Salem Medical Center",
-      "description" : "Example of US Public Health profile (anonymized telecom, Salem Medical Center)",
-      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -876,35 +864,11 @@
         "valueString" : "Organization"
       }],
       "reference" : {
-        "reference" : "Organization/organization-salem-medical-center-anon"
-      },
-      "name" : "eICR Anonymized Organization Example: Salem Medical Center",
-      "description" : "Example of eICR Anonymized Organization profile (anonymized, Salem Medical Center)",
-      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
         "reference" : "Organization/organization-name-tele-addr-anon"
       },
       "name" : "eICR Anonymized Organization Name Telecom Address Example: anonymized (name, telecom, address) Organization",
       "description" : "Example of eICR Anonymized Organization Name Telecom Address profile (anonymized name, telecom, address)",
       "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/organization-telecom-anon"
-      },
-      "name" : "eICR Anonymized Organization Telecom Example: anonymized (telecom only) Organization",
-      "description" : "Example of eICR Anonymized Organization Telecom profile (anonymized (telecom only), Telecom Anonymized Organization)",
-      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele"
     },
     {
       "extension" : [{
@@ -1305,13 +1269,37 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
+        "valueString" : "Location"
       }],
       "reference" : {
-        "reference" : "Observation/observation-exposure-contact-info-football-game-anon"
+        "reference" : "Location/location-salem-medical-center"
       },
-      "name" : "US Public Health Exposure Contact Information Example: Football Game",
-      "description" : "Example of US Public Health Exposure Contact Information (Football Game)",
+      "name" : "US Public Health Location Example: Clinic Bldg A, Salem Medical Center",
+      "description" : "Example of US Public Health Location profile (Clinic Bldg A, Salem Medical Center)",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/organization-custodian"
+      },
+      "name" : "US Public Health Organization Example: Custodian Organization",
+      "description" : "Example of US Public Health Organization profile (Custodian Organization)",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/organization-salem-medical-center"
+      },
+      "name" : "US Public Health Organization Example: Salem Medical Center",
+      "description" : "Example of US Public Health Organization profile (Salem Medical Center)",
       "exampleBoolean" : true
     },
     {

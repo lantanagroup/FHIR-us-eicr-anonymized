@@ -6,7 +6,7 @@
     <profile value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitionerrole"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole </b><a name="practitionerrole-anon"> </a><a name="hcpractitionerrole-anon"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourcePractitionerRole &quot;practitionerrole-anon&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-eicr-anon-practitionerrole.html">eICR Anonymized PractitionerRole</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/5.3.0/NamingSystem-npi.html" title="National Provider Identifier">United States National Provider Identifier</a>/9941339108</p><p><b>practitioner</b>: <a href="Practitioner-practitioner-anon.html">Practitioner/practitioner-anon</a> &quot;&quot;</p><p><b>organization</b>: <a href="Organization-organization-salem-medical-center-anon.html">Organization/organization-salem-medical-center-anon</a> &quot;Salem Medical Center&quot;</p><p><b>code</b>: Primary Care Clinic/Center <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (provider-taxonomy#261QP2300X)</span></p><p><b>specialty</b>: Family practice <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#419772000)</span></p><p><b>location</b>: <a href="Location-location-salem-medical-center-anon.html">Location/location-salem-medical-center-anon</a> &quot;Clinic Bldg A, Salem Medical Center&quot;</p><p><b>telecom</b>: <a href="mailto:null"/></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole </b><a name="practitionerrole-anon"> </a><a name="hcpractitionerrole-anon"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourcePractitionerRole &quot;practitionerrole-anon&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-eicr-anon-practitionerrole.html">eICR Anonymized PractitionerRole</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/5.3.0/NamingSystem-npi.html" title="National Provider Identifier">United States National Provider Identifier</a>/9941339108</p><p><b>practitioner</b>: <a href="Practitioner-practitioner-anon.html">Practitioner/practitioner-anon</a> &quot;&quot;</p><p><b>organization</b>: <a href="Organization-organization-salem-medical-center.html">Organization/organization-salem-medical-center</a> &quot;Salem Medical Center&quot;</p><p><b>code</b>: Primary Care Clinic/Center <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (provider-taxonomy#261QP2300X)</span></p><p><b>specialty</b>: Family practice <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#419772000)</span></p><p><b>location</b>: <a href="Location-location-salem-medical-center.html">Location/location-salem-medical-center</a> &quot;Clinic Bldg A, Salem Medical Center&quot;</p><p><b>telecom</b>: <a href="mailto:null"/></p></div>
   </text>
   <identifier>
     <system value="http://hl7.org/fhir/sid/us-npi"/>
@@ -16,7 +16,7 @@
     <reference value="Practitioner/practitioner-anon"/>
   </practitioner>
   <organization>
-    <reference value="Organization/organization-salem-medical-center-anon"/>
+    <reference value="Organization/organization-salem-medical-center"/>
   </organization>
   <code>
     <coding>
@@ -33,7 +33,7 @@
     </coding>
   </specialty>
   <location>
-    <reference value="Location/location-salem-medical-center-anon"/>
+    <reference value="Location/location-salem-medical-center"/>
   </location>
   <telecom>
     <system value="email"/>

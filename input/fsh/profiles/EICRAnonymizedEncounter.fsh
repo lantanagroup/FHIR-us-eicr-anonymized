@@ -14,7 +14,3 @@ It is based on the **eICR Encounter** profile with further constraints to requir
 * subject ^definition = "The subject is the anonymized Patient"
 
 * participant[sliceResponsibleProvider].individual only Reference(EICRAnonymizedPractitionerRole)
-
-* location.location only Reference(EICRAnonymizedLocation)
-
-* serviceProvider only Reference(EICRAnonymizedOrgTeleAddr)

@@ -43,7 +43,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Practitioner that is able to provide the defined services for the organization","Practitioner that is able to provide the defined services for the organization.","","","","","","","","","",,,,,"",,,,"PractitionerRole.practitioner",0,1,"us-core-13
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".player"
-"PractitionerRole.organization","PractitionerRole.organization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr]]}
+"PractitionerRole.organization","PractitionerRole.organization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization]]}
 ","Organization where the roles are available","The organization where the Practitioner performs the roles associated.","","","","","","","","","",,,,,"",,,,"PractitionerRole.organization",0,1,"us-core-13
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".scoper"
@@ -53,7 +53,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "PractitionerRole.specialty","PractitionerRole.specialty","","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}
 ","Specific specialty of the practitioner","Specific specialty of the practitioner.","","","","","","","","","",,"extensible","","http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066","",,,,"PractitionerRole.specialty",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PRA-5",".player.HealthCareProvider[@classCode = 'PROV'].code","./Specialty"
-"PractitionerRole.location","PractitionerRole.location","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location]]}
+"PractitionerRole.location","PractitionerRole.location","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-location]]}
 ","The location(s) at which this practitioner provides care","The location(s) at which this practitioner provides care.","","","","","","","","","",,,,,"",,,,"PractitionerRole.location",0,*,"us-core-13
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".performance.ActDefinitionOrEvent.ServiceDeliveryLocation[@classCode = 'SDLOC']","(ServD maps Practitioners and Organizations via another entity, so this concept is not available)<br/> However these are accessed via the Site.ServiceSite.ServiceSiteProvider record. (The Site has the location)","FiveWs.where[x]"

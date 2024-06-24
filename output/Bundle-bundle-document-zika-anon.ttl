@@ -41,8 +41,8 @@
      fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Immunization/immunization-pneumo-anon"^^xsd:anyURI ] ;
      fhir:resource ( <http://www.example.org/fhir/Immunization/immunization-pneumo-anon> )
   ] [
-     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Location/location-salem-medical-center-anon"^^xsd:anyURI ] ;
-     fhir:resource ( <http://www.example.org/fhir/Location/location-salem-medical-center-anon> )
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Location/location-salem-medical-center"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Location/location-salem-medical-center> )
   ] [
      fhir:fullUrl [ fhir:v "http://www.example.org/fhir/MedicationAdministration/medicationadministration-azithromycin-anon"^^xsd:anyURI ] ;
      fhir:resource ( <http://www.example.org/fhir/MedicationAdministration/medicationadministration-azithromycin-anon> )
@@ -92,11 +92,11 @@
      fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Organization/organization-name-tele-addr-anon"^^xsd:anyURI ] ;
      fhir:resource ( <http://www.example.org/fhir/Organization/organization-name-tele-addr-anon> )
   ] [
-     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Organization/organization-telecom-anon"^^xsd:anyURI ] ;
-     fhir:resource ( <http://www.example.org/fhir/Organization/organization-telecom-anon> )
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Organization/organization-custodian"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Organization/organization-custodian> )
   ] [
-     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Organization/organization-salem-medical-center-anon"^^xsd:anyURI ] ;
-     fhir:resource ( <http://www.example.org/fhir/Organization/organization-salem-medical-center-anon> )
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Organization/organization-salem-medical-center"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Organization/organization-salem-medical-center> )
   ] [
      fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Patient/patient-anon"^^xsd:anyURI ] ;
      fhir:resource ( <http://www.example.org/fhir/Patient/patient-anon> )
@@ -151,7 +151,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_composition-zika-anon\"> </a><p><b>Generated Narrative: Composition </b><a name=\"composition-zika-anon\"> </a><a name=\"hccomposition-zika-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceComposition &quot;composition-zika-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-composition.html\">eICR Anonymized Composition</a></p></div><p><b>Composition Version Number</b>: 1</p><p><b>identifier</b>: c03eab8c-11e8-4d0c-ad2a-b385395e27db</p><p><b>status</b>: final</p><p><b>type</b>: Public Health Case Report <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#55751-2)</span></p><p><b>encounter</b>: See on this page: Encounter/encounter-outpatient-anon</p><p><b>date</b>: 2024-06-02 22:13:23+0000</p><p><b>author</b>: See on this page: PractitionerRole/practitionerrole-anon</p><p><b>title</b>: Initial Public Health Case Report - Zika Example</p><p><b>custodian</b>: See on this page: Organization/organization-telecom-anon</p><h3>RelatesTos</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Target[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>transforms</td><td><a href=\"http://terminology.hl7.org/5.3.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:58fecd25-973e-4397-af68-1b7683758955</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_composition-zika-anon\"> </a><p><b>Generated Narrative: Composition </b><a name=\"composition-zika-anon\"> </a><a name=\"hccomposition-zika-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceComposition &quot;composition-zika-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-composition.html\">eICR Anonymized Composition</a></p></div><p><b>Composition Version Number</b>: 1</p><p><b>identifier</b>: c03eab8c-11e8-4d0c-ad2a-b385395e27db</p><p><b>status</b>: final</p><p><b>type</b>: Public Health Case Report <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#55751-2)</span></p><p><b>encounter</b>: See on this page: Encounter/encounter-outpatient-anon</p><p><b>date</b>: 2024-06-02 22:13:23+0000</p><p><b>author</b>: See on this page: PractitionerRole/practitionerrole-anon</p><p><b>title</b>: Initial Public Health Case Report - Zika Example</p><p><b>custodian</b>: See on this page: Organization/organization-custodian</p><h3>RelatesTos</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Target[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>transforms</td><td><a href=\"http://terminology.hl7.org/5.3.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:58fecd25-973e-4397-af68-1b7683758955</td></tr></table></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber"^^xsd:anyURI ] ;
@@ -184,8 +184,8 @@
   ] ) ; # 
   fhir:title [ fhir:v "Initial Public Health Case Report - Zika Example"] ; # 
   fhir:custodian [
-     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-telecom-anon> ;
-     fhir:reference [ fhir:v "Organization/organization-telecom-anon" ]
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-custodian> ;
+     fhir:reference [ fhir:v "Organization/organization-custodian" ]
   ] ; # 
   fhir:relatesTo ( [
      fhir:code [ fhir:v "transforms" ] ;
@@ -661,7 +661,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_encounter-outpatient-anon\"> </a><p><b>Generated Narrative: Encounter </b><a name=\"encounter-outpatient-anon\"> </a><a name=\"hcencounter-outpatient-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceEncounter &quot;encounter-outpatient-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-encounter.html\">eICR Anonymized Encounter</a></p></div><p><b>identifier</b>: <code>http://hospital.smarthealthit.org</code>/9937012</p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: ActCode code AMB  = ' ambulatory ', stated as ' ambulatory ')</p><p><b>type</b>: Office Visit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT®)</a>#99202)</span></p><p><b>subject</b>: See on this page: Patient/patient-anon</p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td>attender <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#ATND)</span></td><td>See on this page: PractitionerRole/practitionerrole-anon</td></tr></table><p><b>period</b>: 2018-04-01 10:00:00-0500 --&gt; 2018-04-02 10:15:00-0500</p><blockquote><p><b>diagnosis</b></p><blockquote><p><b>eICR Trigger Code Flag Extension</b></p><blockquote><p><b>url</b></p><code>triggerCodeValueSet</code></blockquote><p><b>value</b>: <code>urn:oid:2.16.840.1.114222.4.11.7508</code></p><blockquote><p><b>url</b></p><code>triggerCodeValueSetVersion</code></blockquote><p><b>value</b>: 12/12/2018</p><blockquote><p><b>url</b></p><code>triggerCode</code></blockquote><p><b>value</b>: Zika virus disease (disorder) (Details: SNOMED CT code 3928002  = ' Zika virus disease ', stated as ' Zika virus disease (disorder) ')</p></blockquote><p><b>condition</b>: See on this page: Condition/condition-zika-anon</p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>condition</b>: See on this page: Condition/condition-common-cold-anon</p></blockquote><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td>See on this page: Location/location-salem-medical-center-anon</td></tr></table><p><b>serviceProvider</b>: See on this page: Organization/organization-salem-medical-center-anon</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_encounter-outpatient-anon\"> </a><p><b>Generated Narrative: Encounter </b><a name=\"encounter-outpatient-anon\"> </a><a name=\"hcencounter-outpatient-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceEncounter &quot;encounter-outpatient-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-encounter.html\">eICR Anonymized Encounter</a></p></div><p><b>identifier</b>: <code>http://hospital.smarthealthit.org</code>/9937012</p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: ActCode code AMB  = ' ambulatory ', stated as ' ambulatory ')</p><p><b>type</b>: Office Visit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT®)</a>#99202)</span></p><p><b>subject</b>: See on this page: Patient/patient-anon</p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td>attender <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#ATND)</span></td><td>See on this page: PractitionerRole/practitionerrole-anon</td></tr></table><p><b>period</b>: 2018-04-01 10:00:00-0500 --&gt; 2018-04-02 10:15:00-0500</p><blockquote><p><b>diagnosis</b></p><blockquote><p><b>eICR Trigger Code Flag Extension</b></p><blockquote><p><b>url</b></p><code>triggerCodeValueSet</code></blockquote><p><b>value</b>: <code>urn:oid:2.16.840.1.114222.4.11.7508</code></p><blockquote><p><b>url</b></p><code>triggerCodeValueSetVersion</code></blockquote><p><b>value</b>: 12/12/2018</p><blockquote><p><b>url</b></p><code>triggerCode</code></blockquote><p><b>value</b>: Zika virus disease (disorder) (Details: SNOMED CT code 3928002  = ' Zika virus disease ', stated as ' Zika virus disease (disorder) ')</p></blockquote><p><b>condition</b>: See on this page: Condition/condition-zika-anon</p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>condition</b>: See on this page: Condition/condition-common-cold-anon</p></blockquote><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td>See on this page: Location/location-salem-medical-center</td></tr></table><p><b>serviceProvider</b>: See on this page: Organization/organization-salem-medical-center</p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hospital.smarthealthit.org"^^xsd:anyURI ] ;
@@ -732,13 +732,13 @@
   ] ) ; # 
   fhir:location ( [
      fhir:location [
-       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Location/location-salem-medical-center-anon> ;
-       fhir:reference [ fhir:v "Location/location-salem-medical-center-anon" ]
+       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Location/location-salem-medical-center> ;
+       fhir:reference [ fhir:v "Location/location-salem-medical-center" ]
      ]
   ] ) ; # 
   fhir:serviceProvider [
-     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-salem-medical-center-anon> ;
-     fhir:reference [ fhir:v "Organization/organization-salem-medical-center-anon" ]
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-salem-medical-center> ;
+     fhir:reference [ fhir:v "Organization/organization-salem-medical-center" ]
   ] . # 
 
 <http://www.example.org/fhir/Immunization/immunization-pneumo-anon> a fhir:Immunization ;
@@ -768,17 +768,17 @@
   fhir:occurrence [ fhir:v "2018-09-01"^^xsd:date] ; # 
   fhir:primarySource [ fhir:v "true"^^xsd:boolean] . # 
 
-<http://www.example.org/fhir/Location/location-salem-medical-center-anon> a fhir:Location ;
-  fhir:id [ fhir:v "location-salem-medical-center-anon"] ; # 
+<http://www.example.org/fhir/Location/location-salem-medical-center> a fhir:Location ;
+  fhir:id [ fhir:v "location-salem-medical-center"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location>
+       fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-location"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-location>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_location-salem-medical-center-anon\"> </a><p><b>Generated Narrative: Location </b><a name=\"location-salem-medical-center-anon\"> </a><a name=\"hclocation-salem-medical-center-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceLocation &quot;location-salem-medical-center-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-location.html\">eICR Anonymized Location</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/1144221995</p><p><b>status</b>: active</p><p><b>name</b>: Clinic Bldg A, Salem Medical Center</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HOSP)</span></p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: Clinic Bldg A 4444 Healthcare Drive Ann Arbor MI 99999 </p><p><b>managingOrganization</b>: See on this page: Organization/organization-salem-medical-center-anon</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_location-salem-medical-center\"> </a><p><b>Generated Narrative: Location </b><a name=\"location-salem-medical-center\"> </a><a name=\"hclocation-salem-medical-center\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceLocation &quot;location-salem-medical-center&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-us-ph-location.html\">US Public Health Location</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/1144221995</p><p><b>status</b>: active</p><p><b>name</b>: Clinic Bldg A, Salem Medical Center</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HOSP)</span></p><p><b>telecom</b>: ph: (+1) (555)555-3001, fax: (+1) (555)555-3002, <a href=\"mailto:mail@smc.org\">mail@smc.org</a></p><p><b>address</b>: Clinic Bldg A 4444 Healthcare Drive Ann Arbor MI 99999 </p><p><b>managingOrganization</b>: See on this page: Organization/organization-salem-medical-center</p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org.fhir/sid/us-npi"^^xsd:anyURI ] ;
@@ -794,10 +794,14 @@
      ] )
   ] ) ; # 
   fhir:telecom ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "masked" ]
-     ] )
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "(+1) (555)555-3001" ]
+  ] [
+     fhir:system [ fhir:v "fax" ] ;
+     fhir:value [ fhir:v "(+1) (555)555-3002" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mail@smc.org" ]
   ] ) ; # 
   fhir:address [
      fhir:line ( [ fhir:v "Clinic Bldg A" ] [ fhir:v "4444 Healthcare Drive" ] ) ;
@@ -806,8 +810,8 @@
      fhir:postalCode [ fhir:v "99999" ]
   ] ; # 
   fhir:managingOrganization [
-     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-salem-medical-center-anon> ;
-     fhir:reference [ fhir:v "Organization/organization-salem-medical-center-anon" ]
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-salem-medical-center> ;
+     fhir:reference [ fhir:v "Organization/organization-salem-medical-center" ]
   ] . # 
 
 <http://www.example.org/fhir/MedicationAdministration/medicationadministration-azithromycin-anon> a fhir:MedicationAdministration ;
@@ -1626,29 +1630,30 @@
      ] )
   ] ) . # 
 
-<http://www.example.org/fhir/Organization/organization-telecom-anon> a fhir:Organization ;
-  fhir:id [ fhir:v "organization-telecom-anon"] ; # 
+<http://www.example.org/fhir/Organization/organization-custodian> a fhir:Organization ;
+  fhir:id [ fhir:v "organization-custodian"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele>
+       fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-telecom-anon\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-telecom-anon\"> </a><a name=\"hcorganization-telecom-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-telecom-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-org-tele.html\">eICR Anonymized Organization - Telecom</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/545454545</p><p><b>active</b>: true</p><p><b>name</b>: Telecom Anonymized Organization</p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: 11111 Custodian Drive Ann Arbor MI 99999 </p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-custodian\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-custodian\"> </a><a name=\"hcorganization-custodian\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-custodian&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-us-ph-organization.html\">US Public Health Organization</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/545454545</p><p><b>active</b>: true</p><p><b>name</b>: Custodian Organization</p><p><b>telecom</b>: <a href=\"tel:+1-555-555-4545\">+1-555-555-4545</a>, <a href=\"mailto:mail@custodianorganization.com\">mail@custodianorganization.com</a></p><p><b>address</b>: 11111 Custodian Drive Ann Arbor MI 99999 </p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org.fhir/sid/us-npi"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "545454545" ]
   ] ) ; # 
   fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:name [ fhir:v "Telecom Anonymized Organization"] ; # 
+  fhir:name [ fhir:v "Custodian Organization"] ; # 
   fhir:telecom ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "masked" ]
-     ] )
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+1-555-555-4545" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mail@custodianorganization.com" ]
   ] ) ; # 
   fhir:address ( [
      fhir:line ( [ fhir:v "11111 Custodian Drive" ] ) ;
@@ -1657,17 +1662,17 @@
      fhir:postalCode [ fhir:v "99999" ]
   ] ) . # 
 
-<http://www.example.org/fhir/Organization/organization-salem-medical-center-anon> a fhir:Organization ;
-  fhir:id [ fhir:v "organization-salem-medical-center-anon"] ; # 
+<http://www.example.org/fhir/Organization/organization-salem-medical-center> a fhir:Organization ;
+  fhir:id [ fhir:v "organization-salem-medical-center"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr>
+       fhir:v "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-salem-medical-center-anon\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-salem-medical-center-anon\"> </a><a name=\"hcorganization-salem-medical-center-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-salem-medical-center-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-org-tele-addr.html\">eICR Anonymized Organization - Telecom, Address</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/55555555</p><p><b>active</b>: true</p><p><b>name</b>: Salem Medical Center</p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: </p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-salem-medical-center\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-salem-medical-center\"> </a><a name=\"hcorganization-salem-medical-center\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-salem-medical-center&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-us-ph-organization.html\">US Public Health Organization</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/55555555</p><p><b>active</b>: true</p><p><b>name</b>: Salem Medical Center</p><p><b>telecom</b>: <a href=\"tel:+1-555-555-1111\">+1-555-555-1111</a>, <a href=\"mailto:mail@salemmedicalcenter.com\">mail@salemmedicalcenter.com</a></p><p><b>address</b>: 22222 Health Authority Drive Ann Arbor MI 99999 </p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org.fhir/sid/us-npi"^^xsd:anyURI ] ;
@@ -1676,16 +1681,17 @@
   fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:name [ fhir:v "Salem Medical Center"] ; # 
   fhir:telecom ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "masked" ]
-     ] )
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+1-555-555-1111" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mail@salemmedicalcenter.com" ]
   ] ) ; # 
   fhir:address ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "masked" ]
-     ] )
+     fhir:line ( [ fhir:v "22222 Health Authority Drive" ] ) ;
+     fhir:city [ fhir:v "Ann Arbor" ] ;
+     fhir:state [ fhir:v "MI" ] ;
+     fhir:postalCode [ fhir:v "99999" ]
   ] ) . # 
 
 <http://www.example.org/fhir/Patient/patient-anon> a fhir:Patient ;
@@ -1914,7 +1920,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_practitionerrole-anon\"> </a><p><b>Generated Narrative: PractitionerRole </b><a name=\"practitionerrole-anon\"> </a><a name=\"hcpractitionerrole-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourcePractitionerRole &quot;practitionerrole-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-practitionerrole.html\">eICR Anonymized PractitionerRole</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.3.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/9941339108</p><p><b>practitioner</b>: See on this page: Practitioner/practitioner-anon</p><p><b>organization</b>: See on this page: Organization/organization-salem-medical-center-anon</p><p><b>code</b>: Primary Care Clinic/Center <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (provider-taxonomy#261QP2300X)</span></p><p><b>specialty</b>: Family practice <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#419772000)</span></p><p><b>location</b>: See on this page: Location/location-salem-medical-center-anon</p><p><b>telecom</b>: <a href=\"mailto:null\"/></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_practitionerrole-anon\"> </a><p><b>Generated Narrative: PractitionerRole </b><a name=\"practitionerrole-anon\"> </a><a name=\"hcpractitionerrole-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourcePractitionerRole &quot;practitionerrole-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-practitionerrole.html\">eICR Anonymized PractitionerRole</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.3.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/9941339108</p><p><b>practitioner</b>: See on this page: Practitioner/practitioner-anon</p><p><b>organization</b>: See on this page: Organization/organization-salem-medical-center</p><p><b>code</b>: Primary Care Clinic/Center <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (provider-taxonomy#261QP2300X)</span></p><p><b>specialty</b>: Family practice <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#419772000)</span></p><p><b>location</b>: See on this page: Location/location-salem-medical-center</p><p><b>telecom</b>: <a href=\"mailto:null\"/></p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
@@ -1925,8 +1931,8 @@
      fhir:reference [ fhir:v "Practitioner/practitioner-anon" ]
   ] ; # 
   fhir:organization [
-     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-salem-medical-center-anon> ;
-     fhir:reference [ fhir:v "Organization/organization-salem-medical-center-anon" ]
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-salem-medical-center> ;
+     fhir:reference [ fhir:v "Organization/organization-salem-medical-center" ]
   ] ; # 
   fhir:code ( [
      fhir:coding ( [
@@ -1944,8 +1950,8 @@
      ] )
   ] ) ; # 
   fhir:location ( [
-     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Location/location-salem-medical-center-anon> ;
-     fhir:reference [ fhir:v "Location/location-salem-medical-center-anon" ]
+     fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Location/location-salem-medical-center> ;
+     fhir:reference [ fhir:v "Location/location-salem-medical-center" ]
   ] ) ; # 
   fhir:telecom ( [
      fhir:system [ fhir:v "email" ] ;

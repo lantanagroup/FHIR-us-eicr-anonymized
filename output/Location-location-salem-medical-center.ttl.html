@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>eICR Anonymized Organization Telecom Example: anonymized (telecom only) Organization - TTL Representation - CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR) v1.0.0</title>
+    <title>US Public Health Location Example: Clinic Bldg A, Salem Medical Center - TTL Representation - CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR) v1.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.27"}
-    h3,h4,h5,h6{--heading-prefix:"5.27"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.53"}
+    h3,h4,h5,h6{--heading-prefix:"5.53"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -116,7 +116,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>eICR Anonymized Organization Telecom Example: anonymized (telecom only) Organization</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>US Public Health Location Example: Clinic Bldg A, Salem Medical Center</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -142,21 +142,21 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="Organization-organization-telecom-anon.html">Narrative Content</a>
+    <a href="Location-location-salem-medical-center.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="Organization-organization-telecom-anon.xml.html">XML</a>
+      <a href="Location-location-salem-medical-center.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="Organization-organization-telecom-anon.json.html">JSON</a>
+      <a href="Location-location-salem-medical-center.json.html">JSON</a>
     </li>
   
 
@@ -175,10 +175,10 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: eICR Anonymized Organization Telecom Example: anonymized (telecom only) Organization - TTL Representation</h2>
+<h2 id="root">: US Public Health Location Example: Clinic Bldg A, Salem Medical Center - TTL Representation</h2>
 
 
-<p><a href="Organization-organization-telecom-anon.ttl" no-download="true">Raw ttl</a> | <a href="Organization-organization-telecom-anon.ttl" download>Download</a></p>
+<p><a href="Location-location-salem-medical-center.ttl" no-download="true">Raw ttl</a> | <a href="Location-location-salem-medical-center.ttl" download>Download</a></p>
 
   <!-- insert intro if present -->
   
@@ -193,35 +193,49 @@
 
 # - resource -------------------------------------------------------------------
 
- a fhir:Organization ;
+ a fhir:Location ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;organization-telecom-anon&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">fhir:meta</a> [
+  <a href="http://hl7.org/fhir/R4/location.html#Location.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;location-salem-medical-center&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/location.html#Location.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele&gt;     ] )
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-location&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-location&gt;     ] )
   ] ; # 
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.text">fhir:text</a> [
+  <a href="http://hl7.org/fhir/R4/location.html#Location.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Organization &lt;/b&gt;&lt;a name=\&quot;organization-telecom-anon\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcorganization-telecom-anon\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;ResourceOrganization &amp;quot;organization-telecom-anon&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-eicr-anon-org-tele.html\&quot;&gt;eICR Anonymized Organization - Telecom&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://hl7.org.fhir/sid/us-npi&lt;/code&gt;/545454545&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Telecom Anonymized Organization&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: -unknown-&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 11111 Custodian Drive Ann Arbor MI 99999 &lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Location &lt;/b&gt;&lt;a name=\&quot;location-salem-medical-center\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hclocation-salem-medical-center\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;ResourceLocation &amp;quot;location-salem-medical-center&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-us-ph-location.html\&quot;&gt;US Public Health Location&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://hl7.org.fhir/sid/us-npi&lt;/code&gt;/1144221995&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Clinic Bldg A, Salem Medical Center&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Hospital &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html\&quot;&gt;RoleCode&lt;/a&gt;#HOSP)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: ph: (+1) (555)555-3001, fax: (+1) (555)555-3002, &lt;a href=\&quot;mailto:mail@smc.org\&quot;&gt;mail@smc.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Clinic Bldg A 4444 Healthcare Drive Ann Arbor MI 99999 &lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=\&quot;Organization-organization-salem-medical-center.html\&quot;&gt;Organization/organization-salem-medical-center&lt;/a&gt; &amp;quot;Salem Medical Center&amp;quot;&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">fhir:identifier</a> ( [
+  <a href="http://hl7.org/fhir/R4/location.html#Location.identifier">fhir:identifier</a> ( [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org.fhir/sid/us-npi&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;545454545&quot; ]
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1144221995&quot; ]
   ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.active">fhir:active</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean] ; # 
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Telecom Anonymized Organization&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.telecom">fhir:telecom</a> ( [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.extension">fhir:extension</a> [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;masked&quot; ]     ] )
+  <a href="http://hl7.org/fhir/R4/location.html#Location.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/location.html#Location.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Clinic Bldg A, Salem Medical Center&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/location.html#Location.type">fhir:type</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;HOSP&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hospital&quot; ]     ] )
   ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.address">fhir:address</a> ( [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">fhir:line</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;11111 Custodian Drive&quot; ] ) ;
+  <a href="http://hl7.org/fhir/R4/location.html#Location.telecom">fhir:telecom</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;phone&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;(+1) (555)555-3001&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;fax&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;(+1) (555)555-3002&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mail@smc.org&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/location.html#Location.address">fhir:address</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">fhir:line</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Clinic Bldg A&quot; ] [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;4444 Healthcare Drive&quot; ] ) ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">fhir:city</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ann Arbor&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">fhir:state</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MI&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">fhir:postalCode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;99999&quot; ]
-  ] ) . # 
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/location.html#Location.managingOrganization">fhir:managingOrganization</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Organization/organization-salem-medical-center&quot; ]
+  ] . # 
 
 </code></pre>
 
@@ -248,7 +262,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 21, 2024 11:31+1000">2024-06-21</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 25, 2024 09:09+1000">2024-06-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

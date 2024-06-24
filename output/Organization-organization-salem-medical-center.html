@@ -1,13 +1,9 @@
-<!-- layouts\layout-changehistory.html -->
-<!-- get modelType -->
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title> - CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR) v1.0.0</title>
+    <title>US Public Health Organization Example: Salem Medical Center - CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR) v1.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -44,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"5.55"}
+    h3,h4,h5,h6{--heading-prefix:"5.55"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -118,7 +114,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>US Public Health Organization Example: Salem Medical Center</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -130,9 +126,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-
-<div style="counter-reset: section 10" class="col-12">
+<div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR) - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://fhir.org/fhir/us/anonymized-eicr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
   
 
 
@@ -144,29 +140,29 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="Organization-organization-telecom-anon.html">Narrative Content</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="Organization-organization-telecom-anon.xml.html">XML</a>
+      <a href="Organization-organization-salem-medical-center.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="Organization-organization-telecom-anon.json.html">JSON</a>
+      <a href="Organization-organization-salem-medical-center.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="Organization-organization-telecom-anon.ttl.html">TTL</a>
+      <a href="Organization-organization-salem-medical-center.ttl.html">TTL</a>
     </li>
   
 
@@ -176,13 +172,28 @@
 
 
   <a name="root"> </a>
-  <h2 id="root">: Telecom Anonymized Organization - Change History</h2>
-  <p>History of changes for organization-telecom-anon .</p>
+
+
+  <h2 id="root">Example Organization: US Public Health Organization Example: Salem Medical Center</h2>
+
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization </b><a name="organization-salem-medical-center"> </a><a name="hcorganization-salem-medical-center"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceOrganization &quot;organization-salem-medical-center&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-us-ph-organization.html">US Public Health Organization</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/55555555</p><p><b>active</b>: true</p><p><b>name</b>: Salem Medical Center</p><p><b>telecom</b>: <a href="tel:+1-555-555-1111">+1-555-555-1111</a>, <a href="mailto:mail@salemmedicalcenter.com">mail@salemmedicalcenter.com</a></p><p><b>address</b>: 22222 Health Authority Drive Ann Arbor MI 99999 </p></div>
 
   
 
-</div>
+  <!-- insert notes if present -->
+  
 
+
+
+</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -191,8 +202,6 @@
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript" src="assets/js/tabs.js"> </script>
-
   <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
@@ -200,7 +209,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 21, 2024 11:31+1000">2024-06-21</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 25, 2024 09:09+1000">2024-06-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

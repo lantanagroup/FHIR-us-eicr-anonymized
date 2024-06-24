@@ -1,9 +1,13 @@
+<!-- layouts\layout-changehistory.html -->
+<!-- get modelType -->
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>US Public Health Exposure Contact Information Example: Football Game - CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR) v1.0.0</title>
+    <title> - CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR) v1.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -40,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.56"}
-    h3,h4,h5,h6{--heading-prefix:"5.56"}</style>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -114,7 +118,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>US Public Health Exposure Contact Information Example: Football Game</b></li>
+          
 
         </ul>
       </div>  <!-- /container -->
@@ -126,9 +130,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR) - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://fhir.org/fhir/us/anonymized-eicr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR) - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://fhir.org/fhir/us/anonymized-eicr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -140,29 +144,29 @@
 
 <ul class="nav nav-tabs">
 
-  <li class="active">
-    <a href="#">Narrative Content</a>
+  <li>
+    <a href="Organization-organization-custodian.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="Observation-observation-exposure-contact-info-football-game-anon.xml.html">XML</a>
+      <a href="Organization-organization-custodian.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="Observation-observation-exposure-contact-info-football-game-anon.json.html">JSON</a>
+      <a href="Organization-organization-custodian.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="Observation-observation-exposure-contact-info-football-game-anon.ttl.html">TTL</a>
+      <a href="Organization-organization-custodian.ttl.html">TTL</a>
     </li>
   
 
@@ -172,28 +176,13 @@
 
 
   <a name="root"> </a>
-
-
-  <h2 id="root">Example Observation: US Public Health Exposure Contact Information Example: Football Game</h2>
-
-
-
-
-  <!-- insert intro if present -->
-  
-
-
-
-  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation </b><a name="observation-exposure-contact-info-football-game-anon"> </a><a name="hcobservation-exposure-contact-info-football-game-anon"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceObservation &quot;observation-exposure-contact-info-football-game-anon&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-us-ph-exposure-contact-information.html">US Public Health Exposure Contact Information</a></p></div><p><b>status</b>: final</p><p><b>category</b>: An interaction between entities that provides opportunity for transmission of a physical, chemical, or biological agent from an exposure source entity to an exposure target entity. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActClass.html">ActClass</a>#EXPOS &quot;exposure&quot;)</span></p><p><b>code</b>: Mass gathering (football game) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-umls.html">Unified Medical Language System</a>#C3841750 &quot;Mass gathering&quot;)</span></p><p><b>subject</b>: <a href="Patient-patient-anon.html">Patient/patient-anon</a> &quot;&quot;</p><p><b>focus</b>: <a href="Location-location-city-football-stadium-anon.html">Location/location-city-football-stadium-anon</a> &quot;City Football Stadium&quot;</p><p><b>effective</b>: 2020-01-11 18:00:00+0000 --&gt; 2020-01-11 21:30:00+0000</p><p><b>value</b>: City Football Stadium <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#264379009 &quot;Sports stadium (environment)&quot;)</span></p><h3>Components</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td>ExposureAgent <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ParticipationType.html">ParticipationType</a>#EXPAGNT)</span></td><td>Severe acute respiratory syndrome coronavirus 2 (organism) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#840533007)</span></td></tr></table></div>
+  <h2 id="root">: Custodian Organization - Change History</h2>
+  <p>History of changes for organization-custodian .</p>
 
   
-
-  <!-- insert notes if present -->
-  
-
-
 
 </div>
+
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -202,6 +191,8 @@
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
+
   <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
@@ -209,7 +200,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 21, 2024 11:31+1000">2024-06-21</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 25, 2024 09:09+1000">2024-06-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

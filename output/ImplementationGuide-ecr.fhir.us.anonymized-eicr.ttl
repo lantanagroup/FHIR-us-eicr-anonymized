@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "EICRAnonymized"] ; # 
   fhir:title [ fhir:v "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-06-21T11:31:43+10:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-25T09:09:40+10:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "APHL"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
@@ -756,21 +756,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Location" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Location/location-salem-medical-center-anon> ;
-         fhir:reference [ fhir:v "Location/location-salem-medical-center-anon" ]
-       ] ;
-       fhir:name [ fhir:v "eICR Anonymized Location Example: Anonymized telecom, Clinic Bldg A, Salem Medical Center" ] ;
-       fhir:description [ fhir:v "Example of US Public Health profile (anonymized telecom, Salem Medical Center)" ] ;
-       fhir:example [
-         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location"^^xsd:anyURI ;
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -810,21 +795,6 @@
          fhir:value [ fhir:v "Organization" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-salem-medical-center-anon> ;
-         fhir:reference [ fhir:v "Organization/organization-salem-medical-center-anon" ]
-       ] ;
-       fhir:name [ fhir:v "eICR Anonymized Organization Example: Salem Medical Center" ] ;
-       fhir:description [ fhir:v "Example of eICR Anonymized Organization profile (anonymized, Salem Medical Center)" ] ;
-       fhir:example [
-         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr"^^xsd:anyURI ;
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Organization" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-name-tele-addr-anon> ;
          fhir:reference [ fhir:v "Organization/organization-name-tele-addr-anon" ]
        ] ;
@@ -833,21 +803,6 @@
        fhir:example [
          fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name"^^xsd:anyURI ;
          fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Organization" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-telecom-anon> ;
-         fhir:reference [ fhir:v "Organization/organization-telecom-anon" ]
-       ] ;
-       fhir:name [ fhir:v "eICR Anonymized Organization Telecom Example: anonymized (telecom only) Organization" ] ;
-       fhir:description [ fhir:v "Example of eICR Anonymized Organization Telecom profile (anonymized (telecom only), Telecom Anonymized Organization)" ] ;
-       fhir:example [
-         fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele"^^xsd:anyURI ;
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele>
        ]
      ] [
        fhir:extension ( [
@@ -1263,14 +1218,38 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
+         fhir:value [ fhir:v "Location" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Observation/observation-exposure-contact-info-football-game-anon> ;
-         fhir:reference [ fhir:v "Observation/observation-exposure-contact-info-football-game-anon" ]
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Location/location-salem-medical-center> ;
+         fhir:reference [ fhir:v "Location/location-salem-medical-center" ]
        ] ;
-       fhir:name [ fhir:v "US Public Health Exposure Contact Information Example: Football Game" ] ;
-       fhir:description [ fhir:v "Example of US Public Health Exposure Contact Information (Football Game)" ] ;
+       fhir:name [ fhir:v "US Public Health Location Example: Clinic Bldg A, Salem Medical Center" ] ;
+       fhir:description [ fhir:v "Example of US Public Health Location profile (Clinic Bldg A, Salem Medical Center)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-custodian> ;
+         fhir:reference [ fhir:v "Organization/organization-custodian" ]
+       ] ;
+       fhir:name [ fhir:v "US Public Health Organization Example: Custodian Organization" ] ;
+       fhir:description [ fhir:v "Example of US Public Health Organization profile (Custodian Organization)" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-salem-medical-center> ;
+         fhir:reference [ fhir:v "Organization/organization-salem-medical-center" ]
+       ] ;
+       fhir:name [ fhir:v "US Public Health Organization Example: Salem Medical Center" ] ;
+       fhir:description [ fhir:v "Example of US Public Health Organization profile (Salem Medical Center)" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [

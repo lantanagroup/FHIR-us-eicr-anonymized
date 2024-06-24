@@ -22,8 +22,9 @@ Description: "This Composition profile represents an anonymized eICR Composition
 * author ^short = "References the eICR Anonymized PractitionerRole, eICR Anonymized Practitioner, eICR Anonymized Organization, or Device"
 * author.display 0..0
 
-* custodian only Reference (EICRAnonymizedOrgTele)
-* custodian ^short = "References the eICR Anonymized Organization - Telecom"
+// 2024-06-25 remove anonymized constraint on Custodian Organization
+// * custodian only Reference (EICRAnonymizedOrgTele)
+// * custodian ^short = "References the eICR Anonymized Organization - Telecom"
 * custodian.display 0..0
 
 * relatesTo 1..

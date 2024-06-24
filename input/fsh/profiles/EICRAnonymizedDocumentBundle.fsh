@@ -16,13 +16,13 @@ It also adds invariants (constraints) to check that any required anonymized prof
 * obeys eicr-anon-prct
 * obeys eicr-anon-prct-rol
 * obeys eicr-anon-enc
-* obeys eicr-anon-loc
+//* obeys eicr-anon-loc
 * obeys eicr-anon-rp
 
 * obeys eicr-anon-exposure
 
-* entry obeys eicr-anon-org-tele
-* entry obeys eicr-anon-org-tele-addr
+// * entry obeys eicr-anon-org-tele
+// * entry obeys eicr-anon-org-tele-addr
 
 // no references can have a display
 * entry.resource obeys eicr-anon-display
@@ -30,38 +30,38 @@ It also adds invariants (constraints) to check that any required anonymized prof
 * entry[slicePublicHealthComposition].resource only EICRAnonymizedComposition
 * entry[slicePublicHealthComposition].resource ^short = "References the Anonymized eICR Composition"
 
-Invariant: eicr-anon-org-tele
-Description: "All Organization resources (other than in lab orders, lab results, and PHAs in RR) must conform to EICRAnonymizedOrgTele"
-* severity = #error
-* expression = "resource.ofType(Organization).empty() or 
-                resource.ofType(Organization).where(type.coding.code.first()='RR7' or type.coding.code.first()='RR8' or type.coding.code.first()='RR12') or 
-                resource.ofType(Organization).where(
-                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference) and 
-                                      (
-                                        'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.ofType(ServiceRequest)).descendants().reference
-                                      ).not()
-                                    ) or 
-                resource.ofType(Organization).where(
-                                      ('Organization/' + id in %rootResource.entry.resource.conformsTo('http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab').descendants().reference).trace('in1') and 
-                                      (
-                                        'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.conformsTo('http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab')).descendants().reference
-                                      ).not().trace('in2')
-                                    ).trace('where') or
-                where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele')"
+// Invariant: eicr-anon-org-tele
+// Description: "All Organization resources (other than in lab orders, lab results, and PHAs in RR) must conform to EICRAnonymizedOrgTele"
+// * severity = #error
+// * expression = "resource.ofType(Organization).empty() or 
+//                 resource.ofType(Organization).where(type.coding.code.first()='RR7' or type.coding.code.first()='RR8' or type.coding.code.first()='RR12') or 
+//                 resource.ofType(Organization).where(
+//                                       ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference) and 
+//                                       (
+//                                         'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.ofType(ServiceRequest)).descendants().reference
+//                                       ).not()
+//                                     ) or 
+//                 resource.ofType(Organization).where(
+//                                       ('Organization/' + id in %rootResource.entry.resource.conformsTo('http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab').descendants().reference).trace('in1') and 
+//                                       (
+//                                         'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.conformsTo('http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab')).descendants().reference
+//                                       ).not().trace('in2')
+//                                     ).trace('where') or
+//                 where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele')"
 
-Invariant: eicr-anon-org-tele-addr
-Description: "All Organization resources (other than custodian, in laborders, lab results, and PHAs in RR) must conform to EICRAnonymizedOrgTeleAddr"
-* severity = #error
-* expression = "resource.ofType(Organization).empty() or 
-resource.ofType(Organization).where(type.coding.code.first()='RR7' or type.coding.code.first()='RR8' or type.coding.code.first()='RR12') or 
-resource.ofType(Organization).where(%context.fullUrl.endsWith(%rootResource.entry.resource.ofType(Composition).custodian.reference)) or 
-resource.ofType(Organization).where(
-                                      ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference) and 
-                                      (
-                                        'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.ofType(ServiceRequest)).descendants().reference
-                                      ).not()
-                                    ) or 
-where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr')"
+// Invariant: eicr-anon-org-tele-addr
+// Description: "All Organization resources (other than custodian, in laborders, lab results, and PHAs in RR) must conform to EICRAnonymizedOrgTeleAddr"
+// * severity = #error
+// * expression = "resource.ofType(Organization).empty() or 
+// resource.ofType(Organization).where(type.coding.code.first()='RR7' or type.coding.code.first()='RR8' or type.coding.code.first()='RR12') or 
+// resource.ofType(Organization).where(%context.fullUrl.endsWith(%rootResource.entry.resource.ofType(Composition).custodian.reference)) or 
+// resource.ofType(Organization).where(
+//                                       ('Organization/' + id in %rootResource.entry.resource.ofType(ServiceRequest).descendants().reference) and 
+//                                       (
+//                                         'Organization/' + id in %rootResource.entry.resource.exclude(%rootResource.entry.resource.ofType(ServiceRequest)).descendants().reference
+//                                       ).not()
+//                                     ) or 
+// where(resource is Organization).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr')"
 
 Invariant: eicr-anon-patient
 Description: "All Patient resources must conform to EICRAnonymizedPatient profile"
@@ -83,10 +83,10 @@ Description: "All Encounter resources must conform to EICRAnonymizedEncounter"
 * severity = #error
 * expression = "entry.resource.ofType(Encounter).empty() or entry.where(resource.ofType(Encounter).exists()).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-encounter')"
 
-Invariant: eicr-anon-loc
-Description: "All Location resources must conform to EICRAnonymizedLocation"
-* severity = #error
-* expression = "entry.resource.ofType(Location).empty() or entry.where(resource.ofType(Location).exists()).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location')"
+// Invariant: eicr-anon-loc
+// Description: "All Location resources must conform to EICRAnonymizedLocation"
+// * severity = #error
+// * expression = "entry.resource.ofType(Location).empty() or entry.where(resource.ofType(Location).exists()).fullUrl.resolve().conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location')"
 
 Invariant: eicr-anon-rp
 Description: "All RelatedPerson resources must conform to EICRAnonymizedRelatedPerson"

@@ -27,5 +27,5 @@ Usage: #example
 * diagnosis[=].condition.reference = "Condition/condition-zika-anon"
 * diagnosis[+].condition.reference = "Condition/condition-common-cold-anon"
 
-* location.location.reference = "Location/location-salem-medical-center-anon"
-* serviceProvider.reference = "Organization/organization-salem-medical-center-anon"
+* location.location.reference = "Location/location-salem-medical-center"
+* serviceProvider.reference = "Organization/organization-salem-medical-center"

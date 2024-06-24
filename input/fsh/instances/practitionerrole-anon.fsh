@@ -6,10 +6,10 @@ Usage: #example
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "9941339108"
 * practitioner = Reference(practitioner-anon)
-* organization = Reference(organization-salem-medical-center-anon)
+* organization = Reference(organization-salem-medical-center)
 * code = $provider-taxonomy#261QP2300X "Primary Care Clinic/Center"
 * specialty = $sct#419772000 "Family practice"
-* location = Reference(location-salem-medical-center-anon)
+* location = Reference(location-salem-medical-center)
 
 * telecom.system = #email
 * insert rsDataAbsentReason(telecom.value)

@@ -9,19 +9,11 @@ Usage: #example
 * status = #final
 * type = $loinc#55751-2 "Public Health Case Report"
 * subject = Reference(patient-anon)
-// tested and correctly fails validation
-// * subject.display = "anonymized"
 * encounter = Reference(encounter-outpatient-anon)
-// tested and correctly fails validation
-// * encounter.display = "Ambulatory Office Visit"
 * date = "2024-06-02T22:13:23Z"
 * author = Reference(practitionerrole-anon)
-// tested and correctly fails validation
-// * author.display = "Henry Seven, MD"
 * title = "Initial Public Health Case Report - Zika Example"
-* custodian = Reference(organization-telecom-anon)
-// tested and correctly fails validation
-// * custodian.display = "Salem Medical Center"
+* custodian = Reference(organization-custodian)
 
 * relatesTo[sliceTransformed]
   * code = #transforms
@@ -33,7 +25,6 @@ Usage: #example
   * code = $loinc#29299-5 "Reason for visit Narrative"
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Reason for Visit Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Reason for visit Narrative</div> <div title=\"code\">(29299-5)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td colspan=\"2\" lang=\"en-US\" class=\"text-no-entries\"><p>Reason for Visit: Bad cough</p></td></tr></table></div>"
-  // * text.div = ""
 
 * section[sliceChiefComplaintSection]
   * title = "Chief Complaint"
@@ -53,7 +44,6 @@ Usage: #example
   * code = $loinc#11450-4 "Problem list - Reported"
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Problems Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Problem list - Reported</div> <div title=\"code\">(11450-4)</div></li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Condition-condition-common-cold-anon.html\">Common cold (disorder)</a></td></tr></table></div>"
-  // * text.div = ""
   * entry = Reference(condition-common-cold-anon)
 
 * section[sliceMedicationsAdministeredSection]
@@ -97,7 +87,7 @@ Usage: #example
     * extension.extension[+].url = "triggerCode"
     * extension.extension[=].valueCoding = $sct#3928002 "Zika virus disease (disorder)"
     * extension.url = "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-trigger-code-flag-extension"
-  //* entry[sliceEICRServiceRequest]
+
 
 * section[sliceImmunizationsSection]
   * title = "Immunizations Section"

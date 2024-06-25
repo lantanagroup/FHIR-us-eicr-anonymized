@@ -1598,13 +1598,13 @@
   fhir:id [ fhir:v "organization-name-tele-addr-anon"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name>
+       fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-name-tele-addr-anon\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-name-tele-addr-anon\"> </a><a name=\"hcorganization-name-tele-addr-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-name-tele-addr-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-org-tele-addr-name.html\">eICR Anonymized Organization - Telecom, Address, Name</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/7878787878</p><p><b>active</b>: true</p><p><b>name</b>: Absent because : <code>masked</code></p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: </p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-name-tele-addr-anon\"> </a><p><b>Generated Narrative: Organization </b><a name=\"organization-name-tele-addr-anon\"> </a><a name=\"hcorganization-name-tele-addr-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-name-tele-addr-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eicr-anon-organization.html\">eICR Anonymized Organization</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/7878787878</p><p><b>active</b>: true</p><p><b>name</b>: Absent because : <code>masked</code></p><p><b>telecom</b>: -unknown-</p><p><b>address</b>: </p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org.fhir/sid/us-npi"^^xsd:anyURI ] ;

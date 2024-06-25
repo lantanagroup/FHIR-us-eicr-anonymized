@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "eICR Anonymized Encounter"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-06-25T09:09:40+10:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-26T05:55:02+10:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "APHL"] ; # 
   fhir:description [ fhir:v "This Encounter profile represents an anonymized eICR Encounter.\r\n\r\nIt is based on the **eICR Encounter** profile with further constraints to require masking of some data elements."] ; # 
   fhir:jurisdiction ( [

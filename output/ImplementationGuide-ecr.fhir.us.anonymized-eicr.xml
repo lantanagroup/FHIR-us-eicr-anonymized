@@ -10,7 +10,7 @@
   <name value="EICRAnonymized"/>
   <title value="CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)"/>
   <status value="active"/>
-  <date value="2024-06-25T09:09:40+10:00"/>
+  <date value="2024-06-26T05:55:02+10:00"/>
   <publisher value="APHL"/>
   <jurisdiction>
     <coding>
@@ -636,43 +636,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/eicr-anon-location"/>
+        <reference value="StructureDefinition/eicr-anon-organization"/>
       </reference>
-      <name value="eICR Anonymized Location"/>
-      <description value="This Location profile represents an anonymized eCR Location.&#xD;&#xA;&#xD;&#xA;It is based on the **US Public Health Location** profile with further constraints to require masking of some data elements."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/eicr-anon-org-tele"/>
-      </reference>
-      <name value="eICR Anonymized Organization - Telecom"/>
-      <description value="This Organization profile represents an anonymized eCR Organization - Telecom.&#xD;&#xA;&#xD;&#xA;It is based on the **US Public Health Organization** profile with further constraints to require masking of telecom."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/eicr-anon-org-tele-addr"/>
-      </reference>
-      <name value="eICR Anonymized Organization - Telecom, Address"/>
-      <description value="This Organization profile represents an anonymized eCR Organization.&#xD;&#xA;&#xD;&#xA;It is based on the **EICRAnonymizedOrgTele** profile with further constraints to require masking of address."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/eicr-anon-org-tele-addr-name"/>
-      </reference>
-      <name value="eICR Anonymized Organization - Telecom, Address, Name"/>
-      <description value="This Organization profile represents an anonymized eCR Organization.&#xD;&#xA;&#xD;&#xA;It is based on the **EICRAnonymizedOrgTeleAddr** profile with further constraints to require masking of name."/>
+      <name value="eICR Anonymized Organization"/>
+      <description value="This Organization profile represents an anonymized eCR Organization.&#xD;&#xA;&#xD;&#xA;It is based on the **US Public Health Organization** profile with further constraints to require masking of name, address, and telecom."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -684,7 +651,7 @@
       </reference>
       <name value="eICR Anonymized Organization Name Telecom Address Example: anonymized (name, telecom, address) Organization"/>
       <description value="Example of eICR Anonymized Organization Name Telecom Address profile (anonymized name, telecom, address)"/>
-      <exampleCanonical value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name"/>
+      <exampleCanonical value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

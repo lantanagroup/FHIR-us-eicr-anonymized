@@ -42,32 +42,11 @@
     "name" : "EICRAnonymizedImmunization"
   },
   {
-    "id" : "eicr-anon-location",
+    "id" : "eicr-anon-organization",
     "type" : "StructureDefinition",
-    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location",
+    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization",
     "version" : "1.0.0",
-    "name" : "EICRAnonymizedLocation"
-  },
-  {
-    "id" : "eicr-anon-org-tele",
-    "type" : "StructureDefinition",
-    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele",
-    "version" : "1.0.0",
-    "name" : "EICRAnonymizedOrgTele"
-  },
-  {
-    "id" : "eicr-anon-org-tele-addr",
-    "type" : "StructureDefinition",
-    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr",
-    "version" : "1.0.0",
-    "name" : "EICRAnonymizedOrgTeleAddr"
-  },
-  {
-    "id" : "eicr-anon-org-tele-addr-name",
-    "type" : "StructureDefinition",
-    "url" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name",
-    "version" : "1.0.0",
-    "name" : "EICRAnonymizedOrgTeleAddrName"
+    "name" : "EICRAnonymizedOrganization"
   },
   {
     "id" : "eicr-anon-past-or-present-job",

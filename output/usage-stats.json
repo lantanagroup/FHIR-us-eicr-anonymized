@@ -35,24 +35,10 @@
         "title": "eICR Anonymized Immunization"
       }
     ],
-    "Location": [
-      {
-        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location",
-        "title": "eICR Anonymized Location"
-      }
-    ],
     "Organization": [
       {
-        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele",
-        "title": "eICR Anonymized Organization - Telecom"
-      },
-      {
-        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr",
-        "title": "eICR Anonymized Organization - Telecom, Address"
-      },
-      {
-        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name",
-        "title": "eICR Anonymized Organization - Telecom, Address, Name"
+        "url": "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization",
+        "title": "eICR Anonymized Organization"
       }
     ],
     "Patient": [
@@ -101,7 +87,6 @@
       "Bundle.entry.resource.telecom",
       "Bundle.entry.resource.telecom.value",
       "Composition.section.text",
-      "Location.telecom",
       "Organization.address",
       "Organization.name",
       "Organization.telecom",

@@ -10,7 +10,7 @@
   "name" : "EICRAnonymized",
   "title" : "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)",
   "status" : "active",
-  "date" : "2024-06-25T09:09:40+10:00",
+  "date" : "2024-06-26T05:55:02+10:00",
   "publisher" : "APHL",
   "jurisdiction" : [{
     "coding" : [{
@@ -816,46 +816,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/eicr-anon-location"
+        "reference" : "StructureDefinition/eicr-anon-organization"
       },
-      "name" : "eICR Anonymized Location",
-      "description" : "This Location profile represents an anonymized eCR Location.\r\n\r\nIt is based on the **US Public Health Location** profile with further constraints to require masking of some data elements.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/eicr-anon-org-tele"
-      },
-      "name" : "eICR Anonymized Organization - Telecom",
-      "description" : "This Organization profile represents an anonymized eCR Organization - Telecom.\r\n\r\nIt is based on the **US Public Health Organization** profile with further constraints to require masking of telecom.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/eicr-anon-org-tele-addr"
-      },
-      "name" : "eICR Anonymized Organization - Telecom, Address",
-      "description" : "This Organization profile represents an anonymized eCR Organization.\r\n\r\nIt is based on the **EICRAnonymizedOrgTele** profile with further constraints to require masking of address.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/eicr-anon-org-tele-addr-name"
-      },
-      "name" : "eICR Anonymized Organization - Telecom, Address, Name",
-      "description" : "This Organization profile represents an anonymized eCR Organization.\r\n\r\nIt is based on the **EICRAnonymizedOrgTeleAddr** profile with further constraints to require masking of name.",
+      "name" : "eICR Anonymized Organization",
+      "description" : "This Organization profile represents an anonymized eCR Organization.\r\n\r\nIt is based on the **US Public Health Organization** profile with further constraints to require masking of name, address, and telecom.",
       "exampleBoolean" : false
     },
     {
@@ -868,7 +832,7 @@
       },
       "name" : "eICR Anonymized Organization Name Telecom Address Example: anonymized (name, telecom, address) Organization",
       "description" : "Example of eICR Anonymized Organization Name Telecom Address profile (anonymized name, telecom, address)",
-      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name"
+      "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization"
     },
     {
       "extension" : [{

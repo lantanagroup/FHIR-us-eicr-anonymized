@@ -17,7 +17,7 @@
   <title value="eICR Anonymized Document Bundle"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2024-06-25T09:09:40+10:00"/>
+  <date value="2024-06-26T05:55:02+10:00"/>
   <publisher value="APHL"/>
   <description value="This Composition profile represents an anonymized eICR Document Bundle.&#xD;&#xA;&#xD;&#xA;It is based on the **eICR Document Bundle** profile with further constraints to require masking the contained eICR Composition.&#xD;&#xA;&#xD;&#xA;It also adds invariants (constraints) to check that any required anonymized profiles are present in the Bundle entries."/>
   <jurisdiction>

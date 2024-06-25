@@ -1,7 +1,7 @@
 EICRAnonymized : Validation Results
 =========================================
 
-err = 6, warn = 86, info = 121
+err = 6, warn = 83, info = 121
 $--
 Generated $--. FHIR version $-- for ecr.fhir.us.anonymized-eicr#$-- (canonical = http://fhir.org/fhir/us/anonymized-eicr)
  Build Errors : 0 / 0 / 0
@@ -53,10 +53,7 @@ Generated $--. FHIR version $-- for ecr.fhir.us.anonymized-eicr#$-- (canonical =
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-document-bundle : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-encounter : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-immunization : 0 / 0 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-location : 0 / 1 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-org-tele : 0 / 1 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-org-tele-addr : 0 / 1 / 1
- C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-org-tele-addr-name : 0 / 0 / 1
+ C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-organization : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-past-or-present-job : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-patient : 0 / 0 / 1
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\StructureDefinition-eicr-anon-practitioner : 0 / 0 / 1
@@ -134,7 +131,7 @@ WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[18].resource/*Observatio
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[19].resource/*Observation/observation-lab-result-lymphocytes-anon*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-document-zika-anon: Bundle.entry[20].resource/*Observation/observation-vaccine-credential-assertion-anon*/: Best Practice Recommendation: In general, all observations should have a performer
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[21].resource/*Organization/organization-acme-laboratory*/.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization|2.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[22].resource/*Organization/organization-name-tele-addr-anon*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[22].resource/*Organization/organization-name-tele-addr-anon*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[23].resource/*Organization/organization-custodian*/.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization|2.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[24].resource/*Organization/organization-salem-medical-center*/.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization|2.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[30].resource/*ServiceRequest/servicerequest-zika-anon*/.category[0].coding[0].code: The code '103693007' is valid but is not active
@@ -282,7 +279,7 @@ INFORMATION: Organization/organization-acme-laboratory: Organization.identifier[
 == fsh-generated\resources\Organization-organization-custodian.json ==
 INFORMATION: Organization/organization-custodian: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization|2.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated\resources\Organization-organization-name-tele-addr-anon.json ==
-INFORMATION: Organization/organization-name-tele-addr-anon: Organization.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr-name|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Organization/organization-name-tele-addr-anon: Organization.identifier[0]: This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated\resources\Organization-organization-rr-responsible-agency-haw.json ==
 INFORMATION: Organization/organization-rr-responsible-agency-haw: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/ecr/StructureDefinition/rr-responsible-agency-organization|2.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Organization/organization-rr-responsible-agency-haw: Organization.type[0].coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.232' could not be found, so the code cannot be validated
@@ -322,13 +319,7 @@ INFORMATION: StructureDefinition/eicr-anon-composition: Composition.extension: T
 == fsh-generated\resources\StructureDefinition-eicr-anon-document-bundle.json ==
 == fsh-generated\resources\StructureDefinition-eicr-anon-encounter.json ==
 == fsh-generated\resources\StructureDefinition-eicr-anon-immunization.json ==
-== fsh-generated\resources\StructureDefinition-eicr-anon-location.json ==
-WARNING: StructureDefinition.where(url = 'http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-location'): The Implementation Guide contains no examples for this profile
-== fsh-generated\resources\StructureDefinition-eicr-anon-org-tele.json ==
-WARNING: StructureDefinition.where(url = 'http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele'): The Implementation Guide contains no examples for this profile
-== fsh-generated\resources\StructureDefinition-eicr-anon-org-tele-addr.json ==
-WARNING: StructureDefinition.where(url = 'http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-org-tele-addr'): The Implementation Guide contains no examples for this profile
-== fsh-generated\resources\StructureDefinition-eicr-anon-org-tele-addr-name.json ==
+== fsh-generated\resources\StructureDefinition-eicr-anon-organization.json ==
 == fsh-generated\resources\StructureDefinition-eicr-anon-past-or-present-job.json ==
 == fsh-generated\resources\StructureDefinition-eicr-anon-patient.json ==
 == fsh-generated\resources\StructureDefinition-eicr-anon-practitioner.json ==

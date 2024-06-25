@@ -20,9 +20,9 @@
   <title value="eICR Anonymized Past or Present Job"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2024-06-26T05:55:02+10:00"/>
+  <date value="2024-06-26T06:31:28+10:00"/>
   <publisher value="APHL"/>
-  <description value="This Past or Present Job profile represents an anonymized eICR Past or Present Job.&#xD;&#xA;&#xD;&#xA;It is based on the **Occupational Data for Health Past Or Present Job** profile with further constraints to require masking of some data elements."/>
+  <description value="This Past or Present Job profile represents an anonymized eICR Past or Present Job."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

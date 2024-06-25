@@ -1,0 +1,1 @@
+It is based on the **eICR Encounter** profile with further constraints to require masking of the subject and partcipant (responsible provider).

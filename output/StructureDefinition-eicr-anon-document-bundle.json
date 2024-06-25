@@ -11,9 +11,9 @@
   "title" : "eICR Anonymized Document Bundle",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-06-26T05:55:02+10:00",
+  "date" : "2024-06-26T06:31:28+10:00",
   "publisher" : "APHL",
-  "description" : "This Composition profile represents an anonymized eICR Document Bundle.\r\n\r\nIt is based on the **eICR Document Bundle** profile with further constraints to require masking the contained eICR Composition.\r\n\r\nIt also adds invariants (constraints) to check that any required anonymized profiles are present in the Bundle entries.",
+  "description" : "This Composition profile represents an anonymized eICR Document Bundle.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

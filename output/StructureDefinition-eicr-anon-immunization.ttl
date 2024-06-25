@@ -18,9 +18,9 @@
   fhir:title [ fhir:v "eICR Anonymized Immunization"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-06-26T05:55:02+10:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-26T06:31:28+10:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "APHL"] ; # 
-  fhir:description [ fhir:v "This Immunization profile represents an anonymized eICR Immunization.\r\n\r\nIt is based on the **US Core Immunization** profile with further constraints to require removal of performer."] ; # 
+  fhir:description [ fhir:v "This Immunization profile represents an anonymized eICR Immunization."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;

@@ -3,7 +3,7 @@ EICRAnonymized : Validation Results
 
 err = 6, warn = 83, info = 121
 IG Publisher Version: 1.6.11
-Generated Wed Jun 26 05:57:44 AEST 2024. FHIR version 4.0.1 for ecr.fhir.us.anonymized-eicr#1.0.0 (canonical = http://fhir.org/fhir/us/anonymized-eicr)
+Generated Wed Jun 26 06:34:06 AEST 2024. FHIR version 4.0.1 for ecr.fhir.us.anonymized-eicr#1.0.0 (canonical = http://fhir.org/fhir/us/anonymized-eicr)
  Build Errors : 0 / 0 / 0
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Bundle-bundle-document-zika-anon : 3 / 48 / 163
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Composition-composition-zika-anon : 0 / 0 / 2

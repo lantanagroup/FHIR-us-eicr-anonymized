@@ -1,7 +1,7 @@
 Instance: organization-name-tele-addr-anon
 InstanceOf: EICRAnonymizedOrganization
-Title: "eICR Anonymized Organization Name Telecom Address Example: anonymized (name, telecom, address) Organization"
-Description: "Example of eICR Anonymized Organization Name Telecom Address profile (anonymized name, telecom, address)"
+Title: "eICR Anonymized Organization Example: anonymized Organization"
+Description: "Example of eICR Anonymized Organization profile (anonymized)"
 Usage: #example
 * identifier.system = "http://hl7.org.fhir/sid/us-npi"
 * identifier.value = "7878787878"

@@ -2,9 +2,7 @@ Profile: EICRAnonymizedOrganization
 Parent: USPublicHealthOrganization
 Id: eicr-anon-organization
 Title: "eICR Anonymized Organization"
-Description: "This Organization profile represents an anonymized eCR Organization.
-
-It is based on the **US Public Health Organization** profile with further constraints to require masking of name, address, and telecom."
+Description: "This Organization profile represents an anonymized eCR Organization."
 
 * ^version = "1.0.0"
 * insert rsProfileMeta

@@ -2,9 +2,7 @@ Profile: EICRAnonymizedPatient
 Parent: USPublicHealthPatient
 Id: eicr-anon-patient
 Title: "eICR Anonymized Patient"
-Description: "This Patient profile represents an anonymized eICR Patient.
-
-It is based on the **US Public Health Patient** profile with further constraints to require masking of some data elements."
+Description: "This Patient profile represents an anonymized eICR Patient."
 
 * ^version = "1.0.0"
 * insert rsProfileMeta

@@ -11,9 +11,9 @@
   "title" : "eICR Anonymized Practitioner",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-06-26T05:55:02+10:00",
+  "date" : "2024-06-26T06:31:28+10:00",
   "publisher" : "APHL",
-  "description" : "This Practitioner profile represents an anonymized eCR Practitioner.\r\n\r\nIt is based on the **US Core Practitioner** profile with further constraints to require masking of some data elements.",
+  "description" : "This Practitioner profile represents an anonymized eCR Practitioner.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

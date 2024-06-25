@@ -10,7 +10,7 @@
   "name" : "EICRAnonymized",
   "title" : "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)",
   "status" : "active",
-  "date" : "2024-06-26T05:55:02+10:00",
+  "date" : "2024-06-26T06:31:28+10:00",
   "publisher" : "APHL",
   "jurisdiction" : [{
     "coding" : [{
@@ -747,7 +747,7 @@
         "reference" : "StructureDefinition/eicr-anon-document-bundle"
       },
       "name" : "eICR Anonymized Document Bundle",
-      "description" : "This Composition profile represents an anonymized eICR Document Bundle.\r\n\r\nIt is based on the **eICR Document Bundle** profile with further constraints to require masking the contained eICR Composition.\r\n\r\nIt also adds invariants (constraints) to check that any required anonymized profiles are present in the Bundle entries.",
+      "description" : "This Composition profile represents an anonymized eICR Document Bundle.",
       "exampleBoolean" : false
     },
     {
@@ -771,7 +771,7 @@
         "reference" : "StructureDefinition/eicr-anon-encounter"
       },
       "name" : "eICR Anonymized Encounter",
-      "description" : "This Encounter profile represents an anonymized eICR Encounter.\r\n\r\nIt is based on the **eICR Encounter** profile with further constraints to require masking of some data elements.",
+      "description" : "This Encounter profile represents an anonymized eICR Encounter.",
       "exampleBoolean" : false
     },
     {
@@ -795,7 +795,7 @@
         "reference" : "StructureDefinition/eicr-anon-immunization"
       },
       "name" : "eICR Anonymized Immunization",
-      "description" : "This Immunization profile represents an anonymized eICR Immunization.\r\n\r\nIt is based on the **US Core Immunization** profile with further constraints to require removal of performer.",
+      "description" : "This Immunization profile represents an anonymized eICR Immunization.",
       "exampleBoolean" : false
     },
     {
@@ -819,7 +819,7 @@
         "reference" : "StructureDefinition/eicr-anon-organization"
       },
       "name" : "eICR Anonymized Organization",
-      "description" : "This Organization profile represents an anonymized eCR Organization.\r\n\r\nIt is based on the **US Public Health Organization** profile with further constraints to require masking of name, address, and telecom.",
+      "description" : "This Organization profile represents an anonymized eCR Organization.",
       "exampleBoolean" : false
     },
     {
@@ -830,8 +830,8 @@
       "reference" : {
         "reference" : "Organization/organization-name-tele-addr-anon"
       },
-      "name" : "eICR Anonymized Organization Name Telecom Address Example: anonymized (name, telecom, address) Organization",
-      "description" : "Example of eICR Anonymized Organization Name Telecom Address profile (anonymized name, telecom, address)",
+      "name" : "eICR Anonymized Organization Example: anonymized Organization",
+      "description" : "Example of eICR Anonymized Organization profile (anonymized)",
       "exampleCanonical" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization"
     },
     {
@@ -843,7 +843,7 @@
         "reference" : "StructureDefinition/eicr-anon-past-or-present-job"
       },
       "name" : "eICR Anonymized Past or Present Job",
-      "description" : "This Past or Present Job profile represents an anonymized eICR Past or Present Job.\r\n\r\nIt is based on the **Occupational Data for Health Past Or Present Job** profile with further constraints to require masking of some data elements.",
+      "description" : "This Past or Present Job profile represents an anonymized eICR Past or Present Job.",
       "exampleBoolean" : false
     },
     {
@@ -867,7 +867,7 @@
         "reference" : "StructureDefinition/eicr-anon-patient"
       },
       "name" : "eICR Anonymized Patient",
-      "description" : "This Patient profile represents an anonymized eICR Patient.\r\n\r\nIt is based on the **US Public Health Patient** profile with further constraints to require masking of some data elements.",
+      "description" : "This Patient profile represents an anonymized eICR Patient.",
       "exampleBoolean" : false
     },
     {
@@ -891,7 +891,7 @@
         "reference" : "StructureDefinition/eicr-anon-practitioner"
       },
       "name" : "eICR Anonymized Practitioner",
-      "description" : "This Practitioner profile represents an anonymized eCR Practitioner.\r\n\r\nIt is based on the **US Core Practitioner** profile with further constraints to require masking of some data elements.",
+      "description" : "This Practitioner profile represents an anonymized eCR Practitioner.",
       "exampleBoolean" : false
     },
     {
@@ -915,7 +915,7 @@
         "reference" : "StructureDefinition/eicr-anon-practitionerrole"
       },
       "name" : "eICR Anonymized PractitionerRole",
-      "description" : "This PractitionerRole profile represents an anonymized eCR PractitionerRole.\r\n\r\nIt is based on the **US Public Health PractitionerRole** profile with further constraints to require masking of some data elements.",
+      "description" : "This PractitionerRole profile represents an anonymized eCR PractitionerRole.",
       "exampleBoolean" : false
     },
     {
@@ -939,7 +939,7 @@
         "reference" : "StructureDefinition/eicr-anon-relatedperson"
       },
       "name" : "eICR Anonymized RelatedPerson",
-      "description" : "This RelatedPerson profile represents an anonymized eCR RelatedPerson.\r\n\r\nIt is based on the **RelatedPerson** resource with further constraints to require masking of some data elements.",
+      "description" : "This RelatedPerson profile represents an anonymized eCR RelatedPerson.",
       "exampleBoolean" : false
     },
     {

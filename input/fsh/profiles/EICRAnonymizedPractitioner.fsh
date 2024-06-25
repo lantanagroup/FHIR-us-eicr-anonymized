@@ -2,9 +2,7 @@ Profile: EICRAnonymizedPractitioner
 Parent: USCorePractitionerProfile
 Id: eicr-anon-practitioner
 Title: "eICR Anonymized Practitioner"
-Description: "This Practitioner profile represents an anonymized eCR Practitioner.
-
-It is based on the **US Core Practitioner** profile with further constraints to require masking of some data elements."
+Description: "This Practitioner profile represents an anonymized eCR Practitioner."
 
 * ^version = "1.0.0"
 * insert rsProfileMeta

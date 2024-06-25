@@ -2,9 +2,7 @@ Profile: EICRAnonymizedPastOrPresentJob
 Parent: PastOrPresentJob
 Id: eicr-anon-past-or-present-job
 Title: "eICR Anonymized Past or Present Job"
-Description: "This Past or Present Job profile represents an anonymized eICR Past or Present Job.
-
-It is based on the **Occupational Data for Health Past Or Present Job** profile with further constraints to require masking of some data elements."
+Description: "This Past or Present Job profile represents an anonymized eICR Past or Present Job."
 
 * ^version = "1.0.0"
 * insert rsProfileMeta

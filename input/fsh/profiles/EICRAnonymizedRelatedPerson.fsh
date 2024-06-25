@@ -2,9 +2,7 @@ Profile: EICRAnonymizedRelatedPerson
 Parent: RelatedPerson
 Id: eicr-anon-relatedperson
 Title: "eICR Anonymized RelatedPerson"
-Description: "This RelatedPerson profile represents an anonymized eCR RelatedPerson.
-
-It is based on the **RelatedPerson** resource with further constraints to require masking of some data elements."
+Description: "This RelatedPerson profile represents an anonymized eCR RelatedPerson."
 
 * ^version = "1.0.0"
 * insert rsProfileMeta

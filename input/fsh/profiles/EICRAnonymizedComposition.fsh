@@ -19,7 +19,7 @@ Description: "This Composition profile represents an anonymized eICR Composition
 * encounter.display 0..0
 * date ^short = "The creation date of the eICR Anonymized Document (this is different to the creation date of the original (non-anonymized) eICR document)"
 * author only Reference(EICRAnonymizedPractitionerRole or EICRAnonymizedPractitioner or USPublicHealthOrganization or Device)
-* author ^short = "References the eICR Anonymized PractitionerRole, eICR Anonymized Practitioner, eICR Anonymized Organization, or Device"
+* author ^short = "References the eICR Anonymized PractitionerRole, eICR Anonymized Practitioner, US Public Health Organization, or Device"
 * author.display 0..0
 
 // 2024-06-25 remove anonymized constraint on Custodian Organization

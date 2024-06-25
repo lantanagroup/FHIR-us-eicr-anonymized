@@ -2,9 +2,7 @@ Profile: EICRAnonymizedImmunization
 Parent: USCoreImmunizationProfile
 Id: eicr-anon-immunization
 Title: "eICR Anonymized Immunization"
-Description: "This Immunization profile represents an anonymized eICR Immunization.
-
-It is based on the **US Core Immunization** profile with further constraints to require removal of performer."
+Description: "This Immunization profile represents an anonymized eICR Immunization."
 
 * ^version = "1.0.0"
 * insert rsProfileMeta

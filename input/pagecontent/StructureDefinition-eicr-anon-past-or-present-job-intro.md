@@ -1,0 +1,1 @@
+It is based on the **Occupational Data for Health Past Or Present Job** profile with further constraints to require masking subject, employer (name, telecom, and address), and focus (relatedPerson).

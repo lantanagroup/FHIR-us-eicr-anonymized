@@ -3,8 +3,10 @@ It is based on the **eICR Composition** profile with further constraints to requ
  * encounter
  * author
  * custodian
+
+It disallows the Exposure Contact Information profile (slice) and requires the text to be masked in the History of Present Illness Section and Past Medical History Section.
  
  It requires:
-  * relatesTo which must point to the original eICR
+  * relatesTo (must reference the original eICR)
   * eICR Anonymized Immunization
-  * Calculated Age Observation.
+  * Calculated Age Observation

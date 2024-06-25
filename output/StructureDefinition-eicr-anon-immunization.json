@@ -11,9 +11,9 @@
   "title" : "eICR Anonymized Immunization",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-06-26T05:55:02+10:00",
+  "date" : "2024-06-26T06:31:28+10:00",
   "publisher" : "APHL",
-  "description" : "This Immunization profile represents an anonymized eICR Immunization.\r\n\r\nIt is based on the **US Core Immunization** profile with further constraints to require removal of performer.",
+  "description" : "This Immunization profile represents an anonymized eICR Immunization.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

@@ -10,7 +10,7 @@
   <name value="EICRAnonymized"/>
   <title value="CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)"/>
   <status value="active"/>
-  <date value="2024-06-26T05:55:02+10:00"/>
+  <date value="2024-06-26T06:31:28+10:00"/>
   <publisher value="APHL"/>
   <jurisdiction>
     <coding>
@@ -573,7 +573,7 @@
         <reference value="StructureDefinition/eicr-anon-document-bundle"/>
       </reference>
       <name value="eICR Anonymized Document Bundle"/>
-      <description value="This Composition profile represents an anonymized eICR Document Bundle.&#xD;&#xA;&#xD;&#xA;It is based on the **eICR Document Bundle** profile with further constraints to require masking the contained eICR Composition.&#xD;&#xA;&#xD;&#xA;It also adds invariants (constraints) to check that any required anonymized profiles are present in the Bundle entries."/>
+      <description value="This Composition profile represents an anonymized eICR Document Bundle."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -595,7 +595,7 @@
         <reference value="StructureDefinition/eicr-anon-encounter"/>
       </reference>
       <name value="eICR Anonymized Encounter"/>
-      <description value="This Encounter profile represents an anonymized eICR Encounter.&#xD;&#xA;&#xD;&#xA;It is based on the **eICR Encounter** profile with further constraints to require masking of some data elements."/>
+      <description value="This Encounter profile represents an anonymized eICR Encounter."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -617,7 +617,7 @@
         <reference value="StructureDefinition/eicr-anon-immunization"/>
       </reference>
       <name value="eICR Anonymized Immunization"/>
-      <description value="This Immunization profile represents an anonymized eICR Immunization.&#xD;&#xA;&#xD;&#xA;It is based on the **US Core Immunization** profile with further constraints to require removal of performer."/>
+      <description value="This Immunization profile represents an anonymized eICR Immunization."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -639,7 +639,7 @@
         <reference value="StructureDefinition/eicr-anon-organization"/>
       </reference>
       <name value="eICR Anonymized Organization"/>
-      <description value="This Organization profile represents an anonymized eCR Organization.&#xD;&#xA;&#xD;&#xA;It is based on the **US Public Health Organization** profile with further constraints to require masking of name, address, and telecom."/>
+      <description value="This Organization profile represents an anonymized eCR Organization."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -649,8 +649,8 @@
       <reference>
         <reference value="Organization/organization-name-tele-addr-anon"/>
       </reference>
-      <name value="eICR Anonymized Organization Name Telecom Address Example: anonymized (name, telecom, address) Organization"/>
-      <description value="Example of eICR Anonymized Organization Name Telecom Address profile (anonymized name, telecom, address)"/>
+      <name value="eICR Anonymized Organization Example: anonymized Organization"/>
+      <description value="Example of eICR Anonymized Organization profile (anonymized)"/>
       <exampleCanonical value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization"/>
     </resource>
     <resource>
@@ -661,7 +661,7 @@
         <reference value="StructureDefinition/eicr-anon-past-or-present-job"/>
       </reference>
       <name value="eICR Anonymized Past or Present Job"/>
-      <description value="This Past or Present Job profile represents an anonymized eICR Past or Present Job.&#xD;&#xA;&#xD;&#xA;It is based on the **Occupational Data for Health Past Or Present Job** profile with further constraints to require masking of some data elements."/>
+      <description value="This Past or Present Job profile represents an anonymized eICR Past or Present Job."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -683,7 +683,7 @@
         <reference value="StructureDefinition/eicr-anon-patient"/>
       </reference>
       <name value="eICR Anonymized Patient"/>
-      <description value="This Patient profile represents an anonymized eICR Patient.&#xD;&#xA;&#xD;&#xA;It is based on the **US Public Health Patient** profile with further constraints to require masking of some data elements."/>
+      <description value="This Patient profile represents an anonymized eICR Patient."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -705,7 +705,7 @@
         <reference value="StructureDefinition/eicr-anon-practitioner"/>
       </reference>
       <name value="eICR Anonymized Practitioner"/>
-      <description value="This Practitioner profile represents an anonymized eCR Practitioner.&#xD;&#xA;&#xD;&#xA;It is based on the **US Core Practitioner** profile with further constraints to require masking of some data elements."/>
+      <description value="This Practitioner profile represents an anonymized eCR Practitioner."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -727,7 +727,7 @@
         <reference value="StructureDefinition/eicr-anon-practitionerrole"/>
       </reference>
       <name value="eICR Anonymized PractitionerRole"/>
-      <description value="This PractitionerRole profile represents an anonymized eCR PractitionerRole.&#xD;&#xA;&#xD;&#xA;It is based on the **US Public Health PractitionerRole** profile with further constraints to require masking of some data elements."/>
+      <description value="This PractitionerRole profile represents an anonymized eCR PractitionerRole."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -749,7 +749,7 @@
         <reference value="StructureDefinition/eicr-anon-relatedperson"/>
       </reference>
       <name value="eICR Anonymized RelatedPerson"/>
-      <description value="This RelatedPerson profile represents an anonymized eCR RelatedPerson.&#xD;&#xA;&#xD;&#xA;It is based on the **RelatedPerson** resource with further constraints to require masking of some data elements."/>
+      <description value="This RelatedPerson profile represents an anonymized eCR RelatedPerson."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

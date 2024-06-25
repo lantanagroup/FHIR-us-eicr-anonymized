@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "EICRAnonymized"] ; # 
   fhir:title [ fhir:v "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-06-26T05:55:02+10:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-26T06:31:28+10:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "APHL"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
@@ -670,7 +670,7 @@
          fhir:reference [ fhir:v "StructureDefinition/eicr-anon-document-bundle" ]
        ] ;
        fhir:name [ fhir:v "eICR Anonymized Document Bundle" ] ;
-       fhir:description [ fhir:v "This Composition profile represents an anonymized eICR Document Bundle.\r\n\r\nIt is based on the **eICR Document Bundle** profile with further constraints to require masking the contained eICR Composition.\r\n\r\nIt also adds invariants (constraints) to check that any required anonymized profiles are present in the Bundle entries." ] ;
+       fhir:description [ fhir:v "This Composition profile represents an anonymized eICR Document Bundle." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -697,7 +697,7 @@
          fhir:reference [ fhir:v "StructureDefinition/eicr-anon-encounter" ]
        ] ;
        fhir:name [ fhir:v "eICR Anonymized Encounter" ] ;
-       fhir:description [ fhir:v "This Encounter profile represents an anonymized eICR Encounter.\r\n\r\nIt is based on the **eICR Encounter** profile with further constraints to require masking of some data elements." ] ;
+       fhir:description [ fhir:v "This Encounter profile represents an anonymized eICR Encounter." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -724,7 +724,7 @@
          fhir:reference [ fhir:v "StructureDefinition/eicr-anon-immunization" ]
        ] ;
        fhir:name [ fhir:v "eICR Anonymized Immunization" ] ;
-       fhir:description [ fhir:v "This Immunization profile represents an anonymized eICR Immunization.\r\n\r\nIt is based on the **US Core Immunization** profile with further constraints to require removal of performer." ] ;
+       fhir:description [ fhir:v "This Immunization profile represents an anonymized eICR Immunization." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -751,7 +751,7 @@
          fhir:reference [ fhir:v "StructureDefinition/eicr-anon-organization" ]
        ] ;
        fhir:name [ fhir:v "eICR Anonymized Organization" ] ;
-       fhir:description [ fhir:v "This Organization profile represents an anonymized eCR Organization.\r\n\r\nIt is based on the **US Public Health Organization** profile with further constraints to require masking of name, address, and telecom." ] ;
+       fhir:description [ fhir:v "This Organization profile represents an anonymized eCR Organization." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -762,8 +762,8 @@
          fhir:link <http://fhir.org/fhir/us/anonymized-eicr/Organization/organization-name-tele-addr-anon> ;
          fhir:reference [ fhir:v "Organization/organization-name-tele-addr-anon" ]
        ] ;
-       fhir:name [ fhir:v "eICR Anonymized Organization Name Telecom Address Example: anonymized (name, telecom, address) Organization" ] ;
-       fhir:description [ fhir:v "Example of eICR Anonymized Organization Name Telecom Address profile (anonymized name, telecom, address)" ] ;
+       fhir:name [ fhir:v "eICR Anonymized Organization Example: anonymized Organization" ] ;
+       fhir:description [ fhir:v "Example of eICR Anonymized Organization profile (anonymized)" ] ;
        fhir:example [
          fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization"^^xsd:anyURI ;
          fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization>
@@ -778,7 +778,7 @@
          fhir:reference [ fhir:v "StructureDefinition/eicr-anon-past-or-present-job" ]
        ] ;
        fhir:name [ fhir:v "eICR Anonymized Past or Present Job" ] ;
-       fhir:description [ fhir:v "This Past or Present Job profile represents an anonymized eICR Past or Present Job.\r\n\r\nIt is based on the **Occupational Data for Health Past Or Present Job** profile with further constraints to require masking of some data elements." ] ;
+       fhir:description [ fhir:v "This Past or Present Job profile represents an anonymized eICR Past or Present Job." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -805,7 +805,7 @@
          fhir:reference [ fhir:v "StructureDefinition/eicr-anon-patient" ]
        ] ;
        fhir:name [ fhir:v "eICR Anonymized Patient" ] ;
-       fhir:description [ fhir:v "This Patient profile represents an anonymized eICR Patient.\r\n\r\nIt is based on the **US Public Health Patient** profile with further constraints to require masking of some data elements." ] ;
+       fhir:description [ fhir:v "This Patient profile represents an anonymized eICR Patient." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -832,7 +832,7 @@
          fhir:reference [ fhir:v "StructureDefinition/eicr-anon-practitioner" ]
        ] ;
        fhir:name [ fhir:v "eICR Anonymized Practitioner" ] ;
-       fhir:description [ fhir:v "This Practitioner profile represents an anonymized eCR Practitioner.\r\n\r\nIt is based on the **US Core Practitioner** profile with further constraints to require masking of some data elements." ] ;
+       fhir:description [ fhir:v "This Practitioner profile represents an anonymized eCR Practitioner." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -859,7 +859,7 @@
          fhir:reference [ fhir:v "StructureDefinition/eicr-anon-practitionerrole" ]
        ] ;
        fhir:name [ fhir:v "eICR Anonymized PractitionerRole" ] ;
-       fhir:description [ fhir:v "This PractitionerRole profile represents an anonymized eCR PractitionerRole.\r\n\r\nIt is based on the **US Public Health PractitionerRole** profile with further constraints to require masking of some data elements." ] ;
+       fhir:description [ fhir:v "This PractitionerRole profile represents an anonymized eCR PractitionerRole." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -886,7 +886,7 @@
          fhir:reference [ fhir:v "StructureDefinition/eicr-anon-relatedperson" ]
        ] ;
        fhir:name [ fhir:v "eICR Anonymized RelatedPerson" ] ;
-       fhir:description [ fhir:v "This RelatedPerson profile represents an anonymized eCR RelatedPerson.\r\n\r\nIt is based on the **RelatedPerson** resource with further constraints to require masking of some data elements." ] ;
+       fhir:description [ fhir:v "This RelatedPerson profile represents an anonymized eCR RelatedPerson." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

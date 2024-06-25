@@ -176,7 +176,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Rather than create new profiles for all the profiles in the original eICR IG, in order to replace the original Patient, Practitioner, Organization profiles with new anonymized profiles, constraints (invariants) have been added to the eICR Document Bundle to validate that all relevant references conform to the new anonymized profiles. For example, there is a constraint to ensure that all Patient references in the Bundle conform to the new anonymized Patient profile and that a display that could inadvertently show patient data is disallowed.</p>
 
-<p>Validation of the Bundle instance using the FHIR validator (add link) will ensure that the data is properly anonymized.</p>
+<p>Validation of the Bundle instance using the <a href="https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar">FHIR validator</a> will ensure that the data is properly anonymized. See also: <a href="https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator">instructions for using the FHIR validator</a>.</p>
 
 
 
@@ -196,7 +196,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 26, 2024 06:31+1000">2024-06-26</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 26, 2024 06:54+1000">2024-06-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -19,4 +19,4 @@ Where changes were needed to the original eICR IG profiles, new profiles that ar
 
 Rather than create new profiles for all the profiles in the original eICR IG, in order to replace the original Patient, Practitioner, Organization profiles with new anonymized profiles, constraints (invariants) have been added to the eICR Document Bundle to validate that all relevant references conform to the new anonymized profiles. For example, there is a constraint to ensure that all Patient references in the Bundle conform to the new anonymized Patient profile and that a display that could inadvertently show patient data is disallowed. 
 
-Validation of the Bundle instance using the FHIR validator (add link) will ensure that the data is properly anonymized.
+Validation of the Bundle instance using the [FHIR validator](https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar) will ensure that the data is properly anonymized. See also: [instructions for using the FHIR validator](https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator).

@@ -3,7 +3,7 @@ EICRAnonymized : Validation Results
 
 err = 4, warn = 120, info = 281
 IG Publisher Version: 1.6.12 Out of date - current version is 1.6.13
-Generated Fri Jun 28 20:00:44 AEST 2024. FHIR version 4.0.1 for ecr.fhir.us.anonymized-eicr#1.0.0 (canonical = http://fhir.org/fhir/us/anonymized-eicr)
+Generated Fri Jun 28 21:01:33 AEST 2024. FHIR version 4.0.1 for ecr.fhir.us.anonymized-eicr#1.0.0 (canonical = http://fhir.org/fhir/us/anonymized-eicr)
  Build Errors : 0 / 11 / 0
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Bundle-bundle-document-zika-anon : 2 / 48 / 163
  C:\Users\minigrrl\Dropbox\12_SourceControl\GitHub\Lantana\FHIR-us-eicr-anonymized\fsh-generated\resources\Composition-composition-zika-anon : 0 / 0 / 2

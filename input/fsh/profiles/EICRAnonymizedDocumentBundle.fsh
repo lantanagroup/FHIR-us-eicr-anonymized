@@ -102,4 +102,4 @@ Description: "A reference cannot have a display"
 Invariant: eicr-anon-text-div
 Description: """text.div SHALL be '<div xmlns="http://www.w3.org/1999/xhtml"><p>MASKED</p></div>'"""
 * severity = #error
-* expression = "resource.text.`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'"
+* expression = "resource.text.exists() implies resource.text.`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'"

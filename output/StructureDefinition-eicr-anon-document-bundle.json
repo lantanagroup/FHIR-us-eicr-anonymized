@@ -11,7 +11,7 @@
   "title" : "eICR Anonymized Document Bundle",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-06-28T19:57:37+10:00",
+  "date" : "2024-06-28T20:58:40+10:00",
   "publisher" : "APHL",
   "description" : "This Composition profile represents an anonymized eICR Document Bundle.",
   "jurisdiction" : [{
@@ -650,7 +650,7 @@
         "key" : "eicr-anon-text-div",
         "severity" : "error",
         "human" : "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'",
-        "expression" : "resource.text.`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'",
+        "expression" : "resource.text.exists() implies resource.text.`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'",
         "source" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle"
       },
       {
@@ -2772,7 +2772,7 @@
         "key" : "eicr-anon-text-div",
         "severity" : "error",
         "human" : "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'",
-        "expression" : "resource.text.`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'",
+        "expression" : "resource.text.exists() implies resource.text.`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'",
         "source" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle"
       },
       {

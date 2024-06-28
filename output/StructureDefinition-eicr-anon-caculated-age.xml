@@ -30,7 +30,7 @@
   <title value="eICR Anonymized Calculated Age"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2024-06-28T19:57:37+10:00"/>
+  <date value="2024-06-28T20:58:40+10:00"/>
   <publisher value="APHL"/>
   <description value="This Observation profile represents the patient's age, calculated by subtracting the date of birth from the current date."/>
   <jurisdiction>

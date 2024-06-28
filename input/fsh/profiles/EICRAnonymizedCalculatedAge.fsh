@@ -5,6 +5,8 @@ Title: "eICR Anonymized Calculated Age"
 Description: "This Observation profile represents the patient's age, calculated by subtracting the date of birth from the current date."
 * insert rsProfileMeta
 
+* insert rsAddDARConstraints
+
 * code MS
 * code = $loinc#29553-5 "Age calculated"
 

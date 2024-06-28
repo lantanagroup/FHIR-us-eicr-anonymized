@@ -6,6 +6,7 @@ Description: "This Organization profile represents an anonymized eCR Organizatio
 
 * ^version = "1.0.0"
 * insert rsProfileMeta
+* insert rsAddDARConstraints
 
 * name.extension contains $data-absent-reason named dataAbsentReason 1..1 MS
 * name.extension[dataAbsentReason] ^short = "A value for name is not allowed, must use data-absent-reason with value 'masked'"

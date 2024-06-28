@@ -3,6 +3,9 @@ InstanceOf: USPublicHealthTravelHistory
 Title: "Travel History Observation Example: observation-travel-history-anonymized-201801"
 Description: "Example of Travel History Observation profile (anonymized, January 2018)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * status = #final
 * code = $sct#420008001 "Travel"
 * code.text = "Travel History"

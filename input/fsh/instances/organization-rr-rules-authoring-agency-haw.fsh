@@ -3,6 +3,9 @@ InstanceOf: RR_Rules_Authoring_Agency_Organization
 Title: "RR Rules Authoring Agency Organization Example: Health Authority West Rules Authoring Agency"
 Description: "Example of RR Rules Authoring Agency profile (Health Authority West Rules Authoring Agency)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * identifier.system = "http://hl7.org.fhir/sid/us-npi"
 * identifier.value = "12341234"
 * active = true

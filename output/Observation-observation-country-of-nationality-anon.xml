@@ -6,7 +6,10 @@
     <profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-country-of-nationality"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation </b><a name="observation-country-of-nationality-anon"> </a><a name="hcobservation-country-of-nationality-anon"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceObservation &quot;observation-country-of-nationality-anon&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-eicr-country-of-nationality.html">eICR Country of Nationality</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Ethnicity / related nationality data (observable entity) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#186034007)</span></p><p><b>subject</b>: <a href="Patient-patient-anon.html">Patient/patient-anon</a> &quot;&quot;</p><p><b>effective</b>: 2020-11-10 22:33:22+0000</p><p><b>value</b>: Australia <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#AU)</span></p></div>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="masked"/>
+    </extension>
+    <status value="empty"/><div xmlns="http://www.w3.org/1999/xhtml"><p>MASKED</p></div>
   </text>
   <status value="final"/>
   <code>

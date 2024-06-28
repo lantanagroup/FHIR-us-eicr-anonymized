@@ -3,6 +3,9 @@ InstanceOf: USCoreLocation
 Title: "Location Example: City Football Stadium"
 Description: "Example of Location resource (anonymized, City Football Stadium)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * status = #active
 * name = "City Football Stadium"
 * type = $sct#264379009 "Sports stadium (environment)"

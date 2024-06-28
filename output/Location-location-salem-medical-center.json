@@ -5,8 +5,12 @@
     "profile" : ["http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-location"]
   },
   "text" : {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location </b><a name=\"location-salem-medical-center\"> </a><a name=\"hclocation-salem-medical-center\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceLocation &quot;location-salem-medical-center&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-us-ph-location.html\">US Public Health Location</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/1144221995</p><p><b>status</b>: active</p><p><b>name</b>: Clinic Bldg A, Salem Medical Center</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HOSP)</span></p><p><b>telecom</b>: ph: (+1) (555)555-3001, fax: (+1) (555)555-3002, <a href=\"mailto:mail@smc.org\">mail@smc.org</a></p><p><b>address</b>: Clinic Bldg A 4444 Healthcare Drive Ann Arbor MI 99999 </p><p><b>managingOrganization</b>: <a href=\"Organization-organization-salem-medical-center.html\">Organization/organization-salem-medical-center</a> &quot;Salem Medical Center&quot;</p></div>"
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode" : "masked"
+    }],
+    "status" : "empty",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>"
   },
   "identifier" : [{
     "system" : "http://hl7.org.fhir/sid/us-npi",

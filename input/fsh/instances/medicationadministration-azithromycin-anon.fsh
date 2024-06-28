@@ -3,6 +3,9 @@ InstanceOf: USPublicHealthMedicationAdministration
 Title: "MedicationAdministration Example: anonymized, azithromycin"
 Description: "Example of MedicationAdministration resource (anonymized, azithromycin)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * status = #completed
 * medicationCodeableConcept = $rxnorm#248656 "Azithromycin 500 MG Oral Tablet"
 * medicationCodeableConcept.text = "Azithromycin 500 MG Oral Tablet"

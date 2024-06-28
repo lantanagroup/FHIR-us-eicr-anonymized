@@ -3,6 +3,9 @@ InstanceOf: EICRCountryOfResidence
 Title: "Country of Residence Observation Example: anonymized"
 Description: "Example of Country of Residence Observation (anonymized)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * status = #final
 * code = $loinc#77983-5 "Country of usual residence"
 * subject = Reference(patient-anon)

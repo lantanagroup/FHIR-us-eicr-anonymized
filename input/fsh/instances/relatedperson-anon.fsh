@@ -4,6 +4,8 @@ Title: "eICR Anonymized RelatedPerson Example: Anonymized"
 Description: "Example of eICR Anonymized RelatedPerson profile (anonymized)"
 Usage: #example
 
+* insert rsDataAbsentReasonText(text)
+
 * insert rsDataAbsentReason(identifier)
 // * identifier
 //   * use = #usual

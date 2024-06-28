@@ -4,6 +4,9 @@ Title: "eICR Anonymized Past or Present Job Example: anonymized"
 Description: "Example of eICR Anonymized Past or Present Job profile (anonymized)"
 Usage: #example
 
+* insert rsDataAbsentReasonText(text)
+
+
 * extension[employer].valueReference = Reference(organization-name-tele-addr-anon)
 
 * status = #final

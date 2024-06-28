@@ -6,6 +6,7 @@ Description: "This RelatedPerson profile represents an anonymized eCR RelatedPer
 
 * ^version = "1.0.0"
 * insert rsProfileMeta
+* insert rsAddDARConstraints
 
 * identifier.extension contains $data-absent-reason named dataAbsentReason 1..1 MS
 * identifier.extension[dataAbsentReason] ^short = "RelatedPerson.identifier is not allowed, must use data-absent-reason with value 'masked'"

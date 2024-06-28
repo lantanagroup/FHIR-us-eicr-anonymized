@@ -3,6 +3,9 @@ InstanceOf: USPublicHealthPregnancyStatusObservation
 Title: "US Public Health Pregnancy Status Observation Example: anonymized"
 Description: "Example of US Public Health Pregnancy Status Observation profile (anonymized)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * extension[extensionPregnancyStatusRecordedDate].url = "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-date-recorded-extension"
 * extension[extensionPregnancyStatusRecordedDate].valueDateTime = "2017-10-01"
 * extension[extensionPregnancyStatusDeterminationDate].url = "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-date-determined-extension"

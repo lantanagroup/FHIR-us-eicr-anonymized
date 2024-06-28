@@ -3,6 +3,9 @@ InstanceOf: EICRAnonymizedPatient
 Title: "eICR Anonymized Patient Example: Anonymized"
 Description: "Example of eICR Anonymized Patient profile (anonymized)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * extension[race].extension[ombCategory].url = "ombCategory"
 * extension[race].extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
 * extension[race].extension[text].url = "text"

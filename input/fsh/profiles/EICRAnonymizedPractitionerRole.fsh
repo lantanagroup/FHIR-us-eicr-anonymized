@@ -6,6 +6,7 @@ Description: "This PractitionerRole profile represents an anonymized eCR Practit
 
 * ^version = "1.0.0"
 * insert rsProfileMeta
+* insert rsAddDARConstraints
 
 * practitioner only Reference(EICRAnonymizedPractitioner)
 

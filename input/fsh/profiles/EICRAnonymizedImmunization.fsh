@@ -6,6 +6,7 @@ Description: "This Immunization profile represents an anonymized eICR Immunizati
 
 * ^version = "1.0.0"
 * insert rsProfileMeta
+* insert rsAddDARConstraints
 
 * patient only Reference(EICRAnonymizedPatient)
 * patient ^short = "The patient of this anonymized Immunization is the anonymized Patient"

@@ -6,6 +6,7 @@ Description: "This Practitioner profile represents an anonymized eCR Practitione
 
 * ^version = "1.0.0"
 * insert rsProfileMeta
+* insert rsAddDARConstraints
 
 * name.extension contains $data-absent-reason named dataAbsentReason 1..1 MS
 * name.extension[dataAbsentReason] ^short = "A value is not allowed, must use data-absent-reason with value 'masked'"

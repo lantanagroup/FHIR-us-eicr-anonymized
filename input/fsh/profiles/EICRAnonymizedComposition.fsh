@@ -6,6 +6,8 @@ Description: "This Composition profile represents an anonymized eICR Composition
 * ^version = "1.0.0"
 * insert rsProfileMeta
 
+* insert rsAddDARConstraints
+
 * extension 1..
 
 // sliceExtensionInformationRecipient
@@ -35,33 +37,61 @@ Description: "This Composition profile represents an anonymized eICR Composition
 * relatesTo[sliceTransformed].target[x] ^short = "Identifier of the Document or Composition transformed"
 * relatesTo[sliceTransformed].target[x] ^definition = "Identifier of the Document or Composition transformed"
 
-* section[sliceHistoryOfPresentIllnessSection].text.extension contains $data-absent-reason named dataAbsentReason 1..1 MS
-* section[sliceHistoryOfPresentIllnessSection].text.extension[dataAbsentReason] ^short = "Use data-absent-reason with value 'masked'"
-* section[sliceHistoryOfPresentIllnessSection].text.extension[dataAbsentReason].value[x] = #masked (exactly)
-* section[sliceHistoryOfPresentIllnessSection].text.div ^short = """Set to '<div xmlns="http://www.w3.org/1999/xhtml"><p>MASKED</p></div>'"""
-* section[sliceHistoryOfPresentIllnessSection].text.div obeys eicr-anon-text-div
+* insert rsAddDARConstraintsToSection(sliceReasonForVisitSection)
+* insert rsAddDARConstraintsToSection(sliceChiefComplaintSection)
 
-* section[slicePastMedicalHistorySection].text.extension contains $data-absent-reason named dataAbsentReason 1..1 MS
-* section[slicePastMedicalHistorySection].text.extension[dataAbsentReason] ^short = "Use data-absent-reason with value 'masked'"
-* section[slicePastMedicalHistorySection].text.extension[dataAbsentReason].value[x] = #masked (exactly)
-* section[slicePastMedicalHistorySection].text.div ^short = """Set to '<div xmlns="http://www.w3.org/1999/xhtml"><p>MASKED</p></div>'"""
-* section[slicePastMedicalHistorySection].text.div obeys eicr-anon-text-div
+// * section[sliceHistoryOfPresentIllnessSection].text.extension contains $data-absent-reason named dataAbsentReason 1..1 MS
+// * section[sliceHistoryOfPresentIllnessSection].text.extension[dataAbsentReason] ^short = "Use data-absent-reason with value 'masked'"
+// * section[sliceHistoryOfPresentIllnessSection].text.extension[dataAbsentReason].value[x] = #masked (exactly)
+// * section[sliceHistoryOfPresentIllnessSection].text.div ^short = """Set to '<div xmlns="http://www.w3.org/1999/xhtml"><p>MASKED</p></div>'"""
+// * section[sliceHistoryOfPresentIllnessSection].text.div obeys eicr-anon-sect-text-div
+* insert rsAddDARConstraintsToSection(sliceHistoryOfPresentIllnessSection)
 
+* insert rsAddDARConstraintsToSection(sliceProblemSection)
+
+* insert rsAddDARConstraintsToSection(sliceMedicationsAdministeredSection)
+
+* insert rsAddDARConstraintsToSection(sliceAdmissionMedicationsSection)
+
+* insert rsAddDARConstraintsToSection(sliceMedicationsSection)
+
+* insert rsAddDARConstraintsToSection(sliceResultsSection)
+
+* insert rsAddDARConstraintsToSection(slicePlanOfTreatmentSection)
+
+* insert rsAddDARConstraintsToSection(sliceImmunizationsSection)
 * section[sliceImmunizationsSection].entry[sliceUSCoreImmunization] only Reference(EICRAnonymizedImmunization)
 
+* insert rsAddDARConstraintsToSection(sliceProceduresSection)
+
+* insert rsAddDARConstraintsToSection(sliceVitalSignsSection)
+
+* insert rsAddDARConstraintsToSection(sliceSocialHistorySection)
 * section[sliceSocialHistorySection].entry[sliceExposureContactInformation] 0..0
 * section[sliceSocialHistorySection].entry[sliceExposureContactInformation] only Reference(USPublicHealthExposureContactInformation)
-
 * section[sliceSocialHistorySection].entry[sliceODHPastOrPresentJob] only Reference(EICRAnonymizedPastOrPresentJob)
-
 * section[sliceSocialHistorySection].entry contains sliceEICRAnonymizedCalculatedAge 1..1 MS
 * section[sliceSocialHistorySection].entry[sliceEICRAnonymizedCalculatedAge] only Reference(EICRAnonymizedCalculatedAge)
 * section[sliceSocialHistorySection].entry[sliceEICRAnonymizedCalculatedAge] ^short = "Calculated Age entry"
 * section[sliceSocialHistorySection].entry[sliceEICRAnonymizedCalculatedAge] ^definition = "Calculated Age entry"
 
+* insert rsAddDARConstraintsToSection(slicePregnancySection)
+// added to pass new validation rules about slices not adding properly
 * section[slicePregnancySection].entry 1..
 
-Invariant: eicr-anon-text-div
-Description: """section.text.div SHALL be '<div xmlns="http://www.w3.org/1999/xhtml"><p>MASKED</p></div>'"""
+* insert rsAddDARConstraintsToSection(sliceEmergencyOutbreakInformationSection)
+
+// * section[slicePastMedicalHistorySection].text.extension contains $data-absent-reason named dataAbsentReason 1..1 MS
+// * section[slicePastMedicalHistorySection].text.extension[dataAbsentReason] ^short = "Use data-absent-reason with value 'masked'"
+// * section[slicePastMedicalHistorySection].text.extension[dataAbsentReason].value[x] = #masked (exactly)
+// * section[slicePastMedicalHistorySection].text.div ^short = """Set to '<div xmlns="http://www.w3.org/1999/xhtml"><p>MASKED</p></div>'"""
+// * section[slicePastMedicalHistorySection].text.div obeys eicr-anon-sect-text-div
+* insert rsAddDARConstraintsToSection(slicePastMedicalHistorySection)
+
+* insert rsAddDARConstraintsToSection(sliceReviewOfSystemsSection)
+* insert rsAddDARConstraintsToSection(sliceReportabilityResponseInformationSection)
+
+Invariant: eicr-anon-text
+Description: """text.div SHALL be '<div xmlns="http://www.w3.org/1999/xhtml"><p>MASKED</p></div>'"""
 * severity = #error
-* expression = "where($this = '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>')"
+* expression = "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'"

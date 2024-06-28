@@ -3,6 +3,9 @@ InstanceOf: EICRAnonymizedEncounter
 Title: "eICR Anonymized Encounter Example: encounter-outpatient-anon"
 Description: "Example of eICR Anonymized Encounter profile (anonymized, outpatient)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * identifier.system = "http://hospital.smarthealthit.org"
 * identifier.value = "9937012"
 * status = #finished

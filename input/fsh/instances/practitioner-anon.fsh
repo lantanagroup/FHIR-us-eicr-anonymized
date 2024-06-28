@@ -3,6 +3,9 @@ InstanceOf: EICRAnonymizedPractitioner
 Title: "eICR Anonymized Practitioner Example: Anonymized"
 Description: "Example of eICR Anonymized Practitioner (anonymized)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "9941339108"
 * insert rsDataAbsentReason(name)

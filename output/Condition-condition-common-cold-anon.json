@@ -5,8 +5,12 @@
     "profile" : ["http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-condition"]
   },
   "text" : {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition </b><a name=\"condition-common-cold-anon\"> </a><a name=\"hccondition-common-cold-anon\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceCondition &quot;condition-common-cold-anon&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-us-ph-condition.html\">US Public Health Condition</a></p></div><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: Common cold (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#82272006)</span></p><p><b>subject</b>: <a href=\"Patient-patient-anon.html\">Patient/patient-anon</a> &quot;&quot;</p><p><b>onset</b>: 2017-09-23</p><p><b>asserter</b>: <a href=\"Practitioner-practitioner-anon.html\">Practitioner/practitioner-anon</a> &quot;&quot;</p></div>"
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode" : "masked"
+    }],
+    "status" : "empty",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>"
   },
   "category" : [{
     "coding" : [{

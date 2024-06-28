@@ -3,6 +3,9 @@ InstanceOf: EICRCountryOfNationality
 Title: "Country of Nationality Observation Example: anonymized"
 Description: "Example of Country of Nationality Observation (anonymized)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * status = #final
 * code = $sct#186034007 "Ethnicity / related nationality data (observable entity)"
 * subject = Reference(patient-anon)

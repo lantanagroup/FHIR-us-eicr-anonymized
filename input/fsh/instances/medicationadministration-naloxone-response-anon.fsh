@@ -3,6 +3,9 @@ InstanceOf: USPublicHealthMedicationAdministration
 Title: "MedicationAdministration Example: anonymized, naloxone response"
 Description: "Example of MedicationAdministration resource with Therapeutic Medication Response extension (anonymized: naloxone response)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * extension.url = "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-therapeutic-medication-response-extension"
 * extension.valueCodeableConcept = $sct#268910001 "Patient's condition improved (finding)"
 * status = #completed

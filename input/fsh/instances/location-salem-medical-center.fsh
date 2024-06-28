@@ -3,6 +3,9 @@ InstanceOf: USPublicHealthLocation
 Title: "US Public Health Location Example: Clinic Bldg A, Salem Medical Center"
 Description: "Example of US Public Health Location profile (Clinic Bldg A, Salem Medical Center)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * identifier.system = "http://hl7.org.fhir/sid/us-npi"
 * identifier.value = "1144221995"
 * status = #active

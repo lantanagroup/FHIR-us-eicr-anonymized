@@ -3,6 +3,9 @@ InstanceOf: Device
 Title: "Device Example: ECMO, anonymized"
 Description: "Example of Device Profile (anonymized, ECMO)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * udiCarrier.deviceIdentifier = "99863313444316"
 * udiCarrier.carrierHRF = "(01)99863313444316(17)220101(10)M320(21)AC222"
 * udiCarrier.entryType = #rfid

@@ -3,6 +3,9 @@ InstanceOf: RR_Routing_Entity_Organization
 Title: "RR Routing Entity Organization Example: Health Authority West Routing Entity"
 Description: "Example of RR Routing Entity Organization Example profile (Health Authority West Routing Entity)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * identifier.system = "http://hl7.org.fhir/sid/us-npi"
 * identifier.value = "43214321"
 * active = true

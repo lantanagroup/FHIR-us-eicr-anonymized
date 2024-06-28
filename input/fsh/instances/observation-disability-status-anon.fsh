@@ -3,6 +3,9 @@ InstanceOf: USPublicHealthDisabilityStatus
 Title: "Disability Status Example: anonymized"
 Description: "Example of Disability Status Profile (anonymized)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * status = #final
 * code = $loinc#69856-3 "Are you deaf, or do you have serious difficulty hearing"
 * subject = Reference(patient-anon)

@@ -3,6 +3,9 @@ InstanceOf: USPublicHealthEmergencyOutbreakInformation
 Title: "US Public Health Emergency Outbreak Information Example: anonymized"
 Description: "Example of Emergency Outbreak Information profile (anonymized)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * status = #final
 * code.text = "Employee desk distance from mail sorter"
 * subject = Reference(patient-anon)

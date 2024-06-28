@@ -3,6 +3,9 @@ InstanceOf: RRReportabilityInformationObservation
 Title: "RR Reportability Information Observation Example - anonymized"
 Description: "Example of RR Reportability Information Observation profile - anonymized"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * extension[0].url = "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-extension"
 * extension[=].valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#RRVS1 "Reportable"
 * extension[+].url = "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-reason-extension"

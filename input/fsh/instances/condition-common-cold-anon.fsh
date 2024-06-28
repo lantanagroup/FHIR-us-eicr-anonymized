@@ -3,6 +3,9 @@ InstanceOf: USPublicHealthCondition
 Title: "US Public Health Condition example: anonymized - common cold"
 Description: "Example of US Public Health Condition profile (anonymized, common cold)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * category = $condition-category#problem-list-item "Problem List Item"
 * code = $sct#82272006 "Common cold (disorder)"
 * subject = Reference(patient-anon)

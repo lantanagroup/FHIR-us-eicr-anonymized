@@ -3,6 +3,9 @@ InstanceOf: USPublicHealthOrganization
 Title: "US PH Organization Example: Acme Labs"
 Description: "Example of US Public Health Organization profile: Acme Labs"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * identifier.system = "http://hl7.org.fhir/sid/us-npi"
 * identifier.value = "1144221999"
 * active = true

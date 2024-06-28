@@ -3,6 +3,9 @@ InstanceOf: RRRelevantReportableConditionObservation
 Title: "RR Relevant Reportable Condition Observation Example - anonymized"
 Description: "Example of RR Relevant Reportable Condition Observation profile - anonymized"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * status = #final
 * code.coding[codeSNOMED] = $sct#64572001
 * code.coding[codeLOINC] = $loinc#75323-6

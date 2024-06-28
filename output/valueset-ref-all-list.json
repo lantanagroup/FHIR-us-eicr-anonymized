@@ -160,10 +160,10 @@
       "uses" : {
       },
       "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization",
+      "StructureDefinition-eicr-anon-practitionerrole.html" : "eICR Anonymized PractitionerRole",
       "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
       "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
-      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
-      "StructureDefinition-eicr-anon-practitionerrole.html" : "eICR Anonymized PractitionerRole"
+      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -178,10 +178,10 @@
       "uses" : {
       },
       "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization",
+      "StructureDefinition-eicr-anon-practitionerrole.html" : "eICR Anonymized PractitionerRole",
       "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
       "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
-      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
-      "StructureDefinition-eicr-anon-practitionerrole.html" : "eICR Anonymized PractitionerRole"
+      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -210,13 +210,15 @@
       "uses" : {
       },
       "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization",
-      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
+      "StructureDefinition-eicr-anon-practitionerrole.html" : "eICR Anonymized PractitionerRole",
       "StructureDefinition-eicr-anon-caculated-age.html" : "eICR Anonymized Calculated Age",
       "StructureDefinition-eicr-anon-composition.html" : "eICR Anonymized Composition",
+      "StructureDefinition-eicr-anon-immunization.html" : "eICR Anonymized Immunization",
+      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
+      "StructureDefinition-eicr-anon-past-or-present-job.html" : "eICR Anonymized Past or Present Job",
       "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
       "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
-      "StructureDefinition-eicr-anon-practitionerrole.html" : "eICR Anonymized PractitionerRole",
-      "StructureDefinition-eicr-anon-past-or-present-job.html" : "eICR Anonymized Past or Present Job"
+      "StructureDefinition-eicr-anon-encounter.html" : "eICR Anonymized Encounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -466,9 +468,9 @@
       },
       "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization",
       "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
-      "StructureDefinition-eicr-anon-encounter.html" : "eICR Anonymized Encounter",
       "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
-      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson"
+      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
+      "StructureDefinition-eicr-anon-encounter.html" : "eICR Anonymized Encounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -484,9 +486,9 @@
       },
       "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization",
       "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
-      "StructureDefinition-eicr-anon-encounter.html" : "eICR Anonymized Encounter",
       "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
-      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson"
+      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
+      "StructureDefinition-eicr-anon-encounter.html" : "eICR Anonymized Encounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
@@ -666,16 +668,16 @@
       "uses" : {
       },
       "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization",
-      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
-      "StructureDefinition-eicr-anon-encounter.html" : "eICR Anonymized Encounter",
+      "StructureDefinition-eicr-anon-practitionerrole.html" : "eICR Anonymized PractitionerRole",
       "StructureDefinition-eicr-anon-caculated-age.html" : "eICR Anonymized Calculated Age",
       "StructureDefinition-eicr-anon-composition.html" : "eICR Anonymized Composition",
+      "StructureDefinition-eicr-anon-immunization.html" : "eICR Anonymized Immunization",
+      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
+      "StructureDefinition-eicr-anon-past-or-present-job.html" : "eICR Anonymized Past or Present Job",
       "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
       "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
-      "StructureDefinition-eicr-anon-practitionerrole.html" : "eICR Anonymized PractitionerRole",
-      "StructureDefinition-eicr-anon-immunization.html" : "eICR Anonymized Immunization",
-      "StructureDefinition-eicr-anon-past-or-present-job.html" : "eICR Anonymized Past or Present Job",
-      "StructureDefinition-eicr-anon-document-bundle.html" : "eICR Anonymized Document Bundle"
+      "StructureDefinition-eicr-anon-document-bundle.html" : "eICR Anonymized Document Bundle",
+      "StructureDefinition-eicr-anon-encounter.html" : "eICR Anonymized Encounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -794,7 +796,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.55"],
       "uses" : {
       },
-      "StructureDefinition-eicr-anon-composition.html" : "eICR Anonymized Composition"
+      "StructureDefinition-eicr-anon-organization.html" : "eICR Anonymized Organization",
+      "StructureDefinition-eicr-anon-practitionerrole.html" : "eICR Anonymized PractitionerRole",
+      "StructureDefinition-eicr-anon-caculated-age.html" : "eICR Anonymized Calculated Age",
+      "StructureDefinition-eicr-anon-composition.html" : "eICR Anonymized Composition",
+      "StructureDefinition-eicr-anon-immunization.html" : "eICR Anonymized Immunization",
+      "StructureDefinition-eicr-anon-patient.html" : "eICR Anonymized Patient",
+      "StructureDefinition-eicr-anon-past-or-present-job.html" : "eICR Anonymized Past or Present Job",
+      "StructureDefinition-eicr-anon-practitioner.html" : "eICR Anonymized Practitioner",
+      "StructureDefinition-eicr-anon-relatedperson.html" : "eICR Anonymized RelatedPerson",
+      "StructureDefinition-eicr-anon-encounter.html" : "eICR Anonymized Encounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",

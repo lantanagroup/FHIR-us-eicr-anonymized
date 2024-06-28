@@ -5,8 +5,12 @@
     "profile" : ["http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization"]
   },
   "text" : {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization </b><a name=\"organization-custodian\"> </a><a name=\"hcorganization-custodian\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-custodian&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-us-ph-organization.html\">US Public Health Organization</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/545454545</p><p><b>active</b>: true</p><p><b>name</b>: Custodian Organization</p><p><b>telecom</b>: <a href=\"tel:+1-555-555-4545\">+1-555-555-4545</a>, <a href=\"mailto:mail@custodianorganization.com\">mail@custodianorganization.com</a></p><p><b>address</b>: 11111 Custodian Drive Ann Arbor MI 99999 </p></div>"
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode" : "masked"
+    }],
+    "status" : "empty",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>"
   },
   "identifier" : [{
     "system" : "http://hl7.org.fhir/sid/us-npi",

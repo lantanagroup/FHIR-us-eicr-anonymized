@@ -3,6 +3,9 @@ InstanceOf: USPublicHealthOrganization
 Title: "US Public Health Organization Example: Custodian Organization"
 Description: "Example of US Public Health Organization profile (Custodian Organization)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * identifier.system = "http://hl7.org.fhir/sid/us-npi"
 * identifier.value = "545454545"
 * active = true

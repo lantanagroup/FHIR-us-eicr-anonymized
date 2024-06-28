@@ -3,6 +3,9 @@ InstanceOf: RRDocumentReference
 Title: "RR DocumentReference example: Zika follow-up"
 Description: "Example of RR DocumentReference profile: Zika follow-up"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * extension.url = "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-priority-extension"
 * extension.valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#RRVS18 "Immediate action requested"
 * status = #current

@@ -15,8 +15,12 @@
      ] )
   ] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization </b><a name=\"organization-rr-rules-authoring-agency-haw\"> </a><a name=\"hcorganization-rr-rules-authoring-agency-haw\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceOrganization &quot;organization-rr-rules-authoring-agency-haw&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/ecr/STU2.1/StructureDefinition-rr-rules-authoring-agency-organization.html\">Rules Authoring Agency Organization</a></p></div><p><b>identifier</b>: <code>http://hl7.org.fhir/sid/us-npi</code>/12341234</p><p><b>active</b>: true</p><p><b>type</b>: Rules Authoring Agency <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#RR12)</span></p><p><b>name</b>: Health Authority West Rules Authoring Agency</p><p><b>telecom</b>: <a href=\"tel:+1-555-555-3555\">+1-555-555-3555</a>, <a href=\"mailto:mail@healthauthoritywest.gov\">mail@healthauthoritywest.gov</a></p><p><b>address</b>: 7777 Health Authority Drive Ann Arbor MI 99999 </p></div>"
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "masked" ]
+     ] ) ;
+     fhir:status [ fhir:v "empty" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org.fhir/sid/us-npi"^^xsd:anyURI ] ;

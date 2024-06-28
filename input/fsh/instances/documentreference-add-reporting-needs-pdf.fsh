@@ -3,6 +3,9 @@ InstanceOf: RRDocumentReference
 Title: "RR DocumentReference example: Additional reporting needs"
 Description: "Example of RR DocumentReference profile: Additional reporting needs"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * extension.url = "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-priority-extension"
 * extension.valueCodeableConcept = urn:oid:2.16.840.1.114222.4.5.274#RRVS16 "Action requested"
 * status = #current

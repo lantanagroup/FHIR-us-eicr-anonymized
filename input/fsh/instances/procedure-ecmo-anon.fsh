@@ -3,6 +3,9 @@ InstanceOf: EICRProcedure
 Title: "eICR Procedure Example: ECMO"
 Description: "Example of eICR Procedure (anonymized, ECMO)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:b2a737f2-2fdb-49c1-b097-dac173d07afd"
 * status = #completed

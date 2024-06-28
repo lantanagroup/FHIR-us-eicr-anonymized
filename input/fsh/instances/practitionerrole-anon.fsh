@@ -3,6 +3,9 @@ InstanceOf: EICRAnonymizedPractitionerRole
 Title: "eICR Anonymized PractitionerRole Example: anonymized"
 Description: "Example of eICR Anonymized PractitionerRole profile (anonymized)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "9941339108"
 * practitioner = Reference(practitioner-anon)

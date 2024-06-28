@@ -6,6 +6,7 @@ Description: "This Patient profile represents an anonymized eICR Patient."
 
 * ^version = "1.0.0"
 * insert rsProfileMeta
+* insert rsAddDARConstraints
 
 // need the data absent reason set out here because it is only on id in the base profile
 * identifier.system.extension contains $data-absent-reason named dataAbsentReason 1..1 MS

@@ -3,6 +3,9 @@ InstanceOf: UsualWork
 Title: "ODH Usual Work Example: observation-odh-usual-work-anonymized"
 Description: "Example of ODH Usual Work profile (anonymized)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * status = #final
 * code = $loinc#21843-8 "History of Usual occupation"
 * subject = Reference(patient-anon)

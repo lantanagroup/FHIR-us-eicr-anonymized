@@ -185,7 +185,7 @@
 
 
 
-  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
 {
   "<a href="http://hl7.org/fhir/R4/composition.html#Composition">resourceType</a>" : "Composition",
   "<a href="http://hl7.org/fhir/R4/composition.html#Composition.id">id</a>" : "composition-zika-anon",
@@ -195,8 +195,14 @@
     ]
   },
   "<a href="http://hl7.org/fhir/R4/composition.html#Composition.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Composition &lt;/b&gt;&lt;a name=\&quot;composition-zika-anon\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccomposition-zika-anon\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;ResourceComposition &amp;quot;composition-zika-anon&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-eicr-anon-composition.html\&quot;&gt;eICR Anonymized Composition&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Composition Version Number&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: c03eab8c-11e8-4d0c-ad2a-b385395e27db&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Public Health Case Report &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#55751-2)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-encounter-outpatient-anon.html\&quot;&gt;Encounter/encounter-outpatient-anon&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2024-06-02 22:13:23+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;PractitionerRole-practitionerrole-anon.html\&quot;&gt;PractitionerRole/practitionerrole-anon&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Initial Public Health Case Report - Zika Example&lt;/p&gt;&lt;p&gt;&lt;b&gt;custodian&lt;/b&gt;: &lt;a href=\&quot;Organization-organization-custodian.html\&quot;&gt;Organization/organization-custodian&lt;/a&gt; &amp;quot;Custodian Organization&amp;quot;&lt;/p&gt;&lt;h3&gt;RelatesTos&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;transforms&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/5.3.0/NamingSystem-uri.html\&quot; title=\&quot;As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\&quot;&gt;Uniform Resource Identifier (URI)&lt;/a&gt;/urn:uuid:58fecd25-973e-4397-af68-1b7683758955&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+      }
+    ],
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/composition.html#Composition.extension">extension</a>" : [
     {
@@ -255,8 +261,14 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table xmlns:xsl=\&quot;http://www.w3.org/1999/XSL/Transform\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;title&lt;/td&gt;&lt;td&gt;&lt;div title=\&quot;title\&quot;&gt;Reason for Visit Section&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;code&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;div title=\&quot;display\&quot;&gt;Reason for visit Narrative&lt;/div&gt;&lt;div title=\&quot;code\&quot;&gt;(29299-5)&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div title=\&quot;system\&quot;&gt;&lt;a href=\&quot;http://loinc.org\&quot;&gt;http://loinc.org&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot; lang=\&quot;en-US\&quot; class=\&quot;text-no-entries\&quot;&gt;&lt;p&gt;Reason for Visit: Bad cough&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       }
     },
     {
@@ -271,8 +283,14 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table xmlns:xsl=\&quot;http://www.w3.org/1999/XSL/Transform\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;title&lt;/td&gt;&lt;td&gt;&lt;div title=\&quot;title\&quot;&gt;Chief complaint Narrative - Reported&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;code&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;div title=\&quot;display\&quot;&gt;Chief complaint Narrative - Reported&lt;/div&gt;&lt;div title=\&quot;code\&quot;&gt;(10154-3)&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div title=\&quot;system\&quot;&gt;&lt;a href=\&quot;http://loinc.org\&quot;&gt;http://loinc.org&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot; lang=\&quot;en-US\&quot; class=\&quot;text-no-entries\&quot;&gt;&lt;p&gt;Chief Complaint: Bad cough&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       }
     },
     {
@@ -294,7 +312,7 @@
           }
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       }
     },
     {
@@ -309,8 +327,14 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table xmlns:xsl=\&quot;http://www.w3.org/1999/XSL/Transform\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;title&lt;/td&gt;&lt;td&gt;&lt;div title=\&quot;title\&quot;&gt;Problems Section&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;code&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;div title=\&quot;display\&quot;&gt;Problem list - Reported&lt;/div&gt;&lt;div title=\&quot;code\&quot;&gt;(11450-4)&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div title=\&quot;system\&quot;&gt;&lt;a href=\&quot;http://loinc.org\&quot;&gt;http://loinc.org&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Condition-condition-common-cold-anon.html\&quot;&gt;Common cold (disorder)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
@@ -330,8 +354,14 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table xmlns:xsl=\&quot;http://www.w3.org/1999/XSL/Transform\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;title&lt;/td&gt;&lt;td&gt;&lt;div title=\&quot;title\&quot;&gt;Medications Administered Section&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;code&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;div title=\&quot;display\&quot;&gt;Medication administered Narrative&lt;/div&gt;&lt;div title=\&quot;code\&quot;&gt;(29549-3)&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div title=\&quot;system\&quot;&gt;&lt;a href=\&quot;http://loinc.org\&quot;&gt;http://loinc.org&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;MedicationAdministration-medicationadministration-azithromycin-anon.html\&quot;&gt;Azithromycin 500 MG Oral Tablet&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
@@ -351,8 +381,14 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table xmlns:xsl=\&quot;http://www.w3.org/1999/XSL/Transform\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;title&lt;/td&gt;&lt;td&gt;&lt;div title=\&quot;title\&quot;&gt;Results Section&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;code&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;div title=\&quot;display\&quot;&gt;Relevant Dx tests/lab data&lt;/div&gt;&lt;div title=\&quot;code\&quot;&gt;(30954-2)&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div title=\&quot;system\&quot;&gt;&lt;a href=\&quot;http://loinc.org\&quot;&gt;http://loinc.org&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Observation-observation-lab-result-lymphocytes-anon.html\&quot;&gt;Lymphocytes [#/​volume] in Blood by Automated count - Interpretation: High&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
@@ -372,8 +408,14 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table xmlns:xsl=\&quot;http://www.w3.org/1999/XSL/Transform\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;title&lt;/td&gt;&lt;td&gt;&lt;div title=\&quot;title\&quot;&gt;Social History Section&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;code&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;div title=\&quot;display\&quot;&gt;Social history Narrative&lt;/div&gt;&lt;div title=\&quot;code\&quot;&gt;(29762-2)&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div title=\&quot;system\&quot;&gt;&lt;a href=\&quot;http://loinc.org\&quot;&gt;http://loinc.org&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Observation-observation-travel-history-201801-anon.html\&quot;&gt;eICR Travel History: anonymized 2018-01&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Observation-observation-odh-usual-work-anon.html\&quot;&gt;ODH Usual Work: anonymized&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Observation-observation-past-or-present-job-anon.html\&quot;&gt;:eICR Anonymized Past or Present Job&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Observation-observation-disability-status-anon.html\&quot;&gt;:US Public Health Disability Status: anonymized&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Observation-observation-country-of-nationality-anon.html\&quot;&gt;:eICR Country of Nationality: anonymized&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Observation-observation-country-of-residence-anon.html\&quot;&gt;:eICR Country of Residence: anonymized&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Observation-observation-calculated-age-anon.html\&quot;&gt;:eICR Calculated Age: anonymized&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
@@ -411,8 +453,14 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;title&lt;/td&gt;&lt;td&gt;&lt;div title=\&quot;title\&quot;&gt;Admission Medications Section&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;code&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;div title=\&quot;display\&quot;&gt;Medications on admission (narrative)&lt;/div&gt;&lt;div title=\&quot;code\&quot;&gt;(42346-7)&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div title=\&quot;system\&quot;&gt;&lt;a href=\&quot;http://loinc.org\&quot;&gt;http://loinc.org&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;MedicationAdministration-medicationadministration-naloxone-response-anon.html\&quot;&gt;naloxone HCl 0.4 MG in 1 ML Injection&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
@@ -432,8 +480,14 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;title&lt;/td&gt;&lt;td&gt;&lt;div title=\&quot;title\&quot;&gt;Medications Section&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;code&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;div title=\&quot;display\&quot;&gt;History of Medication use Narrative&lt;/div&gt;&lt;div title=\&quot;code\&quot;&gt;(10160-0)&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div title=\&quot;system\&quot;&gt;&lt;a href=\&quot;http://loinc.org\&quot;&gt;http://loinc.org&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;MedicationAdministration-medicationadministration-azithromycin-anon.html\&quot;&gt;Azithromycin 500 MG Oral Tablet&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
@@ -453,8 +507,14 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table xmlns:xsl=\&quot;http://www.w3.org/1999/XSL/Transform\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;title&lt;/td&gt;&lt;td&gt;&lt;div title=\&quot;title\&quot;&gt;Plan of Treatment Section&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;code&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;div title=\&quot;display\&quot;&gt;Plan of care note&lt;/div&gt;&lt;div title=\&quot;code\&quot;&gt;(18776-5)&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div title=\&quot;system\&quot;&gt;&lt;a href=\&quot;http://loinc.org\&quot;&gt;http://loinc.org&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;b&gt;Trigger code&lt;/b&gt;&lt;/li&gt;&lt;li&gt;Trigger Code:&lt;/li&gt;&lt;li&gt;Trigger Code Display:&lt;/li&gt;&lt;li&gt;Trigger Code System:&lt;/li&gt;&lt;li&gt;Trigger Code Value Set: urn:oid:2.16.840.1.114222.4.11.7508&lt;/li&gt;&lt;li&gt;Trigger Code Value Set Version: 19/05/2018&lt;/li&gt;&lt;/ul&gt;&lt;a href=\&quot;ServiceRequest-servicerequest-zika-anon.html\&quot;&gt;Request for Zika virus envelope (E) gene [Presence] in Serum by Probe and target amplification method&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
@@ -497,8 +557,14 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;title&lt;/td&gt;&lt;td&gt;&lt;div title=\&quot;title\&quot;&gt;Immunizations Section&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;code&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;div title=\&quot;display\&quot;&gt;History of Immunization Narrative&lt;/div&gt;&lt;div title=\&quot;code\&quot;&gt;(11369-6)&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div title=\&quot;system\&quot;&gt;&lt;a href=\&quot;http://loinc.org\&quot;&gt;http://loinc.org&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Immunization-immunization-pneumo-anon.html\&quot;&gt;pneumococcal polysaccharide vaccine&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Observation-observation-vaccine-credential-assertion-anon.html\&quot;&gt;Vaccine Credential Patient Assertion Observation Example&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
@@ -521,8 +587,14 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;title&lt;/td&gt;&lt;td&gt;&lt;div title=\&quot;title\&quot;&gt;Procedures Section&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;code&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;div title=\&quot;display\&quot;&gt;History of Procedures Document&lt;/div&gt;&lt;div title=\&quot;code\&quot;&gt;(47519-4)&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div title=\&quot;system\&quot;&gt;&lt;a href=\&quot;http://loinc.org\&quot;&gt;http://loinc.org&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Procedure-procedure-ecmo-anon.html\&quot;&gt;Extracorporeal membrane oxygenation (procedure)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
@@ -542,8 +614,14 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;title&lt;/td&gt;&lt;td&gt;&lt;div title=\&quot;title\&quot;&gt;Vital Signs Section&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;code&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;div title=\&quot;display\&quot;&gt;Vital signs&lt;/div&gt;&lt;div title=\&quot;code\&quot;&gt;(8716-3)&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div title=\&quot;system\&quot;&gt;&lt;a href=\&quot;http://loinc.org\&quot;&gt;http://loinc.org&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Observation-observation-blood-pressure-anon.html\&quot;&gt;Blood pressure systolic and diastolic&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
@@ -563,8 +641,14 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table xmlns:xsl=\&quot;http://www.w3.org/1999/XSL/Transform\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;title&lt;/td&gt;&lt;td&gt;&lt;div title=\&quot;title\&quot;&gt;Pregnancy Section&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;code&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;div title=\&quot;display\&quot;&gt;Pregnancy summary Document&lt;/div&gt;&lt;div title=\&quot;code\&quot;&gt;(90767-5)&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div title=\&quot;system\&quot;&gt;&lt;a href=\&quot;http://loinc.org\&quot;&gt;http://loinc.org&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Observation-observation-pregnancy-status-anon.html\&quot;&gt;eICR Pregnancy Status: anonymized&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
@@ -584,8 +668,14 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;title&lt;/td&gt;&lt;td&gt;&lt;div title=\&quot;title\&quot;&gt;Emergency Outbreak Information Section&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;code&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;div title=\&quot;display\&quot;&gt;Public health Note&lt;/div&gt;&lt;div title=\&quot;code\&quot;&gt;(83910-0)&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div title=\&quot;system\&quot;&gt;&lt;a href=\&quot;http://loinc.org\&quot;&gt;http://loinc.org&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Observation-observation-emergency-outbreak-info-anon.html\&quot;&gt;US Public Health Emergency Outbreak Information Example&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
@@ -612,7 +702,7 @@
           }
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       }
     },
     {
@@ -627,8 +717,14 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table xmlns:xsl=\&quot;http://www.w3.org/1999/XSL/Transform\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;title&lt;/td&gt;&lt;td&gt;&lt;div title=\&quot;title\&quot;&gt;Review of Systems Section&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;code&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;div title=\&quot;display\&quot;&gt;Review of Systems Section Narrative&lt;/div&gt;&lt;div title=\&quot;code\&quot;&gt;(10187-3)&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div title=\&quot;system\&quot;&gt;&lt;a href=\&quot;http://loinc.org\&quot;&gt;http://loinc.org&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot; lang=\&quot;en-US\&quot; class=\&quot;text-no-entries\&quot;&gt;&lt;p&gt;Review of systems section text&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       }
     },
     {
@@ -643,8 +739,14 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;title&lt;/td&gt;&lt;td&gt;&lt;div title=\&quot;title\&quot;&gt;Reportability Response Information Section&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;code&lt;/td&gt;&lt;td&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;ul style=\&quot;list-style:none; padding-left:0; margin:0 0;\&quot;&gt;&lt;li&gt;&lt;div title=\&quot;display\&quot;&gt;Reportability response report Document Public health&lt;/div&gt;&lt;div title=\&quot;code\&quot;&gt;(88085-6)&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div title=\&quot;system\&quot;&gt;&lt;a href=\&quot;http://loinc.org\&quot;&gt;http://loinc.org&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;font-weight: bold\&quot;&gt;entry&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Observation-observation-rr-relevant-reportable-condition-anon.html\&quot;&gt;RR Relevant Reportable Condition: anonymized&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "masked"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "empty",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;"
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
@@ -677,7 +779,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 26, 2024 06:54+1000">2024-06-26</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 28, 2024 19:57+1000">2024-06-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -2,15 +2,15 @@
   "resourceType" : "ImplementationGuide",
   "id" : "ecr.fhir.us.anonymized-eicr",
   "text" : {
-    "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>EICRAnonymized</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/fhir/us/anonymized-eicr/ImplementationGuide/ecr.fhir.us.anonymized-eicr</pre></div>"
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ecr.fhir.us.anonymized-eicr</b></p><a name=\"ecr.fhir.us.anonymized-eicr\"> </a><a name=\"hcecr.fhir.us.anonymized-eicr\"> </a><a name=\"hcecr.fhir.us.anonymized-eicr-en-AU\"> </a><h2>EICRAnonymized</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/fhir/us/anonymized-eicr/ImplementationGuide/ecr.fhir.us.anonymized-eicr</pre></div>"
   },
   "url" : "http://fhir.org/fhir/us/anonymized-eicr/ImplementationGuide/ecr.fhir.us.anonymized-eicr",
   "version" : "1.0.0",
   "name" : "EICRAnonymized",
   "title" : "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)",
   "status" : "active",
-  "date" : "2024-06-26T06:54:29+10:00",
+  "date" : "2024-06-28T19:57:37+10:00",
   "publisher" : "APHL",
   "jurisdiction" : [{
     "coding" : [{
@@ -1180,6 +1180,18 @@
       },
       "name" : "US Core Lab Result Observation Example: observation-lab-result-lymphocytes-anon",
       "description" : "Example of US Core Lab Result profile (anonymized, lymphocytes)",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/practitioner-anon-not"
+      },
+      "name" : "US Core Practitioner Profile",
+      "description" : "Example of US Core Pracitioner Profile",
       "exampleBoolean" : true
     },
     {

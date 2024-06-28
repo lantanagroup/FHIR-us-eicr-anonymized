@@ -3,6 +3,9 @@ InstanceOf: USCoreBloodPressureProfile
 Title: "US Core Vital Sign Observation example"
 Description: "Example of US Core Vital Sign Observation profile."
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * status = #final
 * category[VSCat] = $observation-category#vital-signs "Vital Signs"
 * category[VSCat].text = "Vital Signs"

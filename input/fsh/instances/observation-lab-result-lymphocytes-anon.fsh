@@ -3,6 +3,9 @@ InstanceOf: USCoreLaboratoryResultObservationProfile
 Title: "US Core Lab Result Observation Example: observation-lab-result-lymphocytes-anon"
 Description: "Example of US Core Lab Result profile (anonymized, lymphocytes)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * status = #final
 * category[Laboratory] = $observation-category#laboratory "Laboratory"
 * category[Laboratory].text = "Laboratory"

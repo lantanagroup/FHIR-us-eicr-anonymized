@@ -3,6 +3,9 @@ InstanceOf: EICRVaccineCredentialPatientAssertion
 Title: "eICR Vaccine Credential Patient Assertion Observation Example: anonymized"
 Description: "Example of eICR Vaccine Credential Patient Assertion Observation (anonymized)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * status = #final
 * code = $loinc#11370-4 "Immunization status - Reported"
 * subject = Reference(patient-anon)

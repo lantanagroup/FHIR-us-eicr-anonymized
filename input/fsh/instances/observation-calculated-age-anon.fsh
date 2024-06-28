@@ -3,6 +3,9 @@ InstanceOf: EICRAnonymizedCalculatedAge
 Title: "Calculated Age Observation Example: anonymized"
 Description: "Example of Calculated Age Observation (anonymized)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * status = #final
 * code = $loinc#29553-5 "Age calculated"
 * subject = Reference(patient-anon)

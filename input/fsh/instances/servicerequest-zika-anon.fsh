@@ -3,6 +3,9 @@ InstanceOf: Eicr_ServiceRequest
 Title: "eICR ServiceRequest Example"
 Description: "Example of eICR ServiceRequest profile (anonymized, Zika RT-PCR)"
 Usage: #example
+
+* insert rsDataAbsentReasonText(text)
+
 * identifier.system = "http://lab.smarthealthit.org"
 * identifier.value = "061ef612-344f-4e7b-81a8-1059ae7bbe11"
 * status = #completed

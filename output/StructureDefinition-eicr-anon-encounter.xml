@@ -22,7 +22,7 @@
   <title value="eICR Anonymized Encounter"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2024-06-28T20:58:40+10:00"/>
+  <date value="2024-06-29T16:05:37+10:00"/>
   <publisher value="APHL"/>
   <description value="This Encounter profile represents an anonymized eICR Encounter."/>
   <jurisdiction>
@@ -273,7 +273,7 @@
         <key value="eicr-anon-text"/>
         <severity value="error"/>
         <human value="text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'"/>
-        <expression value="`div` ~ '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'"/>
+        <expression value="exists() implies `div`.toString().matches('&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;\\s*&lt;p&gt;MASKED&lt;/p&gt;\\s*&lt;/div&gt;')"/>
         <source value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-encounter"/>
       </constraint>
       <isModifier value="false"/>
@@ -3971,7 +3971,7 @@
         <key value="eicr-anon-text"/>
         <severity value="error"/>
         <human value="text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'"/>
-        <expression value="`div` ~ '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'"/>
+        <expression value="exists() implies `div`.toString().matches('&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;\\s*&lt;p&gt;MASKED&lt;/p&gt;\\s*&lt;/div&gt;')"/>
         <source value="http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-encounter"/>
       </constraint>
     </element>

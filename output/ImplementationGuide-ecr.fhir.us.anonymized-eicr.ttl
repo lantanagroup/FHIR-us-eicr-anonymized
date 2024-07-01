@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "EICRAnonymized"] ; # 
   fhir:title [ fhir:v "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-06-28T20:58:40+10:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-29T16:05:37+10:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "APHL"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [

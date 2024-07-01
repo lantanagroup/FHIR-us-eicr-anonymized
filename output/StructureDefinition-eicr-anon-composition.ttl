@@ -19,7 +19,7 @@
   fhir:title [ fhir:v "eICR Anonymized Composition"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-06-28T20:58:40+10:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-29T16:05:37+10:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "APHL"] ; # 
   fhir:description [ fhir:v "This Composition profile represents an anonymized eICR Composition."] ; # 
   fhir:jurisdiction ( [
@@ -314,7 +314,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -4843,7 +4843,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -5851,7 +5851,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -6859,7 +6859,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -7867,7 +7867,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -9199,7 +9199,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -10526,7 +10526,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -11587,7 +11587,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -12914,7 +12914,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -14241,7 +14241,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -15880,7 +15880,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -17251,7 +17251,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -18583,7 +18583,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -19644,7 +19644,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -21104,7 +21104,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -22294,7 +22294,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -23349,7 +23349,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -24407,7 +24407,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -25409,7 +25409,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26075,7 +26075,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26200,7 +26200,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26244,7 +26244,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26288,7 +26288,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26332,7 +26332,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26376,7 +26376,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26420,7 +26420,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26464,7 +26464,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26508,7 +26508,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26552,7 +26552,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26596,7 +26596,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26651,7 +26651,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26695,7 +26695,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26739,7 +26739,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26819,7 +26819,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26867,7 +26867,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26911,7 +26911,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26955,7 +26955,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>
@@ -26999,7 +26999,7 @@
          fhir:key [ fhir:v "eicr-anon-text" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
-         fhir:expression [ fhir:v "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'" ] ;
+         fhir:expression [ fhir:v "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')" ] ;
          fhir:source [
            fhir:v "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"^^xsd:anyURI ;
            fhir:link <http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition>

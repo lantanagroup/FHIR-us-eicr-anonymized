@@ -94,4 +94,5 @@ Description: "This Composition profile represents an anonymized eICR Composition
 Invariant: eicr-anon-text
 Description: """text.div SHALL be '<div xmlns="http://www.w3.org/1999/xhtml"><p>MASKED</p></div>'"""
 * severity = #error
-* expression = "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'"
+// * expression = "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'"
+* expression = """exists() implies `div`.toString().matches('<div xmlns="http://www.w3.org/1999/xhtml">\\s*<p>MASKED</p>\\s*</div>')"""

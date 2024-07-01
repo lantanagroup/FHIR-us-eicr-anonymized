@@ -25,7 +25,7 @@ dom-3:If the resource is contained in another resource, it SHALL be referred to 
 "Composition.text","Composition.text","","narrative
 htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 ","Text summary of the resource, for human interpretation","A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it ""clinically safe"" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.","Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a ""text blob"" or where text is additionally entered raw or narrated and encoded information is added later.","","","","","","","","",,,,,"",,,,"DomainResource.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","Act.text?"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","Act.text?"
 "Composition.text.id","Composition.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.text.extension","Composition.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -438,7 +438,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:sliceReasonForVisitSection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Reason for Visit narrative","Reason for Visit narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","[eICR R2 STU3.1] Reason for Visit Section/text",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","[eICR R2 STU3.1] Reason for Visit Section/text",".text",".text"
 "Composition.section:sliceReasonForVisitSection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:sliceReasonForVisitSection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -523,7 +523,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:sliceChiefComplaintSection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Chief Complaint narrative","Chief Complaint narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","[eICR R2 STU3.1] Chief Complaint Section/text",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","[eICR R2 STU3.1] Chief Complaint Section/text",".text",".text"
 "Composition.section:sliceChiefComplaintSection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:sliceChiefComplaintSection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -608,7 +608,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:sliceHistoryOfPresentIllnessSection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","History of Present Illness narrative","History of Present Illness narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","[eICR R2 STU3.1] History of Present Illness Section/text",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","[eICR R2 STU3.1] History of Present Illness Section/text",".text",".text"
 "Composition.section:sliceHistoryOfPresentIllnessSection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:sliceHistoryOfPresentIllnessSection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -693,7 +693,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:sliceProblemSection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Problem Section narrative","Problem Section narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","[eICR R2 STU3.1] Problem Section (entries required) (V3)/text",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","[eICR R2 STU3.1] Problem Section (entries required) (V3)/text",".text",".text"
 "Composition.section:sliceProblemSection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:sliceProblemSection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -813,7 +813,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:sliceMedicationsAdministeredSection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Medications Administered Section narrative","Medications Administered Section narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","[eICR R2 STU3.1] Medications Administered Section (V2)/text",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","[eICR R2 STU3.1] Medications Administered Section (V2)/text",".text",".text"
 "Composition.section:sliceMedicationsAdministeredSection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:sliceMedicationsAdministeredSection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -933,7 +933,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:sliceAdmissionMedicationsSection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Admission Medications Section narrative","Admission Medications Section narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","[eICR R2 STU3.1] Admission Medications Administered Section (V3)/text",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","[eICR R2 STU3.1] Admission Medications Administered Section (V3)/text",".text",".text"
 "Composition.section:sliceAdmissionMedicationsSection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:sliceAdmissionMedicationsSection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -1023,7 +1023,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:sliceMedicationsSection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Medications Section narrative","Medications Section narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","[eICR R2 STU3.1] Medications Section (V2)/text",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","[eICR R2 STU3.1] Medications Section (V2)/text",".text",".text"
 "Composition.section:sliceMedicationsSection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:sliceMedicationsSection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -1147,7 +1147,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:sliceResultsSection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Results Section narrative","Results Section narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","[eICR R2 STU3.1] Results Section (entries required) (V3)/text",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","[eICR R2 STU3.1] Results Section (entries required) (V3)/text",".text",".text"
 "Composition.section:sliceResultsSection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:sliceResultsSection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -1267,7 +1267,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:slicePlanOfTreatmentSection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Plan of Treatment narrative","Plan of Treatment narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","[eICR R2 STU3.1] Plan of Treatment Section (V2)/text",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","[eICR R2 STU3.1] Plan of Treatment Section (V2)/text",".text",".text"
 "Composition.section:slicePlanOfTreatmentSection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:slicePlanOfTreatmentSection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -1421,7 +1421,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:sliceImmunizationsSection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Immunizations narrative","Immunizations narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","[eICR R2 STU3.1] Immunizations Section (entries required) (V3)/text",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","[eICR R2 STU3.1] Immunizations Section (entries required) (V3)/text",".text",".text"
 "Composition.section:sliceImmunizationsSection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:sliceImmunizationsSection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -1545,7 +1545,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:sliceProceduresSection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Procedures Section narrative","Procedures Section narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","[eICR R2 STU3] Procedures Section (entries required) (V2)/text",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","[eICR R2 STU3] Procedures Section (entries required) (V2)/text",".text",".text"
 "Composition.section:sliceProceduresSection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:sliceProceduresSection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -1665,7 +1665,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:sliceVitalSignsSection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Vital Signs narrative","Vital Signs narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","[eICR R2 STU3.1] Vital Signs Section (entries required) (V3)/text",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","[eICR R2 STU3.1] Vital Signs Section (entries required) (V3)/text",".text",".text"
 "Composition.section:sliceVitalSignsSection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:sliceVitalSignsSection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -1755,7 +1755,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:sliceSocialHistorySection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Social History Section narrative","Social History Section narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","[eICR R2 STU3.1] Social History Section (V3)/text",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","[eICR R2 STU3.1] Social History Section (V3)/text",".text",".text"
 "Composition.section:sliceSocialHistorySection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:sliceSocialHistorySection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -1881,7 +1881,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:slicePregnancySection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Pregnancy summary Document narrative","Pregnancy summary Document narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","[eICR R2 STU3.1] Pregnancy Section/text",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","[eICR R2 STU3.1] Pregnancy Section/text",".text",".text"
 "Composition.section:slicePregnancySection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:slicePregnancySection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -1983,7 +1983,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:sliceEmergencyOutbreakInformationSection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Emergency Outbreak Information Section narrative","Emergency Outbreak Information Section narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}",".text",".text"
 "Composition.section:sliceEmergencyOutbreakInformationSection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:sliceEmergencyOutbreakInformationSection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -2073,7 +2073,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:slicePastMedicalHistorySection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Past Medical History Section narrative","Past Medical History Section narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","[eICR R2 STU3.1] Past Medical History Section (V3)/text",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","[eICR R2 STU3.1] Past Medical History Section (V3)/text",".text",".text"
 "Composition.section:slicePastMedicalHistorySection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:slicePastMedicalHistorySection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -2163,7 +2163,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:sliceReviewOfSystemsSection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Review of Systems narrative","Review of Systems narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}","[eICR R2 STU3.1] Review of Systems Section/text",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}","[eICR R2 STU3.1] Review of Systems Section/text",".text",".text"
 "Composition.section:sliceReviewOfSystemsSection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:sliceReviewOfSystemsSection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -2250,7 +2250,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section:sliceReportabilityResponseInformationSection.text","Composition.section.text","","","",1,1,"Y","","","Narrative {[]} {[]}
 ","Reportability Response Information Section narrative","Reportability Response Information Section narrative","Document profiles may define what content should be represented in the narrative to ensure clinical safety.","","","","","","","","",,,,,"",,,,"Composition.section.text",0,1,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {`div` ~ '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>'}",".text",".text"
+eicr-anon-text:text.div SHALL be '<div xmlns=""http://www.w3.org/1999/xhtml""><p>MASKED</p></div>' {exists() implies `div`.toString().matches('<div xmlns=""http://www.w3.org/1999/xhtml"">\\s*<p>MASKED</p>\\s*</div>')}",".text",".text"
 "Composition.section:sliceReportabilityResponseInformationSection.text.id","Composition.section.text.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.section:sliceReportabilityResponseInformationSection.text.extension","Composition.section.text.extension","","","",1,*,"","","","Extension {[]} {[]}

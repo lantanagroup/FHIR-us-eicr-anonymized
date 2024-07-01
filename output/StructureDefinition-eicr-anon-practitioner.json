@@ -11,7 +11,7 @@
   "title" : "eICR Anonymized Practitioner",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-06-28T20:58:40+10:00",
+  "date" : "2024-06-29T16:05:37+10:00",
   "publisher" : "APHL",
   "description" : "This Practitioner profile represents an anonymized eCR Practitioner.",
   "jurisdiction" : [{
@@ -277,7 +277,7 @@
         "key" : "eicr-anon-text",
         "severity" : "error",
         "human" : "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'",
-        "expression" : "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'",
+        "expression" : "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')",
         "source" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner"
       }],
       "isModifier" : false,
@@ -3793,7 +3793,7 @@
         "key" : "eicr-anon-text",
         "severity" : "error",
         "human" : "text.div SHALL be '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'",
-        "expression" : "`div` ~ '<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>MASKED</p></div>'",
+        "expression" : "exists() implies `div`.toString().matches('<div xmlns=\"http://www.w3.org/1999/xhtml\">\\\\s*<p>MASKED</p>\\\\s*</div>')",
         "source" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner"
       }]
     },

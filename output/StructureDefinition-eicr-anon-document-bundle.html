@@ -237,7 +237,7 @@
         
           Active
           
-            as of 2024-06-28
+            as of 2024-06-29
           
         
       </td>
@@ -383,7 +383,7 @@
 <tr><td>eicr-anon-prct</td><td>error</td><td>Bundle.entry</td><td>All Practitioner resources must conform to EICRAnonymizedPractitioner<br/>: resource.ofType(Practitioner).empty() or resource.ofType(Practitioner).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner')</td><td></td></tr>
 <tr><td>eicr-anon-prct-rol</td><td>error</td><td>Bundle.entry</td><td>All PractitionerRole resources must conform to EICRAnonymizedPractitionerRole<br/>: resource.ofType(PractitionerRole).empty() or resource.ofType(PractitionerRole).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitionerrole')</td><td></td></tr>
 <tr><td>eicr-anon-rp</td><td>error</td><td>Bundle.entry</td><td>All RelatedPerson resources must conform to EICRAnonymizedRelatedPerson<br/>: resource.ofType(RelatedPerson).empty() or resource.ofType(RelatedPerson).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson')</td><td></td></tr>
-<tr><td>eicr-anon-text-div</td><td>error</td><td>Bundle.entry</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: resource.text.exists() implies resource.text.`div` ~ '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'</td><td></td></tr>
+<tr><td>eicr-anon-text-div</td><td>error</td><td>Bundle.entry</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: resource.text.exists() implies resource.text.`div`.toString().matches('&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;\\s*&lt;p&gt;MASKED&lt;/p&gt;\\s*&lt;/div&gt;')</td><td></td></tr>
 </table>
 
           
@@ -514,7 +514,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>eicr-anon-prct</td><td>error</td><td>Bundle.entry</td><td>All Practitioner resources must conform to EICRAnonymizedPractitioner<br/>: resource.ofType(Practitioner).empty() or resource.ofType(Practitioner).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner')</td><td></td></tr>
 <tr><td>eicr-anon-prct-rol</td><td>error</td><td>Bundle.entry</td><td>All PractitionerRole resources must conform to EICRAnonymizedPractitionerRole<br/>: resource.ofType(PractitionerRole).empty() or resource.ofType(PractitionerRole).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitionerrole')</td><td></td></tr>
 <tr><td>eicr-anon-rp</td><td>error</td><td>Bundle.entry</td><td>All RelatedPerson resources must conform to EICRAnonymizedRelatedPerson<br/>: resource.ofType(RelatedPerson).empty() or resource.ofType(RelatedPerson).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson')</td><td></td></tr>
-<tr><td>eicr-anon-text-div</td><td>error</td><td>Bundle.entry</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: resource.text.exists() implies resource.text.`div` ~ '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'</td><td></td></tr>
+<tr><td>eicr-anon-text-div</td><td>error</td><td>Bundle.entry</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: resource.text.exists() implies resource.text.`div`.toString().matches('&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;\\s*&lt;p&gt;MASKED&lt;/p&gt;\\s*&lt;/div&gt;')</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
@@ -1109,7 +1109,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>eicr-anon-prct</td><td>error</td><td>Bundle.entry</td><td>All Practitioner resources must conform to EICRAnonymizedPractitioner<br/>: resource.ofType(Practitioner).empty() or resource.ofType(Practitioner).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner')</td><td></td></tr>
 <tr><td>eicr-anon-prct-rol</td><td>error</td><td>Bundle.entry</td><td>All PractitionerRole resources must conform to EICRAnonymizedPractitionerRole<br/>: resource.ofType(PractitionerRole).empty() or resource.ofType(PractitionerRole).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitionerrole')</td><td></td></tr>
 <tr><td>eicr-anon-rp</td><td>error</td><td>Bundle.entry</td><td>All RelatedPerson resources must conform to EICRAnonymizedRelatedPerson<br/>: resource.ofType(RelatedPerson).empty() or resource.ofType(RelatedPerson).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson')</td><td></td></tr>
-<tr><td>eicr-anon-text-div</td><td>error</td><td>Bundle.entry</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: resource.text.exists() implies resource.text.`div` ~ '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'</td><td></td></tr>
+<tr><td>eicr-anon-text-div</td><td>error</td><td>Bundle.entry</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: resource.text.exists() implies resource.text.`div`.toString().matches('&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;\\s*&lt;p&gt;MASKED&lt;/p&gt;\\s*&lt;/div&gt;')</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
@@ -1303,7 +1303,7 @@ Summary
 <tr><td>eicr-anon-prct</td><td>error</td><td>Bundle.entry</td><td>All Practitioner resources must conform to EICRAnonymizedPractitioner<br/>: resource.ofType(Practitioner).empty() or resource.ofType(Practitioner).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner')</td><td></td></tr>
 <tr><td>eicr-anon-prct-rol</td><td>error</td><td>Bundle.entry</td><td>All PractitionerRole resources must conform to EICRAnonymizedPractitionerRole<br/>: resource.ofType(PractitionerRole).empty() or resource.ofType(PractitionerRole).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitionerrole')</td><td></td></tr>
 <tr><td>eicr-anon-rp</td><td>error</td><td>Bundle.entry</td><td>All RelatedPerson resources must conform to EICRAnonymizedRelatedPerson<br/>: resource.ofType(RelatedPerson).empty() or resource.ofType(RelatedPerson).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson')</td><td></td></tr>
-<tr><td>eicr-anon-text-div</td><td>error</td><td>Bundle.entry</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: resource.text.exists() implies resource.text.`div` ~ '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'</td><td></td></tr>
+<tr><td>eicr-anon-text-div</td><td>error</td><td>Bundle.entry</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: resource.text.exists() implies resource.text.`div`.toString().matches('&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;\\s*&lt;p&gt;MASKED&lt;/p&gt;\\s*&lt;/div&gt;')</td><td></td></tr>
 </table>
 
           
@@ -1434,7 +1434,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>eicr-anon-prct</td><td>error</td><td>Bundle.entry</td><td>All Practitioner resources must conform to EICRAnonymizedPractitioner<br/>: resource.ofType(Practitioner).empty() or resource.ofType(Practitioner).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner')</td><td></td></tr>
 <tr><td>eicr-anon-prct-rol</td><td>error</td><td>Bundle.entry</td><td>All PractitionerRole resources must conform to EICRAnonymizedPractitionerRole<br/>: resource.ofType(PractitionerRole).empty() or resource.ofType(PractitionerRole).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitionerrole')</td><td></td></tr>
 <tr><td>eicr-anon-rp</td><td>error</td><td>Bundle.entry</td><td>All RelatedPerson resources must conform to EICRAnonymizedRelatedPerson<br/>: resource.ofType(RelatedPerson).empty() or resource.ofType(RelatedPerson).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson')</td><td></td></tr>
-<tr><td>eicr-anon-text-div</td><td>error</td><td>Bundle.entry</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: resource.text.exists() implies resource.text.`div` ~ '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'</td><td></td></tr>
+<tr><td>eicr-anon-text-div</td><td>error</td><td>Bundle.entry</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: resource.text.exists() implies resource.text.`div`.toString().matches('&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;\\s*&lt;p&gt;MASKED&lt;/p&gt;\\s*&lt;/div&gt;')</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
@@ -2029,7 +2029,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>eicr-anon-prct</td><td>error</td><td>Bundle.entry</td><td>All Practitioner resources must conform to EICRAnonymizedPractitioner<br/>: resource.ofType(Practitioner).empty() or resource.ofType(Practitioner).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitioner')</td><td></td></tr>
 <tr><td>eicr-anon-prct-rol</td><td>error</td><td>Bundle.entry</td><td>All PractitionerRole resources must conform to EICRAnonymizedPractitionerRole<br/>: resource.ofType(PractitionerRole).empty() or resource.ofType(PractitionerRole).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-practitionerrole')</td><td></td></tr>
 <tr><td>eicr-anon-rp</td><td>error</td><td>Bundle.entry</td><td>All RelatedPerson resources must conform to EICRAnonymizedRelatedPerson<br/>: resource.ofType(RelatedPerson).empty() or resource.ofType(RelatedPerson).conformsTo('http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-relatedperson')</td><td></td></tr>
-<tr><td>eicr-anon-text-div</td><td>error</td><td>Bundle.entry</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: resource.text.exists() implies resource.text.`div` ~ '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'</td><td></td></tr>
+<tr><td>eicr-anon-text-div</td><td>error</td><td>Bundle.entry</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: resource.text.exists() implies resource.text.`div`.toString().matches('&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;\\s*&lt;p&gt;MASKED&lt;/p&gt;\\s*&lt;/div&gt;')</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
@@ -2186,7 +2186,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 28, 2024 20:58+1000">2024-06-28</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jun 29, 2024 16:05+1000">2024-06-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -218,7 +218,7 @@
         
           Active
           
-            as of 2024-06-28
+            as of 2024-06-29
           
         
       </td>
@@ -250,7 +250,7 @@
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>" : "eICR Anonymized Composition",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2024-06-28T20:58:40+10:00",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2024-06-29T16:05:37+10:00",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "APHL",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>" : "This Composition profile represents an anonymized eICR Composition.",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.jurisdiction">jurisdiction</a>" : [
@@ -570,7 +570,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -5663,7 +5663,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -6779,7 +6779,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -7895,7 +7895,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -9011,7 +9011,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -10491,7 +10491,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -11964,7 +11964,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -13142,7 +13142,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -14615,7 +14615,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -16088,7 +16088,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -17909,7 +17909,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -19432,7 +19432,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -20912,7 +20912,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -22090,7 +22090,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -23724,7 +23724,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -25049,7 +25049,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -26219,7 +26219,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -27393,7 +27393,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -28501,7 +28501,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ],
@@ -29248,7 +29248,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -29388,7 +29388,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -29438,7 +29438,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -29488,7 +29488,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -29538,7 +29538,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -29588,7 +29588,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -29638,7 +29638,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -29688,7 +29688,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -29738,7 +29738,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -29788,7 +29788,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -29838,7 +29838,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -29901,7 +29901,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -29951,7 +29951,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -30001,7 +30001,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -30093,7 +30093,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -30148,7 +30148,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -30198,7 +30198,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -30248,7 +30248,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -30298,7 +30298,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "eicr-anon-text",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "text.div SHALL be '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "`div` ~ '&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "exists() implies `div`.toString().matches('&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\\\\s*&lt;p&gt;MASKED&lt;/p&gt;\\\\s*&lt;/div&gt;')",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition"
           }
         ]
@@ -30364,7 +30364,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 28, 2024 20:58+1000">2024-06-28</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jun 29, 2024 16:05+1000">2024-06-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

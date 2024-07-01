@@ -237,7 +237,7 @@
         
           Active
           
-            as of 2024-06-28
+            as of 2024-06-29
           
         
       </td>
@@ -449,7 +449,7 @@
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>eicr-anon-text</td><td>error</td><td>Observation.text</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: `div` ~ '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'</td><td></td></tr>
+<tr><td>eicr-anon-text</td><td>error</td><td>Observation.text</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: exists() implies `div`.toString().matches('&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;\\s*&lt;p&gt;MASKED&lt;/p&gt;\\s*&lt;/div&gt;')</td><td></td></tr>
 </table>
 
           
@@ -640,7 +640,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-4</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
 <tr><td>dom-5</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Observation</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>eicr-anon-text</td><td>error</td><td>Observation.text</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: `div` ~ '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'</td><td></td></tr>
+<tr><td>eicr-anon-text</td><td>error</td><td>Observation.text</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: exists() implies `div`.toString().matches('&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;\\s*&lt;p&gt;MASKED&lt;/p&gt;\\s*&lt;/div&gt;')</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>obs-6</td><td>error</td><td>Observation</td><td>dataAbsentReason SHALL only be present if Observation.value[x] is not present<br/>: dataAbsentReason.empty() or value.empty()</td><td></td></tr>
@@ -1249,7 +1249,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-4</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
 <tr><td>dom-5</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Observation</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>eicr-anon-text</td><td>error</td><td>Observation.text</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: `div` ~ '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'</td><td></td></tr>
+<tr><td>eicr-anon-text</td><td>error</td><td>Observation.text</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: exists() implies `div`.toString().matches('&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;\\s*&lt;p&gt;MASKED&lt;/p&gt;\\s*&lt;/div&gt;')</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>obs-3</td><td>error</td><td>Observation.referenceRange</td><td>Must have at least a low or a high or text<br/>: low.exists() or high.exists() or text.exists()</td><td></td></tr>
@@ -1546,7 +1546,7 @@ Summary
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>eicr-anon-text</td><td>error</td><td>Observation.text</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: `div` ~ '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'</td><td></td></tr>
+<tr><td>eicr-anon-text</td><td>error</td><td>Observation.text</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: exists() implies `div`.toString().matches('&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;\\s*&lt;p&gt;MASKED&lt;/p&gt;\\s*&lt;/div&gt;')</td><td></td></tr>
 </table>
 
           
@@ -1737,7 +1737,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-4</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
 <tr><td>dom-5</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Observation</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>eicr-anon-text</td><td>error</td><td>Observation.text</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: `div` ~ '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'</td><td></td></tr>
+<tr><td>eicr-anon-text</td><td>error</td><td>Observation.text</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: exists() implies `div`.toString().matches('&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;\\s*&lt;p&gt;MASKED&lt;/p&gt;\\s*&lt;/div&gt;')</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>obs-6</td><td>error</td><td>Observation</td><td>dataAbsentReason SHALL only be present if Observation.value[x] is not present<br/>: dataAbsentReason.empty() or value.empty()</td><td></td></tr>
@@ -2346,7 +2346,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-4</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
 <tr><td>dom-5</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Observation</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>eicr-anon-text</td><td>error</td><td>Observation.text</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: `div` ~ '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'</td><td></td></tr>
+<tr><td>eicr-anon-text</td><td>error</td><td>Observation.text</td><td>text.div SHALL be '&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;MASKED&lt;/p&gt;&lt;/div&gt;'<br/>: exists() implies `div`.toString().matches('&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;\\s*&lt;p&gt;MASKED&lt;/p&gt;\\s*&lt;/div&gt;')</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>obs-3</td><td>error</td><td>Observation.referenceRange</td><td>Must have at least a low or a high or text<br/>: low.exists() or high.exists() or text.exists()</td><td></td></tr>
@@ -2530,7 +2530,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 28, 2024 20:58+1000">2024-06-28</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="">APHL</a>.  Package ecr.fhir.us.anonymized-eicr#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jun 29, 2024 16:05+1000">2024-06-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

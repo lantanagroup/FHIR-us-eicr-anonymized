@@ -1,7 +1,5 @@
 For transmission of reportable, anonymized eICR data to the CDC when the relevant PHA has approved that sharing.
 
-TODO: Add a table listing the anonymized data elements in each profile
-
 This IG masks and/or disallows fields in the various FHIR profiles for the purposes of anonymization.
 
 Where changes were needed to the original eICR IG profiles, new profiles that are based on the original profiles have been created:

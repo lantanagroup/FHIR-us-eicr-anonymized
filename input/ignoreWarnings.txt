@@ -1,1 +1,44 @@
 == Suppressed Messages ==
+# Not required for this IG
+Best Practice Recommendation: In general, all observations should have a performer
+Best Practice Recommendation: In general, all observations should have an effective[x] ()
+
+# The non-defined slices are intentional
+This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-past-or-present-job|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization|2.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/ecr/StructureDefinition/rr-responsible-agency-organization|2.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/ecr/StructureDefinition/rr-routing-entity-organization|2.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/ecr/StructureDefinition/rr-rules-authoring-agency-organization|2.1.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-composition|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+# External code system that the terminology server cannot validate
+A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/PHIndustryCDCCensus2010' could not be found, so the code cannot be validated
+A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/PHOccupationCDCCensus2010' could not be found, so the code cannot be validated
+A definition for CodeSystem 'urn:oid:1.0.3166.1' could not be found, so the code cannot be validated
+A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.232' could not be found, so the code cannot be validated
+A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated
+A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.3|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found
+A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.314' could not be found, so the code cannot be validated
+A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.315' could not be found, so the code cannot be validated
+Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.3|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found
+Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.4|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found
+Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.5|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found
+Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.6|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found
+
+# Value intentionally used in example
+The code '103693007' is valid but is not active
+
+# These pdfs do not exist and the links are for example purposes only
+Can't find 'http://statedepartmentofhealth.gov/epi/disease/zika/Supplemental_data_form.pdf' in the bundle (Bundle.entry[36].resource.content[0].attachment.url)
+Can't find 'http://statedepartmentofhealth.gov/epi/diseases/zika/Zika_Virus_Testing_Guidance.pdf' in the bundle (Bundle.entry[37].resource.content[0].attachment.url)
+Can't find 'http://statedepartmentofhealth.gov/epi/disease/zika/outbreakinfo.pdf' in the bundle (Bundle.entry[38].resource.content[0].attachment.url)
+
+# This is due to the anonymization masking and has been checked
+The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+
+# Aware of the deprecation and will update in future release
+The extension http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber|5.1.0 is deprecated

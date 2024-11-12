@@ -37,6 +37,10 @@ Description: "This Patient profile represents an anonymized eICR Patient."
 * address.line.extension[dataAbsentReason].value[x] = #masked (exactly)
 * address obeys eicr-anon-pt-addr
 
+//* address.line.extension contains $data-absent-reason named dataAbsentReason 1..1 MS
+* address.postalCode ^short = "If Patient.postalCode (zip) is present it SHALL be truncated to 3 digits"
+* address obeys eicr-anon-pt-pc
+
 * contact.name.extension[dataAbsentReason] 1..
 * contact.name.extension[dataAbsentReason] ^short = "A value for name is not allowed, must use data-absent-reason with value 'masked'"
 * contact.name obeys eicr-anon-pt-ct-name
@@ -76,6 +80,11 @@ Invariant: eicr-anon-pt-addr
 Description: "Patient.address.line.value SHALL NOT be present"
 * severity = #error
 * expression = "line.value.empty()"
+
+Invariant: eicr-anon-pt-pc
+Description: "If Patient.postalCode (zip) is present it SHALL be truncated to 3 digits"
+* severity = #error
+* expression = "postalCode.empty() or postalCode.value.length() <= 3"
 
 Invariant: eicr-anon-pt-ct-name
 Description: "Patient.contact.name fields SHALL NOT be present"

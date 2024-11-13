@@ -7,4 +7,5 @@ It is based on the **US Public Health Patient** profile with further constraints
  * contact.name
  * contact.telecom
  * contact.address
+ 
 It also requires trunction of address.postalCode (zip) to 3 digits.

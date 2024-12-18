@@ -38,7 +38,7 @@ Description: "This Patient profile represents an anonymized eICR Patient."
 * address obeys eicr-anon-pt-addr
 
 //* address.line.extension contains $data-absent-reason named dataAbsentReason 1..1 MS
-* address.postalCode ^short = "If Patient.postalCode (zip) is present it SHALL be truncated to 3 digits"
+* address.postalCode ^short = "If Patient.postalCode (zip) is present it SHALL contain the original first 3 digits and contain zeros for the last 2 digits"
 * address obeys eicr-anon-pt-pc
 
 * contact.name.extension[dataAbsentReason] 1..
@@ -54,37 +54,35 @@ Description: "This Patient profile represents an anonymized eICR Patient."
 * contact.address obeys eicr-anon-pt-ct-addr
 
 Invariant: eicr-anon-pt-iden
-Description: "Patient.identifier.system.value SHALL NOT be present AND Patient.identifier.value.value SHALL NOT be present"
+Description: "Values for Patient.identifier.system and Patient.identifier.value SHALL NOT be present"
 * severity = #error
-* expression = "system.value.empty() and value.value.empty()"
-* xpath = "not(f:system/@value) and not(f:value/@value)"
+//* expression = "system.value.empty() and value.value.empty()"
+* expression = "system.hasValue().not() and value.hasValue().not()"
 
 Invariant: eicr-anon-pt-name
 Description: "Patient.name fields SHALL NOT be present"
 * severity = #error
 * expression = "use.empty() and text.empty() and family.empty() and given.empty() and prefix.empty() and suffix.empty() and period.empty()"
-* xpath = "not(f:use) and not(f:text) and not(f:family) and not(f:given) and not(f:prefix) and not(f:suffix) and not(f:period)"
 
 Invariant: eicr-anon-pt-tel
-Description: "Patient.telecom.value.value SHALL NOT be present"
+Description: "A value for Patient.telecom SHALL NOT be present"
 * severity = #error
-* expression = "value.value.empty()"
-* xpath = "not(f:value/@value)"
+* expression = "value.hasValue().not()"
 
 Invariant: eicr-anon-pt-bd
-Description: "Patient.birthDate.value SHALL NOT be present"
+Description: "A value for Patient.birthDate SHALL NOT be present"
 * severity = #error
-* expression = "value.empty()"
+* expression = "hasValue().not()"
 
 Invariant: eicr-anon-pt-addr
-Description: "Patient.address.line.value SHALL NOT be present"
+Description: "A value for address.line SHALL NOT be present"
 * severity = #error
-* expression = "line.value.empty()"
+* expression = "line.hasValue().not()"
 
 Invariant: eicr-anon-pt-pc
-Description: "If Patient.postalCode (zip) is present it SHALL be truncated to 3 digits"
+Description: "If Patient.postalCode (zip) is present it SHALL contain the original first 3 digits and contain zeros for the last 2 digits"
 * severity = #error
-* expression = "postalCode.empty() or postalCode.value.length() <= 3"
+* expression = "postalCode.empty() or postalCode.substring(3, 2) = '00'"
 
 Invariant: eicr-anon-pt-ct-name
 Description: "Patient.contact.name fields SHALL NOT be present"

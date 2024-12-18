@@ -34,6 +34,6 @@ Description: "Organization.telecom fields SHALL NOT be present"
 * expression = "system.empty() and value.empty() and use.empty() and rank.empty() and period.empty()"
 
 Invariant: eicr-anon-org-name
-Description: "Organization.name.value SHALL NOT be present"
+Description: "A value for Organization.name SHALL NOT be present"
 * severity = #error
-* expression = "value.empty()"
+* expression = "hasValue().not()"

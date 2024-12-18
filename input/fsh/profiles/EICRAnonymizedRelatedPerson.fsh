@@ -38,9 +38,9 @@ Description: "This RelatedPerson profile represents an anonymized eCR RelatedPer
 * address obeys eicr-anon-rp-ad
 
 Invariant: eicr-anon-rp-iden
-Description: "RelatedPerson.identifier.system SHALL NOT be present AND Patient.identifier.value SHALL NOT be present"
+Description: "Values for RelatedPerson.identifier.system and RelatedPerson.identifier.value SHALL NOT be present"
 * severity = #error
-* expression = "system.empty() and value.empty()"
+* expression = "system.hasValue().not() and value.hasValue().not()"
 
 Invariant: eicr-anon-rp-name
 Description: "RelatedPerson.name fields SHALL NOT be present"
@@ -53,9 +53,9 @@ Description: "RelatedPerson.telecom fields SHALL NOT be present"
 * expression = "system.empty() and value.empty() and use.empty() and rank.empty() and period.empty()"
 
 Invariant: eicr-anon-rp-bd
-Description: "Patient.birthDate.value SHALL NOT be present"
+Description: "A value for Patient.birthDate SHALL NOT be present"
 * severity = #error
-* expression = "value.empty()"
+* expression = "hasValue().not()"
 
 Invariant: eicr-anon-rp-ad
 Description: "RelatedPerson.address fields SHALL NOT be present"

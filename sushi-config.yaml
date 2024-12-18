@@ -1,5 +1,5 @@
 canonical: http://fhir.org/fhir/us/anonymized-eicr
-title: "CDC FHIR® Implementation Guide: Anonymized Electronic Initial Case Reporting (eICR)"
+title: "CDC FHIR® IG: Anonymized Electronic Initial Case Reporting (eICR)"
 fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
@@ -7,18 +7,18 @@ id: ecr.fhir.us.anonymized-eicr
 name: EICRAnonymized
 status: active
 version: 1.0.0
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 
 publisher:
   name: APHL
 
 dependencies:
   hl7.fhir.us.ecr:
-    version: 2.1.1
-    uri: http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr
+    version: 2.1.2
+    uri: http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr#2.1.2
     id: hl7fhirusecr
   us.nlm.vsac:
-    version: 0.18.0
+    version: 0.21.0
     uri: http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac
     id: usnlmvsac
   hl7.fhir.us.core:

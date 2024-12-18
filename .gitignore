@@ -13,3 +13,9 @@
 /validator_cli.jar
 /_delete-fsh-generated.bat
 /_gencontinuous.bat
+/output
+/test-files
+/fhir_validator - resource.bat
+/_gencontinuous.sh
+/_genonce.sh
+/_updatePublisher.sh

@@ -8,4 +8,4 @@ It is based on the **US Public Health Patient** profile with further constraints
  * contact.telecom
  * contact.address
  
-It also requires trunction of address.postalCode (zip) to 3 digits.
+If Patient.postalCode (zip) is present it SHALL contain the original first 3 digits and contain zeros for the last 2 digits

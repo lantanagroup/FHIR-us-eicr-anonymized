@@ -7,7 +7,7 @@
 
 |IG Dependencies	|
 |----------------------------------|
-| [HL7 FHIR Implementation Guide: Electronic Case Reporting (eCR) - US Realm 2.1.1](https://hl7.org/fhir/us/ecr/STU2.1.1/) |
+| [HL7 FHIR Implementation Guide: Electronic Case Reporting (eCR) - US Realm 2.1.2](https://hl7.org/fhir/us/ecr/) |
 {:.table-striped}
 
 

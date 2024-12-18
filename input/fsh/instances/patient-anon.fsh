@@ -57,7 +57,7 @@ Usage: #example
 * address.city = "Atlanta"
 * address.state = "GA"
 //* address.postalCode = "30302"
-* address.postalCode = "303"
+* address.postalCode = "30300"
 * address.country = "US"
 
 * contact.relationship = $v3-RoleClass#GUARD

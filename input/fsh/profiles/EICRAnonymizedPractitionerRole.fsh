@@ -16,7 +16,6 @@ Description: "This PractitionerRole profile represents an anonymized eCR Practit
 * telecom obeys eicr-anon-prctrl-tel
 
 Invariant: eicr-anon-prctrl-tel
-Description: "PracitionerRole.telecom.value.value SHALL NOT be present"
+Description: "A value for PracitionerRole.telecom.value SHALL NOT be present"
 * severity = #error
-* expression = "value.value.empty()"
-* xpath = "not(f:value/@value)"
+* expression = "value.hasValue().not()"

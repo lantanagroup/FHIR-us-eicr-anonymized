@@ -38,16 +38,13 @@ Invariant: eicr-anon-prct-fam
 Description: "Practitioner.name.family.value SHALL NOT be present"
 * severity = #error
 * expression = "value.empty()"
-* xpath = "not(@value)"
 
 Invariant: eicr-anon-prct-tel
 Description: "Practitioner.telecom fields SHALL NOT be present"
 * severity = #error
 * expression = "system.empty() and value.empty() and use.empty() and rank.empty() and period.empty()"
-* xpath = "not(f:system) and not(f:value) and not(f:use) and not(f:rank)"
 
 Invariant: eicr-anon-prct-ad
 Description: "Practitioner.address fields SHALL NOT be present"
 * severity = #error
 * expression = "use.empty() and text.empty() and line.empty() and city.empty() and district.empty() and state.empty() and postalCode.empty() and country.empty() and period.empty()"
-* xpath = "not(f:text) and not(f:line) and not(f:city) and not(f:district) and not(f:state) and not(f:postalCode) and not(f:country)"

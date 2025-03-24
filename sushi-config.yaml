@@ -15,7 +15,7 @@ publisher:
 dependencies:
   hl7.fhir.us.ecr:
     version: 2.1.2
-    uri: http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr#2.1.2
+    uri: http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7.fhir.us.ecr
     id: hl7fhirusecr
   us.nlm.vsac:
     version: 0.21.0

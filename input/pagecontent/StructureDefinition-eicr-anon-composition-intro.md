@@ -1,4 +1,4 @@
-It is based on the **eICR Composition** profile with further constraints to require masking of:
+It is based on the **[eICR Composition](http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition)** profile with further constraints to require masking of:
  * subject
  * encounter
  * author

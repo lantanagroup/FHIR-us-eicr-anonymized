@@ -4,7 +4,6 @@ Id: eicr-anon-relatedperson
 Title: "eICR Anonymized RelatedPerson"
 Description: "This RelatedPerson profile represents an anonymized eCR RelatedPerson."
 
-* ^version = "1.0.0"
 * insert rsProfileMeta
 * insert rsAddDARConstraints
 

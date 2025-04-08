@@ -4,7 +4,6 @@ Id: eicr-anon-document-bundle
 Title: "eICR Anonymized Document Bundle"
 Description: "This Composition profile represents an anonymized eICR Document Bundle."
 
-* ^version = "1.0.0"
 * insert rsProfileMeta
 
 * entry 1..

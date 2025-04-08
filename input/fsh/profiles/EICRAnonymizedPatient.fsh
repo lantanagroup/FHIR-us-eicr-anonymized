@@ -4,7 +4,6 @@ Id: eicr-anon-patient
 Title: "eICR Anonymized Patient"
 Description: "This Patient profile represents an anonymized eICR Patient."
 
-* ^version = "1.0.0"
 * insert rsProfileMeta
 * insert rsAddDARConstraints
 

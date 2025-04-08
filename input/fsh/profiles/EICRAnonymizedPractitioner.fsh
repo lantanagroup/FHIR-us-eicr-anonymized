@@ -4,7 +4,6 @@ Id: eicr-anon-practitioner
 Title: "eICR Anonymized Practitioner"
 Description: "This Practitioner profile represents an anonymized eCR Practitioner."
 
-* ^version = "1.0.0"
 * insert rsProfileMeta
 * insert rsAddDARConstraints
 

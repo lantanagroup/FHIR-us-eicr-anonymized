@@ -3,7 +3,7 @@ Parent: EICRComposition
 Id: eicr-anon-composition
 Title: "eICR Anonymized Composition"
 Description: "This Composition profile represents an anonymized eICR Composition."
-* ^version = "1.0.0"
+
 * insert rsProfileMeta
 
 * insert rsAddDARConstraints

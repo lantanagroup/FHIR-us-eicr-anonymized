@@ -4,7 +4,6 @@ Id: eicr-anon-past-or-present-job
 Title: "eICR Anonymized Past or Present Job"
 Description: "This Past or Present Job profile represents an anonymized eICR Past or Present Job."
 
-* ^version = "1.0.0"
 * insert rsProfileMeta
 * insert rsAddDARConstraints
 

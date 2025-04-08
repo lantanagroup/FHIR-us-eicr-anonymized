@@ -4,7 +4,6 @@ Id: eicr-anon-organization
 Title: "eICR Anonymized Organization"
 Description: "This Organization profile represents an anonymized eCR Organization."
 
-* ^version = "1.0.0"
 * insert rsProfileMeta
 * insert rsAddDARConstraints
 

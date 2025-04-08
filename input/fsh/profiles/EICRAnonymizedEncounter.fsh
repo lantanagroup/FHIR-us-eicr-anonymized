@@ -4,7 +4,6 @@ Id: eicr-anon-encounter
 Title: "eICR Anonymized Encounter"
 Description: "This Encounter profile represents an anonymized eICR Encounter."
 
-* ^version = "1.0.0"
 * insert rsProfileMeta
 * insert rsAddDARConstraints
 

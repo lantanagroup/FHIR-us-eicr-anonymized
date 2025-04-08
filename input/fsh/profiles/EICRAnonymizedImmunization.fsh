@@ -4,7 +4,6 @@ Id: eicr-anon-immunization
 Title: "eICR Anonymized Immunization"
 Description: "This Immunization profile represents an anonymized eICR Immunization."
 
-* ^version = "1.0.0"
 * insert rsProfileMeta
 * insert rsAddDARConstraints
 

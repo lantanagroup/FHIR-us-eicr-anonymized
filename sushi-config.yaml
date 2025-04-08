@@ -6,7 +6,7 @@ applyExtensionMetadataToRoot: false
 id: ecr.fhir.us.anonymized-eicr
 name: EICRAnonymized
 status: active
-version: 1.0.0
+version: 1.0.1
 releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 
 publisher:
@@ -40,6 +40,8 @@ pages:
    title: Technical Guidance
   downloads.md:
     title: Downloads
+  change_log.md:
+    title: Change Log
             
 menu:
   Home: index.html
@@ -47,6 +49,7 @@ menu:
   Technical Guidance: technical_guidance.html
   Downloads: downloads.html
   Artifact Index: artifacts.html
+  Change Log: change_log.html
 
 copyrightYear: 2024+
 jurisdiction: urn:iso:std:iso:3166#US

@@ -3,6 +3,7 @@ Parent: Observation
 Id: eicr-anon-caculated-age
 Title: "eICR Anonymized Calculated Age"
 Description: "This Observation profile represents the patient's age, calculated by subtracting the date of birth from the current date."
+
 * insert rsProfileMeta
 
 * insert rsAddDARConstraints

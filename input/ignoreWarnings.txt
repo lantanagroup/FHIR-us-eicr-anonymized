@@ -4,9 +4,9 @@ Best Practice Recommendation: In general, all observations should have a perform
 Best Practice Recommendation: In general, all observations should have an effective[x] ()
 
 # 02 The non-defined slices are intentional
-This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-past-or-present-job|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-document-bundle|1.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-organization|1.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://fhir.org/fhir/us/anonymized-eicr/StructureDefinition/eicr-anon-past-or-present-job|1.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/ecr/StructureDefinition/rr-responsible-agency-organization|2.1.2 (this may not be a problem, but you should check that it's not intended to match a slice)
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/ecr/StructureDefinition/rr-routing-entity-organization|2.1.2 (this may not be a problem, but you should check that it's not intended to match a slice)
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/ecr/StructureDefinition/rr-rules-authoring-agency-organization|2.1.2 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -19,23 +19,27 @@ A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/PHOccupationC
 A definition for CodeSystem 'urn:oid:1.0.3166.1' could not be found, so the code cannot be validated
 A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.232' could not be found, so the code cannot be validated
 A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated
-A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.3|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found
 A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.314' could not be found, so the code cannot be validated
 A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.315' could not be found, so the code cannot be validated
 Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.3|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found
 Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.4|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found
 Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.5|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found
 Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.6|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found
+A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.3|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found
+A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.4|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found
+A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.5|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found
+A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.6|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found
 
 # 04 - Value intentionally used in example
 The code '103693007' is valid but is not active
 
 # 05 - This is due to the anonymization masking and has been checked
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 
-# 06 - Aware of the deprecation and will update in future release (later version of R5)
-The extension http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber|5.1.0 is deprecated
+# 06 - Aware of the deprecation and will update in future release
+The extension http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber|5.2.0 is deprecated
+The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex
+The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 
 # 07 - These value sets are not retired, they have been updated but are not in the VSAC package release version that the eCR IG depends on
 INFORMATION: Bundle/bundle-document-zika-anon: Bundle.entry[8].resource.extension[0].value.ofType(CodeableConcept): Reference to retired ValueSet http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.12|20190823
@@ -50,3 +54,27 @@ The discriminator type 'pattern' is deprecated in R5+. For future compatibility,
 Can't find 'http://statedepartmentofhealth.gov/epi/disease/zika/Supplemental_data_form.pdf' in the bundle (Bundle.entry[36].resource.content[0].attachment.url)
 Can't find 'http://statedepartmentofhealth.gov/epi/diseases/zika/Zika_Virus_Testing_Guidance.pdf' in the bundle (Bundle.entry[37].resource.content[0].attachment.url)
 Can't find 'http://statedepartmentofhealth.gov/epi/disease/zika/outbreakinfo.pdf' in the bundle (Bundle.entry[38].resource.content[0].attachment.url)
+
+# 10 - These are identifiers and not meant to resolve
+URL value 'urn:oid:2.16.840.1.114222.4.11.7508' does not resolve
+URL value 'http://hl7.org.fhir/sid/us-npi' does not resolve
+URL value 'urn:oid:2.16.840.1.114222.4.5.314' does not resolve
+URL value 'urn:oid:2.16.840.1.114222.4.5.315' does not resolve
+URL value 'urn:oid:1.0.3166.1' does not resolve
+URL value 'urn:oid:2.16.840.1.114222.4.5.274' does not resolve
+URL value 'urn:oid:2.16.840.1.114222.4.5.232' does not resolve
+Canonical URL 'http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac' does not resolve
+
+# 11 - These are examples and not meant to resolve
+URL value 'http://hospital.smarthealthit.org' does not resolve
+URL value 'http://lab.smarthealthit.org' does not resolve
+URL value 'http://statedepartmentofhealth.gov/epi/disease/zika/Supplemental_data_form.pdf' does not resolve
+URL value 'http://statedepartmentofhealth.gov/epi/diseases/zika/Zika_Virus_Testing_Guidance.pdf' does not resolve
+URL value 'http://statedepartmentofhealth.gov/epi/disease/zika/outbreakinfo.pdf' does not resolve
+
+# 12 - Will consider hard coding the versions at a later date
+There are multiple different potential matches for%
+
+# 13 - The next version of eCR will be based on a more recent versions of the IGs
+The ImplementationGuide uses package hl7.fhir.us.core#4.0.0 released on 2021-06-28, but the most recent appropriate version is 7.0.0. This reference is getting old and the more recent version should be considered
+The ImplementationGuide uses package hl7.fhir.us.odh#1.1.0 released on 2021-07-12, but the most recent appropriate version is 1.3.0. This reference is getting old and the more recent version should be considered

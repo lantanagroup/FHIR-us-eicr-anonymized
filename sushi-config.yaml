@@ -32,6 +32,7 @@ dependencies:
 
 parameters:
   show-inherited-invariants: true
+  path-expansion-params: 'Parameters-expansion-parameters-ecr-anon.json'  #path is relative to [base]/fsh-generated/resources
 
 pages:
   index.md:
@@ -50,6 +51,12 @@ menu:
   Downloads: downloads.html
   Artifact Index: artifacts.html
   Change Log: change_log.html
+
+groups:
+  other:
+    name: Other
+    resources:
+    - expansion-parameters-ecr-anon
 
 copyrightYear: 2024+
 jurisdiction: urn:iso:std:iso:3166#US
